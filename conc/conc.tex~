@@ -1,0 +1,260 @@
+\chapter{Conclusions \& Future Work}
+\label{chap:conc}
+
+\section{Conclusions}
+
+Over the course of this thesis, we have sought to identify and
+characterize the Milky Way's most luminous star clusters. Initially,
+we identify them through their environmental signatures of gas
+morphology and reprocessed emission. Subsequently, we seek to identify
+their massive stellar populations directly. It is through this process
+that we substantially increase the number of young, massive star
+clusters known in the Galaxy and better characterize the upper end of
+the Galactic cluster mass function. 
+
+In Chapter \ref{chap:sfcs}, we use data from Spitzer GLIMPSE and radio
+recombination line surveys to identify SFCs within the 13 most
+luminous WMAP free-free emission sources in the Galaxy. On the basis
+of morphology from the 8 \micron\, emission and radial velocities from
+radio recombination lines, we identify 40 SFCs, some of which are
+expected to contain young clusters or OB associations with masses
+greater than $10^4$ M$_{\sun}$. Based on the locations of the SFCs, we
+estimate that the scale height of Galactic O-type stars to be $35\pm5$
+pc, consistent with previous values. With the free-free emission
+measurements from WMAP and the 8 \micron\, emission measurements from
+Spitzer GLIMPSE, we find a nearly linear relationship between the two
+integrated over the area of the WMAP sources. Having estimated the
+expansion velocity of the bubbles associated with the SFCs, we show
+that the mechanical luminosity from the expansion of bubbles
+accounting for one-third of the Galaxy's star formation can account
+for approximately one-third of the luminosity require to maintain the
+velocity dispersion of the molecular gas inside the solar circle,
+suggesting that the expansion of bubbles surrounding the most luminous
+star clusters and OB associations is likely sufficient to support the
+observed turbulence of the molecular gas disk. Further, we show that
+the kinetic energy of some of the largest bubbles in the sample is
+similar to those of previously known superbubbles, likely prior to a
+single supernova taking place, indicating that some of these bubbles
+are progenitors of the superbubbles. Finally, based on statistical
+arguments of projection, we show that the observed shell structure in
+the 8 \micron\, morphology is more consistent with the hypothesis of
+limb brightened shells rather than flattened rings.
+
+In Chapter \ref{chap:dfcand}, we search for the powering stellar
+population of the most luminous SFC identified in Chapter
+\ref{chap:sfcs}, the Dragonfish Nebula. We use the 2MASS point source
+catalog to identify candidate O-type stars consistent with the
+distance and extinction of the Dragonfish Nebula, using colour cuts
+around the expected extinction to filter out most line-of-sight
+contaminating stars. Based on the size and demographics of the
+overdensity, we classify it as a candidate OB association. We find a
+significant overdensity of point sources with extinction between $0.96
+< A_K < 1.2$ towards the centre of the SFC. Subtracting the
+contribution of field sources, we find $406 \pm 102$ sources in the
+candidate association appearing as O- and early B-type stars at the
+distance of the association, consistent with the expected population
+based on its total ionizing luminosity. Based on the ionizing
+luminosity and point source demographics, we find that the candidate
+OB association is likely the most luminous OB association known in the
+Galaxy.
+
+In Chapter \ref{chap:dfspec}, we seek to confirm the existence of the
+Dragonfish Association, identified in Chapter \ref{chap:dfcand}. We
+take NIR spectroscopy of a sample of possible O-stars in the candidate
+Dragonfish Association in the $H$- and $K$-bands using the SOFI
+spectrograph on the NTT 3.6m telescope in La Silla, Chile. With the
+identification of Brackett-series hydrogen and helium absorption
+lines, we find that 15 of the 50 stars identified are O-type stars. In
+addition, we identify a late-type WN star through hydrogen line
+emission, and two LBV candidates using helium and forbidden iron line
+emission. Based on the population statistics, we confirm the existence
+of the Dragonfish association and its estimated ionizing luminosity
+and stellar mass, inferring the existence of a low-mass association
+population from the stellar initial mass function. In addition to the
+confirmation of the association, the spectroscopy validates the method
+developed in Chapter \ref{chap:dfcand} and adds evidence to the
+candidate associations/clusters identified through it.
+
+In Chapter \ref{chap:candclust}, we refine the method of Chapter
+\ref{chap:dfcand} to apply to the remaining SFCs from Chapter
+\ref{chap:sfcs}. Including the Dragonfish association from Chapter
+\ref{chap:dfcand}, we find that 22 of the 40 SFCs host candidate
+clusters, either central to the SFC or on its periphery. We constrain
+the false positive rate of the candidates to be $3.0 \pm 0.6$, and we
+find that the candidates have a strong correlation between their
+measured extinction and the modeled extinction based on the distance
+of their host SFC. These two lines of evidence, added with the
+confirmation of the Dragonfish Association from Chapter
+\ref{chap:dfspec}, indicate the reality of the candidates
+identified. We estimate the masses and luminosity of the candidates,
+showing that the candidates can account for the observed WMAP
+free-free flux for most of the investigated sources. We, finally,
+produce the census of the Galactic OB associations and clusters with
+ages $< 4$ Myrs and masses $> 10^{4}$ M$_{\sun}$, showing that with
+this work, we have doubled the number of such known clusters. Based on
+extragalactic estimates, we estimate that the census is now within a
+factor of two to completion and we indicate the locations on the
+Galactic plane that may likely host the remaining young, massive OB
+associations and stellar clusters.
+
+% In Chapter \ref{chap:mopra}, we present the preliminary results from
+% the molecular mapping of the natal molecular cloud surrounding the
+% Dragonfish Association. We use the 3mm fast mapping mode of the Mopra
+% radio telescope in Coonabarabran, Australia to map a 1\degr $\times$
+% 1.5\degr\, region centred on the Dragonfish association. We present
+% the preliminary channel maps from this work, showing a large, clumpy
+% bubble located at the position and radial velocity of the OB
+% association, with structure coincident to the 8 \micron\, morphology
+% and existing within a large \ion{H}{1} void in the Galactic
+% plane. This provides direct evidence for the inflation of a bubble
+% caused by feedback from the central OB association the ongoing
+% destruction of the association's natal molecular cloud, driving
+% turbulence into the molecular material.
+
+To summarize, in this thesis we have found some of the most luminous
+(and massive) young OB associations and clusters in the Galaxy.
+
+\section{Future Work and Directions}
+
+With the identification and characterization of a large new sample of
+young, massive clusters and OB associations from this thesis, there is
+a plethora of different avenues of future work and investigation. We
+summarize a number of these directions and classify them into two
+overarching categories: characterizing the stellar populations
+themselves and characterizing their energetic feedback into the
+Galactic disk and halo.
+
+\subsection{Characterization of Stellar Populations}
+\label{subsect:charstel}
+While the locations for a large number of new massive clusters and OB
+associations have been determined in this thesis, very little has been
+determined about their stellar population. Even their very reality
+requires independent confirmation with additional evidence beyond
+statistical stellar density arguments. We outline a number of
+alternative means to confirm the existence of the clusters and
+determine the composition and distribution of the stellar members.
+
+\subsubsection{Spectroscopic Follow-up}
+
+As was conducted in Chapter \ref{chap:dfspec} for the Dragonfish
+Association, follow-up spectroscopy on individual candidate cluster
+members will enable precise spectroscopic typing of the stars. Since
+these clusters are located at large ($> 2$ kpc) distances within the
+Galactic disk, extinction becomes a substantial problem; while the
+spectroscopic typing of massive stars is best conducted in the optical
+bands, this is likely only possible for the nearest
+clusters/associations with relatively low extinction. For the most
+deeply-veiled clusters/associations, the line-of-sight extinction may
+only permit spectroscopy in the NIR bands, where the spectra of an
+O-type star is nearly featureless \citep{gray09}. To further
+complicate matters, the spectral features due to interstellar
+absorption are similar to the depth of the features intrinsic to the
+spectra (Chapter \ref{chap:dfspec}).
+
+While the advent of NIR multi-object spectrographs will enable greater
+numbers of stars to be tested at a time, direct spectroscopy of stars
+is inherently a low yield technique for highly confused
+clusters/associations.  In many of the cases from Chapter
+\ref{chap:candclust}, the ratio of cluster stars to confusing sources
+along the line of sight is worse than 1:1 after the colour-selection
+criteria are applied. Additionally, many of these candidates have
+$\sim 10^3$ OB stars identified in 2MASS, requiring substantial effort
+and telescope time to fully classify every identified cluster
+candidate. 
+
+However, despite these challenges, direct spectroscopic follow-up of
+candidate cluster stars provides a simple, robust determination of the
+reality of the candidate cluster/OB association. Spectroscopic
+observations also allow the identification of the exotic, evolved
+massive star phases, such as the Wolf-Rayet and luminous blue variable
+phases (Chapter \ref{chap:dfspec}). The identification of these short
+lived states and their population statistics may in the future lead to
+robust estimates of the age of the cluster or association. 
+
+\subsubsection{Point Source X-ray Observations}
+
+Over the past decade, the {\em Chandra X-ray Observatory} has been
+beneficial for the characterization of young, massive stellar clusters
+and OB associations \citep{moffat02, wang08}. Recently, the detailed
+work of \citet{townsley11} for the Carina region has highlighted the
+advantages of using the X-ray regime to characterize massive stellar
+populations through X-ray emitting OB stars and colliding-wind
+binaries. The relatively large ($\sim 1/3$\degr) field-of-view permits
+even some of the widest OB associations to be observed at once. In the
+case of the Carina region, this has lead to the discovery of a large,
+diffuse population of OB stars outside the dense clusters
+\citep{povich11}.
+
+In addition to the X-ray emitting OB stars, the high energy regime
+enables the detection of the flaring intermediate-mass pre-main
+sequence stellar population \citep{povich11b}. The detection of this
+population is unique to the X-ray regime as these sources would be too
+faint to observe in the optical or infrared wavelengths. 
+
+However, the challenge of X-ray observations include the extremely
+long exposure times required to obtain sufficient sensitivity to the
+X-ray emitting sources in the clusters with large distances and
+extinguishing columns ($\sim 10^2$ ks). Further, there is a limited
+number of facilities capable of making such observations ($\sim 1$).
+
+\subsubsection{Astrometric Observations}
+
+Precision (near microarcsecond) astrometry enabled through space-based
+facilities such as the {\em Hubble Space Telescope} and ground-based
+multi-conjugate adaptive optics is allowing the separation of cluster
+and contaminating sources on the basis of relative proper
+motions. This process has been successfully conducted on NGC 3603
+\citep{rochau10}. This technique provides an entirely unbiased
+sampling of all objects in the field, enabling the identification of
+cluster members that would be otherwise excluded by colour cuts or
+chance X-ray emission processes. However, the large distances to the
+clusters/associations require multi-year epochs of observation to
+provide sufficient proper motion sensitivity to separate cluster and
+contaminant sources.
+
+\subsection{Characterization of Feedback }
+
+Studying the energetic feedback processes of young, massive clusters
+and associations into their environment requires knowledge of both the
+powering stellar population and its energetic output. We have
+discussed avenues to characterize the stellar populations above. The
+energetic output can be measured through reprocessed emission,
+possibly coming from the winds or ionizing photons produced, or the
+kinematics and morphology of the region being acted upon. This new
+population of young, massive clusters and associations is well suited
+for studies of energetic feedback; the complexes were initially
+identified through their reprocessed emission and morphology, meaning
+that their large scale structure beyond the position of individual
+stars is established. We outline possible directions for feedback
+studies using these associations.
+
+\subsubsection{Molecular Mapping}
+
+Mapping the SFCs and their surrounding natal clouds with a molecular
+tracer, such as $^{12}$CO, will enable studies of the feedback of
+these clusters/associations into their natal GMCs. We are in the midst
+of conducting such a study of the Dragonfish Nebula currently, using
+data obtained with the Mopra Observatory in Australia. While CO
+surveys of the Galactic Plane do exist \citep{dame01}, they tend to
+have relatively low ($\sim 1/8$\degr) angular resolution, insufficient
+to resolve the structure caused by feedback effects. Sub-arcminute,
+wide field ($\ga 1$\degr) CO surveys surrounding the SFCs will enable
+investigations into the driving of large scale structure into the GMC,
+the cascading of turbulence in the molecular gas, and the kinematics
+of GMC destruction. These observations will help connect the evolution
+of young, massive clusters to the life cycle of a GMC in a detailed
+manner.
+
+\subsubsection{Diffuse Emission X-ray Observations}
+
+Beyond characterizing stellar populations (as noted in
+\S\ref{subsect:charstel}), X-ray observations are uniquely capable of
+measuring the hot gas originating from stellar winds
+\citep{townsley11b}. The diffuse X-ray emission can be extracted using
+long ($> 60$ ks) exposures, binned over arcminute-sized zones,
+removing the coincident X-ray point sources. Measuring the diffuse hot
+gas through X-rays enables a direct measure of the cluster's wind
+feedback and energetics. From these measurements, we can determine the
+total pressure contributed by the hot winds into the bubble inflated
+by the central cluster. This will enable the direct determination of
+the driving of energetic feedback into the ambient medium. 
