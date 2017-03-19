@@ -4,46 +4,47 @@ The top-level auxiliary file: intro_ver1.aux
 The style file: apj.bst
 Database file #1: intro_ver1.bib.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty publisher in Armitage2010
 Warning--empty publisher in SSD1999
-You've used 14 entries,
+You've used 25 entries,
             3085 wiz_defined-function locations,
-            737 strings with 6657 characters,
-and the built_in function-call counts, 6061 in all, are:
-= -- 540
-> -- 378
-< -- 9
-+ -- 127
-- -- 134
-* -- 471
-:= -- 1132
-add.period$ -- 14
-call.type$ -- 14
-change.case$ -- 93
-chr.to.int$ -- 14
-cite$ -- 15
-duplicate$ -- 264
-empty$ -- 386
-format.name$ -- 167
-if$ -- 1212
+            822 strings with 8589 characters,
+and the built_in function-call counts, 10635 in all, are:
+= -- 953
+> -- 622
+< -- 17
++ -- 207
+- -- 215
+* -- 806
+:= -- 1971
+add.period$ -- 25
+call.type$ -- 25
+change.case$ -- 160
+chr.to.int$ -- 25
+cite$ -- 27
+duplicate$ -- 474
+empty$ -- 705
+format.name$ -- 273
+if$ -- 2151
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 14
-newline$ -- 46
-num.names$ -- 56
-pop$ -- 96
+missing$ -- 25
+newline$ -- 79
+num.names$ -- 100
+pop$ -- 172
 preamble$ -- 1
-purify$ -- 93
+purify$ -- 160
 quote$ -- 0
-skip$ -- 219
+skip$ -- 400
 stack$ -- 0
-substring$ -- 244
-swap$ -- 0
+substring$ -- 464
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 123
-warning$ -- 1
-while$ -- 55
+type$ -- 219
+warning$ -- 2
+while$ -- 98
 width$ -- 0
-write$ -- 142
-(There was 1 warning)
+write$ -- 252
+(There were 2 warnings)
