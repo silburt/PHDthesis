@@ -37,7 +37,7 @@ Proposed sections in the introduction:
 \begin{enumerate}
 \item Exoplanet detection -- Dominant detection methods = Transit, RV. Basic statistics of exoplanets discovered by Kepler Space Telescope. 
 \item Planet Formation -- MMSN, Core accretion/GI models, Planetesimal Formation, Nice Model. 
-\item Planet Dynamics -- Mean Motion Resonance, (planetesimal and gas) Migration,  Stability.
+\textbf{\item Planet Dynamics -- Mean Motion Resonance, (planetesimal and gas) Migration, Stability.}
 \item Numerical Integration -- Hamiltonian Dynamics, Close Encounters, etc. 
 \end{enumerate}
 
@@ -47,9 +47,9 @@ Below I am going to elaborate on planet dynamics.
 \subsection{Mean Motion Resonance (MMR)}
 \label{sec:MMR}
 MMR occurs when the orbital period of one planet is an integer ratio of another. 
-Like other types of resonance that occur in nature, MMR results in the amplitude growth of various quantities characterizing the system, like eccentricity, semi-major axis and the longitude of pericentre \citep{SSD1999}. 
-As a result, the presence of MMR can strongly affect the formation, evolution and longterm stability of planetary systems in a diversity of ways.
-For example, Kirkwood gaps are unstable regions in the asteroid belt carved by MMRs with Jupiter, while Pluto and Neptune are protected from colliding due to a 3:2 MMR, even though they are on crossing orbits. 
+Like other types of resonances occuring in nature, MMR results in the amplitude growth of various quantities that characterize the system like eccentricity, semi-major axis and the longitude of pericentre \citep{SSD1999}. 
+As a result, the presence of MMR can strongly affect the formation, evolution and longterm stability of planetary systems in diverse ways.
+For example, Kirkwood gaps are unstable regions in the asteroid belt carved by MMRs with Jupiter, while Pluto and Neptune are on crossing orbits but are protected from colliding due to a 3:2 MMR. 
 
 For every $p:q$ MMR (where $p$ and $q$ are integers) there are two important resonant angles:
 \begin{align*}
@@ -59,7 +59,7 @@ For every $p:q$ MMR (where $p$ and $q$ are integers) there are two important res
 \end{split}
 \end{align*}
 where $\lambda$ is the mean longitude and $\varpi$ is the longitude of periapse. 
-For planets to be in MMR the time variation of at least one resonant argument, $\dot{\phi}$, must be zero.
+For planets to be in MMR the time variation of one or both of these resonant arguments, $\dot{\phi}$, must be zero.
 %, however there are exceptions to this rule.
 %For example, planets with commensurate period ratios are not required to be in MMR, and planets a few percent away from period commensurability can be found to be in MMR \citep[e.g.][]{Lee2002}. 
 %In addition, circulating resonant angles can be associated with planets in MMR while librating resonant angles can be associated with planets not in MMR \citep{Delisle2012}.
@@ -73,13 +73,13 @@ For planets to be in MMR the time variation of at least one resonant argument, $
 \label{fig:KepMMR}
 \end{figure}
 
-The strength of a given MMR is related to its width, which in turn is related to the order of the resonance, and the magnitude of $p$ and $q$. 
-In general, the lower the order and the smaller $p$ and $q$ are the stronger the resonance \citep{SSD1999}, making the 2:1 and 3:2 MMRs are the most probable trapping locations in nature. 
+The strength of a given MMR is related to its width, which in turn is related to the order ($= p - q$) of the resonance and the magnitude of $p$ and $q$ \citep{SSD1999}. 
+In general the lower the order, $p$ and $q$ are the stronger the resonance \citep{SSD1999}, making the 2:1 and 3:2 MMRs the most probable resonant locations in nature. 
 Figure~\ref{fig:KepMMR} shows the distribution of period ratios for planets discovered by \kep, along with the locations of first and second order MMRs. 
 As can be seen, statistical excesses of planets exist near the 2:1 and 3:2 MMR \citep{Lissauer2011,Fabrycky2014,Steffen2015}, supporting the idea that these resonant locations trap planets.
 
-However, most planets from these statistical pileups are a few percent away from exact period commensurability, and dissipative mechanisms have been proposed to transport these planets from exact MMR. 
-The most popular dissipative mechanisms are tidal \citep{LithwickWu2012, Batygin2013, Delisle2014}, protoplanetary \citep{Rein2012b, Baruteau2013, Goldreich2014}, and planetesimal \citep{Moore2013, Chatterjee2015}. 
+However, most planets belonging to these statistical pileups are a few percent away from exact period commensurability, and dissipative mechanisms have been proposed to transport these planets from exact MMR. 
+The most popular of these mechanisms are tidal \citep{LithwickWu2012, Batygin2013, Delisle2014}, protoplanetary \citep{Rein2012b, Baruteau2013, Goldreich2014}, and planetesimal \citep{Moore2013, Chatterjee2015}. 
 The formation implications for each mechanism are different, and no clear consensus has yet emerged.
 
 %Structure of MMR -- pendulum model, Separatrix, libration of resonant angles. 
@@ -117,6 +117,15 @@ In contrast, recent work \citep{Fung2017} suggests that planets actually do not 
 A consensus on migration has yet to be established, but it is clear that some form of migration occurs in the universe due to the large number of planets in MMR.
 
 \subsection{Stability}
+Although the longterm stability of planetary orbits has been studied for hundreds of years by the likes of Newton, Lagrange and Gauss, it has been historically difficult to make progress in the field due to the chaotic and non-integrable nature of planetary systems.  
+This chaos is caused by overlapping resonances \citep{Chirikov1979, Lecar2001}, resulting in the divergence of near-identical systems on long timescales. 
+However, with the aid of computers the equations of motion governing planetary systems can be brute-force integrated into the future or past with N-body simulation, allowing scientists to answer fundamental questions that have plagued humans for hundreds of years. 
+For example, it is now known that the Solar System is marginally stable \citep{Sussman1988, Laskar1994, Lecar2001} with Mercury having a 1\% chance of colliding with Venus or the sun within a couple billion years \citep{Laskar2009}.
+
+Since the discovery of numerous exoplanetary systems via \kep, longterm stability has become a popular way to constrain the orbital parameters of the planets in that system \citep{Lissauer2011, Steffen2013, Jontof-Hutter2014, Tamayo2015}. 
+Assuming that the observed system is stable over billion year timescales, grids of N-body integrations are run using initial conditions that are consistent with the observational constrains. 
+Although this brute-force method is useful for ruling out additional regions of parameter space, it is not without its costs. 
+A typical 10 billion year integration or the Solar System can take weeks to complete, and due to the chaotic nature of planetary systems, hundreds to thousands of realizations must typically be simulated to acquire statistically rigorous answers. 
 
 \bibliographystyle{apj}
 \bibliography{intro_ver1.bib}
