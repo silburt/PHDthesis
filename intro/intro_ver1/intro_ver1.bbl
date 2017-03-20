@@ -20,16 +20,25 @@
   {Correia}}]{Delisle2014}
 {Delisle}, J.-B., {Laskar}, J., \& {Correia}, A. C.~M. 2014, AA, 566, 14
 
+\bibitem[{{Duncan} {et~al.}(1989){Duncan}, {Quinn}, \& {Tremaine}}]{Duncan1989}
+{Duncan}, M., {Quinn}, T., \& {Tremaine}, S. 1989, \icarus, 82, 402
+
 \bibitem[{{Fabrycky} {et~al.}(2014){Fabrycky}, {Lissauer}, {Ragozzine}, {Rowe},
   \& {Steffen}}]{Fabrycky2014}
 {Fabrycky}, D.~C., {Lissauer}, J.~J., {Ragozzine}, D., {Rowe}, J.~F., \&
   {Steffen}, J.~H. 2014, ApJ, 790, 12
+
+\bibitem[{{Fang} \& {Margot}(2013)}]{Fang2013}
+{Fang}, J., \& {Margot}, J.-L. 2013, \apj, 767, 115
 
 \bibitem[{{Fernandez} \& {Ip}(1984)}]{Fernandez1984}
 {Fernandez}, J.~A., \& {Ip}, W.-H. 1984, \icarus, 58, 109
 
 \bibitem[{{Fung} \& {Chiang}(2017)}]{Fung2017}
 {Fung}, J., \& {Chiang}, E. 2017, ArXiv e-prints, arXiv:1701.08161
+
+\bibitem[{{Gladman}(1993)}]{Gladman1993}
+{Gladman}, B. 1993, \icarus, 106, 247
 
 \bibitem[{{Goldreich} \& {Schlichting}(2014)}]{Goldreich2014}
 {Goldreich}, P., \& {Schlichting}, H.~E. 2014, \aj, 147, 32
@@ -53,11 +62,8 @@
 {Kirsh}, D.~R., {Duncan}, M., {Brasser}, R., \& {Levison}, H.~F. 2009, \icarus,
   199, 197
 
-\bibitem[{{Laskar}(1988)}]{Laskar1988}
-{Laskar}, J. 1988, \aap, 198, 341
-
 \bibitem[{{Laskar}(1994)}]{Laskar1994}
----. 1994, \aap, 287, L9
+{Laskar}, J. 1994, \aap, 287, L9
 
 \bibitem[{{Laskar} \& {Gastineau}(2009)}]{Laskar2009}
 {Laskar}, J., \& {Gastineau}, M. 2009, \nat, 459, 817
@@ -78,11 +84,8 @@
 {Lissauer}, J.~J., {Ragozzine}, D., {Fabrycky}, D.~C., {Steffen}, J.~H., \&
   {Ford}, E.~B. 2011, ApJ, 197, 26
 
-\bibitem[{{Lithwick} \& {Wu}(2011)}]{Lithwick2010}
-{Lithwick}, Y., \& {Wu}, Y. 2011, \apj, 739, 31
-
 \bibitem[{{Lithwick} \& {Wu}(2012)}]{LithwickWu2012}
----. 2012, ApJ, 756, 5
+{Lithwick}, Y., \& {Wu}, Y. 2012, ApJ, 756, 5
 
 \bibitem[{{Malhotra}(1993)}]{Malhotra1993}
 {Malhotra}, R. 1993, \nat, 365, 819
@@ -99,11 +102,11 @@
 \bibitem[{{Murray} \& {Dermott}(1999)}]{SSD1999}
 {Murray}, C.~D., \& {Dermott}, S.~F. 1999, {Solar system dynamics}
 
+\bibitem[{{Pu} \& {Wu}(2015)}]{Pu2015}
+{Pu}, B., \& {Wu}, Y. 2015, \apj, 807, 44
+
 \bibitem[{{Rein}(2012)}]{Rein2012b}
 {Rein}, H. 2012, MNRAS, 427, 5
-
-\bibitem[{{Smith} \& {Lissauer}(2009)}]{Smith2009}
-{Smith}, A.~W., \& {Lissauer}, J.~J. 2009, \icarus, 201, 381
 
 \bibitem[{{Steffen} \& {Hwang}(2015)}]{Steffen2015}
 {Steffen}, J.~H., \& {Hwang}, J.~A. 2015, MNRAS, 448, 16
@@ -125,5 +128,8 @@
 
 \bibitem[{{Tanaka} {et~al.}(2002){Tanaka}, {Takeuchi}, \& {Ward}}]{Tanaka2002}
 {Tanaka}, H., {Takeuchi}, T., \& {Ward}, W.~R. 2002, \apj, 565, 1257
+
+\bibitem[{{Wisdom}(1980)}]{Wisdom1980}
+{Wisdom}, J. 1980, \aj, 85, 1122
 
 \end{thebibliography}
