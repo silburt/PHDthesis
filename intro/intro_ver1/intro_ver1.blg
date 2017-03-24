@@ -6,45 +6,45 @@ Database file #1: intro_ver1.bib.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty publisher in Armitage2010
 Warning--empty publisher in SSD1999
-You've used 38 entries,
+You've used 40 entries,
             3085 wiz_defined-function locations,
-            924 strings with 11029 characters,
-and the built_in function-call counts, 16285 in all, are:
-= -- 1443
-> -- 973
-< -- 25
-+ -- 323
-- -- 336
-* -- 1254
-:= -- 3036
-add.period$ -- 38
-call.type$ -- 38
-change.case$ -- 240
-chr.to.int$ -- 38
-cite$ -- 40
-duplicate$ -- 713
-empty$ -- 1068
-format.name$ -- 416
-if$ -- 3286
+            941 strings with 11282 characters,
+and the built_in function-call counts, 16977 in all, are:
+= -- 1505
+> -- 997
+< -- 27
++ -- 331
+- -- 342
+* -- 1298
+:= -- 3170
+add.period$ -- 40
+call.type$ -- 40
+change.case$ -- 250
+chr.to.int$ -- 40
+cite$ -- 42
+duplicate$ -- 747
+empty$ -- 1124
+format.name$ -- 424
+if$ -- 3428
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 38
-newline$ -- 118
-num.names$ -- 152
-pop$ -- 252
+missing$ -- 40
+newline$ -- 124
+num.names$ -- 160
+pop$ -- 260
 preamble$ -- 1
-purify$ -- 240
+purify$ -- 250
 quote$ -- 0
-skip$ -- 607
+skip$ -- 639
 stack$ -- 0
-substring$ -- 734
+substring$ -- 776
 swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 336
+type$ -- 354
 warning$ -- 2
-while$ -- 149
+while$ -- 157
 width$ -- 0
-write$ -- 382
+write$ -- 402
 (There were 2 warnings)

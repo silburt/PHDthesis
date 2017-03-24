@@ -44,26 +44,42 @@ Proposed sections in the introduction:
 \textbf{Below I am going to elaborate on Planet Dynamics. }
 
 \section{Planet Dynamics}
-\subsection{Mean Motion Resonance (MMR)}
+\subsection{Mean Motion Resonance}
 \label{sec:MMR}
-MMR occurs when the orbital period of one planet is an integer ratio of another. 
+Mean motion resonance (MMR) occurs when the orbital period of one planet is an integer ratio of another. 
 Like other types of resonances occuring in nature, MMR results in the amplitude growth of various quantities characterizing the system, like eccentricity, semi-major axis and the longitude of pericentre \citep{SSD1999}. 
 As a result, the presence of MMR can strongly affect the formation, evolution and longterm stability of planetary systems in a diversity of ways.
 For example, Kirkwood gaps are unstable regions in the asteroid belt carved by MMRs with Jupiter, while Pluto and Neptune are protected from going unstable due to a 3:2 MMR. 
 
 For every $p:q$ MMR (where $p$ and $q$ are integers) there are two important resonant angles:
-\begin{align*}
+\begin{align}
 \begin{split}
 \phi_1 &= p\lambda_1 - q\lambda_2 + \varpi_1 \\
 \phi_2 &= p\lambda_1 - q\lambda_2 + \varpi_2 
+\label{eq:MMR}
 \end{split}
-\end{align*}
+\end{align}
 where $\lambda$ is the mean longitude and $\varpi$ is the longitude of periapse. 
 For planets to be in MMR, the time variation of one or both of these resonant arguments must be zero.
-%, however there are exceptions to this rule.
-%For example, planets with commensurate period ratios are not required to be in MMR, and planets a few percent away from period commensurability can be found to be in MMR \citep[e.g.][]{Lee2002}. 
-%In addition, circulating resonant angles can be associated with planets in MMR while librating resonant angles can be associated with planets not in MMR \citep{Delisle2012}.
-%As a result, it can be difficult to constrain the formation histories of discovered planetary systems. 
+As a result, MMRs can be modelled in terms of a pendulum oscillating about a stable, fixed point. 
+After some algebra it can be shown that a MMR can be modelled as \citep{SSD1999}:
+\begin{equation}
+\ddot{\phi} = -\omega_0^2 \sin\phi
+\label{eq:pendulum}
+\end{equation}
+where $\omega_0$ is the amplitude of libration and is dependent upon the orbital parameters of the system ($m$, $e$, $a$, etc.).
+
+The pendulum model facilitates an understanding about certain properties of MMR. 
+For energies larger than a critical energy $E_{crit}$, the pendulum will circulate with $\phi$ ranging all possible values. 
+For energies smaller than $E_{crit}$ the pendulum will be in MMR and librate about $\phi = 0$.
+The critical energy, $E_{crit}$, defines motion on the separatrix, which divides the circulation and libration regimes. 
+In context of a pendulum, this would correspond to the pendulum suspended vertically in the air, with an infinite period of libration. 
+
+The strength of a given MMR is related to its width, which in turn is related to the order of the resonance ($= p - q$),  the magnitude of $p$ and $q$\citep{SSD1999}. 
+More fundamentally, the strength of a MMR is related to the mass, eccentricity and mean motion of the planets involved in the resonance \citep{SSD1999}.
+The lower $p$, $q$ and the order are the stronger the resonance \citep{SSD1999}, making the 2:1 and 3:2 MMRs the most probable resonant locations in nature. 
+Figure~\ref{fig:KepMMR} shows the distribution of period ratios for planets discovered by \kep, along with the locations of first and second order MMRs. 
+As can be seen, statistical excesses of planets exist near the 2:1 and 3:2 MMR \citep{Lissauer2011,Fabrycky2014,Steffen2015}, supporting the idea that these resonances are most capable of trapping planets.
 
 \begin{figure}
 \centering
@@ -73,13 +89,8 @@ For planets to be in MMR, the time variation of one or both of these resonant ar
 \label{fig:KepMMR}
 \end{figure}
 
-The strength of a given MMR is related to its width, which in turn is related to the order of the resonance ($= p - q$)  and the magnitude of $p$ and $q$ \citep{SSD1999}. 
-The lower $p$, $q$ and the order are the stronger the resonance \citep{SSD1999}, making the 2:1 and 3:2 MMRs the most probable resonant locations in nature. 
-Figure~\ref{fig:KepMMR} shows the distribution of period ratios for planets discovered by \kep, along with the locations of first and second order MMRs. 
-As can be seen, statistical excesses of planets exist near the 2:1 and 3:2 MMR \citep{Lissauer2011,Fabrycky2014,Steffen2015}, supporting the idea that these resonant locations are most capable of trapping planets.
-
-However, the planets from these statistical pileups are typically a few percent away from exact period commensurability, and dissipative mechanisms have been proposed to transport these planets from exact MMR. 
-The most popular of these mechanisms are tidal \citep{LithwickWu2012, Batygin2013, Delisle2014}, protoplanetary \citep{Rein2012b, Baruteau2013, Goldreich2014}, and planetesimal \citep{Moore2013, Chatterjee2015}. 
+The planets from these statistical pileups are typically a few percent away from exact period commensurability, and dissipative mechanisms have been proposed to transport these planets from exact MMR. 
+The most popular of these mechanisms are tidal \citep{LithwickWu2012, Batygin2013, Delisle2014}, protoplanetary \citep{Rein2012b, Baruteau2013, Goldreich2014}, and planetesimal \citep{Moore2013, Chatterjee2015} \memoas{Could elaborate on these dissipative mechanisms for another sentence or two}. 
 The formation implications for each mechanism are different, and no clear consensus has yet emerged.
 
 %Structure of MMR -- pendulum model, Separatrix, libration of resonant angles. 
@@ -87,36 +98,40 @@ The formation implications for each mechanism are different, and no clear consen
 
 \subsection{Migration}
 \subsubsection{Planetesimal-Driven Migration}
-Planetesimals passing through the Hill sphere of a planet will exchange angular momentum via gravitational interaction \citep{Ida2000, Kirsh2009}.
+Planetesimals passing through the Hill sphere of a planet will exchange angular momentum via gravity \citep{Ida2000, Kirsh2009}.
 If there is an asymmetry to the number of planetesimals interacting with the planet on its near and far sides, a net force will migrate the planet. 
 However, to guarantee migration, planetesimal orbits must decouple from the planet. 
 A massive enough planet (e.g. Jupiter) will directly eject planetesimals from the system, however if the planet is smaller (e.g. Neptune) planetesimals must decouple by interacting with a neighbouring planet. 
 In addition, for sustained migration the planet must constantly encounter fresh, dynamically cold planetesimals \citep{Armitage2010}.  
 
-It is believed that such planetesimal migration occurred for Neptune, migrating outwards into the Kuiper belt and shepherding planetesimals inwards to Jupiter, which subsequently ejected them from the Solar System \citep{Fernandez1984}.
+Since protoplanetary growth is proportional to orbital frequency \citep{Rafikov2003} planetesimal disks are most likely to exist in the outer reaches of planetary systems where fewer orbital cycles have occurred. 
+The primordial Kuiper belt is believed to have caused Neptune to migrate outwards into the Kuiper belt and shepherd planetesimals inwards to Jupiter, which subsequently ejected them from the Solar System \citep{Fernandez1984}.
 This idea is well supported by observations of the outer Solar System, which show that Pluto, along with a host of smaller bodies, orbit in stable 3:2 MMRs with Neptune \citep{Malhotra1993, Malhotra1995}.
 
 \subsubsection{Gas-Driven migration}
-A planet embedded in a protoplanetary disk can migrate via an exchange of angular momentum from disk-planet torques \citep{Goldreich1980}.
 Since the discovery of the first hot Jupiter \citep{Mayor1995}, gas-driven migration is believed to play an important role in shaping exoplanetary systems \citep{Lin1996}.
+Whenever a fully-formed planet is embedded in a protoplanetary disk, angular momentum can be exchanged via disk-planet torques \citep{Goldreich1980}.
+The result of this exchange is planetary migration, and this scenario is believed to be common in young planetary systems. 
 Planet migration comes in two main flavours, Type I and Type II. 
 
 Type I migration occurs when low-mass planets are fully embedded in a protoplanetary disk and do not significantly perturb the disk structure \citep{Armitage2010}. 
 At particular resonant locations, known as ``Linblad resonances'', density waves are excited due to gravitational interactions between the planet and disk \citep{Goldreich1979}. 
 These density waves exchange angular momentum with the planet, and migration occurs when the inner and outer disk interact asymmetrically with the planet \citep{Goldreich1979}.
+In general, the direction of Type-I migration tends to be inwards towards the star \citep{Ward1997}.
 
-Type II migration occurs when high-mass Jovian planets significantly modify the structure of the surrounding protoplanetary disk. 
-In particular, a gap is created in the disk by the planet, which in turn locks the planet in place \citep{Armitage2010}.
-The planet then migrates inwards at the same rate as the local disk due to ordinary viscous evolution \citep{Armitage2010}.  
+Type II migration occurs when high-mass Jovian planets significantly modify the structure of the surrounding protoplanetary disk, opening up a gap. 
+This gap locks the planet in place, coupling the migration of the planet to the evolution of the disk \citep{Lin1986}.
+The viscous evolution of the disk causes the planet to slowly migrate inwards, at speeds typically one or two orders of magnitude slower than Type-I migration \citep{Ward1997}.
 
 In comparison to planetesimal migration, gas-driven migration is still not well understood. 
-In particular, standard calculations of gas-driven migration are too quick by an order of magnitude \citep{Lin1986, Tanaka2002}, causing planets to spiral into their central stars before the protoplanetary disk has dispersed.
+In particular, standard calculations of gas-driven migration are too quick \citep{Lin1986, Tanaka2002}, causing planets to spiral into their central stars before the protoplanetary disk has dispersed.
 In contrast with these standard calculations, recent work \citep{Fung2017} has suggested that planets actually do not migrate that much and tend to be better behaved than originally believed. 
-A consensus on migration has yet to be established, but it is clear that some form of migration occurs in the universe due to the large number of planets in or near MMR \citep{Lissauer2011,Fabrycky2014,Steffen2015}.
+A consensus on migration has yet to be established, but it is clear that some form of migration must occur in the universe due to the large number of planets in or near MMR \citep{Lissauer2011,Fabrycky2014,Steffen2015}.
 
 \subsection{Stability}
-Although longterm stability of planetary orbits has been studied for hundreds of years by the likes of Newton, Lagrange and Gauss, historically it has been difficult to make progress due to the chaotic and non-integrable nature of planetary systems.  
-This chaos is caused by overlapping resonances \citep{Chirikov1979, Lecar2001}, resulting in the divergence of near-identical systems on long timescales. 
+The longterm stability of planetary orbits has been studied for hundreds of years by the likes of Newton, Lagrange and Gauss. 
+However, due to the chaotic and non-integrable nature of planetary systems, historically it has been difficult to make progress on problems involving many bodies.  
+The chaos present in planetary systems is caused by overlapping resonances \citep{Chirikov1979, Lecar2001}, resulting in the divergence of near-identical systems on long timescales. 
 However, with the aid of computers the equations of motion governing planetary systems can be brute-force integrated into the future or past with N-body simulation, allowing scientists to answer fundamental questions that have plagued humans for hundreds of years. 
 For example, it is now known that the Solar System is marginally stable \citep{Sussman1988, Laskar1994, Lecar2001}, with Mercury having a 1\% chance of colliding with Venus or the sun within a couple billion years \citep{Laskar2009}.
 It is also now well established that most known multi-planet systems are packed to capacity, and adding additional planets into these systems would result in dynamical instabilities \citep{Fang2013,Pu2015}.
