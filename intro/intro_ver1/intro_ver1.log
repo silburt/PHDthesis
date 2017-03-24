@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  23 MAR 2017 21:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  23 MAR 2017 21:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -652,7 +652,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: Figures/KeplerPeriods.png Graphic file (type png)
 
 <use Figures/KeplerPeriods.png>
-Package pdftex.def Info: Figures/KeplerPeriods.png used on input line 86.
+Package pdftex.def Info: Figures/KeplerPeriods.png used on input line 85.
 (pdftex.def)             Requested size: 469.75499pt x 261.79817pt.
  [4] [5] [6] (./intro_ver1.bbl [7] [8 <./Figures/KeplerPeriods.png>] [9
 
@@ -675,7 +675,7 @@ i8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
 .pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
 b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 >
-Output written on intro_ver1.pdf (11 pages, 119001 bytes).
+Output written on intro_ver1.pdf (11 pages, 118535 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream
