@@ -68,7 +68,7 @@ A primary benefit of encoding an $N$-body system into a Hamiltonian framework li
 \end{split}
 \end{align}
 Numerically this is trivial to do, with the accuracy of the result being inversely proportional to the size of the timestep, $dt$.
-\memoas{Something about symplecticity}
+A second benefit is the inherent ``area preserving" or symplectic nature of Hamiltonian systems, where the energy error is bound to a finite value (excluding e.g. roundoff errors which grow with time).
 
 Eq.~\ref{eq:H} can be modified for planetary systems to make the evolution more efficient.
 For example, we know that an isolated planet will orbit in a Keplerian fashion around a central star, determined by the planet's orbital parameters and star mass. 
@@ -139,9 +139,9 @@ However, these coordinates do not solve the Two Body Problem exactly nor Restric
 In addition, $\Ham_K$ cannot be cleanly written as shown in Equation~\ref{eq:Hgeneral} due to several cross terms in the expansion.
 However, this problem can be rectified by transferring these cross terms into an additional ``Jump" Hamiltonian:
 \begin{equation}
-\Ham_J = \frac{1}{2m_0} |\sum_{i=1}^N \textbf{P}_i|^2
+\Ham_J = \frac{1}{2m_0} \left|\sum_{i=1}^N \textbf{P}_i\right|^2
 \end{equation}
-Therefore, the evolution of $\Ham$ as shown in Equation~\ref{eq:DKD} must be modified to include an additional evolution operator under the Jump Hamiltonian, $E_{\Ham_J}$.
+Therefore, the evolution of $\Ham$ in Equation~\ref{eq:DKD} must be modified to include an additional evolution operator under the Jump Hamiltonian, $E_{\Ham_J}$.
 Note that since $\{\Ham_J, \Ham_I\} = 0$, the ordering of $E_{\Ham_I}$ and $E_{\Ham_J}$ does not matter. 
 
 \subsubsection{WHDS}
