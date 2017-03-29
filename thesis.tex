@@ -1,61 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%  
-%%  UT-THESIS.TEX
-%%
-%% This program can be redistributed and/or modified under the terms
-%% of the LaTeX Project Public License Distributed from CTAN archives
-%% in directory CTAN:/macros/latex/base/lppl.txt.
-%%
-%%  Copyright (c) 1999 by Francois Pitt
-%%  Last Update: 1999 May 13
-%%  
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%  
-%%  This file is distributed in the hope that it will be useful but
-%%  without any warranty (without even the implied warranty of
-%%  fitness for a particular purpose).  For a description of this
-%%  file's purpose, and instructions on its use, see below.
-%%  
-%%  Feel free to copy and redistribute this file, as long as this
-%%  copyright notice remains intact and this file is distributed
-%%  along with the companion file `ut-thesis.cls'.
-%%  
-%%  (Thanks to Robert Bernecky for his suggestions on improving the
-%%  usefulness and readability of this file.)
-%%  
-%%  Send all bugs, questions, comments, suggestions, etc. to the
-%%  author, at <fpitt@cs.utoronto.ca>.
-%%  
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%  
-%%  Skeleton LaTeX2e file for the preparation of theses at UofT;
-%%  conforms to the School of Graduate Studies' guidelines of 07/97.
-%%  To be used in conjunction with class file `ut-thesis.cls', whose
-%%  features it illustrates.
-%%  
-%%  To comment out parts of a file, use the macro \ignore{...}
-%%  around the entire block of text you want to ignore.
-%%  
-%%  To explicitly set the pagestyle of any inserted blank page when
-%%  \cleardoublepage occurs, use one of \clearemptydoublepage or
-%%  \clearplaindoublepage instead.
-%%  
-%%  For single-spaced quotes or quotations, use the `longquote' and
-%%  `longquotation' environments.  For single-spaced, 1 1/2-spaced,
-%%  or double-spaced paragraphs, use one of the environments
-%%  `singlespaced', `oneandahalfspaced', or `doublespaced'.  More
-%%  generally, for paragraphs with a line spacing of `n', use
-%%  `\begin{newspacing}{n}...\end{newspacing}'.
-%%  
-%%  All other environments, commands, and options provided by the
-%%  `ut-thesis' class will be described below, at the point where
-%%  they should appear in the document.
-%%  
-%%  See the companion file `ut-thesis.cls' for more details.
-%%  
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%         PREAMBLE         %%%%%%%%%%%%
 
 %% Default settings format a final copy (12pt font, single-sided,
@@ -87,6 +30,11 @@
 \usepackage{graphicx}
 \fi
 
+\usepackage{longtable}
+\usepackage{amsmath,amssymb,multirow,dcolumn,fancyhdr,charter,graphicx}
+\usepackage{xspace}
+\usepackage[hyphens]{url}
+
 % Symbol Stuff
 \usepackage{latexsym}%
 \usepackage{amssymb}%
@@ -107,6 +55,19 @@
 
 % Paragraph Spacing Issue:
 \setlength{\parskip}{0cm plus1mm minus1mm}
+
+%commands
+\newcommand{\reb}{{\sc \tt REBOUND}\xspace}
+\newcommand{\whfast}{{\sc \tt WHFAST}\xspace}
+\newcommand{\ias}{{\sc \tt IAS15}\xspace}
+\newcommand{\emcee}{{\sc \tt EMCEE}\xspace}
+\newcommand{\Lagr}{\mathcal{L}}
+\newcommand{\kep}{{\it Kepler}\xspace}
+\def\memohr#1{\color{blue}$HR[${\bf #1}$]$ \color{black}}
+\def\memoas#1{\color{red}$AS[${\bf #1}$]$ \color{black}}
+
+%journal abbreviations
+\newcommand{\icarus}{Icarus}
 
 %% The line spacing of the document should be specified using one of
 %% the document options given above, but if you need a line spacing

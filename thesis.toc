@@ -1,26 +1,31 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {1.1}My First Section}{1}
-\contentsline {chapter}{\numberline {2}My Second Chapter}{2}
-\contentsline {section}{\numberline {2.1}Chapter Overview}{2}
-\contentsline {section}{\numberline {2.2}Introduction}{2}
-\contentsline {section}{\numberline {2.3}A Section}{2}
-\contentsline {section}{\numberline {2.4}Summary }{2}
-\contentsline {chapter}{\numberline {3}My Third Chapter}{4}
-\contentsline {section}{\numberline {3.1}Chapter Overview}{4}
-\contentsline {section}{\numberline {3.2}Introduction}{4}
-\contentsline {section}{\numberline {3.3}A Section}{4}
-\contentsline {section}{\numberline {3.4}Summary }{4}
-\contentsline {chapter}{\numberline {4}My Fourth Chapter}{5}
-\contentsline {section}{\numberline {4.1}Chapter Overview}{5}
-\contentsline {section}{\numberline {4.2}Introduction}{5}
-\contentsline {section}{\numberline {4.3}A Section}{5}
-\contentsline {section}{\numberline {4.4}Summary }{5}
-\contentsline {chapter}{\numberline {5}My Fifth Chapter}{6}
-\contentsline {section}{\numberline {5.1}Chapter Overview}{6}
-\contentsline {section}{\numberline {5.2}Introduction}{6}
-\contentsline {section}{\numberline {5.3}A Section}{6}
-\contentsline {section}{\numberline {5.4}Summary }{6}
-\contentsline {chapter}{\numberline {6}Conclusions \& Future Work}{7}
-\contentsline {section}{\numberline {6.1}Conclusions}{7}
-\contentsline {section}{\numberline {6.2}Future Work and Directions}{7}
-\contentsline {chapter}{Bibliography}{8}
+\contentsline {section}{\numberline {1.1}Planet Dynamics}{1}
+\contentsline {subsection}{\numberline {1.1.1}Mean Motion Resonance}{1}
+\contentsline {subsection}{\numberline {1.1.2}Migration}{3}
+\contentsline {subsubsection}{Planetesimal-Driven Migration}{3}
+\contentsline {subsubsection}{Gas-Driven migration}{4}
+\contentsline {subsection}{\numberline {1.1.3}Stability}{5}
+\contentsline {chapter}{\numberline {2}My Second Chapter}{7}
+\contentsline {section}{\numberline {2.1}Chapter Overview}{7}
+\contentsline {section}{\numberline {2.2}Introduction}{7}
+\contentsline {section}{\numberline {2.3}A Section}{7}
+\contentsline {section}{\numberline {2.4}Summary }{7}
+\contentsline {chapter}{\numberline {3}My Third Chapter}{9}
+\contentsline {section}{\numberline {3.1}Chapter Overview}{9}
+\contentsline {section}{\numberline {3.2}Introduction}{9}
+\contentsline {section}{\numberline {3.3}A Section}{9}
+\contentsline {section}{\numberline {3.4}Summary }{9}
+\contentsline {chapter}{\numberline {4}My Fourth Chapter}{10}
+\contentsline {section}{\numberline {4.1}Chapter Overview}{10}
+\contentsline {section}{\numberline {4.2}Introduction}{10}
+\contentsline {section}{\numberline {4.3}A Section}{10}
+\contentsline {section}{\numberline {4.4}Summary }{10}
+\contentsline {chapter}{\numberline {5}My Fifth Chapter}{11}
+\contentsline {section}{\numberline {5.1}Chapter Overview}{11}
+\contentsline {section}{\numberline {5.2}Introduction}{11}
+\contentsline {section}{\numberline {5.3}A Section}{11}
+\contentsline {section}{\numberline {5.4}Summary }{11}
+\contentsline {chapter}{\numberline {6}Conclusions \& Future Work}{12}
+\contentsline {section}{\numberline {6.1}Conclusions}{12}
+\contentsline {section}{\numberline {6.2}Future Work and Directions}{12}
+\contentsline {chapter}{Bibliography}{13}

@@ -23,6 +23,9 @@
 \bibitem[{{Duncan} {et~al.}(1989){Duncan}, {Quinn}, \& {Tremaine}}]{Duncan1989}
 {Duncan}, M., {Quinn}, T., \& {Tremaine}, S. 1989, \icarus, 82, 402
 
+\bibitem[{{Duncan} {et~al.}(1998){Duncan}, {Levison}, \& {Lee}}]{Duncan1998}
+{Duncan}, M.~J., {Levison}, H.~F., \& {Lee}, M.~H. 1998, \aj, 116, 2067
+
 \bibitem[{{Fabrycky} {et~al.}(2014){Fabrycky}, {Lissauer}, {Ragozzine}, {Rowe},
   \& {Steffen}}]{Fabrycky2014}
 {Fabrycky}, D.~C., {Lissauer}, J.~J., {Ragozzine}, D., {Rowe}, J.~F., \&
@@ -49,6 +52,13 @@
 \bibitem[{{Goldreich} \& {Tremaine}(1980)}]{Goldreich1980}
 ---. 1980, \apj, 241, 425
 
+\bibitem[{{Gomes} {et~al.}(2004){Gomes}, {Morbidelli}, \&
+  {Levison}}]{Gomes2004}
+{Gomes}, R.~S., {Morbidelli}, A., \& {Levison}, H.~F. 2004, \icarus, 170, 492
+
+\bibitem[{{Hernandez} \& {Dehnen}(2016)}]{Hernandez2016}
+{Hernandez}, D.~M., \& {Dehnen}, W. 2016, ArXiv e-prints, arXiv:1612.05329
+
 \bibitem[{{Ida} {et~al.}(2000){Ida}, {Bryden}, {Lin}, \& {Tanaka}}]{Ida2000}
 {Ida}, S., {Bryden}, G., {Lin}, D.~N.~C., \& {Tanaka}, H. 2000, \apj, 534, 428
 
@@ -67,6 +77,10 @@
 
 \bibitem[{{Laskar} \& {Gastineau}(2009)}]{Laskar2009}
 {Laskar}, J., \& {Gastineau}, M. 2009, \nat, 459, 817
+
+\bibitem[{{Laskar} \& {Robutel}(1995)}]{Laskar1995}
+{Laskar}, J., \& {Robutel}, P. 1995, Celestial Mechanics and Dynamical
+  Astronomy, 62, 193
 
 \bibitem[{{Lecar} {et~al.}(2001){Lecar}, {Franklin}, {Holman}, \&
   {Murray}}]{Lecar2001}
@@ -101,6 +115,9 @@
 
 \bibitem[{{Murray} \& {Dermott}(1999)}]{SSD1999}
 {Murray}, C.~D., \& {Dermott}, S.~F. 1999, {Solar system dynamics}
+
+\bibitem[{{Plummer}(1918)}]{Plummer1918}
+{Plummer}, H.~C.~K. 1918, {An introductory treatise on dynamical astronomy}
 
 \bibitem[{{Pu} \& {Wu}(2015)}]{Pu2015}
 {Pu}, B., \& {Wu}, Y. 2015, \apj, 807, 44
@@ -137,5 +154,11 @@
 
 \bibitem[{{Wisdom}(1980)}]{Wisdom1980}
 {Wisdom}, J. 1980, \aj, 85, 1122
+
+\bibitem[{{Wisdom}(2006)}]{Wisdom2006}
+---. 2006, \aj, 131, 2294
+
+\bibitem[{{Wisdom} \& {Holman}(1991)}]{Wisdom1991}
+{Wisdom}, J., \& {Holman}, M. 1991, \aj, 102, 1528
 
 \end{thebibliography}
