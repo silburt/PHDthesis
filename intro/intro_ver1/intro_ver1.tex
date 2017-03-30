@@ -22,6 +22,7 @@
 \newcommand{\reb}{{\sc \tt REBOUND}\xspace}
 \newcommand{\whfast}{{\sc \tt WHFAST}\xspace}
 \newcommand{\ias}{{\sc \tt IAS15}\xspace}
+\newcommand{\mercury}{{\sc \tt Mercury}\xspace}
 \newcommand{\emcee}{{\sc \tt EMCEE}\xspace}
 \newcommand{\Lagr}{\mathcal{L}}
 \newcommand{\Ham}{\mathcal{H}}
@@ -50,16 +51,16 @@ In its most basic form, the Hamiltonian is:
 \Ham  = \sum_{i=0}^{N-1} \frac{\textbf{p}_i^2}{2m_i} - \sum_{i=0}^{N-1} \sum_{j=i+1}^{N-1} \frac{Gm_im_j}{|\textbf{r}_i - \textbf{r}_j|}
 \label{eq:H}
 \end{equation}
-where $\textbf{p}_i$, $\textbf{r}_i$ and $m_i$ are the momentum, distance and mass of body $i$, respectively. 
-The first term sums the kinetic energies of the system, while the second term sums the potential energies of the system.
+where $\textbf{r}_i$, $\textbf{p}_i$ and $m_i$ are the position, momentum and mass of body $i$, respectively. 
+The first term in Equation~\ref{eq:H} sums the kinetic energies of the system, while the second term sums the potential energies of the system.
 
-The coordinates ($\textbf{p}$,$\textbf{r}$) used in Hamiltonian mechanics are canonical, obeying the fundamental Poisson bracket relations:
+The coordinates ($\textbf{r}$,$\textbf{p}$) used in Hamiltonian mechanics are canonical, obeying the fundamental Poisson bracket relations:
 \begin{equation}
 \{\textbf{r}_i, \textbf{r}_j\} = 0, \qquad
 \{\textbf{p}_i, \textbf{p}_j\} = 0, \qquad
 \{\textbf{r}_i, \textbf{p}_j\} = \delta_{ij}
 \end{equation}
-A primary benefit of encoding an $N$-body system into a Hamiltonian framework lies in its ease of evolving the system into the future or past by applying Hamilton's equations:
+A primary benefit of the Hamiltonian framework is the ease in evolving a N-body system into the future or past via Hamilton's equations:
 \begin{align}
 \begin{split}
 \frac{d\textbf{p}}{dt} &= -\frac{\partial H}{\partial \textbf{r}} \\
@@ -70,9 +71,9 @@ A primary benefit of encoding an $N$-body system into a Hamiltonian framework li
 Numerically this is trivial to do, with the accuracy of the result being inversely proportional to the size of the timestep, $dt$.
 A second benefit is the inherent ``area preserving" or symplectic nature of Hamiltonian systems, where the energy error is bound to a finite value (excluding e.g. roundoff errors which grow with time).
 
-Eq.~\ref{eq:H} can be modified for planetary systems to make the evolution more efficient.
-For example, we know that an isolated planet will orbit in a Keplerian fashion around a central star, determined by the planet's orbital parameters and star mass. 
-For multi-planet systems gravitational interactions between planets will occur, perturbing them from their ordinary Keplerian motion.
+In the context of planetary systems Equation~\ref{eq:H} can be modified to make the evolution more efficient.
+For example, we know that a planet will orbit in a Keplerian fashion around a central star, determined by the planet's orbital parameters and stellar mass. 
+In multi-planet systems gravitational interactions between planets will occur, perturbing planets off their original Keplerian trajectories.
 As a result, the Hamiltonian can be restructured into a ``Keplerian" term, $\Ham_K$, and ``Interaction" term, $\Ham_I$ according to \citep{Wisdom1991}:
 \begin{equation*}
 \Ham = \Ham_K + \Ham_I
@@ -86,23 +87,23 @@ where $E_{X}(Y)$ represents the evolution of the system under $X$ for time $Y$.
 Equation~\ref{eq:DKD} is a second order evolution scheme, and is the most popular choice for integrating planetary systems.
 
 \subsection{Coordinate Systems}
-As mentioned above the most efficient way to solve the N-body problem for planetary physics is to split the Hamiltonian into Keplerian and Interaction components.
+As mentioned above the most efficient way to solve the N-body  problem is to split the Hamiltonian into Keplerian and Interaction components.
 In general, the Keplerian and Interaction Hamiltonians take the following form:
 \begin{equation}
 \Ham_K = \sum_{i=1}^N \frac{\textbf{p}_i^2}{2m_i} - \frac{Gm_0m_i}{\textbf{r}_i}, \qquad
 \Ham_I = \sum_{i=1}^{N}\sum_{j=1,j \ne i}^N \frac{Gm_im_j}{|\textbf{r}_i - \textbf{r}_j|}
 \label{eq:Hgeneral}
 \end{equation}
-However, there are numerous ways to perform these splits, and each coordinate system has different strengths and weaknesses. 
+However, there are numerous ways to perform these splits, with each coordinate system having different strengths and weaknesses. 
 The most popular splittings are are discussed below. 
 In all cases $\textbf{r}$ and $\textbf{p}$ represent cartesian position and momenta, respectively, $N$ is the total number of particles, and $M$ is the total mass of the system. 
 
 \subsubsection{Jacobi}
 \label{sec:Jacobi}
-Carl Jacobi worked out a coordinate system in which the planet positions are measured relative to the centre of mass of all bodies interior to it, instead of with respect to the central star (like Democratic Heliocentric Coordinates, see Section~\ref{sec:DH}). 
-Since a planet's semi-major axis (and hence position) is dependent upon the mass interior to it (by Kepler's 3rd law), the evolution of a particle is affected by all bodies interior to it, even if they do not directly interact with each other. 
+Carl Jacobi worked out a coordinate system in which the planet positions are measured relative to the centre of mass of all bodies interior to it. 
+Since a planet's semi-major axis (and hence position) is dependent upon the mass interior to it by Kepler's 3rd law, the evolution of a particle is affected by all bodies interior to it. 
 
-The Jacobi position $\textbf{r}^{\prime}_i$ and momentum $\textbf{p}^{\prime}_i$ of particle $i$ are a canonical set, and are related to the cartesian position and momentum according to \citep{SSD1999}:
+The Jacobi position $\textbf{r}^{\prime}$ and momentum $\textbf{p}^{\prime}$ are a canonical set and are related to the cartesian position and momentum according to \citep{SSD1999}:
 \begin{equation}
 \textbf{r}^{\prime}_i = \textbf{r}_i - \textbf{R}_{i-1}, \qquad
 \textbf{p}^{\prime}_i = \frac{\eta_{i-1}}{\eta_i}\textbf{p}_i - \frac{m_i}{\eta_i}\sum_{j=0}^{i-1} \textbf{p}_j
@@ -115,14 +116,14 @@ For the special case of $i=0$:
 \end{equation}
 The inverse transformations from Jacobi coordinates to cartesian coordinates can be found in Chapter 9.5 of \citet{SSD1999}.
 
-The benefit of Jacobi coordinates is that the kinetic terms remain a sum of squares \citep{Plummer1918}, making numerical integration a straightforward process. 
-In addition, these coordinates solve the Two Body Problem and Restricted Three Body Problem exactly. 
+The benefit of Jacobi coordinates is that the kinetic terms remain a sum of squares \citep{Plummer1918}, making numerical integration a straightforward process according to Equation~\ref{eq:DKD}. 
+In addition, these coordinates solve the Two Body and Restricted Three Body Problems exactly. 
 However, the primary disadvantage is that a clear ordering of bodies must be present. 
 For example, in a planetesimal disk orbits cross frequently, and there is no straightforward and (computationally) cheap way to order these bodies. 
 
 \subsubsection{Democratic Heliocentric}
 \label{sec:DH}
-In this coordinate system positions $\textbf{Q}$ and momenta $\textbf{P}$ form a canonical set, with $\textbf{Q}$ measured relative to the central mass, and $\textbf{P}$ are barycentric momenta.
+In this coordinate system, positions $\textbf{Q}$ and momenta $\textbf{P}$ form a canonical set with $\textbf{Q}$ measured relative to the central mass and $\textbf{P}$ measuring barycentric momenta.
 These coordinates are related to the cartesian position and momenta according to \citep{Duncan1998}:
 \begin{equation}
 \textbf{Q}_i = \textbf{r}_i - \textbf{r}_0, \qquad
@@ -135,8 +136,8 @@ For the special case of $i=0$:
 \end{equation}
 
 The benefit of Democratic Heliocentric coordinates is that they are easy to understand and do not require the knowledge of other bodies to derive their coordinates (unlike Jacobi coordinates). 
-However, these coordinates do not solve the Two Body Problem exactly nor Restricted Three Body Problem. 
-In addition, $\Ham_K$ cannot be cleanly written as shown in Equation~\ref{eq:Hgeneral} due to several cross terms in the expansion.
+However, these coordinates do not solve the Two Body Problem or Restricted Three Body Problems exactly. 
+In addition, $\Ham_K$ cannot be cleanly written as shown in Equation~\ref{eq:Hgeneral} due to several cross terms that arise when substituting ($\textbf{Q}$,\textbf{P}) for ($\textbf{r}$,\textbf{p}).
 However, this problem can be rectified by transferring these cross terms into an additional ``Jump" Hamiltonian:
 \begin{equation}
 \Ham_J = \frac{1}{2m_0} \left|\sum_{i=1}^N \textbf{P}_i\right|^2
@@ -158,10 +159,24 @@ where $\mu \equiv m_im_0/(m_0 + m_i)$.
 
 The benefit of these coordinates is that, unlike Democratic Heliocentric coordinates, the Two Body and Restricted Three Body Problems are now solved exactly. 
 In addition, like Democratic Heliocentric coordinates, the coordinates of each particle are independent of all other particles. 
-One price to pay for these benefits is that $\{\Ham_J, \Ham_I\} \ne 0$, and in Equation~\ref{eq:DKD}, $E_{\Ham_J}$ must be nestled in between the $E_{\Ham_K}$ and $E_{\Ham_I}$ operators.
+One price to pay for these benefits is that $\{\Ham_J, \Ham_I\} \ne 0$, and in Equation~\ref{eq:DKD} $E_{\Ham_J}$ must be exactly nestled in between the $E_{\Ham_K}$ and $E_{\Ham_I}$ operators.
 In addition, the standard symplectic correctors of \citet{Wisdom2006} cannot be used in this coordinate system, however other correctors may be possible to construct. 
 
 \subsection{Integrator Types}
+The three main classes of N-body integrators are symplectic, non-symplectic and hybrid. 
+Symplectic integrators employ a fixed timestep, bounded energy error (excepting roundoff errors which grow with time) and fast integration time.
+These integrators are best suited for well-separated bodies where $\Ham_I \ll \Ham_k$, otherwise the energy error increases dramatically or the timestep must be changed, both of which break symplecticity. 
+The most popular symplectic integrator is the Wisdom-Holman mapping \citep{Wisdom1991}.
+
+Non-symplectic integrators do not require a fixed timestep and do not have a bounded energy error over time. 
+However, these integrators can employ very accurate and precise numerical convergence schemes, for example the Burlish-Stoer or predictor-corrector algorithms \citep{Press2002}.
+As a result, non-symplectic integrators are typically more accurate but slower than their symplectic counterparts, and can solve most classes of planetary physics problems. 
+A popular non-symplectic integrator is \ias \citep{Rein2015}.
+
+Hybrid integrators typically mix the symplectic and non-symplectic schemes, applying the symplectic scheme on bodies that are distant and non-symplectic scheme on bodies that are close. 
+However, there are hybrid schemes that purely rely on symplectic principles \citep{Duncan1998}.
+As a result, hybrid integrators are often an optimal balance between speed and accuracy, especially for problems involving close encounters. 
+The most popular hybrid integrator is \mercury \citep{Chambers1999}.
 
 \section{Planet Dynamics}
 \subsection{Mean Motion Resonance}

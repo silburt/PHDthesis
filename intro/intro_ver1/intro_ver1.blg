@@ -7,45 +7,46 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty publisher in Armitage2010
 Warning--empty publisher in SSD1999
 Warning--empty publisher in Plummer1918
-You've used 47 entries,
+Warning--empty publisher in Press2002
+You've used 50 entries,
             3085 wiz_defined-function locations,
-            992 strings with 12394 characters,
-and the built_in function-call counts, 19813 in all, are:
-= -- 1757
-> -- 1147
-< -- 32
-+ -- 380
-- -- 391
-* -- 1506
-:= -- 3693
-add.period$ -- 47
-call.type$ -- 47
-change.case$ -- 292
-chr.to.int$ -- 47
-cite$ -- 50
-duplicate$ -- 877
-empty$ -- 1329
-format.name$ -- 489
-if$ -- 4007
+            1012 strings with 13118 characters,
+and the built_in function-call counts, 21067 in all, are:
+= -- 1864
+> -- 1219
+< -- 34
++ -- 404
+- -- 416
+* -- 1599
+:= -- 3924
+add.period$ -- 50
+call.type$ -- 50
+change.case$ -- 311
+chr.to.int$ -- 50
+cite$ -- 54
+duplicate$ -- 932
+empty$ -- 1421
+format.name$ -- 519
+if$ -- 4262
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 47
-newline$ -- 145
-num.names$ -- 188
-pop$ -- 309
+missing$ -- 50
+newline$ -- 154
+num.names$ -- 200
+pop$ -- 332
 preamble$ -- 1
-purify$ -- 292
+purify$ -- 311
 quote$ -- 0
-skip$ -- 750
+skip$ -- 799
 stack$ -- 0
-substring$ -- 912
+substring$ -- 968
 swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 414
-warning$ -- 3
-while$ -- 183
+type$ -- 438
+warning$ -- 4
+while$ -- 194
 width$ -- 0
-write$ -- 471
-(There were 3 warnings)
+write$ -- 500
+(There were 4 warnings)
