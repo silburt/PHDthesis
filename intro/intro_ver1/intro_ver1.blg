@@ -3,50 +3,54 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: intro_ver1.aux
 The style file: apj.bst
 Database file #1: intro_ver1.bib.bib
+Warning--entry type for "NASAEA" isn't style-file defined
+--line 12 of file intro_ver1.bib.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty publisher in Armitage2010
+Warning--can't use both author and editor fields in Beauge2007
+Warning--empty publisher in Beauge2007
 Warning--empty publisher in SSD1999
 Warning--empty publisher in Plummer1918
 Warning--empty publisher in Press2002
-You've used 50 entries,
+You've used 59 entries,
             3085 wiz_defined-function locations,
-            1012 strings with 13118 characters,
-and the built_in function-call counts, 21067 in all, are:
-= -- 1864
-> -- 1219
-< -- 34
-+ -- 404
-- -- 416
-* -- 1599
-:= -- 3924
-add.period$ -- 50
-call.type$ -- 50
-change.case$ -- 311
-chr.to.int$ -- 50
-cite$ -- 54
-duplicate$ -- 932
-empty$ -- 1421
-format.name$ -- 519
-if$ -- 4262
+            1079 strings with 15161 characters,
+and the built_in function-call counts, 25462 in all, are:
+= -- 2216
+> -- 1572
+< -- 35
++ -- 522
+- -- 548
+* -- 1988
+:= -- 4773
+add.period$ -- 59
+call.type$ -- 59
+change.case$ -- 373
+chr.to.int$ -- 59
+cite$ -- 65
+duplicate$ -- 1101
+empty$ -- 1670
+format.name$ -- 656
+if$ -- 5117
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 50
-newline$ -- 154
-num.names$ -- 200
-pop$ -- 332
+missing$ -- 58
+newline$ -- 181
+num.names$ -- 237
+pop$ -- 402
 preamble$ -- 1
-purify$ -- 311
+purify$ -- 373
 quote$ -- 0
-skip$ -- 799
+skip$ -- 930
 stack$ -- 0
-substring$ -- 968
-swap$ -- 6
+substring$ -- 1120
+swap$ -- 9
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 438
-warning$ -- 4
-while$ -- 194
+type$ -- 516
+warning$ -- 6
+while$ -- 226
 width$ -- 0
-write$ -- 500
-(There were 4 warnings)
+write$ -- 589
+(There were 7 warnings)
