@@ -7,6 +7,20 @@
 \bibitem[{{Baruteau} \& {Papaloizou}(2013)}]{Baruteau2013}
 {Baruteau}, C., \& {Papaloizou}, J. C.~B. 2013, ApJ, 778, 15
 
+\bibitem[{{Batalha} {et~al.}(2013){Batalha}, {Rowe}, {Bryson}, {Barclay},
+  {Burke}, {Caldwell}, {Christiansen}, {Mullally}, {Thompson}, {Brown},
+  {Dupree}, {Fabrycky}, {Ford}, {Fortney}, {Gilliland}, {Isaacson}, {Latham},
+  {Marcy}, {Quinn}, {Ragozzine}, {Shporer}, {Borucki}, {Ciardi}, {Gautier},
+  {Haas}, {Jenkins}, {Koch}, {Lissauer}, {Rapin}, {Basri}, {Boss}, {Buchhave},
+  {Carter}, {Charbonneau}, {Christensen-Dalsgaard}, {Clarke}, {Cochran},
+  {Demory}, {Desert}, {Devore}, {Doyle}, {Esquerdo}, {Everett}, {Fressin},
+  {Geary}, {Girouard}, {Gould}, {Hall}, {Holman}, {Howard}, {Howell},
+  {Ibrahim}, {Kinemuchi}, {Kjeldsen}, {Klaus}, {Li}, {Lucas}, {Meibom},
+  {Morris}, {Pr{\v s}a}, {Quintana}, {Sanderfer}, {Sasselov}, {Seader},
+  {Smith}, {Steffen}, {Still}, {Stumpe}, {Tarter}, {Tenenbaum}, {Torres},
+  {Twicken}, {Uddin}, {Van Cleve}, {Walkowicz}, \& {Welsh}}]{Batalha2013}
+{Batalha}, N.~M., {Rowe}, J.~F., {Bryson}, S.~T., {et~al.} 2013, \apjs, 204, 24
+
 \bibitem[{{Batygin} \& {Morbidelli}(2013)}]{Batygin2013}
 {Batygin}, K., \& {Morbidelli}, A. 2013, AJ, 145, 10
 
@@ -153,6 +167,11 @@
 
 \bibitem[{{NASA Exoplanet Archive}(2017)}]{NASAEA}
 {NASA Exoplanet Archive}. 2017, Nasa Exoplanet Archive
+
+\bibitem[{{Petigura} {et~al.}(2013){Petigura}, {Howard}, \&
+  {Marcy}}]{Petigura2013}
+{Petigura}, E.~A., {Howard}, A.~W., \& {Marcy}, G.~W. 2013, Proceedings of the
+  National Academy of Science, 110, 19273
 
 \bibitem[{{Plummer}(1918)}]{Plummer1918}
 {Plummer}, H.~C.~K. 1918, {An introductory treatise on dynamical astronomy}

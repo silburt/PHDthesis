@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  3 APR 2017 15:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 APR 2017 12:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -631,42 +631,42 @@ ABD: EveryShipout initializing macros [1{/usr/local/texlive/2014/texmf-var/font
 s/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    Try loading font information for U+lasy on input line 51.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 52.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 51.
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 51.
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2
 
 ] [3]
-[4] [5] <Figures/PeriodRatios.pdf, id=32, 578.16pt x 433.62pt>
+[4] [5] [6] [7] <Figures/PeriodRatios.pdf, id=40, 578.16pt x 433.62pt>
 File: Figures/PeriodRatios.pdf Graphic file (type pdf)
 
 <use Figures/PeriodRatios.pdf>
-Package pdftex.def Info: Figures/PeriodRatios.pdf used on input line 143.
+Package pdftex.def Info: Figures/PeriodRatios.pdf used on input line 172.
 (pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
- [6] [7 <./Figures/PeriodRatios.pdf>] [8]
-[9] [10] [11] [12] [13] [14] [15] (./intro_ver1.bbl [16] [17
+ [8] [9 <./Figures/PeriodRatios.pdf>] [10]
+[11] [12] [13] [14] [15] [16] [17] (./intro_ver1.bbl [18] [19
 
-] [18] [19])
-[20] (./intro_ver1.aux) ) 
+] [20] [21])
+[22] (./intro_ver1.aux) ) 
 Here is how much of TeX's memory you used:
- 13795 strings out of 493117
- 261157 string characters out of 6135433
- 303871 words of memory out of 5000000
- 16956 multiletter control sequences out of 15000+600000
+ 13803 strings out of 493117
+ 261301 string characters out of 6135433
+ 304813 words of memory out of 5000000
+ 16964 multiletter control sequences out of 15000+600000
  17623 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,17n,54p,479b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,54p,923b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/ba
 se/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/bitstrea/charter/bchb
 8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.
@@ -678,12 +678,13 @@ usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
 r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
 local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
 al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on intro_ver1.pdf (20 pages, 169690 bytes).
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on intro_ver1.pdf (22 pages, 183847 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 166 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

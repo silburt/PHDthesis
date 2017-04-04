@@ -38,8 +38,9 @@ Proposed sections in the introduction:
 \begin{enumerate}
 \item Exoplanet Observations -- Dominant detection methods (Transit, RV), basic statistics of exoplanets discovered by Kepler Space Telescope.
 \item Planet Formation -- MMSN, Core accretion/GI models, Planetesimal Formation, Nice Model. 
-\item Planet Dynamics -- Mean Motion Resonance, (planetesimal and gas) Migration, Stability.
+\item Planetary Dynamics -- Mean Motion Resonance, (planetesimal and gas) Migration, Stability.
 \item Numerical Integration -- Hamiltonian Dynamics, integrator types (hybrid, symplectic, high order), coordinate systems (jacobi, heliocentric, whds).
+\item Tie intro to thesis
 \end{enumerate}
 
 \section{Exoplanet Observations}
@@ -74,6 +75,7 @@ where $n_p$ is the number of planets in the system.
 If however the planet-planet gravitational interactions are strong, Equation~\ref{eq:RVsum} is invalid and must be replaced with a more careful numerical treatment. 
 
 \subsubsection{Transit Method}
+\label{sec:transit}
 When a planet passes (or transits) in front of its host star, a portion of the star's emitted flux $F$ will be blocked. 
 The fraction of blocked flux is proportional to relative areas of the star and planet:
 \begin{equation}
@@ -95,13 +97,40 @@ In addition, the atmospheric properties of exoplanets can also be determined \ci
 In total, the transit method is able to provide essential information about the composition, formation and habitability of a planet. 
 However, the transit method is not without its weaknesses. 
 For example, important parameters for dynamical analysis, like eccentricity and mass, cannot be determined via the transit method.
-In addition, false positives from eclipsing binaries are a huge source of contamination \citep{Fressin2013}, and confirmation from a different method is often required. 
+In addition, false positives from eclipsing binaries and background targets are a huge source of contamination \citep{Fressin2013}, and confirmation from a different method is often required. 
+Smaller and/or multi-planet systems are much less likely to be false positives than large, single planets \citep{Fressin2013}.
 
+\subsection{Statistics of Kepler Planets}
+%I'm assuming that since this section is meant to motivate my work, I should focus on the research leading up to mine, not the research that has happened since.
+The \kep mission is the most successful planet-finding mission to date, providing scientists for the first time a large population of planets orbiting other stars. 
+Due to the selection bias of the transit method (see Section~\ref{sec:transit}), most of these planets have periods of less than 50 days and are many times larger than Earth. 
+However, sufficient detection across the full range of Earth-Jupiter sized planets has allowed scientists to begin statistically analyzing the occurrence of planets around other stars in our galaxy. 
+
+Two seminal works analyzing the \kep population are \citet{Fressin2013} and \citet{Petigura2013}.
+\citet{Fressin2013} found that the global false positive rate present in the \kep data is roughly $10\%$, the radius distribution peaks at mini-Neptune ($2<r_p/r_{\oplus}<2.8$, $r_{\oplus}$ is the radius of Earth) sized planets, and the occurrence of Neptune and Jupiter sized planets is significantly lower than $r_p/r_{\oplus}<2.8$ planets.
+Using a very carefully vetted data sample, \citet{Petigura2013} found a similar result as \citet{Fressin2013}, i.e. that the radius distribution peaks at mini-Neptune and the occurrence of Neptune and Jupiter sized planets is much lower.
+
+The calculation for planet occurrence is usually performed by binning the planets in $r$--$P$ space (where $r$ is planet radius and $P$ is planet period), and calculating planet occurrence for each bin. 
+For bin $(i,j)$ the occurrence $f(P_i, r_j)$ of planets of a planet population:
+\begin{equation}
+f(P_i, r_j) = \frac{1}{N_*} \sum_k^{n_p(i,j)} \left(\frac{a_k}{r_{*,k}} \frac{1}{\epsilon(i,j)} \right)
+\label{eq:occurence}
+\end{equation}
+where $N_*$ is the total number of stars surveyed in the sample, $n_p(i, j)$ are the number of planets falling into bin $(i, j)$, $\frac{a_k}{r_{*,k}}$ is the geometric correction factor to account for missed non-transiting planets and $\epsilon(i,j)$ is the detection completeness of bin $(i, j)$ to account for missed transiting planets due to low signal-to-noise.
+
+Of the ingredients that go into a Equation~\ref{eq:occurence} the most difficult quantity to accurately measure is the detection completeness. 
+Unlike \citet{Fressin2013} who used Combined Differential Photometric Precision (CDPP) to estimate the detection completeness of known planets, \citet{Petigura2013} instead simulated light curves and performed an injection and recovery algorithm to calculate the detection completeness. 
+Although injection and recovery of simulated light curves is certainly a more accurate and sophisticated algorithm to calculate detection completeness, \citet{Fressin2013} found that CDPP estimates were robust and could lead to accurate predictions. 
+
+One critical aspect of planet occurrence that \citet{Fressin2013} and \citet{Petigura2013} failed to incorporate into their calculations was the large error bars present in the \kep data.
+The mean planetary radius error in the \citet{Batalha2013} \kep dataset is $30\%$, meaning that, within 3 standard deviations a super-Earth sized planet could actually be Neptune or Earth-sized. 
+These errors primarily stem from the fact that the radii of \kep stars are not well known \citep{Brown2011}, with a mean radius error also about $30\%$.
+With such large error bars present in the \kep data, ignoring them can significantly affect the resulting occurrence distribution.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Planet Dynamics}
+\section{Planetary Dynamics}
 \subsection{Mean Motion Resonance}
 \label{sec:MMR}
 Mean motion resonance (MMR) occurs when the orbital period of one planet is an integer ratio of another. 
