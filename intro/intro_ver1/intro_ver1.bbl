@@ -49,6 +49,13 @@
 \bibitem[{{Chirikov}(1979)}]{Chirikov1979}
 {Chirikov}, B. 1979, Physics Review, 52, 263
 
+\bibitem[{{Choquet} {et~al.}(2016){Choquet}, {Perrin}, {Chen}, {Soummer},
+  {Pueyo}, {Hagan}, {Gofas-Salas}, {Rajan}, {Golimowski}, {Hines}, {Schneider},
+  {Mazoyer}, {Augereau}, {Debes}, {Stark}, {Wolff}, {N'Diaye}, \&
+  {Hsiao}}]{Choquet2016}
+{Choquet}, {\'E}., {Perrin}, M.~D., {Chen}, C.~H., {et~al.} 2016, \apjl, 817,
+  L2
+
 \bibitem[{{Delisle} {et~al.}(2014){Delisle}, {Laskar}, \&
   {Correia}}]{Delisle2014}
 {Delisle}, J.-B., {Laskar}, J., \& {Correia}, A. C.~M. 2014, AA, 566, 14
@@ -93,6 +100,9 @@
 \bibitem[{{Gomes} {et~al.}(2004){Gomes}, {Morbidelli}, \&
   {Levison}}]{Gomes2004}
 {Gomes}, R.~S., {Morbidelli}, A., \& {Levison}, H.~F. 2004, \icarus, 170, 492
+
+\bibitem[{{Hayashi}(1981)}]{Hayashi1981}
+{Hayashi}, C. 1981, Progress of Theoretical Physics Supplement, 70, 35
 
 \bibitem[{{Henry} {et~al.}(1999){Henry}, {Marcy}, {Butler}, \&
   {Vogt}}]{Henry1999}
@@ -193,6 +203,15 @@
 \bibitem[{{Rein} \& {Spiegel}(2015)}]{Rein2015}
 {Rein}, H., \& {Spiegel}, D.~S. 2015, \mnras, 446, 1424
 
+\bibitem[{{Sasselov} \& {Lecar}(2000)}]{Sasselov2000}
+{Sasselov}, D.~D., \& {Lecar}, M. 2000, \apj, 528, 995
+
+\bibitem[{{Schneider} {et~al.}(2014){Schneider}, {Grady}, {Hines}, {Stark},
+  {Debes}, {Carson}, {Kuchner}, {Perrin}, {Weinberger}, {Wisniewski},
+  {Silverstone}, {Jang-Condell}, {Henning}, {Woodgate}, {Serabyn},
+  {Moro-Martin}, {Tamura}, {Hinz}, \& {Rodigas}}]{Schneider2014}
+{Schneider}, G., {Grady}, C.~A., {Hines}, D.~C., {et~al.} 2014, \aj, 148, 59
+
 \bibitem[{{Steffen} \& {Hwang}(2015)}]{Steffen2015}
 {Steffen}, J.~H., \& {Hwang}, J.~A. 2015, MNRAS, 448, 16
 
@@ -226,6 +245,9 @@
 
 \bibitem[{{Ward}(1997)}]{Ward1997}
 {Ward}, W.~R. 1997, \icarus, 126, 261
+
+\bibitem[{{Weidenschilling}(1977)}]{Weidenschilling1977}
+{Weidenschilling}, S.~J. 1977, \apss, 51, 153
 
 \bibitem[{{Wisdom}(1980)}]{Wisdom1980}
 {Wisdom}, J. 1980, \aj, 85, 1122

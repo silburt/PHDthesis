@@ -37,12 +37,15 @@
 Proposed sections in the introduction:
 \begin{enumerate}
 \item Exoplanet Observations -- Dominant detection methods (Transit, RV), basic statistics of exoplanets discovered by Kepler Space Telescope.
-\item Planet Formation -- MMSN, Core accretion/GI models, Planetesimal Formation, Nice Model. 
+\item Planet Formation -- MMSN, Core accretion/GI models, Planetesimal Formation. 
 \item Planetary Dynamics -- Mean Motion Resonance, (planetesimal and gas) Migration, Stability.
 \item Numerical Integration -- Hamiltonian Dynamics, integrator types (hybrid, symplectic, high order), coordinate systems (jacobi, heliocentric, whds).
 \item Tie intro to thesis
 \end{enumerate}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Exoplanet Observations}
 \subsection{Detection Methods}
 \subsubsection{Radial Velocity}
@@ -60,12 +63,13 @@ K = \frac{m_p \sin(i)}{m_* + m_p} \frac{2\pi a}{P\sqrt{1-e^2}}
 $a$ is the semi-major axis of the planet, $P$ is the orbital period, $m_p$ is the planet mass, $m_*$ is the stellar mass, $i$ is the inclination of the orbital planet, $e$ is the eccentricity of the planet, $\nu(t)$ is the true anomaly, $\omega$ is the argument of periastron, and $\gamma$ is the stellar drift in velocity.
 Since the probability of detecting a planet is related to $K$, Equation~\ref{eq:K} reveals that radial velocity is best at detecting massive planets on short orbits. 
 
-Using these equations, in theory, allows one to extract the orbital parameters of the planet. 
-However there are a few sources of uncertainty associated with this method.
+In theory, these equations will yield the orbital parameters of the planet (mass, eccentricity, orbital period, etc.). 
+In practice, there are some uncertainties associated with this method.
 For example, successfully extracting orbital parameters requires accurate and precise knowledge of the stellar mass, which is typically difficult to obtain \citep[e.g.][]{Brown2011}.
-In addition, only a lower limit $m\sin(i)$ estimate on planet mass can be obtained unless the inclination relative to Earth's line of sight is known. 
+Furthermore, only a lower limit $m\sin(i)$ estimate on planet mass can be calculated unless the inclination relative to Earth's line of sight is known. 
+In addition, the radius of the planet cannot be calculated from the radial velocity method, precluding any information about size and density.
 
-When multiple planets orbit a star the radial velocity signal becomes more complex, though it is still periodic in nature. 
+When multiple planets orbit a star the radial velocity signal becomes more complex, though it is still periodic in nature (assuming orbital stability). 
 Assuming that the planets are well-separated such that their mutual gravitational interactions are weak, the radial velocity of the star can be approximated as the sum of planetary Keplerian orbits:
 \begin{equation}
 V_r = \gamma + \sum_{i=1}^{n_p} K_i \cdot [\cos(\nu_i(t) + \omega_i) + e_i\cdot \cos(\omega_i)]
@@ -80,52 +84,79 @@ When a planet passes (or transits) in front of its host star, a portion of the s
 The fraction of blocked flux is proportional to relative areas of the star and planet:
 \begin{equation}
 \frac{\Delta F}{F} \propto \left(\frac{r_p}{r_*}\right)^2
+\label{eq:F}
 \end{equation}
 where $r_p$ and $r_*$ are the planet and stellar radii, respectively. 
 In addition, the probability of a transiting planet $P_t$ is inversely proportional to its semi-major axis:
 \begin{equation}
-P_t \propto \frac{r_*}{a_p}
+P_t = \frac{r_*}{a_p}
+\label{eq:tp}
 \end{equation}
-Thus, large and short-period planets are preferentially detected by the transit method.
+Thus, from Equations~\ref{eq:F} and \ref{eq:tp} we see that large and short-period planets are preferentially detected by the transit method.
 
 The first transiting planet was detected by \citet{Henry1999} and independently by \citet{Charbonneau2000}.
-Since then, the transit method has become the most successful detection technique, with over 2,700 confirmed planets to date \citep{NASAEA}, and most of these discoveries coming from the \textit{Kepler Space Telescope}.
+Since then, the transit method has become the most successful detection technique, with over 2,700 confirmed planets to date \citep{NASAEA}, with most of these discoveries coming from the \textit{Kepler Space Telescope} (hereafter \kep).
 The next most successful detection technique is the radial velocity method (Section~\ref{sec:RV}) with over 600 confirmed planets to date \citep{NASAEA}.
 
-From the transit method one can extract the period and radius of the planet. 
+From the transit method one can determine the period and radius of the planet. 
 In addition, the atmospheric properties of exoplanets can also be determined \citep{Kreidberg2014, Tsiaras2016, Stevenson2016}.
 In total, the transit method is able to provide essential information about the composition, formation and habitability of a planet. 
 However, the transit method is not without its weaknesses. 
-For example, important parameters for dynamical analysis, like eccentricity and mass, cannot be determined via the transit method.
-In addition, false positives from eclipsing binaries and background targets are a huge source of contamination \citep{Fressin2013}, and confirmation from a different method is often required. 
-Smaller and/or multi-planet systems are much less likely to be false positives than large, single planets \citep{Fressin2013}.
+For example, important parameters for dynamical analysis, like eccentricity and mass, cannot be determined for individual systems via the transit method.
+In addition, false positives from eclipsing binaries and background targets are a huge source of contamination \citep{Fressin2013}, and confirmation via a different method is often required. 
+Smaller planets and/or planets belonging to multi-planet systems are much less likely to be false positives than large, single planets \citep{Fressin2013}.
 
 \subsection{Statistics of Kepler Planets}
 %I'm assuming that since this section is meant to motivate my work, I should focus on the research leading up to mine, not the research that has happened since.
 The \kep mission is the most successful planet-finding mission to date, providing scientists for the first time a large population of planets orbiting other stars. 
-Due to the selection bias of the transit method (see Section~\ref{sec:transit}), most of these planets have periods of less than 50 days and are many times larger than Earth. 
-However, sufficient detection across the full range of Earth-Jupiter sized planets has allowed scientists to begin statistically analyzing the occurrence of planets around other stars in our galaxy. 
+Due to the selection bias of the transit method (see Section~\ref{sec:transit}), most of these planets have periods of less than 50 days and are much larger than Earth. 
+However, sufficient detection across the full range of Earth-Jupiter sized planets has allowed scientists to calculate the occurrence of planets around other stars in our galaxy. 
 
 Two seminal works analyzing the \kep population are \citet{Fressin2013} and \citet{Petigura2013}.
-\citet{Fressin2013} found that the global false positive rate present in the \kep data is roughly $10\%$, the radius distribution peaks at mini-Neptune ($2<r_p/r_{\oplus}<2.8$, $r_{\oplus}$ is the radius of Earth) sized planets, and the occurrence of Neptune and Jupiter sized planets is significantly lower than $r_p/r_{\oplus}<2.8$ planets.
+\citet{Fressin2013} found that the global false positive rate of the \kep data is roughly $10\%$, the radius distribution peaks at mini-Neptune ($2<r_p/r_{\oplus}<2.8$, $r_{\oplus}$ is the radius of Earth) sized planets, and the occurrence of Neptune and Jupiter sized planets is significantly lower than the occurrence of $r_p/r_{\oplus}<2.8$ sized planets.
 Using a very carefully vetted data sample, \citet{Petigura2013} found a similar result as \citet{Fressin2013}, i.e. that the radius distribution peaks at mini-Neptune and the occurrence of Neptune and Jupiter sized planets is much lower.
 
 The calculation for planet occurrence is usually performed by binning the planets in $r$--$P$ space (where $r$ is planet radius and $P$ is planet period), and calculating planet occurrence for each bin. 
-For bin $(i,j)$ the occurrence $f(P_i, r_j)$ of planets of a planet population:
+The occurrence $f(P_i, r_j)$ of planets in bin $(i,j)$ for a population of planets is:
 \begin{equation}
 f(P_i, r_j) = \frac{1}{N_*} \sum_k^{n_p(i,j)} \left(\frac{a_k}{r_{*,k}} \frac{1}{\epsilon(i,j)} \right)
 \label{eq:occurence}
 \end{equation}
-where $N_*$ is the total number of stars surveyed in the sample, $n_p(i, j)$ are the number of planets falling into bin $(i, j)$, $\frac{a_k}{r_{*,k}}$ is the geometric correction factor to account for missed non-transiting planets and $\epsilon(i,j)$ is the detection completeness of bin $(i, j)$ to account for missed transiting planets due to low signal-to-noise.
+where $N_*$ is the total number of stars surveyed in the sample, $n_p(i, j)$ are the number of planets falling into bin $(i, j)$, $\frac{a_k}{r_{*,k}}$ is the geometric correction factor to account for missed non-transiting planets (inverse of Equation~\ref{eq:tp}) and $\epsilon(i,j)$ is the detection completeness of bin $(i, j)$ to account for missed transiting planets due to low signal-to-noise.
 
-Of the ingredients that go into a Equation~\ref{eq:occurence} the most difficult quantity to accurately measure is the detection completeness. 
-Unlike \citet{Fressin2013} who used Combined Differential Photometric Precision (CDPP) to estimate the detection completeness of known planets, \citet{Petigura2013} instead simulated light curves and performed an injection and recovery algorithm to calculate the detection completeness. 
+Of the ingredients that go into a Equation~\ref{eq:occurence}, the most difficult quantity to accurately measure is the detection completeness. 
+Unlike \citet{Fressin2013} who used Combined Differential Photometric Precision (CDPP) values to estimate the detection completeness of known planets, \citet{Petigura2013} instead performed an injection and recovery of simulated light curves to calculate the detection completeness. 
 Although injection and recovery of simulated light curves is certainly a more accurate and sophisticated algorithm to calculate detection completeness, \citet{Fressin2013} found that CDPP estimates were robust and could lead to accurate predictions. 
 
 One critical aspect of planet occurrence that \citet{Fressin2013} and \citet{Petigura2013} failed to incorporate into their calculations was the large error bars present in the \kep data.
 The mean planetary radius error in the \citet{Batalha2013} \kep dataset is $30\%$, meaning that, within 3 standard deviations a super-Earth sized planet could actually be Neptune or Earth-sized. 
 These errors primarily stem from the fact that the radii of \kep stars are not well known \citep{Brown2011}, with a mean radius error also about $30\%$.
 With such large error bars present in the \kep data, ignoring them can significantly affect the resulting occurrence distribution.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Planet Formation}
+\subsection{Minimum Mass Solar Nebula (MMSN) and Snowline}
+The initial conditions of a new solar system is still unknown, but missions like the Atacama Large Millimeter/submillimeter Array (ALMA) have begun to answer this question, imaging circumstellar disks around young stellar objects like HL Tau \citep{ALMA2014}.
+In total, about 80 circumstellar and debris disks have been observed to date \citep[e.g.][]{Schneider2014,Choquet2016}, revealing unexpected features like concentric rings sculpted by large planets \citep{Tamayo2015}.
+However, even 10 years ago little was known about the birth of young planetary systems. 
+\citet{Hayashi1981} and \citet{Weidenschilling1977} provided the first benchmarks for the initial mass of the Solar System by assuming a rocky core for all planets and calculating the initial surface density distribution $\Sigma(d)$ as a function of distance $d$ required to produce the masses of the planets:
+\begin{equation}
+\Sigma(d) = \Sigma_0\left(\frac{d}{1 \textrm{AU}} \right)^{-3/2}
+\end{equation}
+where $\Sigma_0 = 1700 \textrm{g/cm}^{2}$. 
+This initial surface density distribution has been dubbed the ``minimum mass solar nebula" (MMSN), and is a benchmark for current studies. 
+
+Another critical property of circumstellar disks is the location of the snowline. 
+According to conventional theory \citep{}, the snowline marks the region beyond which water turns to ice and Jovian planets can form.
+From \citet{Hayashi1981}, the benchmark temperature profile $T(d)$ for the Solar System is:
+\begin{equation}
+T(d) = T_0 \left(\frac{r}{1 \textrm{AU}} \right)^{-1/2}
+\end{equation}
+where $T_0 = 280$K. 
+In this model, the radius at which the temperature drops to below freezing is $\sim 2.7 AU$. 
+More recent models that include more detailed models of radiative transfer and heating via accretion show that the primordial snow line in our Solar System could have been as close as 1 AU \citep{Sasselov2000}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -370,6 +401,11 @@ Hybrid integrators typically mix the symplectic and non-symplectic schemes, appl
 However, there are hybrid schemes that purely rely on symplectic principles \citep{Duncan1998}.
 As a result, hybrid integrators are often an optimal balance between speed and accuracy, especially for problems involving close encounters. 
 The most popular hybrid integrator is \mercury \citep{Chambers1999}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{This Work}
 
 \bibliographystyle{apj}
 \bibliography{intro_ver1.bib}
