@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 APR 2017 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  8 APR 2017 16:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -653,28 +653,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Package natbib Warning: Citation `ALMA2014' on page 6 undefined on input line 1
 41.
 
-[6] [7] [8] <Figures/PeriodRatios.pdf, id=43, 578.16pt x 433.62pt>
+[6] [7] [8] [9] [10] <Figures/PeriodRatios.pdf, id=49, 578.16pt x 433.62pt>
 File: Figures/PeriodRatios.pdf Graphic file (type pdf)
 
 <use Figures/PeriodRatios.pdf>
-Package pdftex.def Info: Figures/PeriodRatios.pdf used on input line 203.
+Package pdftex.def Info: Figures/PeriodRatios.pdf used on input line 234.
 (pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
- [9] [10 <./Figures/PeriodRatios.pdf>] [11]
-[12] [13] [14] [15] [16] [17] [18] (./intro_ver1.bbl [19] [20
+ [11] [12 <./Figures/PeriodRatios.pdf>] [13]
+[14] [15] [16] [17] [18] [19] [20] (./intro_ver1.bbl [21] [22
 
-] [21] [22])
+] [23] [24]
+[25])
 
 Package natbib Warning: There were undefined citations.
 
-[23] (./intro_ver1.aux) ) 
+[26] (./intro_ver1.aux) ) 
 Here is how much of TeX's memory you used:
- 13822 strings out of 493117
- 261650 string characters out of 6135433
- 305417 words of memory out of 5000000
- 16983 multiletter control sequences out of 15000+600000
+ 13849 strings out of 493117
+ 262205 string characters out of 6135433
+ 305823 words of memory out of 5000000
+ 17010 multiletter control sequences out of 15000+600000
  17623 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,17n,54p,923b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,54p,923b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/ba
 se/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/bitstrea/charter/bchb
 8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.
@@ -689,10 +690,10 @@ al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/
 texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on intro_ver1.pdf (23 pages, 191761 bytes).
+Output written on intro_ver1.pdf (26 pages, 196548 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
+ 180 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

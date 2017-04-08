@@ -1,8 +1,11 @@
 \begin{thebibliography}{}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
+\bibitem[{{Armitage}(2007)}]{Armitage2007}
+{Armitage}, P.~J. 2007, ArXiv Astrophysics e-prints, astro-ph/0701485
+
 \bibitem[{{Armitage}(2010)}]{Armitage2010}
-{Armitage}, P.~J. 2010, {Astrophysics of Planet Formation}, 294
+---. 2010, {Astrophysics of Planet Formation}, 294
 
 \bibitem[{{Baruteau} \& {Papaloizou}(2013)}]{Baruteau2013}
 {Baruteau}, C., \& {Papaloizou}, J. C.~B. 2013, ApJ, 778, 15
@@ -29,6 +32,12 @@
 {Beaug{\'e}}, C., {Ferraz-Mello}, S., \& {Michtchenko}, T.~A. 2007, {Planetary
   Masses and Orbital Parameters from Radial Velocity Measurements}, ed.
   R.~{Dvorak}, 1
+
+\bibitem[{{Blum} \& {Wurm}(2008)}]{Blum2008}
+{Blum}, J., \& {Wurm}, G. 2008, \araa, 46, 21
+
+\bibitem[{{Boley} {et~al.}(2014){Boley}, {Morris}, \& {Ford}}]{Boley2014}
+{Boley}, A.~C., {Morris}, M.~A., \& {Ford}, E.~B. 2014, \apjl, 792, L27
 
 \bibitem[{{Brown} {et~al.}(2011){Brown}, {Latham}, {Everett}, \&
   {Esquerdo}}]{Brown2011}
@@ -97,9 +106,17 @@
 \bibitem[{{Goldreich} \& {Tremaine}(1980)}]{Goldreich1980}
 ---. 1980, \apj, 241, 425
 
+\bibitem[{{Goldreich} \& {Ward}(1973)}]{Goldreich1973}
+{Goldreich}, P., \& {Ward}, W.~R. 1973, \apj, 183, 1051
+
 \bibitem[{{Gomes} {et~al.}(2004){Gomes}, {Morbidelli}, \&
   {Levison}}]{Gomes2004}
 {Gomes}, R.~S., {Morbidelli}, A., \& {Levison}, H.~F. 2004, \icarus, 170, 492
+
+\bibitem[{{Greenberg} {et~al.}(1978){Greenberg}, {Hartmann}, {Chapman}, \&
+  {Wacker}}]{Greenberg1978}
+{Greenberg}, R., {Hartmann}, W.~K., {Chapman}, C.~R., \& {Wacker}, J.~F. 1978,
+  \icarus, 35, 1
 
 \bibitem[{{Hayashi}(1981)}]{Hayashi1981}
 {Hayashi}, C. 1981, Progress of Theoretical Physics Supplement, 70, 35
@@ -124,6 +141,9 @@
   {Levison}}]{Kirsh2009}
 {Kirsh}, D.~R., {Duncan}, M., {Brasser}, R., \& {Levison}, H.~F. 2009, \icarus,
   199, 197
+
+\bibitem[{{Kokubo} \& {Ida}(1998)}]{Kokubo1998}
+{Kokubo}, E., \& {Ida}, S. 1998, \icarus, 131, 171
 
 \bibitem[{{Kreidberg} {et~al.}(2014){Kreidberg}, {Bean}, {D{\'e}sert},
   {Benneke}, {Deming}, {Stevenson}, {Seager}, {Berta-Thompson}, {Seifahrt}, \&
@@ -206,6 +226,9 @@
 \bibitem[{{Sasselov} \& {Lecar}(2000)}]{Sasselov2000}
 {Sasselov}, D.~D., \& {Lecar}, M. 2000, \apj, 528, 995
 
+\bibitem[{{Schlichting}(2014)}]{Schlichting2014}
+{Schlichting}, H.~E. 2014, \apjl, 795, L15
+
 \bibitem[{{Schneider} {et~al.}(2014){Schneider}, {Grady}, {Hines}, {Stark},
   {Debes}, {Carson}, {Kuchner}, {Perrin}, {Weinberger}, {Wisniewski},
   {Silverstone}, {Jang-Condell}, {Henning}, {Woodgate}, {Serabyn},
@@ -246,8 +269,14 @@
 \bibitem[{{Ward}(1997)}]{Ward1997}
 {Ward}, W.~R. 1997, \icarus, 126, 261
 
-\bibitem[{{Weidenschilling}(1977)}]{Weidenschilling1977}
-{Weidenschilling}, S.~J. 1977, \apss, 51, 153
+\bibitem[{{Weidenschilling}(1977{\natexlab{a}})}]{Weidenschilling1977b}
+{Weidenschilling}, S.~J. 1977{\natexlab{a}}, \mnras, 180, 57
+
+\bibitem[{{Weidenschilling}(1977{\natexlab{b}})}]{Weidenschilling1977}
+---. 1977{\natexlab{b}}, \apss, 51, 153
+
+\bibitem[{{Wetherill} \& {Stewart}(1989)}]{Wetherill1989}
+{Wetherill}, G.~W., \& {Stewart}, G.~R. 1989, \icarus, 77, 330
 
 \bibitem[{{Wisdom}(1980)}]{Wisdom1980}
 {Wisdom}, J. 1980, \aj, 85, 1122
