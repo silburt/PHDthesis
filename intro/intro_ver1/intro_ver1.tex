@@ -137,57 +137,62 @@ With such large error bars present in the \kep data, ignoring them can significa
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Planet Formation}
-\subsection{Minimum Mass Solar Nebula (MMSN) and Snowline}
-The initial conditions of a new solar system is still unknown, but missions like the Atacama Large Millimeter/submillimeter Array (ALMA) have begun to answer this question, imaging circumstellar disks around young stellar objects like HL Tau \citep{ALMA2014}.
-In total, about 80 circumstellar and debris disks have been observed to date \citep[e.g.][]{Schneider2014,Choquet2016}, revealing unexpected features like concentric rings sculpted by large planets \citep{Tamayo2015}.
-However, even 10 years ago little was known about the birth of young planetary systems. 
-\citet{Hayashi1981} and \citet{Weidenschilling1977} provided the first benchmarks for the initial mass of the Solar System by assuming a rocky core for all planets and calculating the initial surface density distribution $\Sigma(d)$ as a function of distance $d$ required to produce the masses of the planets:
+\subsection{Minimum Mass Solar Nebula and Snowline}
+The initial conditions of the Solar System are still largely unknown.
+\citet{Hayashi1981} and \citet{Weidenschilling1977} provided the first benchmarks for the initial mass of the Solar System by assuming a rocky core for all planets and calculating the initial surface density distribution $\Sigma$ as a function of distance $d$ required to produce the masses of the planets:
 \begin{equation}
 \Sigma(d) = \Sigma_0\left(\frac{d}{1 \textrm{AU}} \right)^{-3/2}
 \end{equation}
 where $\Sigma_0 = 1700 \textrm{g/cm}^{2}$. 
-This initial surface density distribution has been dubbed the ``minimum mass solar nebula" (MMSN), and is a benchmark for current studies. 
+This initial surface density distribution has been dubbed the ``minimum mass solar nebula" (MMSN), and is a benchmark against which most planet formation studies are compared to.
 
 %berta, charbonneau 2012
 
 Another critical property of circumstellar disks is the location of the snowline. 
-According to conventional theory \citep{}, the snowline marks the region beyond which water turns to ice and Jovian planets can form.
-From \citet{Hayashi1981}, the benchmark temperature profile $T(d)$ for the Solar System is:
+In standard formation theory the snowline marks the region beyond which water-ice forms, providing additional solid material to make cores large enough to retain gases and form Jovian planets.
+\citet{Hayashi1981} provided a benchmark temperature profile $T(d)$ for the Solar System:
 \begin{equation}
 T(d) = T_0 \left(\frac{r}{1 \textrm{AU}} \right)^{-1/2}
 \end{equation}
 where $T_0 = 280$K. 
-In this model, the radius at which the temperature drops to below freezing is $\sim 2.7 AU$. 
-More recent models that include more detailed models of radiative transfer and heating via accretion show that the primordial snow line in our Solar System could have been as close as 1 AU \citep{Sasselov2000}.
+In this model, the radius at which the temperature drops to below freezing is $\sim 2.7$ AU. 
+More recent models of the snowline \citep{Sasselov2000} include detailed radiative transfer physics and heating via accretion, and show that the primordial snow line in our Solar System could have been as close as 1 AU .
+
+Until recently, scientists have lacked the capabilities to observationally confirm these theories.  
+Telescopes like the Atacama Large Millimeter/submillimeter Array (ALMA) have begun to provide observations of circumstellar disks around young stellar objects like HL Tau \citep{ALMA2015}.
+In total, about 80 circumstellar and debris disks have been observed to date \citep[e.g.][]{Schneider2014,Choquet2016}, revealing unexpected features like concentric rings sculpted by large planets \citep{Tamayo2015}.
+\memoas{This paragraph needs to be stronger. Summarize better what we have learned from these disks.}
+%is it possible to image the snow line yet?
 
 \subsection{Planetesimal Formation}
-Before planets can form, kilometer-sized planetesimals must first be plentiful.
-There are two main pathways hypothesized for forming planetesimals -- coagulation (core-accretion) and gravitational instability. 
-In the coagulation model of planetesimal formation, pairwise collisions between sticky dust particles lead to steady growth up to meter sized objects and beyond \citep{Weidenschilling1977b, Armitage2010}.
-However, mean collision velocities are strongly coupled to size, and are largest for meter-size bodies \citep{Weidenschilling1977b}, leading to destructive collisions \citep{Blum2008} and hindering planetesimal formation. 
-In addition, meter-sized objects in the protoplanetary disk will typically drift into the central star within $\sim 10^3$ years due to strong gas coupling \citep{Weidenschilling1977b}, requiring a fast growth mechanism beyond a meter in size to avoid destruction. 
+Before planets can form, there must be an abundance of kilometer-sized planetesimals.
+There are two leading models for planetesimal formation -- coagulation (core-accretion) and gravitational instability. 
+In the coagulation model, pairwise collisions between sticky dust particles leads to steady growth up to meter-sized and beyond \citep{Weidenschilling1977b, Armitage2010}.
+However, mean collision velocities are strongly coupled to size, with destructive collisions occurring for meter-sized objects \citep{Weidenschilling1977b, Blum2008} which hinders planetesimal formation. 
+In addition, meter-sized objects embedded in a protoplanetary disk will strongly couple to the gas and typically drift into the central star within $\sim 10^3$ years \citep{Weidenschilling1977b}.
+Thus a mechanism is required to quickly grow particles beyond a meter in size to avoid destruction. 
 Solutions to this ``meter-barrier problem" have been proposed \citep[e.g.][]{Boley2014}, however no clear consensus has yet emerged.  
 
 In the gravitational instability model, as the solar nebula cools dust particles settle in the mid plane, becoming vulnerable to collapse \citep{Goldreich1973}.
-These dust particles eventually become gravitationally unstable and form $\sim$100m bodies \citep{Goldreich1973}. 
-The process then repeats again, forming larger and larger planetesimals each time there is a gravitational instability.
+These dust particles eventually become gravitationally unstable and form $\sim$100m sized particles \citep{Goldreich1973}. 
+The process repeats, each time forming larger and larger planetesimals via gravitational instability.
 This model is attractive since it bypasses the scales most vulnerable to destructive collisions (i.e. the meter-barrier problem), and can form large planetesimals in $\sim 10^3$ years \citep{Goldreich1973, Armitage2007}.
 However, in practice it is very difficult to collect dust particles in densities high enough for gravitational instability \citep{Armitage2007}, and especially so in turbulent disks.
  
-The formation mechanism of planetesimals is still unclear, however, \textit{some} mechanism must exist since planetesimals are ubiquitous in the universe. 
+The formation mechanism of planetesimals is still unclear, however, \textit{some} mechanism must exist since planetesimals are ubiquitous. 
 
-\section{Formation of Protoplanets}
+\subsection{Formation of Protoplanets}
 The formation of protoplanets occurs shortly after the formation of large, kilometer-sized planetesimals.
-In a pioneering study, \citet{Greenberg1978} found that in the early stage of planet formation, larger planetesimals grow more rapidly than smaller ones, resulting in the runaway growth of the largest planetesimal. 
-As a result, 1-10km sized planetesimals at 1AU can grow into $10^22$ -- $10^24$kg protoplanets in $10^5$--$10^6$ years \citep{Wetherill1989}.
-This process is initiated by the fact that 1--10km sized planetesimals are large enough to gravitational focus each other yet are still dynamically cool from the surrounding gas, resulting in maximum collision cross sections \citep{Armitage2010}.
+In a pioneering study, \citet{Greenberg1978} found that in the early stage of planet formation larger planetesimals grow more rapidly than smaller ones, resulting in the runaway growth of the largest planetesimal. 
+As a result, $1$--$10$km sized planetesimals at $1$AU can grow into $10^{22}$ -- $10^{24}$kg protoplanets in $10^5$--$10^6$ years \citep{Wetherill1989}.
+This runaway process is caused by the fact that $1$--$10$km sized planetesimals are large enough to gravitationally focus each other yet are still dynamically cool via damping from the surrounding gas, resulting in a maximum collision cross section \citep{Armitage2010}.
 Since growth time is related to orbital frequency, more distant regions will have slower runaway timescales.
 
 Eventually, this runaway growth will transition into a slower, ``oligarchic" growth. 
-As protoplanets grow surrounding planetesimals are dynamically excited via gravitational stirring, decreasing the collision cross section and slowing the rate of protoplanetary growth \citep{Kokubo1998}.
+As protoplanets grow, surrounding planetesimals are dynamically excited via gravitational stirring, decreasing the collision cross section and slowing the rate of protoplanetary growth \citep{Kokubo1998}.
 By the end of oligarchic growth, protoplanets have consumed most of the surrounding material, reaching their isolation mass \citep{Schlichting2014}.
 In the outer parts of a protoplanetary disk the isolation mass is roughly the mass of Neptune, however in the inner regions the isolation mass is a fraction of an Earth mass \citep{Schlichting2014}.
-Since numerous Kepler planets larger than Earth reside close to their host star, this suggests that either giant impacts between protoplanets or migration must have taken place.  
+Since numerous Kepler planets larger than Earth reside close to their host star, this suggests that either giant impacts between protoplanets or migration must have taken place \citep{Schlichting2014}.  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,6 +1,24 @@
 \begin{thebibliography}{}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
+\bibitem[{{ALMA Partnership} {et~al.}(2015){ALMA Partnership}, {Brogan},
+  {P{\'e}rez}, {Hunter}, {Dent}, {Hales}, {Hills}, {Corder}, {Fomalont},
+  {Vlahakis}, {Asaki}, {Barkats}, {Hirota}, {Hodge}, {Impellizzeri}, {Kneissl},
+  {Liuzzo}, {Lucas}, {Marcelino}, {Matsushita}, {Nakanishi}, {Phillips},
+  {Richards}, {Toledo}, {Aladro}, {Broguiere}, {Cortes}, {Cortes}, {Espada},
+  {Galarza}, {Garcia-Appadoo}, {Guzman-Ramirez}, {Humphreys}, {Jung}, {Kameno},
+  {Laing}, {Leon}, {Marconi}, {Mignano}, {Nikolic}, {Nyman}, {Radiszcz},
+  {Remijan}, {Rod{\'o}n}, {Sawada}, {Takahashi}, {Tilanus}, {Vila Vilaro},
+  {Watson}, {Wiklind}, {Akiyama}, {Chapillon}, {de Gregorio-Monsalvo}, {Di
+  Francesco}, {Gueth}, {Kawamura}, {Lee}, {Nguyen Luong}, {Mangum}, {Pietu},
+  {Sanhueza}, {Saigo}, {Takakuwa}, {Ubach}, {van Kempen}, {Wootten},
+  {Castro-Carrizo}, {Francke}, {Gallardo}, {Garcia}, {Gonzalez}, {Hill},
+  {Kaminski}, {Kurono}, {Liu}, {Lopez}, {Morales}, {Plarre}, {Schieven},
+  {Testi}, {Videla}, {Villard}, {Andreani}, {Hibbard}, \&
+  {Tatematsu}}]{ALMA2015}
+{ALMA Partnership}, {Brogan}, C.~L., {P{\'e}rez}, L.~M., {et~al.} 2015, \apjl,
+  808, L3
+
 \bibitem[{{Armitage}(2007)}]{Armitage2007}
 {Armitage}, P.~J. 2007, ArXiv Astrophysics e-prints, astro-ph/0701485
 

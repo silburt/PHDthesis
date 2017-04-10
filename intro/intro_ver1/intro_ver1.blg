@@ -5,7 +5,6 @@ The style file: apj.bst
 Database file #1: intro_ver1.bib.bib
 Warning--entry type for "NASAEA" isn't style-file defined
 --line 12 of file intro_ver1.bib.bib
-Warning--I didn't find a database entry for "ALMA2014"
 Warning--I didn't find a database entry for ""
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty publisher in Armitage2010
@@ -14,45 +13,45 @@ Warning--empty publisher in Beauge2007
 Warning--empty publisher in SSD1999
 Warning--empty publisher in Plummer1918
 Warning--empty publisher in Press2002
-You've used 75 entries,
+You've used 76 entries,
             3085 wiz_defined-function locations,
-            1203 strings with 20081 characters,
-and the built_in function-call counts, 33270 in all, are:
-= -- 2797
-> -- 2230
+            1209 strings with 21873 characters,
+and the built_in function-call counts, 34758 in all, are:
+= -- 2834
+> -- 2502
 < -- 45
-+ -- 739
-- -- 769
-* -- 2687
-:= -- 6299
-add.period$ -- 75
-call.type$ -- 75
-change.case$ -- 465
-chr.to.int$ -- 74
-cite$ -- 81
-duplicate$ -- 1396
-empty$ -- 2112
-format.name$ -- 907
-if$ -- 6634
++ -- 829
+- -- 861
+* -- 2887
+:= -- 6626
+add.period$ -- 76
+call.type$ -- 76
+change.case$ -- 470
+chr.to.int$ -- 75
+cite$ -- 82
+duplicate$ -- 1415
+empty$ -- 2139
+format.name$ -- 1000
+if$ -- 6883
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 74
-newline$ -- 229
-num.names$ -- 301
-pop$ -- 496
+missing$ -- 75
+newline$ -- 232
+num.names$ -- 305
+pop$ -- 501
 preamble$ -- 1
-purify$ -- 465
+purify$ -- 470
 quote$ -- 0
-skip$ -- 1174
+skip$ -- 1189
 stack$ -- 0
-substring$ -- 1431
+substring$ -- 1449
 swap$ -- 11
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 660
+type$ -- 669
 warning$ -- 6
-while$ -- 286
+while$ -- 289
 width$ -- 0
-write$ -- 749
-(There were 9 warnings)
+write$ -- 759
+(There were 8 warnings)
