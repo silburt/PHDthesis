@@ -1,31 +1,48 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {1.1}Planet Dynamics}{1}
-\contentsline {subsection}{\numberline {1.1.1}Mean Motion Resonance}{1}
-\contentsline {subsection}{\numberline {1.1.2}Migration}{3}
-\contentsline {subsubsection}{Planetesimal-Driven Migration}{3}
-\contentsline {subsubsection}{Gas-Driven migration}{4}
-\contentsline {subsection}{\numberline {1.1.3}Stability}{5}
-\contentsline {chapter}{\numberline {2}My Second Chapter}{7}
-\contentsline {section}{\numberline {2.1}Chapter Overview}{7}
-\contentsline {section}{\numberline {2.2}Introduction}{7}
-\contentsline {section}{\numberline {2.3}A Section}{7}
-\contentsline {section}{\numberline {2.4}Summary }{7}
-\contentsline {chapter}{\numberline {3}My Third Chapter}{9}
-\contentsline {section}{\numberline {3.1}Chapter Overview}{9}
-\contentsline {section}{\numberline {3.2}Introduction}{9}
-\contentsline {section}{\numberline {3.3}A Section}{9}
-\contentsline {section}{\numberline {3.4}Summary }{9}
-\contentsline {chapter}{\numberline {4}My Fourth Chapter}{10}
-\contentsline {section}{\numberline {4.1}Chapter Overview}{10}
-\contentsline {section}{\numberline {4.2}Introduction}{10}
-\contentsline {section}{\numberline {4.3}A Section}{10}
-\contentsline {section}{\numberline {4.4}Summary }{10}
-\contentsline {chapter}{\numberline {5}My Fifth Chapter}{11}
-\contentsline {section}{\numberline {5.1}Chapter Overview}{11}
-\contentsline {section}{\numberline {5.2}Introduction}{11}
-\contentsline {section}{\numberline {5.3}A Section}{11}
-\contentsline {section}{\numberline {5.4}Summary }{11}
-\contentsline {chapter}{\numberline {6}Conclusions \& Future Work}{12}
-\contentsline {section}{\numberline {6.1}Conclusions}{12}
-\contentsline {section}{\numberline {6.2}Future Work and Directions}{12}
-\contentsline {chapter}{Bibliography}{13}
+\contentsline {section}{\numberline {1.1}Exoplanet Observations}{1}
+\contentsline {subsection}{\numberline {1.1.1}Detection Methods}{1}
+\contentsline {subsubsection}{Radial Velocity}{1}
+\contentsline {subsubsection}{Transit Method}{2}
+\contentsline {subsection}{\numberline {1.1.2}Statistics of Kepler Planets}{3}
+\contentsline {section}{\numberline {1.2}Planet Formation}{5}
+\contentsline {subsection}{\numberline {1.2.1}Minimum Mass Solar Nebula and Snowline}{5}
+\contentsline {subsection}{\numberline {1.2.2}Planetesimal Formation}{6}
+\contentsline {subsection}{\numberline {1.2.3}Formation of Protoplanets}{7}
+\contentsline {section}{\numberline {1.3}Planetary Dynamics}{8}
+\contentsline {subsection}{\numberline {1.3.1}Mean Motion Resonance}{8}
+\contentsline {subsection}{\numberline {1.3.2}Migration}{11}
+\contentsline {subsubsection}{Planetesimal-Driven Migration}{11}
+\contentsline {subsubsection}{Gas-Driven migration}{12}
+\contentsline {subsection}{\numberline {1.3.3}Stability}{13}
+\contentsline {section}{\numberline {1.4}Numerical Integration}{14}
+\contentsline {subsection}{\numberline {1.4.1}Hamiltonian Dynamics}{14}
+\contentsline {subsection}{\numberline {1.4.2}Coordinate Systems}{16}
+\contentsline {subsubsection}{Jacobi}{16}
+\contentsline {subsubsection}{Democratic Heliocentric}{17}
+\contentsline {subsubsection}{WHDS}{18}
+\contentsline {subsection}{\numberline {1.4.3}Integrator Types}{18}
+\contentsline {section}{\numberline {1.5}This Work}{19}
+\contentsline {chapter}{\numberline {2}My Second Chapter}{22}
+\contentsline {section}{\numberline {2.1}Chapter Overview}{22}
+\contentsline {section}{\numberline {2.2}Introduction}{22}
+\contentsline {section}{\numberline {2.3}A Section}{22}
+\contentsline {section}{\numberline {2.4}Summary }{22}
+\contentsline {chapter}{\numberline {3}My Third Chapter}{24}
+\contentsline {section}{\numberline {3.1}Chapter Overview}{24}
+\contentsline {section}{\numberline {3.2}Introduction}{24}
+\contentsline {section}{\numberline {3.3}A Section}{24}
+\contentsline {section}{\numberline {3.4}Summary }{24}
+\contentsline {chapter}{\numberline {4}My Fourth Chapter}{25}
+\contentsline {section}{\numberline {4.1}Chapter Overview}{25}
+\contentsline {section}{\numberline {4.2}Introduction}{25}
+\contentsline {section}{\numberline {4.3}A Section}{25}
+\contentsline {section}{\numberline {4.4}Summary }{25}
+\contentsline {chapter}{\numberline {5}My Fifth Chapter}{26}
+\contentsline {section}{\numberline {5.1}Chapter Overview}{26}
+\contentsline {section}{\numberline {5.2}Introduction}{26}
+\contentsline {section}{\numberline {5.3}A Section}{26}
+\contentsline {section}{\numberline {5.4}Summary }{26}
+\contentsline {chapter}{\numberline {6}Conclusions \& Future Work}{27}
+\contentsline {section}{\numberline {6.1}Conclusions}{27}
+\contentsline {section}{\numberline {6.2}Future Work and Directions}{27}
+\contentsline {chapter}{Bibliography}{28}

@@ -1,14 +1,73 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{78}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
+\bibitem[{{ALMA Partnership} {et~al.}(2015){ALMA Partnership}, {Brogan},
+  {P{\'e}rez}, {Hunter}, {Dent}, {Hales}, {Hills}, {Corder}, {Fomalont},
+  {Vlahakis}, {Asaki}, {Barkats}, {Hirota}, {Hodge}, {Impellizzeri}, {Kneissl},
+  {Liuzzo}, {Lucas}, {Marcelino}, {Matsushita}, {Nakanishi}, {Phillips},
+  {Richards}, {Toledo}, {Aladro}, {Broguiere}, {Cortes}, {Cortes}, {Espada},
+  {Galarza}, {Garcia-Appadoo}, {Guzman-Ramirez}, {Humphreys}, {Jung}, {Kameno},
+  {Laing}, {Leon}, {Marconi}, {Mignano}, {Nikolic}, {Nyman}, {Radiszcz},
+  {Remijan}, {Rod{\'o}n}, {Sawada}, {Takahashi}, {Tilanus}, {Vila Vilaro},
+  {Watson}, {Wiklind}, {Akiyama}, {Chapillon}, {de Gregorio-Monsalvo}, {Di
+  Francesco}, {Gueth}, {Kawamura}, {Lee}, {Nguyen Luong}, {Mangum}, {Pietu},
+  {Sanhueza}, {Saigo}, {Takakuwa}, {Ubach}, {van Kempen}, {Wootten},
+  {Castro-Carrizo}, {Francke}, {Gallardo}, {Garcia}, {Gonzalez}, {Hill},
+  {Kaminski}, {Kurono}, {Liu}, {Lopez}, {Morales}, {Plarre}, {Schieven},
+  {Testi}, {Videla}, {Villard}, {Andreani}, {Hibbard}, \&
+  {Tatematsu}}]{ALMA2015}
+{ALMA Partnership} {et~al.} 2015, \apjl, 808, L3
+
+\bibitem[{{Armitage}(2007)}]{Armitage2007}
+{Armitage}, P.~J. 2007, ArXiv Astrophysics e-prints
+
 \bibitem[{{Armitage}(2010)}]{Armitage2010}
-{Armitage}, P.~J. 2010, {Astrophysics of Planet Formation}, 294
+---. 2010, {Astrophysics of Planet Formation}, 294
 
 \bibitem[{{Baruteau} \& {Papaloizou}(2013)}]{Baruteau2013}
 {Baruteau}, C., \& {Papaloizou}, J. C.~B. 2013, ApJ, 778, 15
 
+\bibitem[{{Batalha} {et~al.}(2013){Batalha}, {Rowe}, {Bryson}, {Barclay},
+  {Burke}, {Caldwell}, {Christiansen}, {Mullally}, {Thompson}, {Brown},
+  {Dupree}, {Fabrycky}, {Ford}, {Fortney}, {Gilliland}, {Isaacson}, {Latham},
+  {Marcy}, {Quinn}, {Ragozzine}, {Shporer}, {Borucki}, {Ciardi}, {Gautier},
+  {Haas}, {Jenkins}, {Koch}, {Lissauer}, {Rapin}, {Basri}, {Boss}, {Buchhave},
+  {Carter}, {Charbonneau}, {Christensen-Dalsgaard}, {Clarke}, {Cochran},
+  {Demory}, {Desert}, {Devore}, {Doyle}, {Esquerdo}, {Everett}, {Fressin},
+  {Geary}, {Girouard}, {Gould}, {Hall}, {Holman}, {Howard}, {Howell},
+  {Ibrahim}, {Kinemuchi}, {Kjeldsen}, {Klaus}, {Li}, {Lucas}, {Meibom},
+  {Morris}, {Pr{\v s}a}, {Quintana}, {Sanderfer}, {Sasselov}, {Seader},
+  {Smith}, {Steffen}, {Still}, {Stumpe}, {Tarter}, {Tenenbaum}, {Torres},
+  {Twicken}, {Uddin}, {Van Cleve}, {Walkowicz}, \& {Welsh}}]{Batalha2013}
+{Batalha}, N.~M., {et~al.} 2013, \apjs, 204, 24
+
 \bibitem[{{Batygin} \& {Morbidelli}(2013)}]{Batygin2013}
 {Batygin}, K., \& {Morbidelli}, A. 2013, AJ, 145, 10
+
+\bibitem[{{Beaug{\'e}} {et~al.}(2007){Beaug{\'e}}, {Ferraz-Mello}, \&
+  {Michtchenko}}]{Beauge2007}
+{Beaug{\'e}}, C., {Ferraz-Mello}, S., \& {Michtchenko}, T.~A. 2007, {Planetary
+  Masses and Orbital Parameters from Radial Velocity Measurements}, ed.
+  R.~{Dvorak}, 1
+
+\bibitem[{{Blum} \& {Wurm}(2008)}]{Blum2008}
+{Blum}, J., \& {Wurm}, G. 2008, \araa, 46, 21
+
+\bibitem[{{Boley} {et~al.}(2014){Boley}, {Morris}, \& {Ford}}]{Boley2014}
+{Boley}, A.~C., {Morris}, M.~A., \& {Ford}, E.~B. 2014, \apjl, 792, L27
+
+\bibitem[{{Brown} {et~al.}(2011){Brown}, {Latham}, {Everett}, \&
+  {Esquerdo}}]{Brown2011}
+{Brown}, T.~M., {Latham}, D.~W., {Everett}, M.~E., \& {Esquerdo}, G.~A. 2011,
+  \aj, 142, 112
+
+\bibitem[{{Chambers}(1999)}]{Chambers1999}
+{Chambers}, J.~E. 1999, \mnras, 304, 793
+
+\bibitem[{{Charbonneau} {et~al.}(2000){Charbonneau}, {Brown}, {Latham}, \&
+  {Mayor}}]{Charbonneau2000}
+{Charbonneau}, D., {Brown}, T.~M., {Latham}, D.~W., \& {Mayor}, M. 2000, \apjl,
+  529, L45
 
 \bibitem[{{Chatterjee} \& {Ford}(2015)}]{Chatterjee2015}
 {Chatterjee}, S., \& {Ford}, E.~B. 2015, ApJ, 803, 10
@@ -16,12 +75,21 @@
 \bibitem[{{Chirikov}(1979)}]{Chirikov1979}
 {Chirikov}, B. 1979, Physics Review, 52, 263
 
+\bibitem[{{Choquet} {et~al.}(2016){Choquet}, {Perrin}, {Chen}, {Soummer},
+  {Pueyo}, {Hagan}, {Gofas-Salas}, {Rajan}, {Golimowski}, {Hines}, {Schneider},
+  {Mazoyer}, {Augereau}, {Debes}, {Stark}, {Wolff}, {N'Diaye}, \&
+  {Hsiao}}]{Choquet2016}
+{Choquet}, {\'E}., {et~al.} 2016, \apjl, 817, L2
+
 \bibitem[{{Delisle} {et~al.}(2014){Delisle}, {Laskar}, \&
   {Correia}}]{Delisle2014}
 {Delisle}, J.-B., {Laskar}, J., \& {Correia}, A. C.~M. 2014, AA, 566, 14
 
 \bibitem[{{Duncan} {et~al.}(1989){Duncan}, {Quinn}, \& {Tremaine}}]{Duncan1989}
 {Duncan}, M., {Quinn}, T., \& {Tremaine}, S. 1989, \icarus, 82, 402
+
+\bibitem[{{Duncan} {et~al.}(1998){Duncan}, {Levison}, \& {Lee}}]{Duncan1998}
+{Duncan}, M.~J., {Levison}, H.~F., \& {Lee}, M.~H. 1998, \aj, 116, 2067
 
 \bibitem[{{Fabrycky} {et~al.}(2014){Fabrycky}, {Lissauer}, {Ragozzine}, {Rowe},
   \& {Steffen}}]{Fabrycky2014}
@@ -33,6 +101,11 @@
 
 \bibitem[{{Fernandez} \& {Ip}(1984)}]{Fernandez1984}
 {Fernandez}, J.~A., \& {Ip}, W.-H. 1984, \icarus, 58, 109
+
+\bibitem[{{Fressin} {et~al.}(2013){Fressin}, {Torres}, {Charbonneau}, {Bryson},
+  {Christiansen}, {Dressing}, {Jenkins}, {Walkowicz}, \&
+  {Batalha}}]{Fressin2013}
+{Fressin}, F., {et~al.} 2013, \apj, 766, 81
 
 \bibitem[{{Fung} \& {Chiang}(2017)}]{Fung2017}
 {Fung}, J., \& {Chiang}, E. 2017, ArXiv e-prints
@@ -49,9 +122,28 @@
 \bibitem[{{Goldreich} \& {Tremaine}(1980)}]{Goldreich1980}
 ---. 1980, \apj, 241, 425
 
+\bibitem[{{Goldreich} \& {Ward}(1973)}]{Goldreich1973}
+{Goldreich}, P., \& {Ward}, W.~R. 1973, \apj, 183, 1051
+
 \bibitem[{{Gomes} {et~al.}(2004){Gomes}, {Morbidelli}, \&
   {Levison}}]{Gomes2004}
 {Gomes}, R.~S., {Morbidelli}, A., \& {Levison}, H.~F. 2004, \icarus, 170, 492
+
+\bibitem[{{Greenberg} {et~al.}(1978){Greenberg}, {Hartmann}, {Chapman}, \&
+  {Wacker}}]{Greenberg1978}
+{Greenberg}, R., {Hartmann}, W.~K., {Chapman}, C.~R., \& {Wacker}, J.~F. 1978,
+  \icarus, 35, 1
+
+\bibitem[{{Hayashi}(1981)}]{Hayashi1981}
+{Hayashi}, C. 1981, Progress of Theoretical Physics Supplement, 70, 35
+
+\bibitem[{{Henry} {et~al.}(1999){Henry}, {Marcy}, {Butler}, \&
+  {Vogt}}]{Henry1999}
+{Henry}, G.~W., {Marcy}, G., {Butler}, R.~P., \& {Vogt}, S.~S. 1999, \iaucirc,
+  7307
+
+\bibitem[{{Hernandez} \& {Dehnen}(2016)}]{Hernandez2016}
+{Hernandez}, D.~M., \& {Dehnen}, W. 2016, ArXiv e-prints
 
 \bibitem[{{Ida} {et~al.}(2000){Ida}, {Bryden}, {Lin}, \& {Tanaka}}]{Ida2000}
 {Ida}, S., {Bryden}, G., {Lin}, D.~N.~C., \& {Tanaka}, H. 2000, \apj, 534, 428
@@ -66,16 +158,31 @@
 {Kirsh}, D.~R., {Duncan}, M., {Brasser}, R., \& {Levison}, H.~F. 2009, \icarus,
   199, 197
 
+\bibitem[{{Kokubo} \& {Ida}(1998)}]{Kokubo1998}
+{Kokubo}, E., \& {Ida}, S. 1998, \icarus, 131, 171
+
+\bibitem[{{Kreidberg} {et~al.}(2014){Kreidberg}, {Bean}, {D{\'e}sert},
+  {Benneke}, {Deming}, {Stevenson}, {Seager}, {Berta-Thompson}, {Seifahrt}, \&
+  {Homeier}}]{Kreidberg2014}
+{Kreidberg}, L., {et~al.} 2014, \nat, 505, 69
+
 \bibitem[{{Laskar}(1994)}]{Laskar1994}
 {Laskar}, J. 1994, \aap, 287, L9
 
 \bibitem[{{Laskar} \& {Gastineau}(2009)}]{Laskar2009}
 {Laskar}, J., \& {Gastineau}, M. 2009, \nat, 459, 817
 
+\bibitem[{{Laskar} \& {Robutel}(1995)}]{Laskar1995}
+{Laskar}, J., \& {Robutel}, P. 1995, Celestial Mechanics and Dynamical
+  Astronomy, 62, 193
+
 \bibitem[{{Lecar} {et~al.}(2001){Lecar}, {Franklin}, {Holman}, \&
   {Murray}}]{Lecar2001}
 {Lecar}, M., {Franklin}, F.~A., {Holman}, M.~J., \& {Murray}, N.~J. 2001,
   \araa, 39, 581
+
+\bibitem[{{Lee} {et~al.}(2013){Lee}, {Fabrycky}, \& {Lin}}]{Lee2013}
+{Lee}, M.~H., {Fabrycky}, D., \& {Lin}, D.~N.~C. 2013, \apj, 774, 52
 
 \bibitem[{{Lin} {et~al.}(1996){Lin}, {Bodenheimer}, \& {Richardson}}]{Lin1996}
 {Lin}, D.~N.~C., {Bodenheimer}, P., \& {Richardson}, D.~C. 1996, \nat, 380, 606
@@ -106,6 +213,22 @@
 \bibitem[{{Murray} \& {Dermott}(1999)}]{SSD1999}
 {Murray}, C.~D., \& {Dermott}, S.~F. 1999, {Solar system dynamics}
 
+\bibitem[{{NASA Exoplanet Archive}(2017)}]{NASAEA}
+{NASA Exoplanet Archive}. 2017, Nasa Exoplanet Archive
+
+\bibitem[{{Petigura} {et~al.}(2013){Petigura}, {Howard}, \&
+  {Marcy}}]{Petigura2013}
+{Petigura}, E.~A., {Howard}, A.~W., \& {Marcy}, G.~W. 2013, Proceedings of the
+  National Academy of Science, 110, 19273
+
+\bibitem[{{Plummer}(1918)}]{Plummer1918}
+{Plummer}, H.~C.~K. 1918, {An introductory treatise on dynamical astronomy}
+
+\bibitem[{{Press} {et~al.}(2002){Press}, {Teukolsky}, {Vetterling}, \&
+  {Flannery}}]{Press2002}
+{Press}, W.~H., {Teukolsky}, S.~A., {Vetterling}, W.~T., \& {Flannery}, B.~P.
+  2002, {Numerical recipes in C++ : the art of scientific computing}
+
 \bibitem[{{Pu} \& {Wu}(2015)}]{Pu2015}
 {Pu}, B., \& {Wu}, Y. 2015, \apj, 807, 44
 
@@ -115,6 +238,26 @@
 \bibitem[{{Rein}(2012)}]{Rein2012b}
 {Rein}, H. 2012, MNRAS, 427, 5
 
+\bibitem[{{Rein} \& {Spiegel}(2015)}]{Rein2015}
+{Rein}, H., \& {Spiegel}, D.~S. 2015, \mnras, 446, 1424
+
+\bibitem[{{Robertson} {et~al.}(2012){Robertson}, {Endl}, {Cochran}, {MacQueen},
+  {Wittenmyer}, {Horner}, {Brugamyer}, {Simon}, {Barnes}, \&
+  {Caldwell}}]{Robertson2012}
+{Robertson}, P., {et~al.} 2012, \apj, 749, 39
+
+\bibitem[{{Sasselov} \& {Lecar}(2000)}]{Sasselov2000}
+{Sasselov}, D.~D., \& {Lecar}, M. 2000, \apj, 528, 995
+
+\bibitem[{{Schlichting}(2014)}]{Schlichting2014}
+{Schlichting}, H.~E. 2014, \apjl, 795, L15
+
+\bibitem[{{Schneider} {et~al.}(2014){Schneider}, {Grady}, {Hines}, {Stark},
+  {Debes}, {Carson}, {Kuchner}, {Perrin}, {Weinberger}, {Wisniewski},
+  {Silverstone}, {Jang-Condell}, {Henning}, {Woodgate}, {Serabyn},
+  {Moro-Martin}, {Tamura}, {Hinz}, \& {Rodigas}}]{Schneider2014}
+{Schneider}, G., {et~al.} 2014, \aj, 148, 59
+
 \bibitem[{{Steffen} \& {Hwang}(2015)}]{Steffen2015}
 {Steffen}, J.~H., \& {Hwang}, J.~A. 2015, MNRAS, 448, 16
 
@@ -123,6 +266,11 @@
   {Dupree}, {Jenkins}, {Robertson}, {Rowe}, {Seader}, {Thompson}, \&
   {Twicken}}]{Steffen2013}
 {Steffen}, J.~H., {et~al.} 2013, \mnras, 428, 1077
+
+\bibitem[{{Stevenson} {et~al.}(2016){Stevenson}, {Bean}, {Seifahrt}, {Gilbert},
+  {Line}, {D{\'e}sert}, \& {Fortney}}]{Stevenson2016}
+{Stevenson}, K.~B., {Bean}, J.~L., {Seifahrt}, A., {Gilbert}, G.~J., {Line},
+  M.~R., {D{\'e}sert}, J.-M., \& {Fortney}, J.~J. 2016, \apj, 817, 141
 
 \bibitem[{{Sussman} \& {Wisdom}(1988)}]{Sussman1988}
 {Sussman}, G.~J., \& {Wisdom}, J. 1988, Science, 241, 433
@@ -135,10 +283,30 @@
 \bibitem[{{Tanaka} {et~al.}(2002){Tanaka}, {Takeuchi}, \& {Ward}}]{Tanaka2002}
 {Tanaka}, H., {Takeuchi}, T., \& {Ward}, W.~R. 2002, \apj, 565, 1257
 
+\bibitem[{{Tsiaras} {et~al.}(2016){Tsiaras}, {Rocchetto}, {Waldmann}, {Venot},
+  {Varley}, {Morello}, {Damiano}, {Tinetti}, {Barton}, {Yurchenko}, \&
+  {Tennyson}}]{Tsiaras2016}
+{Tsiaras}, A., {et~al.} 2016, \apj, 820, 99
+
 \bibitem[{{Ward}(1997)}]{Ward1997}
 {Ward}, W.~R. 1997, \icarus, 126, 261
 
+\bibitem[{{Weidenschilling}(1977{\natexlab{a}})}]{Weidenschilling1977b}
+{Weidenschilling}, S.~J. 1977{\natexlab{a}}, \mnras, 180, 57
+
+\bibitem[{{Weidenschilling}(1977{\natexlab{b}})}]{Weidenschilling1977}
+---. 1977{\natexlab{b}}, \apss, 51, 153
+
+\bibitem[{{Wetherill} \& {Stewart}(1989)}]{Wetherill1989}
+{Wetherill}, G.~W., \& {Stewart}, G.~R. 1989, \icarus, 77, 330
+
 \bibitem[{{Wisdom}(1980)}]{Wisdom1980}
 {Wisdom}, J. 1980, \aj, 85, 1122
+
+\bibitem[{{Wisdom}(2006)}]{Wisdom2006}
+---. 2006, \aj, 131, 2294
+
+\bibitem[{{Wisdom} \& {Holman}(1991)}]{Wisdom1991}
+{Wisdom}, J., \& {Holman}, M. 1991, \aj, 102, 1528
 
 \end{thebibliography}
