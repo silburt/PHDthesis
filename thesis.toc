@@ -14,14 +14,14 @@
 \contentsline {subsubsection}{Planetesimal-Driven Migration}{11}
 \contentsline {subsubsection}{Gas-Driven migration}{12}
 \contentsline {subsection}{\numberline {1.3.3}Stability}{13}
-\contentsline {section}{\numberline {1.4}Numerical Integration}{14}
-\contentsline {subsection}{\numberline {1.4.1}Hamiltonian Dynamics}{14}
+\contentsline {section}{\numberline {1.4}Numerical Integration}{15}
+\contentsline {subsection}{\numberline {1.4.1}Hamiltonian Dynamics}{15}
 \contentsline {subsection}{\numberline {1.4.2}Coordinate Systems}{16}
 \contentsline {subsubsection}{Jacobi}{16}
 \contentsline {subsubsection}{Democratic Heliocentric}{17}
 \contentsline {subsubsection}{WHDS}{18}
-\contentsline {subsection}{\numberline {1.4.3}Integrator Types}{18}
-\contentsline {section}{\numberline {1.5}This Work}{19}
+\contentsline {subsection}{\numberline {1.4.3}Integrator Types}{19}
+\contentsline {section}{\numberline {1.5}This Work}{20}
 \contentsline {chapter}{\numberline {2}Statistical Reconstruction of Kepler Planets}{22}
 \contentsline {section}{\numberline {2.1}Chapter Overview}{22}
 \contentsline {section}{\numberline {2.2}Introduction}{22}
