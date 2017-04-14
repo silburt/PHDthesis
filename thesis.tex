@@ -31,7 +31,7 @@
 \fi
 
 \usepackage{longtable}
-\usepackage{amsmath,amssymb,multirow,dcolumn,fancyhdr,charter,graphicx}
+\usepackage{amsmath,amssymb,multirow,dcolumn,fancyhdr,charter,graphicx,color}
 \usepackage{xspace}
 \usepackage[hyphens]{url}
 
@@ -69,6 +69,33 @@
 \def\memohr#1{\color{blue}$HR[${\bf #1}$]$ \color{black}}
 \def\memoas#1{\color{red}$AS[${\bf #1}$]$ \color{black}}
 
+%statistics paper
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand{\oxygen}{O$_2$}
+\newcommand{\rearth}{$R_{\oplus}$}
+\newcommand{\mearth}{$M_{\oplus}$}
+\newcommand{\water}{H$_2$O}
+\newcommand{\logg}{$log~g$ }
+\newcommand{\kp}{$K_P$}
+\newcommand{\metal}{[M/H]}
+\newcommand{\um}{$\mu$m}
+\newcommand{\ha}{H$_{\alpha}$}
+\newcommand{\mpy}{mas~yr$^{-1}$}
+\newcommand{\teff}{$T_{\rm eff}$}
+\newcommand{\tess}{{\it TESS}}
+\newcommand{\ee}{$\eta_{\oplus}$}
+
+%hermes
+\newcommand{\x}{\sout}
+\newcommand{\whfasthelio}{{\sc \tt WHFastHelio}\xspace}
+\newcommand{\symba}{{\sc \tt SyMBA}\xspace}
+\newcommand{\HSF}{f_{\rm H}}
+\newcommand{\HSFop}{f_{\rm{H}, op}}
+\newcommand{\SSF}{f_{\rm \odot}}
+
+%HD155358
+\newcommand{\R}{R2012\xspace}
+
 %journal abbreviations
 \newcommand{\icarus}{Icarus}
 
@@ -102,7 +129,7 @@
 
 %% ***   Change this example to appropriate values.   ***
 \degree{Doctor of Philosophy} \department{Astronomy \& Astrophysics}
-\gradyear{2012} \author{YOUR NAME GOES HERE} \title{YOUR TITLE GOES HERE}
+\gradyear{2017} \author{Ari Silburt} \title{Formation, Dynamics and Statistics of Exoplanetary Systems}
 
 %% ***   NOTE   ***
 %% Put here all other formatting commands that belong in the preamble.
@@ -163,6 +190,8 @@
 
 \hfill \emph{-Maya Angelou}
 
+%Carl Sagan quote? 
+
 \end{minipage}
 \end{center}
 \vspace*{\fill}
@@ -210,6 +239,7 @@ My Acknowledgements go here.
 \include{chap3/chap3}
 \include{chap4/chap4}
 \include{chap5/chap5}
+\include{chap6/chap6}
 \include{conc/conc}
 
 %% This adds a line for the Bibliography in the Table of Contents.

@@ -22,27 +22,85 @@
 \contentsline {subsubsection}{WHDS}{18}
 \contentsline {subsection}{\numberline {1.4.3}Integrator Types}{18}
 \contentsline {section}{\numberline {1.5}This Work}{19}
-\contentsline {chapter}{\numberline {2}My Second Chapter}{22}
+\contentsline {chapter}{\numberline {2}Statistical Reconstruction of Kepler Planets}{22}
 \contentsline {section}{\numberline {2.1}Chapter Overview}{22}
 \contentsline {section}{\numberline {2.2}Introduction}{22}
-\contentsline {section}{\numberline {2.3}A Section}{22}
-\contentsline {section}{\numberline {2.4}Summary }{22}
-\contentsline {chapter}{\numberline {3}My Third Chapter}{24}
-\contentsline {section}{\numberline {3.1}Chapter Overview}{24}
-\contentsline {section}{\numberline {3.2}Introduction}{24}
-\contentsline {section}{\numberline {3.3}A Section}{24}
-\contentsline {section}{\numberline {3.4}Summary }{24}
-\contentsline {chapter}{\numberline {4}My Fourth Chapter}{25}
-\contentsline {section}{\numberline {4.1}Chapter Overview}{25}
-\contentsline {section}{\numberline {4.2}Introduction}{25}
-\contentsline {section}{\numberline {4.3}A Section}{25}
-\contentsline {section}{\numberline {4.4}Summary }{25}
-\contentsline {chapter}{\numberline {5}My Fifth Chapter}{26}
-\contentsline {section}{\numberline {5.1}Chapter Overview}{26}
-\contentsline {section}{\numberline {5.2}Introduction}{26}
-\contentsline {section}{\numberline {5.3}A Section}{26}
-\contentsline {section}{\numberline {5.4}Summary }{26}
-\contentsline {chapter}{\numberline {6}Conclusions \& Future Work}{27}
-\contentsline {section}{\numberline {6.1}Conclusions}{27}
-\contentsline {section}{\numberline {6.2}Future Work and Directions}{27}
-\contentsline {chapter}{Bibliography}{28}
+\contentsline {section}{\numberline {2.3}Methods}{27}
+\contentsline {subsection}{\numberline {2.3.1}Catalogs of Stars and Planets}{27}
+\contentsline {subsection}{\numberline {2.3.2} Simulated Planet Detections}{28}
+\contentsline {subsection}{\numberline {2.3.3}Uncertainties in Planet Radii}{31}
+\contentsline {subsection}{\numberline {2.3.4}Monte Carlo Markov Chain}{33}
+\contentsline {subsection}{\numberline {2.3.5}Iterative Simulation (IS)}{34}
+\contentsline {subsection}{\numberline {2.3.6}Calculation of Occurrence}{36}
+\contentsline {section}{\numberline {2.4}The Primordial Population of Kepler Planets}{38}
+\contentsline {subsection}{\numberline {2.4.1}Completeness}{38}
+\contentsline {subsection}{\numberline {2.4.2}Period Distribution}{39}
+\contentsline {subsection}{\numberline {2.4.3}Radius Distribution}{39}
+\contentsline {subsection}{\numberline {2.4.4}Total Occurrence of Small Planets}{43}
+\contentsline {subsubsection}{Eta-Earth}{44}
+\contentsline {section}{\numberline {2.5}Comparison with PHM13}{45}
+\contentsline {section}{\numberline {2.6}Discussion}{50}
+\contentsline {subsection}{\numberline {2.6.1}Sensitivities and Systematics}{50}
+\contentsline {subsection}{\numberline {2.6.2}Astrophysical and Astrobiological Implications}{52}
+\contentsline {subsection}{\numberline {2.6.3}Improvements in Occurrence will Happen}{54}
+\contentsline {section}{\numberline {2.7}Conclusions}{55}
+\contentsline {section}{\numberline {2.8}Summary }{56}
+\contentsline {chapter}{\numberline {3}Tides Alone Cannot Explain Kepler Planets Close to 2:1 MMR}{57}
+\contentsline {section}{\numberline {3.1}Chapter Overview}{57}
+\contentsline {section}{\numberline {3.2}Introduction}{57}
+\contentsline {section}{\numberline {3.3}Methods}{59}
+\contentsline {subsection}{\numberline {3.3.1}Theory}{59}
+\contentsline {subsection}{\numberline {3.3.2}Experimental Setup}{61}
+\contentsline {section}{\numberline {3.4}Results}{63}
+\contentsline {subsection}{\numberline {3.4.1}Theory vs. Numerics}{63}
+\contentsline {subsection}{\numberline {3.4.2}Resonant Tugging}{65}
+\contentsline {subsection}{\numberline {3.4.3}Minimum Eccentricity to Explain $\Delta _{obs}$}{68}
+\contentsline {section}{\numberline {3.5}Discussion}{70}
+\contentsline {section}{\numberline {3.6}Conclusion}{73}
+\contentsline {section}{\numberline {3.7}Summary }{73}
+\contentsline {chapter}{\numberline {4}{\sc \tt HERMES}\xspace : A hybrid integrator}{74}
+\contentsline {section}{\numberline {4.1}Chapter Overview}{74}
+\contentsline {section}{\numberline {4.2}Introduction}{74}
+\contentsline {section}{\numberline {4.3}Methods}{77}
+\contentsline {subsection}{\numberline {4.3.1}Particle Classification}{77}
+\contentsline {subsection}{\numberline {4.3.2}Heliocentric version of {\sc \tt WHFAST}\xspace }{78}
+\contentsline {subsection}{\numberline {4.3.3}Algorithm}{78}
+\contentsline {subsection}{\numberline {4.3.4}Perturbative Forces in the Mini Simulation}{81}
+\contentsline {subsection}{\numberline {4.3.5}Adaptive $f_{\rm H}$ Algorithm}{82}
+\contentsline {section}{\numberline {4.4}Error}{85}
+\contentsline {section}{\numberline {4.5}Examples}{92}
+\contentsline {subsection}{\numberline {4.5.1}Massive Outer Solar System}{93}
+\contentsline {subsection}{\numberline {4.5.2}Migration of a Planet in Planetesimal Disk \citep {Kirsh2009} }{93}
+\contentsline {subsection}{\numberline {4.5.3}Comparison to {\sc \tt Mercury}\xspace and {\sc \tt SyMBA}\xspace -- Long Simulations}{94}
+\contentsline {section}{\numberline {4.6}Conclusion}{97}
+\contentsline {section}{\numberline {4.7}Summary }{98}
+\contentsline {chapter}{\numberline {5}Stability of Planetary Systems}{99}
+\contentsline {section}{\numberline {5.1}Chapter Overview}{99}
+\contentsline {section}{\numberline {5.2}Introduction}{99}
+\contentsline {section}{\numberline {5.3}Methods}{101}
+\contentsline {subsection}{\numberline {5.3.1}Dataset}{102}
+\contentsline {subsection}{\numberline {5.3.2}Metrics}{103}
+\contentsline {subsection}{\numberline {5.3.3}Algorithm Training}{103}
+\contentsline {section}{\numberline {5.4}Results}{105}
+\contentsline {subsection}{\numberline {5.4.1}Model 1: Learning from Initial conditions}{105}
+\contentsline {subsection}{\numberline {5.4.2}Model 2: Generating Features from Short Integrations}{107}
+\contentsline {section}{\numberline {5.5}Discussion \& Conclusion}{109}
+\contentsline {section}{\numberline {5.6}Summary }{114}
+\contentsline {chapter}{\numberline {6}Analysis of HD155358}{117}
+\contentsline {section}{\numberline {6.1}Chapter Overview}{117}
+\contentsline {section}{\numberline {6.2}Introduction}{117}
+\contentsline {section}{\numberline {6.3}Best-Fit Parameters and Resonance Analysis}{119}
+\contentsline {subsection}{\numberline {6.3.1}Methods}{119}
+\contentsline {subsection}{\numberline {6.3.2}Best Fit Parameters}{120}
+\contentsline {subsection}{\numberline {6.3.3}Resonance Analysis}{123}
+\contentsline {section}{\numberline {6.4}Formation}{124}
+\contentsline {subsection}{\numberline {6.4.1}Methods}{124}
+\contentsline {subsection}{\numberline {6.4.2}Model Comparison}{126}
+\contentsline {subsection}{\numberline {6.4.3}Results}{129}
+\contentsline {section}{\numberline {6.5}Stability}{130}
+\contentsline {section}{\numberline {6.6}Discussion and Conclusion}{132}
+\contentsline {section}{\numberline {6.7}Summary }{133}
+\contentsline {chapter}{\numberline {7}Conclusions \& Future Work}{134}
+\contentsline {section}{\numberline {7.1}Conclusions}{134}
+\contentsline {section}{\numberline {7.2}Future Work and Directions}{134}
+\contentsline {chapter}{Bibliography}{135}

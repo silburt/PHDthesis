@@ -1,24 +1,1269 @@
-\chapter{My Second Chapter}
+\chapter[Statistical Reconstruction of Kepler Planets]{A Statistical Reconstruction of the Planet Population around Kepler Solar-Type Stars}
 
 \section{Chapter Overview}
 
 An Overview of my chapter here.
 
 \section{Introduction}
+\label{sec:introduction}
 
-My Introduction
+Anaximander of Miletus proposed that there were many Earth-like worlds
+\footnote{{\it Dissertation on the Philosophy of Aristotle, in which
+    his Pricipal Physical and Metaphysical Dogmas are Unfolded},
+  transl. by T. Taylor, London, 1812}.  In the twenty five centuries
+since the Ionian philosopher's speculation, we have seen an
+accelerating convergence towards an answer: many if not most stars
+have planets, Earth-sized (and presumably rocky) bodies are more 
+common than Jupiter-sized gaseous bodies, and
+some Earth-sized planets are on orbits in the so-called
+``habitable zones'' of their stars. The most recent advances in this
+field have come from data collected by the \kep{} transiting-planet
+mission \citep{Borucki2010}.  Four years of observations of a $\sim
+100$ sq. deg. field have led to the identification thus far
+of 4254 candidate transiting planets, the vast majority of
+which are thought to be bona fide detections. About 84\% of the
+candidates appear to be smaller than Neptune (3.88\rearth{}).
 
-\section{A Section}
+Beyond simple human curiosity about the prevalence of Earth-like
+planets and possibility of life elsewhere, planet statistics provide
+an important test of planet formation models \citep[e.g.][]{Benz2014}.
+For example, the distribution of planets with respect to orbital
+period and mean motion resonances test models of planet formation and
+early migration \citep[e.g.,][]{HansenMurray,Baruteau2013}.  Planet
+radius and period distributions can be combined to reconstruct the
+distribution of solid mass in disks
+\citep[e.g.,][]{Chiang2013,Raymond2014}.
 
-A section in here.
+There have been many previous studies that use the \kep{} data to
+infer the intrinsic population of planets around \kep{} target stars,
+or subsets of those stars
+\citep[e.g.][]{Catanzarite,Youdin,Traub2012,Howard2012,Fressin2013,
+  Dressing2013,Gaidos2013,Dong2013,Kopparapu2013b,Petigura2013}.
+These works differ in their samples and methods, but are broadly
+consistent in estimating that the occurrence of planets on close
+orbits to be of order unity.  Some of these works have estimated \ee{}, the
+occurence of Earth-size planets in a circumstellar ``habitable zone''
+(where stellar irradiation is similar to the solar constant), and find
+that \ee{} is of order tens of percent.  Of particular interest to us
+is the work of \citet[][hereafter PHM13]{Petigura2013} who performed
+an independent analysis of the \kep{} photometric lightcurves, both
+identifying candidate planet transits and determining the detection
+efficiency by injecting synthetic transit signals into \kep{}
+lightcurves and recovering them.  Among the salient conclusions from
+PHM13 are that the distribution of planets peaks at a radius of
+2-2.8\rearth{} and that, \ee{} is about 22\% (using a liberal
+definition of the habitable zone).
+
+We identify two reasons to revisit the derivation of the \kep{} planet
+population. Firstly, we want to more fully account for the
+uncertainties and biases in the \kep{} data and related observations
+of the target stars.  Secondly, we wish to consider a ``primordial''
+planet population, and restrict our analysis to planets far enough
+from their host stars that their properties have not been altered by
+proximity since their formation.
+
+Precise statements on the occurrence of planets requires rigorous
+statistical methods, full accounting of errors, and adequate
+assessment of potential biases.  First, while the overall rate of
+``false positives'' among \kep{} candidate planets appears to be low
+\citep{Morton2011,Fressin2013}, it is not uniform across all
+  periods and all sizes \citep{Santerne2013}.  Second, determination
+of planet occurrence from transit surveys requires accurate estimates
+of detection efficiency (also known as ``completeness''), which depends on the
+parameters (i.e. density and/or radius) of not only the planet host
+stars but of the entire target catalog. The parameters of \kep{} stars
+were first determined by combining multi-wavelength photometry,
+stellar models, and Bayesian inferrence \citep{Brown2011}.  Colors of
+solar-type stars depend only weakly on gravity and metallicity, and
+parameter values based on photometry have large random and systematic
+errors in both effective temperature \citep{Pinsonneault2012}, gravity
+and luminosity class \citep{Mann2012}.  Spectroscopy, asteroseismology,
+and improved stellar models have yielded more reliable parameters 
+\citep{Huber2014}, especially for \kep{} planet-hosting stars 
+(\kep{} Objects of Interest or KOIs).  Nevertheless, 70\% of all stars in the
+\citet{Huber2014} catalog have assigned parameters based on KIC
+photometry, and for reference the median upper and lower fractional errors in stellar
+radius among solar-type stars is 40\% and 10\%, respectively. Because
+the estimated radius of a planet detected by transit depends on the
+stellar radius, and the probability of transit depends on stellar
+density, these errors need to be taken into account when computing
+occurrence rates.  Errors in luminosity also affect the certainty with
+which a planet can be assigned to a habitable zone described by a
+range of stellar irradiance \citep{Gaidos2013,Mann2013}.
+
+Third, biases if uncorrected or unaccounted for will distort our
+perspective on planet populations.  Perhaps the most insidious is
+detection bias, where the properties of stars with detected planets
+are statistically different from that of the overall target
+population.  The assumption that there is no such difference can lead
+to erroneous conclusions about the properties of stars with planets
+and occurrence rates.  \citet{Mann2012} found that a large fraction of
+the reddest \kep{} target stars are giants, even though virtually all
+red KOI hosts are dwarfs for the simple reason that it is extremely
+difficult to detect a transiting planet around a giant star.  They
+showed that dilution of the target catalog by giants had led to an
+underestimate of the occurrence rate and an incorrect claim that M
+dwarf hosts of detected planets are redder and thus more metal-rich
+than those without detected planets.
+
+\citet{GaidosMann2013} showed that because the \kep{} target catalog
+is essentially magnitude-limited, Malmquist bias combined with
+uncertainties in stellar parameters means that stellar distances are
+underestimated and many stars are likely to be more luminous, evolved,
+and larger than their nominal values.  Follow-up observations and
+analysis thus far seem to confirm this
+\citep[e.g.][]{Bastien2014,Everett2013,Verner2011}.  Because
+transiting planet radius scales with increasing stellar radius, this means that
+planet radii are underestimated.  Moreover, the rate of planet
+detection decreases with increasing stellar radius or density, thus
+for a given planet radius, the detection rate is overestimated and
+thus the occurrence is underestimated.  Detection bias again means
+that any estimate of this effect based on the host stars of transiting
+planets is an {\it underestimate}: the effect will be greater among
+stars in the overall target catalog.  Another bias is Eddington bias:
+scatter by error from more populated regions of parameter space into
+less populated regions will produces the opposite effect,
+i.e. occurrence will be overestimated \citep{Gaidos2013}.
+
+Previous analyses of the \kep{} planet population have often not taken
+these errors or biases into account, and instead have considered only
+Poisson (counting) statistics \citep[e.g.][]{Petigura2013,Howard2012},
+More seriously, some estimates of detection completeness and hence
+occurrence are based on the properties of the host stars of detected
+planets, \citep[e.g.][]{Petigura2013}, not the statistical properties
+of the catalog, thus inviting detection bias.  Finally, many analyses
+were performed by binning the data into discrete bins of planet radius $R_p$
+and orbital period $P$.  While simple and readily explicable, the binning
+method runs the risk of masking details of a distribution, especially
+that of radius, which may be important for testing theoretical
+models.
+
+In this work we wish to consider a ``primordial'' population of
+planets, as opposed to one that has evolved under the influence of the
+host star. Effects of the latter, including tidal heating
+\citep{Jackson2008}, atmospheric escape \citep{Tian2005}, ohmic heating
+\citep{Batygin2011}, and impact erosion \citep{Marcus2009}, act with
+an efficiency that is inversely proportional to the distance to the
+host star. In particular, \citet{Owen2013} proposed that
+photoevaporation by stellar XUV irradiation have effectively removed
+the hydrogen envelopes of close-in planets ($P \leq 10$ days), leading
+to the observed paucity of super-Earth sized planets in that
+neighbourhood.  This process was also investigated for a few \kep{}
+systems by \citet{Lopez2012}. Regardless of the mechanism, the
+distinctiveness of the $P< 20$~d and $P>20$~d populations \citep[see,
+e.g.][]{Youdin} suggests that any analysis treat these separately.  In
+this study, we focus exclusively on the latter population as we
+believe it is more likely to represent the ``primordial'' state.  On
+the other hand, because of \kep{}'s low efficiency at detecting
+long-period planets (see \S \ref{sec:completeness}), we are forced to
+limit our consideration to planets with $P<200$d.
+
+Practical reasons also limit the range of planet radius $R_p$
+considered.  Although \kep{} can readily detect a transiting giant
+planet, the occurrence of these objects is indubitably much lower than
+that of smaller planets.  The distribution with planet radius falls to
+a very low level beyond Neptune-size objects: only 8\% of \kep{}
+candidate planets have nominal radii $>8$\rearth{}, and the
+false-positive rate increases as well \citep{Santerne2012,Colon2012}.
+Conversely, \kep{} can detect planets smaller than 1\rearth{} for only
+a tiny fraction of stars, mostly M dwarfs.  For these reasons we
+restrict our analysis to a radius range of 1-4\rearth{} over which
+statistically rigorous analyses can be performed. 
+
+In this contribution, we infer the intrinsic distribution of planets
+with $20<P<200$ days (equivalent to 0.16-0.67~AU) and
+$1 R_\oplus < R_p < 4R_\oplus$ around solar-type stars as
+observed by \kep{} over
+its entire mission (Quarters 1-17).  This analysis includes the
+effects of errors in stellar and planet radius, and takes into account
+some of the biases that may affect previous works.  We introduce the
+method of iterative simulation to determine the radius distribution of
+planets without resorting to binning.  We compare our results with
+those of PHM13 and also carry out a detailed comparison of the two
+methods to understand the source of any discrepancies.  We use our
+simulations to assess the effect of systematic biases, including
+detection bias and an overall understimate of stellar radius, on
+inferences of a planet population from the \kep{} catalog.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Methods}
+\label{sec:methods}
+\subsection{Catalogs of Stars and Planets}
+\label{sec:catalogs}
+We construct a stellar sample from the \cite{Huber2014} catalog of
+196,468 stars observed during the \kep{} mission (Quarters 1-17),
+selecting stars with radii $0.8R_{\odot}<R_*<1.2R_{\odot}$. We
+restrict the sample to stars with a Kepler magnitude $K_{mag}<15.5$ to
+avoid faint stars with uncertain properties and noisy lightcurves.
+This leaves a sample of 76,711 solar-type stars, hereafter known as
+the ``Solar76k'' sample.  Our planet sample is constructed from the 26
+February 2014 version of the KOI catalog \citep{Ramirez2014}.  Planet
+and stellar parameters are updated with values from \cite{Huber2014}
+where available.  In addition to the cuts made on our stellar sample
+we also require $20<P<200$ d, $0.5R_{\oplus}<R_p<6R_{\oplus}$ and
+SNR$>$12. Although we are only interested in the occurrence of planets 
+$1R_{\oplus}<R_p<4R_{\oplus}$, we use a larger radius range for our analysis 
+since these planets have a non-zero probability of being in our region of 
+interest after accounting for radius errors (\S\ref{sec:plerr}).
+This leaves us with 430 candidate planets, hereafter known
+as the ``430KOI'' sample. We also construct a second planet sample
+(used only in \S\ref{sec:intperiod}) using the same cuts above
+except relax the period restriction to $5<P<200$.  This leaves us with
+1052 KOIs, hereafter known as the ``1052KOI'' sample.
+
+To ease comparison with PHM13, we retrieve their vetted sample of
+603 planet candidates that fall within $5<P<100$ days. We update the stellar
+parameters where possible, using \citet{Huber2014}.  We hereafter
+refer to this planet sample as the ``603PHM'' sample.
+
+\subsection{ Simulated Planet Detections}
+\label{sec:geneq}
+
+Our simulator synthesizes single planet-star pairs\footnote{ We
+  ignore the occurrence of multiple systems and assume that each
+  planet has an independent occurrence.},  drawing stars from one of
+the catalogs described above, and planet parameters from a large
+``master'' population as we describe in \S \ref{sec:plerr}.  We calculate whether each
+planet transits its host star in a probabilistic manner, and then determine
+whether \kep{} could have detected it.  We compare the
+properties of these simulated detections with the observed candidate \kep{}
+planets, and modify the master population using two different
+techniques: Monte Carlo Markov Chain (MCMC) and Iterative Simulation
+(IS).  In implementing our simulations we make two critical
+assumptions. First, that the orbital periods and radii of \kep{}
+planets (as well as orbital eccentricities), are independently
+distributed, i.e. the occurrence is a separable function of period and
+radius:
+\begin{equation}
+{{d^2 N}\over{{d\log P \, d\log R}}} = p(P) r(R)\, ,
+\label{eq:assumption}
+\end{equation}
+where $p$ and $r$ are some yet-to-be-determined functions. Note that
+we measure occurrence in logarithmic period and logarithmic radius.
+Second, we assume that these distributions do not vary over the range
+of stars considered.  We discuss these assumptions in \S
+\ref{sec:sensitivity}.  In this study, we further specify that the
+  period distribution is a power-law:
+\begin{equation}
+\frac{dN}{d log P} = P^{\alpha}\, .
+\label{eq:P}
+\end{equation}
+
+
+The geometric probability that a planet transits its host star is
+\citep{Winn},
+\begin{equation}
+p = \frac{R_*}{a}\frac{1+e \sin \omega}{1-e^2}
+\label{eqn.probtransit}
+\end{equation}
+where $a$ is the semimajor axis, $e$ the orbital eccentricity, and
+$\omega$ the argument of periastron.  While $a$ can be calculated from
+$P$ and the estimated mass of the host star, the orbital eccentricity
+of \kep{} planets are unknown and must be estimated statistically.
+Assuming a Rayleigh distribution with
+  dispersion $\sigma_e$, \citet{Moorhead2011} estimated $\sigma_e =
+0.2$ by studying the distribution of transit durations. This
+  is likely affected by uncertain stellar radii and may be an
+  overestimate. TTV studies have led to much smaller eccentricity
+  dispersion ($\sigma_e \sim$ a few percent), at least in multiple
+  planet systems \citep{WuLithwick,HaddenLithwick}. Here, we choose
+$\sigma_e = 0.18$ and show that our results are not sensitive to the
+exact value of $\sigma_e$ (\S \ref{sec:sensitivity}). 
+The underlying distribution of $\omega$ can be safely assumed to be
+uniform over [0,$2\pi$].  
+Integrating $p$ over the distributions of $e$ and $\omega$,
+Eq.\ref{eqn.probtransit} becomes $p = p_0 R_*/a$, with
+$p_0=1.073$.  As in previous works, we require that at least three
+transits have been observed. 
+We scale every transit probability by $(1/p_0)(a/R_*)_{max}$, 
+the inverse of the max transit probability, which preserves the relative 
+occurrence of simulated transits but
+speeds up simulation time.
+
+We now proceed to assign a transit duration, $T$, to a given
+transiting planet. We follow the procedure of \citet{Gaidos2013} 
+by setting
+\begin{equation}
+\label{eq:T_IS}
+T = \tau^{2/3}P^{1/3}\Delta\, ,
+\end{equation}
+where $\tau = 2\sqrt{R_*^3/(\pi G M_*)}$ is the stellar free-fall
+time, $G$ the gravitational constant, $M_*$ the stellar mass, and
+\begin{equation}
+\label{eqn.delta}
+\Delta = \frac{\sqrt{(1-e^2)(1-b^2)}}{1 + e \cos \omega}\, , 
+\end{equation}
+with $b$ being the impact parameter. For $a \gg R_*$, the impact
+parameter $b$ is uniformly distributed in the range [0,1].
+We then calculate $dN/d\Delta$, the likelihood of drawing a
+given $\Delta$, or rather, its cumulative distribution,
+$\overline{N(\Delta)} \equiv \overline{\int_0^\Delta
+{dN}\over{d\Delta'}}d\Delta'$, with the overbar indicating 
+marginalization over $e$ and $\omega$ distributions. 
+Using the chain rule, we find
+\begin{equation}
+\label{eq:delta1}
+%\overline
+{\frac{dN}{d\Delta}} d\Delta = 
+%\overline
+{\frac{dN}{db}}
+%\overline
+{\frac{db}{d\Delta}} d\Delta = 
+%\overline
+{\frac{db}{d\Delta}} d\Delta,
+\end{equation}
+where we have used the fact that $dN/db = 1$ (i.e. $b$ is uniformly distributed) 
+for transiting systems.
+As a result, $\overline{N(\Delta)} = \overline{b} = \overline{\int_0^\Delta
+  {{db}\over{d\Delta'}} d\Delta'}$.  Inverting
+Eqn. \ref{eqn.delta} then yields:
+\begin{equation}
+\overline{N(\Delta)} = \int_0^1 \eta(e) de \int_0^{2\pi} \sqrt{1 -
+  \frac{\Delta^2\left(1 + e \cos \omega\right)^2}{\left(1-e^2\right)}}d\omega, 
+\end{equation}
+where $\eta(e)$ is the assumed eccentricity distribution.  
+
+We also need to assign a radius to each trial planet: this
+process differs between our MCMC and IS methods and is described in
+their respective sections. Moreover, in comparing the radius
+distribution of trial planets to the observations, we must take into
+account significant uncertanties in the radius of KOIs.
+% (This is not
+%the case for the orbital periods, which are precisely established).
+We describe how we do this in the next section.
+
+Our detection criterion is based on a comparison
+between the transit signal, $(R_p/R_*)^2$, and the
+effective noise over the transit duration.  \citet{Fressin2013}
+established that at signal-to-noise SNR $>12$ the false-positive rate
+among \kep{} KOIs is very low.  PHM13 used this criterion for their
+analysis and we follow suit.  Noise in \kep{}
+lightcurves derives from photon (shot) noise, stellar variability,
+and measurement error \citep{Koch2010}.  The \kep{} team encapsulates
+the total noise of each star into quarterly transit durations of 
+3-hr, 6-hr and 12-hr, known as ``CDPP''
+\citep[Combined Differential Photometric Precision,][]{Christiansen2012} 
+values. For a given star in a given quarter, we generate the appropriate
+noise for transit duration $T$, by interpolating among the various
+CDPP values using a power-law model.  Because sources of noise
+(e.g., stellar variability) are not neccesarily ``white'', 
+the power-law index can and often does depart from -0.5, the
+white noise value.
+
+ We then calculate the total SNR of a model star-planet pair as
+\begin{equation}
+SNR = \left(\frac{R_p}{R_*}\right)^2 \left[\sum\limits_{j=1}^{17}
+\frac{n_j}{\left({\rm CDPP}_j\right)^2} \right]^{1/2},
+\label{eq:SNR}
+\end{equation}
+where $n_j$ is the number of transits in quarter $j$, and CDPP$_j$ is
+the interpolated CDPP value for that quarter.  The system is 
+proclaimed detectable if SNR $> 12$. Eq.~\ref{eq:SNR} does
+not account for noise that is non-Gaussian or non-stationary on a
+timescale shorter than one observing quarter (90~d).  However, the
+conservative requirement that SNR $> 12$ for detection
+partially addresses this limitation and we consider the possible impact 
+of this simplification in \S\ref{sec:petcomp} when we compare our analysis 
+to PHM13.
+
+\subsection{Uncertainties in Planet Radii}
+\label{sec:plerr}
+
+As described in \S\ref{sec:introduction}, there are significant
+uncertainties in the radii of most KOIs (median uncertainty = 33\%),
+primarily due to our limited knowledge of the host star.  For example,
+this means that there is a non-negligible chance that a planet
+with a cataloged radius value of $R_p = 2.5$\rearth{}
+is actually Earth-sized or Neptune-sized.  It is important that
+uncertainties of such magnitude be considered, and we do this by
+replacing each nominal radius by a distribution of radii governed by
+Bayesian statistics.  The probability that a planet with a reported 
+radius $R$ actually has a true radius
+$R'$ is given by $p(R'|R) = q(R|R')r(R')$, where $r(R')$ is a
+normalized prior and is the probability that a planet of radius 
+$R'$ (with same period $P$) would be detected by \kep{} around a given 
+star. Put another way, $r(R')$ is essentially the survey completeness 
+(\S\ref{sec:completeness}) of planet $R'$ (having period $P$) with 
+respect to the entire Solar76k catalog. 
+
+In our treatment, we assume that errors in $R_*$ and hence $R_p$ are
+normally distributed.  This means that
+$q(R|R') = q(R'|R)$ because the Gaussian only depends on the square of
+the difference $R-R'$.  We also assume that the two errors are 
+uncorrelated.  This latter assumption means that a planet
+with a radius that has been over/underestimated would, on average,
+produce a weaker/stronger transit signal among the ensemble of target
+stars and that such a planet would become less/more detectable.
+If errors in $R_*$ are exactly correlated, then errors in $R_p$ are
+unaffected by considerations of detection; if all stars are smaller
+then their planets will also be smaller but by the same proportion,
+and thus produce transit signals of the same depth.
+
+Provided these assumptions hold, a planet cannot be arbitrarily small,
+even if the errors in radius are large, because it would never have
+been detected in the first place. The $r(R')$ factor accounts for this 
+fact. Our prescription for handling radius errors also accounts for 
+the fact that the cataloged radius is more 
+likely to be an understimate, rather than an overestimate, of the 
+true radius. This effect becomes most pronounced among KOIs with 
+small cataloged radii and large uncertainty. For these cases the result is an error
+distribution that is no longer a Gaussian but is strongly asymmetric,
+with a cutoff just below the cataloged radius and an extended tail to
+larger radii.
+
+We implement radius errors into our analysis by replacing each KOI with a probability
+distribution function (PDF) that is the product of a Gaussian times a
+prior detection function which is the fraction of stars around which
+the planet would be detected (i.e. completeness). We represent the 
+PDF by a large number of Monte Carlo planets drawn from a Gaussian 
+distribution with mean equal to the nominal value of $R_P$ and 
+standard deviation equal to the cataloged error. We calculate the 
+fraction of stars $F$ around which each
+Monte Carlo planet could be detected.  We then compute a normalized
+CDF of $F$ with $R_p$ for each Monte Carlo set.  We can then draw a
+radius value from each corrected error distribution by comparing the
+CDF to a unit random deviate.  We create a ``master'' radius
+distribution by randomly drawing 2 million values from all of these
+distributions according to their CDFs.  We use this distribution to
+represent the inferred radius distribution of observed candidate
+planets after errors have been accounted for.
+
+\subsection{Monte Carlo Markov Chain}
+\label{sec:mcmc}
+We discretize the radius-period plane into 16 bins, 4 period bins
+equally spaced in $\log P$ ($P$ = [20-40, 40-80, 80-160, 160-200]
+days) and 4 radius bins equally spaced in $\log R$ (1-1.4\rearth{},
+1.4-2\rearth{}, 2-2.8\rearth{}, 2.8-4\rearth{}). We parametrize the
+planet population by a set of 4 parameters: $\alpha$ (from
+Eq.\ref{eq:P}), and $\kappa_1, \kappa_2, \kappa_3$, where the
+latter 3 parameters are the relative numbers of planets in the first
+3 radius bins to the last bin. For each set of
+parameters, we generate a mock catalog by simulating $10^5$
+transiting pairs around a given stellar sample (\S \ref{sec:geneq})
+while properly taking into account errors in planet radius (\S
+\ref{sec:plerr}).  We then compare our mock population against
+the 430KOI sample by first binning the KOIs in the same manner and then removing 
+a portion from each bin to account for false positives 
+\citep[Table 1 from][]{Fressin2013}. We then scale our mock catalog 
+down from $10^5$ to match the total number of remaining KOIs. 
+The goodness of fit is measured by comparing the simulated number of
+planets in each of the 16 bins, $S_i$, versus that of the
+observed, $D_i$,
+\begin{equation}
+\chi^2=\sum\limits_{i=1}^{16} \frac{({\rm D}_i - {\rm S}_i)^2}{{\rm S}_i}, 
+\end{equation}
+Here, we have assumed that the error in each bin is dominated by 
+Poisson error. Our Markov chain is run for 4000 iterations, with a
+``burn in'' of 200 steps that are excluded from subsequent statistical 
+analysis. A new set of parameters are accepted if $\chi^2_{n} <
+\chi^2_{n-1}$, where the index refers to the Markov step.  If
+$\chi^2_{n} > \chi^2_{n-1}$, the algorithm accepts the new parameter
+set with probability $e^{-(\chi^2_{n} - \chi^2_{n-1})/2}$.  We 
+adopt the medians of the accepted steps as the best-fit set, and we
+calculate both upper and lower standard errors using the
+16th and 84th percentile values. The error of the $2.8<R_p<4$ bin 
+is calculated from the standard deviation of $1/\kappa_3$, i.e. 
+the relative occurrence of the 2.8-4\rearth{} bin with respect to 
+the 2-2.8\rearth{} bin.
+
+\subsection{Iterative Simulation (IS)}
+\label{sec:IS}  
+We use the method of Iterative Simulation (IS) to infer the intrinsic 
+planet radius distribution without resorting to binning.  
+In this technique we first generate a trial population of planets by 
+simulating detections (\S \ref{sec:geneq}).  The radii of
+these simulated detections are then replaced by actual KOIs, and the process
+repeats until the simulated detections converge on the observations.
+The radius distribution of the trial population then reflects that of
+the intrinsic population of planets.  With a sufficiently large trial
+population, the resolution of the radius distribution is limited only
+by the amount of information in the observations (i.e. KOIs), not the 
+size of bins.  We refer the reader to \citet{Gelman92} for a general
+explanation of the IS method.
+
+Our IS simulates $10^6$ transiting planet-star pairs, drawing stars
+from the selected catalog with replacement (\S\ref{sec:geneq}).
+Eccentricities and arguments of periastron of trial planets are drawn
+from Rayleigh and uniform distributions and periods are drawn from a
+power-law with the index of the best-fit MCMC model (\S
+\ref{sec:mcmc}), $\alpha=-0.04$.  Planet radii are initially drawn
+from a uniform distirbution over 0.5-6\rearth{}.  Detections are
+simulated as described in \S \ref{sec:geneq}.  We randomly
+replace the radii of all simulated detected planets with values drawn
+from the ``master'' radius distribution (\S\ref{sec:plerr}), 
+after correcting for false positives using
+the rates in Table 1 of \cite{Fressin2013}.  We then redraw new values
+for all the other planet parameters besides radius and period, and
+reshuffle the planets among the stars.  We repeat this process until
+acceptable convergence is achieved, usually within 100 iterations.  At
+this point, the trial population is used to calculate the intrinsic
+radius distribution.
+
+Errors are calculated by constructing 50 bootstrapped samples of the
+detected planet catalog.  The size of each sample is a random Poisson
+deviate with expectation equal to the size of the actual sample.  The
+bootstrapped samples are drawn with replacement from the actual
+KOI sample.  Planets are randomly removed according to the false
+positive probabilities of \citet{Fressin2013} and then intrinsic
+radius distributions are calculated as in \S \ref{sec:plerr}.
+For our bootstrapped samples we make the false positive correction 
+before constructing the much larger intrinsic distribution to 
+capture the contribution of false positives to the ``noisiness'' 
+of each bootstrapped sample. We analyze each sample using the IS technique 
+and compute standard deviations of the ensemble of bootstrapped
+planet populations to represent 1$\sigma$ uncertainties.
+
+Figure~\ref{fig:IS} shows the results of an artificial test case of
+the reconstruction of a planet radius distribution using the IS technique.  
+The intrinsic distribution (dashed line) is the sum of a Gaussian plus a
+rising slope.  The dotted line is the distribution of 364 simulated 
+observations, which is similar in scale to our
+430KOI sample.  We apply the IS technique on these simulated
+observations to recover the actual distribution: the result is plotted
+as the solid line, with error bars determined from 25 bootstrapped
+runs.  The ability of IS to reconstruct an intrinsic distribution is
+limited by the information available in any region of a distribution,
+i.e. it will fail where the number of planets or rate of detection is
+too low.  In Fig. \ref{fig:IS}, errors or large uncertainties appear
+in the reconstructed at $R_p \sim 1$\rearth{} where the detection
+efficiency is low.  Also, in this simple demonstration we ignore the
+effect of planet radius errors.  Adding planet errors tends to broaden
+and smooth features.
+
+\begin{figure}[h]
+\centerline{\includegraphics[scale=0.55]{chap2/IStest.pdf}}
+\caption{A test case demonstating the recovery of a known, artificial
+  radius distribution (dashed line) using the method of iterative
+  simulation.  The dotted line represents the simulated observations,
+  which consist of 364 detections, and the solid line is the
+  reconstructed distribution (here binned for display).  Error
+  bars are determined from 25 bootstrapped simulations.}
+\label{fig:IS}
+\end{figure}
+
+\subsection{Calculation of Occurrence}
+\label{sec:calocc}
+
+After obtaining best-fit distributions from our MCMC and IS
+analyses, we calculate the rate of planet ocurrence as a function
+of $P$ and $R_p$. We generate $10^6$ mock pairs and the corresponding
+simulated detections (\S \ref{sec:geneq}). These planets are binned in
+a logarithmic grid of $P$ (index $i$) and $R_p$ (index $j$). The
+occurrence $f(i,j)$ in the bin $(i,j)$ is then
+\begin{equation}
+f(i,j) = \frac{K_{ij}}{N_*}\frac{N_{*,S}}{S},
+\label{eq:ISocc}
+\end{equation}
+where $K_{ij}$ is the false positive-corrected \citep[Table
+1,][]{Fressin2013} number of KOIs falling into the bin $(i,j)$,
+$N_{*}$ (=76,711) is the total number of Kepler target stars in
+the Solar76k sample, $N_{*,S} (=10^6)$ is the total number of
+mock pairs, and $S$ is the number of simulated detections.  
+The ratio $S/N_{*,S}$, the fraction of mock pairs that should be detected, 
+and is the product of the geometric factor $R_*/a$ as well as the detection 
+completeness in bin $(i,j)$, hereafter known as $C(i,j)$ (see \S
+\ref{sec:completeness}).  We then sum over all bins to obtain the total 
+occurrence, $f$.
+
+To demonstrate the importance of accounting for radius errors 
+(\S\ref{sec:plerr}) when calculating occurrence, we also conduct 
+a separate analysis which excludes radius errors. Observed planets are 
+binned as above and we calculate the occurrence of each bin, $f$ according to:
+\begin{equation}
+f(P_i,R_i) = \frac{1}{N_*}\sum\limits_{k}^{n_p(i,j)}\left(\frac{a_k}{R_{*,k}}\frac{1}{C(i,j)}\right)
+\label{eq:occtw}
+\end{equation}
+Where $C(i,j)$ is the average completeness of the bin (see \S
+\ref{sec:completeness}), $n_p(i,j)$ is the number of planets in bin $(i,j)$, 
+$N_*$ (=76,711) is the total number of stars in the sample and $a_k/R_{*,k}$ is 
+the geometric correction factor for planet $k$. The geometric effect here 
+does not include a factor $\mathcal{O}(1)$ that accounts for non-zero 
+orbital eccentricities.
+
+Lastly, in order to compare to PHM13, we estimate $f$ without
+correcting for radius errors, as well as calculate the completeness
+$C$ based on the {\it detected systems}, not the entire
+target catalog as in Eqn.~\ref{eq:occtw}.  Simulations and
+observations are binned as above and we calculate the occurrence of
+each bin according to:
+\begin{equation}
+f_b(P_i,R_i) = \frac{1}{N_*}\sum\limits_{k}^{n_p(i,j)}\left(\frac{a_k}{R_{*,k}}\frac{1}{C_{k}}\right)
+\label{eq:occ}
+\end{equation}
+where the sum is over detected systems in the bin $n_p(i,j)$ and $C_{k}$ is the
+completeness of planet $k$ around star $k$. As above, the geometric 
+effect here also does not include a factor $\mathcal{O}(1)$ that 
+accounts for non-zero orbital eccentricities. 
+
+For clarity, we underscore an important difference between these last
+two equations - the completeness $C(i,j)$ used in
+Eqn.~\ref{eq:occtw} is calculated from the {\it entire target
+catalog} for each bin, while $C_k$ in Eqn.~\ref{eq:occ} is
+calculated from the {\it detected systems on a system-by-system
+basis}.  As we will see in \S\ref{sec:petcomp}, this
+difference makes a significant impact on the occurrence.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Primordial Population of Kepler Planets}
+
+\subsection{Completeness}
+\label{sec:completeness}
+
+For a transit survey, completeness is the fraction of transiting
+planets of a given $P$ and $R_p$ that are actually
+detected, i.e. not including the geometric transit probability. 
+Accurately capturing the dependence of completeness
+on $R_p$ and $P$ is crucial to a robust determination of planet
+occurrence.
+
+We emphasize that survey completeness depends, not only on
+the properties of the planet host stars, but also on the stellar
+and noise properties {\it of the entire catalog}.  We calculate
+the completeness $C(i,j)$ of bin $(i,j)$ by inserting $2\times
+10^4$ planets randomly distributed around the Solar76k
+sample of stars. The fraction of ``detected'' planets, modulo the
+transit probability factor, yields the completeness in this bin.
+The results are displayed in Figure~\ref{fig:sil_compl}.
 
 \begin{figure}
-\begin{center}
-\includegraphics[scale=.6]{chap2/sample}
-\caption[Figure Text to Appear in Table of Figures]{Figure Caption
-  like normal, not appearing in Table of Figures}
-\end{center}
+\centerline{\includegraphics[scale=0.55]{chap2/Silburt_completeness.pdf}}
+\caption{Completeness values for \kep{} planet detection around stars 
+  in the Solar76k catalog. The numbers within each grid cell indicate 
+  the completeness percentage, and each grid has been colour coded from low
+  (blue) to high (white) completeness.}
+\label{fig:sil_compl}
 \end{figure}
+
+Figure~\ref{fig:sil_compl} shows that \kep{} completeness is nearly 100\% 
+for planets larger than
+Neptune (3.8\rearth{}), for nearly the full range of periods shown
+here. This falls rapidly beyond $P \sim $ 500~days (not shown)
+since some systems no longer have the required three
+transits during the four-year \kep{} mission. The completeness
+drops rapidly with decreasing radius and/or increasing period:
+Earth-sized planets are readily detected by \kep{} only if they have
+orbital periods of a few days, and beyond $P=200$ days, even the
+completeness of $2 R_\oplus$ planets falls below 50\%. For these
+reasons we restrict our analysis to $P < 200$d.  
+
+Our completeness calculations consider the entire stellar population,
+while other works (e.g. PHM13) have considered only stars with
+detected planets. For large planets this difference is small, but for
+small planets the two methods diverge: completeness calculations from previous
+works lead to an {\it overestimate of completeness and thus an
+  underestimate of planet occurrence}. This is particularly
+substantial for the smallest radius bin. In \S \ref{sec:petcomp} 
+we compare our completeness results with those from PHM13.
+%Moreover,
+%  we find that our completeness estimates diverge from those of PHM13
+%  beyond this point (see \S\ref{sec:petcomp}). 
+
+\subsection{Period Distribution}
+\label{sec:intperiod}
+
+Our MCMC study yields a best-fit distribution for the 430KOI sample of
+$\alpha=-0.04 \pm 0.09$, with a reduced chi-squared $\chi^2_{\nu}$ of
+1.07. Our value of $\alpha$ is consistent with zero (a flat
+logarithmic distribution) within errors, confirming previous
+determinations \citep[e.g.,][]{Youdin,Howard2012,Petigura2013,Fressin2013}.
+
+Figure~\ref{fig:period} compares this best-fit period distribution
+with the observed sample (extended here to include planets inward of
+$20$ days, i.e., the 1052KOI sample). Inside of $P = 20$ days, \kep{}
+planets deviate from a simple power-law distribution \citep[also
+see][]{Youdin,Howard2012}.
+
+\begin{figure}[h]
+\centerline{\includegraphics[scale=0.55]{chap2/Silburt_period.pdf}}
+\caption{Period distribution of \kep{} small planets. The observed
+  distribution (solid line) includes planets inward of $20$ days (i.e. the
+  1052KOI sample), while the simulated distribution from the MCMC best
+  fit ($\alpha = -0.04$, see Eq.\ref{eq:P}) is plotted as a
+  dashed-dotted curve. This best fit is obtained for planets in the $20 <
+  P < 200$ day range, but is extended here to shorter periods to
+  demonstrate that the observed population deviates significantly from
+  a single power-law shortward of $20$ days. The scale in the
+  vertical axis is arbitrarily chosen.  Slight horizontal offsets have
+  been applied to each curve for clarity.}
+\label{fig:period}
+\end{figure}
+
+%%%%%%%
+\subsection{Radius Distribution}
+\label{sec:radiusdist}
+
+Figure~\ref{fig:raddist} displays our best-fit radius distributions
+for both the MCMC (solid, black) and IS (dotted, red) techniques,
+where we have binned the IS result for ease of comparison.  Both the IS and MCMC
+distributions peak at 2-2.8\rearth{} and decrease towards smaller
+radii.  There is a small and statistically insignificant discrepancy
+between the MCMC and IS results at the smallest bin ($1<R_p<1.4$\rearth{}).  
+Since the two methods use
+identical input catalogs (\S \ref{sec:catalogs}) and detection
+algorithms (\S \ref{sec:geneq}), the difference could be due to the
+intrinsic binning in the MCMC method.
+% (note that in Figure~\ref{fig:raddist} the IS is binned only for
+% comparison purposes).
+We have also plotted two additional distributions in
+Figure~\ref{fig:raddist}, a ``No Error'' case (dashed, green)
+constructed from Eq.\ref{eq:occtw} and a ``25$\%$ Larger'' IS case
+(dashed-dotted, blue) where it is assumed that both planet and stellar
+radii are 25$\%$ larger than their catalog values.
+
+%
+\begin{figure}
+\centerline{\includegraphics[scale=0.55]{chap2/Silburt_Rdist_all.pdf}}
+\caption{Size distribution of planets between 1 and 4\rearth{},
+  obtained using the MCMC (solid black line) and the IS (dotted red
+  line) techniques. Both show that planet occurrence peaks in the bin
+  $2-2.8 R_\oplus$. Earth-sized planets are less common, by a factor
+  of $\sim 2$, although the statistical significance of this result is
+  still low. If we assume that the currently determined planet radii
+  carry no uncertainty, or that all stars (and hence planets) have
+  $25\%$ larger radii than their cataloged values,
+  we obtain rather different radius distributions. The error bars for
+  the ``No Error'' case account for poisson error only, while for the
+  IS and 25$\%$ Larger cases, error bars are calculated from 50 bootstrapped
+  simulations of the data (see \S \ref{sec:plerr}). The MCMC error bars are 
+  calculated in the standard manner. Planet occurrence at
+  each logarithmic radius bin is obtained by summing over all period
+  bins.  Slight horizontal offsets have been applied to each curve for clarity.}
+\label{fig:raddist}
+\end{figure}
+  
+As we discuss in \S \ref{sec:plerr}, errors in the radius of candidate
+\kep{} planets, primarily due to uncertainties in stellar radius, are
+large and detection bias against small planets means that a planet's
+cataloged radius is likely an underestimate. Comparing our IS and MCMC 
+results (which include radius errors) with our ``No Error'' case (which 
+doesn't include radius errors) we see that the latter exhibits a significant excess of
+1-1.4\rearth{} planets. This is as expected. Correcting for radius error in a
+Bayesian way (\S \ref{sec:plerr}) tends to promote small planets to
+larger size bins, and de-populates the smallest radius bin. The occurrence of
+the larger bins however do not substantially increase because the survey 
+completeness is substantially higher in these bins compared to the 
+1-1.4\rearth{} bin. We conclude that not accounting for this detection bias 
+on radius leads to an erroneously high (by a factor of $\sim 2$)
+value of occurrence for the 1-1.4\rearth{} bin.
+
+If we assume the extreme scenario that the true radii of all
+stars (and therefore their planets) are 25\% larger than the KOI
+values (``25\% Larger'' case in Fig. \ref{fig:raddist}), as is shown
+to be the case for at least a subset of the \kep{} stars (\S
+\ref{sec:sensitivity}), we observe that the 2-2.8\rearth{} peak is now shifted to
+2.8-4\rearth{}. However, we do not see a significant change in
+the bin 1-1.4\rearth{} because the depopulation of this region 
+(due to increased planet radii) is roughly balanced by a decrease
+in completeness as the stars have also become larger. See \S
+\ref{sec:sensitivity} for a more detailed discussion.
+
+We comment that our treatment for the radius error is far from
+perfect. Some genuinely small planets may, under our procedure, be
+wrongly inferred to have larger radii. A better treatment will require
+improved errors in stellar/planet radius (see, e.g. \S \ref{sec:improvements}).
+
+\begin{figure}
+\centerline{\includegraphics[scale=0.55]{chap2/Silburt_ISnobin.pdf}}
+\caption{Our IS distribution displayed for a smaller logarithmic 
+ bin size. This finer resolution reveals more information about
+ the intrinsic distribution, and specifically we see a potential
+ rise in the number of 1-1.15\rearth{} planets. This bin has large 
+ error however, and thus more statistics are required to confirm this 
+ conclusion.}
+\label{fig:isnobin}
+\end{figure}
+
+Lastly, we display the IS radius distribution for a smaller
+logarithmic bin size in Figure~\ref{fig:isnobin}. As explained in 
+\S\ref{sec:IS}, since the IS technique requires no binning, the 
+resolution of the result is limited only by the data and its errors. 
+This improved resolution can reveal finer detail about the intrinsic 
+radius distribution. We observe a slight excess of planets in the now 
+smallest bin (1-1.15\rearth{}), over that in larger bins.
+Improved statistics is required to confirm this upward turn, but
+if it is true, it would imply a rising number of planets below the
+size of Earth, an exciting possibility for life elsewhere.  We
+expect that, with its independence on binning, the IS technique will
+become central to future analysis.
+
+
+\subsection{Total Occurrence of Small Planets}
+\label{sec:totaloccur}
+In Table~\ref{tab:occ} we report our estimates for the total planet
+occurrence within $20 < P < 200$~days and $1 < R_P < 4$\rearth{}, for
+the four curves in Figure~\ref{fig:raddist}. There is excellent
+agreement between the MCMC and the IS results. Even cases with
+different assumption about the radius error yield statistically
+consistent occurrence rates.
+
+PHM13 reported an occurrence of $37\% \pm 3.4\%$ for planets with 
+$25<P<200$~days and $1<R_p<4$\rearth{}. Including planets from 
+$20 < P < 25$ days raises this value to $42\% \pm 3.6\%$.  
+So the occurrence rates are consistent among
+studies that are based on different detection criteria and different
+model assumptions.  We perform a detailed comparison with PHM13 in \S
+\ref{sec:petcomp}.
+
+The total occurrence rate we calculate here is defined to be the
+average number of planets per star
+\citep{Youdin,Fressin2013,Petigura2013}. Such a definition ignores
+the complication that many of the Kepler systems are multiple
+systems \citep[e.g.][]{Lissauer}. A quantity perhaps more
+relevant for studies of planet formation is the occurrence
+rate of planetary systems, or the average number of planetary
+systems a star has. However, this requires knowledge of the system
+architecture, a task not yet attempted.  
+
+Lastly, if we include small planets inward of $20$ days, the total
+occurrence rate is raised to $\sim 66\%$. It will rise by another
+$\sim 15\%$ if we include planets upward of $4 R_\oplus$.
+
+\begin{table}[h]
+\centering
+\caption{Planet Occurrence for $20<P<200$~days, $1<R_p<4$\rearth{}.}
+\begin{tabular}{c|c}\hline Technique & Planet Occurrence ($\%$)\\\hline
+MCMC                   & $43 \pm 3$ \\
+IS                     & $46 \pm 3$ \\
+No Error               & $56 \pm 10$ \\
+25$\%$ Larger Stars    & $46 \pm 3$ \\
+\hline
+\end{tabular}
+\label{tab:occ}
+\end{table}
+
+\subsubsection{Eta-Earth}
+
+We estimate \ee{}, the occurrence of Earth-like planets in the
+``habitable zone'' of solar-type stars. By Earth-like, we are
+referring to planets between $1-2 R_\oplus$.  We adopt the inner
+and outer boundaries of the habitable zone to be those calculated by
+the 1-D, cloud-free, climate models \citep{Kasting,Kopparapu2013a}.
+For a sun-like star, these boundaries lie at $0.99$ and $1.70$ AU respectively
+(or orbital periods of 350 and 810 days); for other stellar spectral
+types, the boundaries are as tabulated in \citet{Kopparapu2013a}.
+
+Such a habitable zone, however, lies outside the $200$ day limit of
+our study. At these very long periods, the low detection efficiency of
+\kep{} engenders inaccuracies in estimating \ee{}. So instead, we have
+opted to calculate \ee{} by extrapolation, according to:
+\begin{equation}
+\eta_{\oplus} = \frac{f}{N_*}\sum\limits_{i=1}^{N_*} h_i
+\end{equation}
+where $N_*$ (=76,711) is the number of stars in the Solar76k
+sample and $h_i$ is the relative occurrence of planets (per star)
+within the habitable zone to some reference zone having absolute
+occurrence $f$.  We choose this reference zone to be our standard $20 < P <
+200$d, $1 < R_p < 4 R_\oplus$ bound, with $f=0.46 \pm 0.03$ (IS
+value). We calculate $h_i$ for each star by adopting the IS
+radius distribution (Figure~\ref{fig:raddist}) and integrating
+the MCMC best-fit power-law (Eq. \ref{eq:P} with $\alpha=-0.04$) over
+each star's habitable limits \citep{Kopparapu2013a}.  Finally, we obtain
+\begin{equation}
+\eta_{\oplus} = 6.4^{+3.4}_{-1.1} \%
+\end{equation}
+The error is calculated from error propagation of the IS radius
+distribution, occurrence of our reference zone, habitable zone limits 
+(based on $R_*$, $M_*$, and $T_*$) and $\alpha$.  
+This value is consistent within errors with
+the analysis done by PHM13 for the same \citet{Kopparapu2013a} limits,
+$8.6$\%. The reader is reminded that our calculation of \ee{} is an
+extrapolation, and depends crucially on the assumptions made.
+
+\section{Comparison with PHM13}
+\label{sec:petcomp}
+
+We now make a comparison to PHM13, an analysis which
+is similar to ours in terms of scope, but which obtains their results
+of the \kep{} data using the TERRA pipeline \citep{Petigura2013} - an
+analysis tool independent of the \kep{} project pipeline and its
+products on which our work relies.  
+
+We first compare our estimates of detection completeness $C$ with that
+of PHM13.  For this comparison, we re-compute $C$ using the Best42k
+stars from PHM13 and compare these results to the values in Figure S11
+from PHM13.  We calculate the fractional difference ($2(T-P)/(T+P)$,
+where $T$=This Work and $P$=PHM13) and display as percentages in
+Figure~\ref{fig:comp_comp}.  
+\begin{figure}[h]
+\centerline{\includegraphics[scale=0.55]{chap2/Petigura_Sil_frac_completeness.pdf}}
+\caption{Comparison of completeness values computed with our methods
+  to those reported by PHM13 in Figure S11, expressed as a fractional
+  difference.  Our values are generated using the ``Best42k'' catalog
+  from PHM13 and our detection criteria.  Bins where both our
+  completeness and those of PHM13 are zero have been blacked out.}
+\label{fig:comp_comp}
+\end{figure}
+With the exception of a single cell all
+values of $C$ in the range $P = 20-200$~days, and $R_p= 1-4$\rearth{}
+are within 20\% of PHM13 values.  This shows that even a comparatively
+simple description of \kep{} planet detection can account for most of
+the statistics.  The single exception is for the 1-1.4\rearth{} and
+71-100~d bin where our estimate of $C$ is 32\% lower than that of
+PHM13.  This bin includes the 90~d roll-period of \kep{}.  Large
+systematics appear in raw \kep{} lightcurves at this period because
+the stars change positions on the detector array.  It might be
+expected that the planets with $P$ near 90~days would be more
+difficult to detect than our naive criteria and that actual
+completeness would be lower.  If the PHM13 values are more realistic,
+then the opposite appears to be the case.  Elsewhere in $P$-$R_p$
+space our completeness values are slightly and systematically higher
+than those of PHM13, and the discrepancy increases with increasing $P$
+and decreasing $R_p$.  This is to be expected because PHM13 determine
+detection efficiency using actual lightcurves rather than
+representations of noise a la CDPP values.  At $P>200$~d our values of
+$C$ become significantly higher than PHM13 for nearly all values of
+$R_p$.  This discrepancy motivates our restriction to $P < 200$~days.
+One possible explanation for this difference is that detection of
+signals by phase-folding in the \kep{} detection pipeline becomes
+inefficient at long periods.
+
+\begin{figure}
+\centerline{\includegraphics[scale=0.55]{chap2/PHM13_mastercomp.pdf}}
+\caption{A summary of our comparison to PHM13. All curves are
+  constructed using the ``603PHM'' dataset and ``Best42k'' sample. The results
+  of PHM13 are plotted as the dotted curve in red with
+  squares, ``This work'' using Equation~\ref{eq:occtw} is the black
+  solid curve in black with stars, ``This work, PHM13 Completeness'' using PHM13's Figure
+  S11 completeness values and Equation~\ref{eq:occtw} is the green
+  dashed curve with diamonds, and ``This work, PHM13 Method'' using PHM13's method of
+  calculating occurrence (i.e. Equation~\ref{eq:occ}) is the blue
+  dashed-dotted curve with triangles. Slight horizontal offsets have
+  been applied to each curve for clarity.}
+\label{fig:mastercomp} 
+\end{figure}
+
+We next compute the impact of these differences in completeness on
+occurrence over $P=5-100$ d, shown in Figure~\ref{fig:mastercomp}. We first 
+calculated occurrence using the ``603PHM'' dataset (\S\ref{sec:catalogs}),
+Eqn.~\ref{eq:occtw} along with our own detection criteria (\S \ref{sec:geneq}) and completeness
+values (calculated from the Best42k sample), shown as the solid black curve in
+Figure~\ref{fig:mastercomp}. We then re-calculated planet occurrence
+using the 603PHM dataset, Eqn.~\ref{eq:occtw} along with our own detection criteria
+but substituting in the completeness values from Figure S11 of PHM13 for
+ours, shown as the dashed green line in Fig.~\ref{fig:mastercomp}.
+The differences between the solid black and dashed green lines in
+Figure~\ref{fig:mastercomp} are small and, within errors, agree with
+each other. The residual differences in completeness
+seen in Fig. \ref{fig:comp_comp} do not appear to play a significant role in the
+comparative occurrence of our work and that of PHM13 but could be
+responsible for some of the minor (and statistically insignificant)
+differences that we find. {\it We conclude that simple detection
+criteria and noise model can achieve accurate results}.
+
+A second difference between our work and PHM13 is {\it which}
+completeness values are used to compute occurrence.  PHM13 calculates
+occurrence using Eqn. \ref{eq:occ}, i.e. {\it based on the detection
+completeness of those systems which have detected planets}.  As
+discussed in \S \ref{sec:introduction}, if all else is equal,
+planets are more likely to be detected around those stars which are
+more amenable, i.e. smaller, brighter, and less ``noisy''.  Values of
+$C$ for these stars will be higher than the overall target catalog,
+and thus $f$ will be underestimated.  In this work we instead calculate 
+occurrence using the completeness of the entire target catalog for 
+planets of a given $P$ and $R_P$ according to Eqn.~\ref{eq:occtw}.  
+
+This detection bias depends on how completeness varies from
+star to star.  \kep{} can detect planets larger than Neptune around
+essentially all solar-type target stars (Fig. \ref{fig:sil_compl}) and
+hence we expect little to no detection bias in occurrence for this radius range.
+In contrast, \kep{}'s detection of Earth-size planets is SNR limited and
+thus varies strongly between stars even within our target
+catalog. Figure~\ref{fig:compvstars} illustrates this concept,
+plotting a histogram of completeness values, calculated on a
+star-by-star basis for 20,000 Solar76k stars. We display two curves, a
+solid black line representing the distribution of $P$=30d Earth-sized
+($R_p=1.25$\rearth{}) planets and a dashed red line for $P$=30d
+Neptune-sized ($R_p=3.75$\rearth{}) planets. For reference, the
+average completeness of a $P=30$d Earth sized planet in the Solar76k sample 
+is 21$\%$ while for Neptune it is 97$\%$. Although both curves show some degree of 
+completeness variation, we see significantly more variance among the Earth-sized
+planets and in particular a large number of Earth-sized planets above the 
+average. If one calculates completeness based on detected
+systems alone, detection bias can become a dominant source of error in
+occurrence calculations.  In general, as $P$ decreases the variance in
+completeness for Earth-sized planets becomes even greater relative to
+Neptune-sized.
+
+\begin{figure}[h]
+\centerline{\includegraphics[scale=0.55]{chap2/Silburt_compvstars.pdf}}
+\caption{Distribution of completeness values for Earth-sized
+  ($R_p=1.25$\rearth{}, solid, black) and Neptune-sized
+  ($R_p=3.75$\rearth{}, dashed, red) planets among a collection of
+  20,000 stars from the Solar76k sample, calculated on a star-by-star
+  basis. For these calculations, all planets have been assigned a
+  period of 30 days. As is clearly seen, the completeness variation is much larger
+  among the Earths vs. Neptunes, illustrating how one can introduce
+  significant detection bias into the occurrence calculations of small planets if an
+  average over all stars is not taken.}
+\label{fig:compvstars}
+\end{figure}
+
+Thus we expect PHM13's estimate of $f$ for the smallest
+(1-1.4\rearth{}) planets to be biased downwards.  We quantify this
+bias by comparing the dotted-dashed blue curve in
+Figure~\ref{fig:mastercomp} to the solid black curve.  Both curves are
+constructed using our analysis procedures, detection criteria, the 603PHM dataset, 
+and the the Best42k catalog of stars. The dotted-dashed blue curve labelled 
+``This Work, PHM13 Method'' uses Eqn~\ref{eq:occ} (and hence the completeness for
+stars with detected planets) to calculate $f$ while the solid black
+curve labelled ``This work'' uses Eqn.~\ref{eq:occtw} (and hence the
+overall completeness) to calculate occurrence.  As expected, a
+downward bias in occurrence appears at $R_p < 2$\rearth{} where \kep{}
+observations are not complete. The bias increases with decreasing
+$R_p$, reaching a factor of two for the smallest bin.
+
+Referring to Figure~\ref{fig:mastercomp}, the dashed-dotted blue curve
+labelled ``This Work, PHM13 Method'' represents our best attempt to
+replicate the results of PHM13 according to the methods they describe.
+However, this curve underestimates occurrence for 1-2.8\rearth{}
+compared to PHM13 (dotted, red). One explanation for this discrepancy
+is that the equation actually used by PHM13 is not the one given in
+the paper. For example, Howard et al. (2012) use an equation that is a
+better approximation for $f$ because the numerator contains only the
+number of stars around which a planet could be detected, not all stars
+in the target catalog. If PHM13 instead used their Figure S11 for
+calculating planet occurrence (i.e. Eq.~\ref{eq:occtw} instead of
+Eq.~\ref{eq:occ}), then our most direct comparison to PHM13's results (dotted, red)
+in Figure~\ref{fig:mastercomp} is the solid black curve labelled
+``This Work'', in which case there is good agreement within error.
+
+To summarize our comparison with PHM13 using
+Fig.~\ref{fig:mastercomp}, we have shown that (1) 
+substituting the survey completeness values of PHM13 (Fig. S11 of \citet{Petigura2013})
+for our values have a negligible effect on the results (green vs. black curve);
+(2) that emulation PHM13's method to calculate occurrence produces 
+significantly lower values of occurrence for the smallest planets because the
+completeness of systems with detected planets is biased upwards with
+respect to the overall survey; and finally (3) it appears that the
+approximate agreement between our results in 
+\S\ref{sec:radiusdist} and those of PHM13 is coincidence
+brought about by the cancellation of two systematic effects --
+detection bias and radius errors -- which act in roughly equal and
+opposite ways on estimates of the occurrence of the smallest planets.
+
+
+%%%%%%%
+
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Sensitivities and Systematics}
+\label{sec:sensitivity}
+
+To investigate sensitivities to some of the assumptions and parameters
+in our analysis, we repeated our IS simulations, varying $\sigma_e$
+for the Rayleigh distribution of orbital eccentricities between 0.1
+and 0.3, and the value of $\alpha$ between -0.15 and 0.15.  We found
+no significant difference in the radius distributions. We also
+investigate our separability assumption (Eqn.~\ref{eq:assumption}) by
+performing a series of IS calculations where we first scramble the
+period values in our dataset and then extract the resulting radius
+distribution. We find no significant deviation between these results
+and our main IS result, implying that there is no significant
+correlation between planet radius and period in our sample, and
+that Eqn.~\ref{eq:assumption} is a reasonable assumption.
+
+In this analysis, we address the fact that many \kep{} planets
+have large errors in radius, driven primarily
+by uncertainties in the radii of their host stars.
+But we have not addressed the issue of systematic errors
+in stellar radii.  For example,
+stellar effective temperatures based on photometry from KIC
+\citep{Brown2011} are systematically $\sim$200~K hotter than more
+reliable estimates based on the infrared flux method
+\citep{Pinsonneault2012} or spectroscopy \citep{Gaidos2013}.  The
+combination of uncertainties in stellar parameters and Malmquist bias
+in the magnitude-limited \kep{} target catalog means that the
+sample is biased towards the most luminous, hottest, and largest stars
+\citep{GaidosMann2013}.  There is increasing evidence that many \kep{}
+target stars, including planet hosts, are subgiants \citep[e.g.,
+][]{Verner2011,Everett2013,Bastien2014}.  For fixed values of
+$R_p/R_*$, systematically larger stellar radii means the planets
+are also systematically larger and that the geometric transit
+probability is higher than presumed (transit probability depends
+inversely on stellar density and hotter, more evolved stars are less
+dense).  The detection completeness of small planets is also smaller
+than presumed and thus, for fixed number of detections, the occurrence
+is higher.
+
+We have explored the possible impact of these effects by assuming
+that all stellar radii in our Solar76k catalog, as well as all
+the planet radii in the corresponding 450KOI catalog, are 25\% larger
+than their nominal values (dashed-dotted blue curve, Fig.\ref{fig:raddist}). 
+The distribution differs markedly from our IS and MCMC distributions. 
+The peak in the distribution at 2-2.8\rearth{} has shifted towards
+larger radii.  Surprisingly, the occurrence of planets with $R_p =
+1-1.4$\rearth{} has not changed.  This is understood. As stellar
+radii increase, completeness of small planets decrease leading to an
+increase in planet occurrence. However, the number of 1-1.4\rearth{}
+planets in our sample also decreases (from 25 to 8 after a 25$\%$
+radius increase), reducing the raw planet
+occurrence in this radius bin. It appears that these two competing
+effects roughly cancel, resulting in no significant change in planet
+occurrence of the smallest radius bin. 
+
+
+\subsection{Astrophysical and Astrobiological Implications}
+The period distribution of \kep{} small planets contains two distinct
+parts. The first is a rise from a few stellar radii out to $\sim 10$
+days \citep[e.g.][]{Youdin,Howard2012}, the second is a
+logarithmically flat distribution extending from $\sim 10$ days to as
+far as observations are sensitive to \citep[Fig. \ref{fig:period}
+here,][]{Petigura2013,Fressin2013}. The origin of both features are
+unclear. 
+
+We speculate on one origin for the logarithmically flat feature.
+Imagine a set of planetary systems comprised of
+closely-packed, equal-mass planets. Dynamical stability requires that
+neighbouring planets be spaced apart by more than a few Hill radii
+\citep{Chambers,SmithLissauer}. Since the Hill radius scales linearly
+with orbital semi-major axis, this means the separation between
+neighbouring planets grows linearly with their orbital
+span. This would then translate into a period
+distribution that is flat in logarithmic period. In other words, it is
+possible that most or all of our planets are actually in multiple
+systems, and that the flat feature is a result of the stability
+requirement.
+
+Alternatively, the flat feature can arise from the primordial mass
+distribution in the disk. Assuming that all planets have comparable
+masses, are in multiple systems, and are
+formed where they are found today, a logarithmically flat
+spacing would suggest that the disk surface density $\Sigma$ scales
+with the orbital separation $a$ as,
+\begin{equation}
+\Sigma \propto a^{-2}\, .
+\end{equation}
+This is not vastly different from the theoretical MMSN profile:
+$\Sigma \propto a^{-3/2}$ \citep{Hayashi,Weidenschilling}, a
+useful benchmark to study proto-planetary disks.
+
+The radius distribution is equally intriguing. The radius of a 
+%\kep{}
+planet mostly reflects the expanse of its hydrogen envelope.  By
+focussing on planets outward of $20$ days, we discard candidates that
+may have had their atmospheres eroded by stellar irradiation. The
+distribution shown in Fig.\ref{fig:raddist} is therefore likely
+``primordial''. Compared to planets inward of $10$ days that have radii
+$\leq 1.5 R_\oplus$, this ``primordial'' population appears to prefer a 
+size of $\sim 2.5R_\oplus$. Such a size corresponds to a fractional mass in the
+hydrogen envelope of $\sim 1\%$ \citep[see, e.g.][]{WuLithwick}. What
+is the reason behind this preferrence for $1\%$? A planet embedded in
+a proto-planetary disk can accrete a hydro-static
+atmosphere. \citet{Rafikov} calculated that this atmosphere has a mass
+of a few $M_\oplus$ for a $10 M_\oplus$ planet at $0.1$ AU in a MMSN
+disk. This lies much above the $1\%$ value but it depends on disk
+parameters and its evolution history.  In future works, the observed
+radius distribution should be used to decipher formation history.
+
+Moreover, the gradual decline toward smaller
+sizes in logarithmic space has implication for the formation of
+bare-core planets, the norm in the inner Solar
+system. Our terrestrial planets are thought to have formed in a
+gas-free environment by conglomeration of solid materials. The
+relative shortage of bare-core planets may suggest that the 
+observed \kep{} planets may have followed different formation path 
+than that of the terrestrial planets.
+
+Lastly, we turn to the issue of \ee{}. We calculate \ee{} more out of
+respect for tradition than with any conviction that there is
+additional accuracy to be assigned to our calculation.  The limits of
+the habitable zone depend on important assumptions regarding the
+climate state of Earth-like planets \citep{Kopparapu2013a}, mass
+\citep{Kopparapu2014}, and the composition of the atmosphere
+\citep{Pierrehumbert2011}.  Nevertheless, the search for life
+elsewhere can take heart in the fact that multiple investigations
+point to an occurrence of Earth-size planets in habitable zones of
+$\mathcal{O}(0.1)$ or more.  Indeed, studies of M dwarfs suggest that
+\ee{} $\sim 0.5$ \citep{Bonfils2013,Kopparapu2013b,Gaidos2013}.  M
+dwarfs comprise about 70\% of all stars and hence weigh heavily in the
+census for Earth-like planets.
+
+\subsection{Improvements in Occurrence will Happen}
+\label{sec:improvements}
+The errors associated with most \kep{} planets are dominated by
+the uncertainty in the parameters of their host stars. Thus, in 
+order to improve planet occurrence calculations for the future we 
+must first understand \kep{} stars better. 
+The {\it Gaia} (Global Astrometric Interferometer for Astrophysics)
+mission, launched in December 2013, will measure the parallaxes of 1
+billion stars in the local group with accuracies approaching 10
+$\mu$as, as well as obtain multi-band photometry measurements
+\citep{deBruijne2012}. \citet{Liu2012} estimate that for stars in the
+KIC, {\it Gaia} will be able to estimate $T_{\rm eff}$ to 1\%, $\log
+g$ to within 0.1-0.2 dex, and [Fe/H] to within 0.1-0.2 dex.  The
+combinations of these data should dramatically improve our knowledge
+of the properties of \kep{} target stars and hence reconstructions of
+the \kep{} planet population.
+
+Other advances include improved maps of interstellar reddening in the
+\kep{} field based on the colors of oscillating red giants with
+established properties, as well as WISE infrared photometry
+\citep{Huber2014}.  The advent of multiplexed, multi-object
+spectrographs capable of simultaneously measuring thousands of stars
+\citep{Hill2010} should, combined with {\it Gaia} parallaxes, allow
+stellar parameter estimation with unprecedented
+scale and precision. In addition, measurement of photometric noise due
+to stellar granulation (``flicker'') is a promising technique for
+estimating the $\log g$ and hence radius of bright \kep{} stars to
+within 0.1-0.2 dex \citep{Bastien2014}, although its calibration
+and applicability to fainter \kep{} stars -- the majority of targets,
+with lower photometric precision -- remains to be seen.
+
+\section{Conclusions}
+In this work we have developed a population simulator designed to
+extract the underlying period and radius distributions of Earth to Neptune
+sized planets detected by \kep{}. We focus on a ``primordial'' population of
+planets outside $20$ days to exclude the impact of, e.g. photoevaporation.
+We find that the adoption of a simple model of photometric noise and
+transit signal detection allow us to accurately estimate the 
+survey completeness of \kep{}.  We have accounted
+for radius errors in our analysis, and have found that doing so is
+important for reconstructing the intrinsic radius disitribution. We
+apply the iterative simulation technique to reconstruct the planet distribution
+with radius. This does not require binning and allows radius errors to be
+readily accounted for. Lastly, we are the first to use
+the updated Huber et al. 2014 parameters along with all 17 quarters of
+\kep{} data, representing the most up to date analysis. The main
+results are as follows: 
+\begin{enumerate}
+
+\item The period distribution for $20<P<200$ planets is roughly flat
+  in logarithmic space ($\alpha=-0.04 \pm 0.09$).
+
+\item The (likely primordial) radius distribution for \kep{} planets
+  with $20<P<200$d peaks in the radius bin $2-2.8 R_\oplus$. The
+  frequency of Earth-sized planets are $\sim$ twice lower than for
+  these larger planets.
+  
+\item The overall occurrence of planets within $20<P<200$ days and
+  $1<R_p<4$$R_\oplus$ is $46\% \pm 3\%$. This represents the average
+  number of planets per star in the \kep{} field.
+
+\item Extrapolating our radius and period distributions out to the
+  habitable
+  zone for solar-type stars, we find $\eta_{\oplus}=6.4^{+3.4}_{-1.1}\%$.\\
+
+\item While our above results confirm those from earlier studies, our
+  adoption of different statistical methods and our careful treatment
+  of radius errors lend much weight to these conclusions.  In a
+  detailed comparison of our work with PHM13, we show that, while the
+  two studies obtain similar size distribution, they come to it for
+  different reasons. In particular, both the incorporation of radius
+  errors and our improved completeness calculation have
+  opposing effects on the distribution of small planets and to first
+  order, cancel out.
+
+\item Large radius errors are present in the Kepler data, and failing
+  to account for these properly can lead to a different radius
+  distribution. Specifically, this tends to result in a large excess
+  of earth-sized planets. We also find that boosting stellar/planetary
+  radii over values reported in the \kep{} catalog increases the
+  frequency of large planets. Many stellar radii in the \kep{}
+  catalog are suspected to be underestimated. GAIA will improve
+  these stellar radius errors and resolve this issue.
+
+\end{enumerate}
 
 \section{Summary }
 

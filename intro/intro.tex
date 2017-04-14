@@ -210,6 +210,9 @@ The formation implications for each mechanism are different, and no clear consen
 %With the exception of a these statistically significant excesses at first order resonances, the period distribution of planets is to first order uniform.
 
 \subsection{Migration}
+\label{sec:migration}
+\memoas{Something about migration can put planets in MMR if the speed is not too fast.}
+
 \subsubsection{Planetesimal-Driven Migration}
 Planetesimals passing through the Hill sphere of a planet will exchange angular momentum via gravity \citep{Ida2000, Kirsh2009}.
 If there is an asymmetry to the number of planetesimals interacting with the planet on its near and far sides, a net force will migrate the planet. 
@@ -403,27 +406,27 @@ The most popular hybrid integrator is \mercury \citep{Chambers1999}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{This Work}
-The work presented in this thesis is focused on the statistics, formation and stability of planetary systems. 
-The first part of this work deals with a statistical analysis of \kep planets. 
-From Section~\ref{sec:stats}, the statistical analysis of \kep planets conducted by \citet{Fressin2013} and \citet{Petigura2013} ignored the large error bars associated with the radii of these planets.
-It was unclear how these errors would affect the radius distribution, motivating my work in Section~\label{Fill}. 
+The work presented in this thesis focusses on the statistics, formation and stability of planetary systems. 
+Section~\label{Fill} deals with a statistical analysis of \kep planets while incorporating the large radius errors present in the \kep data. 
+As mentioned in Section~\ref{sec:stats}, the analyses by \citet{Fressin2013} and \citet{Petigura2013} ignored these large errors in planetary radius, and it was unclear how these errors would affect the calculation of planet occurrence.
 
-In Section~\label{Fill} I investigate the role of tides in bringing planets from exact MMR commensurability to a few percent wide. 
+Section~\label{Fill} investigates the role of tides in transporting planets from exact MMR commensurability to a few percent wide. 
 From Figure~\ref{fig:kepMMR}, an excess of planets is seen wide of the 3:2 MMR, and to some degree the 2:1 MMR as well. 
-As stated in Section~\ref{sec:MMR}, it is believed that these planets were originally trapped in MMR and some mechanism transported them a few percent wide. 
-Other studies have investigated the role of tides in transporting planets from MMR using analytical \citep{Lee2013, Delisle2014} means, but no one had yet to investigate this question from a purely N-body standpoint, thus avoiding any approximations. 
+As mentioned in Section~\ref{sec:MMR}, it is believed that these planets were originally trapped in MMR and some mechanism transported them a few percent wide. 
+Other studies have investigated the role of tides in transporting planets from MMR using analytical \citep{Lee2013, Delisle2014} means, but no one had yet investigated this question from a numerical (N-body) standpoint.
+Although computationally expensive, N-body simulations are very accurate and avoid any approximations. 
 
-In Section~\label{Fill} I outline \hermes, a hybrid integrator for simulating planetesimal migration, built from \ias and \whfast. 
-The original motivation for building this integrator was to investigate the role of planetesimals in transporting planets from MMR. 
-Other scientists \citep{Chatterjee2015} have researched this question, but significantly more work still must be done.
+Section~\label{Fill} presents \hermes, a hybrid integrator for simulating planetesimal migration, built from \ias \citep{Rein2015a} and \whfast \citep{Rein2015b}. 
+The primary motivation for building \hermes is to investigate the role of planetesimals in transporting planets from MMR. 
+Other scientists \citep{Chatterjee2015} have researched this question, but further investigation is required before conclusive answer is established.
 As outlined in Section~\ref{sec:inttypes}, hybrid integrators are best for simulating planets embedded in planetesimal disks. 
 
 In Section~\label{Fill} I co-investigate the role of machine learning in predicting the longterm stability of planetary systems. 
-As stated in Section~\ref{sec:stability}, due to the non-integrable and chaotic nature of multi-planet systems, classification of stability is difficult without performing many costly N-body simulations. 
-However, using all the available information from the initial conditions and early evolution, machine learning can accurately predict whether a system will be longterm stable.  
-A trained machine learning tool for classifying longterm stability would be invaluable to the scientific community due to the orders of magnitude reduction in classification speed over brute-force N-body integrations.  
+As stated in Section~\ref{sec:stability}, due to the non-integrable and chaotic nature of multi-planet systems, classification of planetary stability is difficult without performing numerous costly N-body simulations. 
+However, using information from the initial conditions and early evolution, a trained machine learning algorithm can accurately predict whether a planetary system will be longterm stable.  
+This tool is useful to the scientific community due to its speed in classifying systems over brute-force N-body integrations.  
 
-In Section~\label{Fill} I analyze the radial velocity data of HD155358 originally collected by \citet{Robertson2012}. 
-The system consists of two Jovian-sized planets orbiting a few percent from the 2:1 MMR around a solar-mass star. 
-\citet{Robertson2012} did not account for the gravitational planet-planet interactions in deriving orbital parameters, which is a valid assumption when these planets are far from MMR and each other. 
-However, since these planets are so close to MMR it motivated a re-analysis of the system. 
+Finally, in Section~\label{Fill} I analyze the radial velocity data of HD155358. 
+The system consists of two Jovian-sized planets orbiting a few percent from the 2:1 MMR around a $0.92M_{\odot}$ star. 
+This system was previously analyzed by \citet{Robertson2012}, but they did not account for gravitational planet-planet interactions when deriving the orbital parameters -- an assumption only valid when planet interactions are weak. 
+As mentioned in Section~\ref{sec:migration}, planets near MMR are likely to have formed via migration, and here I re-derive the orbital parameters of the system and analyze the formation and longterm stability of the system. 
