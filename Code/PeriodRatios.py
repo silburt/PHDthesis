@@ -21,7 +21,7 @@ for n in systems:
 
 Pratios = np.sort(Pratios[Pratios < 4])
 
-cdf = 0
+cdf = 1
 
 if cdf == 1:    #cdf
     n = float(len(Pratios))
@@ -30,7 +30,7 @@ if cdf == 1:    #cdf
     max = max(cdf)
     plt.ylabel('Noramlized Cumulative Distribution')
 else:           #histogram
-    n, bins, patches = plt.hist(Pratios, 60, normed=1, facecolor='green', alpha=0.75)
+    n, bins, patches = plt.hist(Pratios, 90, normed=1, facecolor='green', alpha=0.75)
     max = max(n)
     plt.ylabel('Normalized Counts')
 
