@@ -1,4 +1,4 @@
-\begin{thebibliography}{197}
+\begin{thebibliography}{183}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Akeson} {et~al.}(2013){Akeson}, {Chen}, {Ciardi}, \&
@@ -80,8 +80,7 @@
 \bibitem[{{Beaug{\'e}} {et~al.}(2007){Beaug{\'e}}, {Ferraz-Mello}, \&
   {Michtchenko}}]{Beauge2007}
 {Beaug{\'e}}, C., {Ferraz-Mello}, S., \& {Michtchenko}, T.~A. 2007, {Planetary
-  Masses and Orbital Parameters from Radial Velocity Measurements}, ed.
-  R.~{Dvorak}, 1
+  Masses and Orbital Parameters from Radial Velocity Measurements}, 1
 
 \bibitem[{{Benz} {et~al.}(2014){Benz}, {Ida}, {Alibert}, {Lin}, \&
   {Mordasini}}]{Benz2014}
@@ -129,14 +128,9 @@
 \bibitem[{{Chambers}(1999)}]{Chambers1999}
 {Chambers}, J.~E. 1999, \mnras, 304, 793
 
-\bibitem[{{Chambers} {et~al.}(1996{\natexlab{a}}){Chambers}, {Wetherill}, \&
-  {Boss}}]{Chambers}
-{Chambers}, J.~E., {Wetherill}, G.~W., \& {Boss}, A.~P. 1996{\natexlab{a}},
-  \icarus, 119, 261
-
-\bibitem[{{Chambers} {et~al.}(1996{\natexlab{b}}){Chambers}, {Wetherill}, \&
-  {Boss}}]{Chambers96}
----. 1996{\natexlab{b}}, Icarus, 119, 261
+\bibitem[{{Chambers} {et~al.}(1996){Chambers}, {Wetherill}, \&
+  {Boss}}]{Chambers1996}
+{Chambers}, J.~E., {Wetherill}, G.~W., \& {Boss}, A.~P. 1996, Icarus, 119, 261
 
 \bibitem[{{Charbonneau} {et~al.}(2000){Charbonneau}, {Brown}, {Latham}, \&
   {Mayor}}]{Charbonneau2000}
@@ -269,11 +263,8 @@ Friedman, J., Hastie, T., \& Tibshirani, R. 2001, The elements of statistical
 Gelman, A., \& Rubin, D. 1992, Statistical Science, 7, 457,
   \url{http://www.stat.columbia.edu/~gelman/research/published/itsim.pdf}
 
-\bibitem[{{Gladman}(1993{\natexlab{a}})}]{Gladman1993}
-{Gladman}, B. 1993{\natexlab{a}}, \icarus, 106, 247
-
-\bibitem[{{Gladman}(1993{\natexlab{b}})}]{Gladman93}
----. 1993{\natexlab{b}}, Icarus, 106, 247
+\bibitem[{{Gladman}(1993)}]{Gladman1993}
+{Gladman}, B. 1993, \icarus, 106, 247
 
 \bibitem[{{Goldreich} \& {Schlichting}(2014)}]{Goldreich2014}
 {Goldreich}, P., \& {Schlichting}, H.~E. 2014, \aj, 147, 32
@@ -304,21 +295,14 @@ Gelman, A., \& Rubin, D. 1992, Statistical Science, 7, 457,
   Sciences: A Comparative Approach with `Mathematica' Support} (Cambridge
   University Press)
 
-\bibitem[{{Hadden} \& {Lithwick}(2014{\natexlab{a}})}]{HaddenLithwick}
-{Hadden}, S., \& {Lithwick}, Y. 2014{\natexlab{a}}, \apj, 787, 80
-
-\bibitem[{{Hadden} \& {Lithwick}(2014{\natexlab{b}})}]{Hadden2014}
----. 2014{\natexlab{b}}, ApJ, 787, 7
+\bibitem[{{Hadden} \& {Lithwick}(2014)}]{Hadden2014}
+{Hadden}, S., \& {Lithwick}, Y. 2014, ApJ, 787, 7
 
 \bibitem[{{Hansen} \& {Murray}(2013)}]{HansenMurray}
 {Hansen}, B.~M.~S., \& {Murray}, N. 2013, \apj, 775, 53
 
-\bibitem[{{Hayashi}(1981{\natexlab{a}})}]{Hayashi1981}
-{Hayashi}, C. 1981{\natexlab{a}}, Progress of Theoretical Physics Supplement,
-  70, 35
-
-\bibitem[{{Hayashi}(1981{\natexlab{b}})}]{Hayashi}
----. 1981{\natexlab{b}}, Progress of Theoretical Physics Supplement, 70, 35
+\bibitem[{{Hayashi}(1981)}]{Hayashi1981}
+{Hayashi}, C. 1981, Progress of Theoretical Physics Supplement, 70, 35
 
 \bibitem[{{Henry} {et~al.}(1999){Henry}, {Marcy}, {Butler}, \&
   {Vogt}}]{Henry1999}
@@ -451,22 +435,10 @@ Ito, T., \& Tanikawa, K. 1999, Icarus, 139, 336
 \bibitem[{{Lin} \& {Papaloizou}(1986)}]{Lin1986}
 {Lin}, D.~N.~C., \& {Papaloizou}, J. 1986, \apj, 309, 846
 
-\bibitem[{{Lissauer} {et~al.}(2011{\natexlab{a}}){Lissauer}, {Ragozzine},
-  {Fabrycky}, {Steffen}, \& {Ford}}]{Lissauer2011}
+\bibitem[{{Lissauer} {et~al.}(2011){Lissauer}, {Ragozzine}, {Fabrycky},
+  {Steffen}, \& {Ford}}]{Lissauer2011}
 {Lissauer}, J.~J., {Ragozzine}, D., {Fabrycky}, D.~C., {Steffen}, J.~H., \&
-  {Ford}, E.~B. 2011{\natexlab{a}}, ApJ, 197, 26
-
-\bibitem[{{Lissauer} {et~al.}(2011{\natexlab{b}}){Lissauer}, {Ragozzine},
-  {Fabrycky}, {Steffen}, {Ford}, {Jenkins}, {Shporer}, {Holman}, {Rowe},
-  {Quintana}, {Batalha}, {Borucki}, {Bryson}, {Caldwell}, {Carter}, {Ciardi},
-  {Dunham}, {Fortney}, {Gautier}, {Howell}, {Koch}, {Latham}, {Marcy},
-  {Morehead}, \& {Sasselov}}]{Lissauer}
-{Lissauer}, J.~J., {et~al.} 2011{\natexlab{b}}, \apjs, 197, 8
-
-\bibitem[{Lissauer {et~al.}(2011)Lissauer, Ragozzine, Fabrycky, Steffen, Ford,
-  Jenkins, Shporer, Holman, Rowe, Quintana, {et~al.}}]{Lissauer11}
-Lissauer, J.~J., {et~al.} 2011, The Astrophysical Journal Supplement Series,
-  197, 8
+  {Ford}, E.~B. 2011, ApJ, 197, 26
 
 \bibitem[{{Lithwick} \& {Wu}(2011)}]{Lithwick11secularchaos}
 {Lithwick}, Y., \& {Wu}, Y. 2011, \apj, 739, 31
@@ -538,16 +510,8 @@ Lissauer, J.~J., {et~al.} 2011, The Astrophysical Journal Supplement Series,
 \bibitem[{{Morton} \& {Johnson}(2011)}]{Morton2011}
 {Morton}, T.~D., \& {Johnson}, J.~A. 2011, \apj, 738, 170
 
-\bibitem[{{Murray} \& {Dermott}(1999{\natexlab{a}})}]{SSD1999}
-{Murray}, C.~D., \& {Dermott}, S.~F. 1999{\natexlab{a}}, {Solar system
-  dynamics}
-
-\bibitem[{{Murray} \& {Dermott}(1999{\natexlab{b}})}]{MurrayDermott}
----. 1999{\natexlab{b}}, Solar System Dynamics (Cambridge University Press)
-
-\bibitem[{{Murray} \& {Dermott}(1999{\natexlab{c}})}]{Murray99}
----. 1999{\natexlab{c}}, {Solar System Dynamics} (Cambridge: Cambridge U.
-  Press)
+\bibitem[{{Murray} \& {Dermott}(1999)}]{SSD1999}
+{Murray}, C.~D., \& {Dermott}, S.~F. 1999, {Solar system dynamics}
 
 \bibitem[{{NASA Exoplanet Archive}(2017)}]{NASAEA}
 {NASA Exoplanet Archive}. 2017, Nasa Exoplanet Archive
@@ -555,12 +519,11 @@ Lissauer, J.~J., {et~al.} 2011, The Astrophysical Journal Supplement Series,
 \bibitem[{{Owen} \& {Wu}(2013)}]{Owen2013}
 {Owen}, J.~E., \& {Wu}, Y. 2013, \apj, 775, 105
 
-\bibitem[{{Papaloizou} \& {Larwood}(2000{\natexlab{a}})}]{Papaloizou2000}
-{Papaloizou}, J. C.~B., \& {Larwood}, J.~D. 2000{\natexlab{a}}, MNRAS, 315, 823
+\bibitem[{{P{\'a}l}(2009)}]{Pal2009}
+{P{\'a}l}, A. 2009, \mnras, 396, 1737
 
-\bibitem[{{Papaloizou} \& {Larwood}(2000{\natexlab{b}})}]{Papa2000}
-{Papaloizou}, J.~C.~B., \& {Larwood}, J.~D. 2000{\natexlab{b}}, \mnras, 315,
-  823
+\bibitem[{{Papaloizou} \& {Larwood}(2000)}]{Papaloizou2000}
+{Papaloizou}, J. C.~B., \& {Larwood}, J.~D. 2000, MNRAS, 315, 823
 
 \bibitem[{{Peterson}(2009)}]{Scipy2016}
 {Peterson}, P. 2009, Int. J. of Computational Science and Engineering, 4, 296
@@ -603,9 +566,6 @@ Petrovich, C. 2015, The Astrophysical Journal, 808, 120
 \bibitem[{{Pu} \& {Wu}(2015)}]{Pu2015}
 {Pu}, B., \& {Wu}, Y. 2015, \apj, 807, 44
 
-\bibitem[{Pu \& Wu(2015)}]{Pu15}
-Pu, B., \& Wu, Y. 2015, The Astrophysical Journal, 807, 44
-
 \bibitem[{{Rafikov}(2003)}]{Rafikov2003}
 {Rafikov}, R.~R. 2003, \aj, 125, 942
 
@@ -626,27 +586,20 @@ Pu, B., \& Wu, Y. 2015, The Astrophysical Journal, 807, 44
 \bibitem[{{Rein} \& {Liu}(2012)}]{Rein2012}
 {Rein}, H., \& {Liu}, S.-F. 2012, A\&A, 537, 10
 
-\bibitem[{Rein \& Liu(2012)}]{Rein12}
-Rein, H., \& Liu, S.-F. 2012, Astronomy \& Astrophysics, 537, A128
-
 \bibitem[{{Rein} \& {Papaloizou}(2009)}]{Rein2009}
 {Rein}, H., \& {Papaloizou}, J.~C.~B. 2009, \aap, 497, 595
 
 \bibitem[{{Rein} {et~al.}(2010){Rein}, {Papaloizou}, \& {Kley}}]{Rein2010}
 {Rein}, H., {Papaloizou}, J.~C.~B., \& {Kley}, W. 2010, \aap, 510, A4
 
-\bibitem[{{Rein} \& {Spiegel}(2015{\natexlab{a}})}]{Rein2015}
-{Rein}, H., \& {Spiegel}, D.~S. 2015{\natexlab{a}}, \mnras, 446, 1424
-
-\bibitem[{{Rein} \& {Spiegel}(2015{\natexlab{b}})}]{Rein2015a}
----. 2015{\natexlab{b}}, \mnras, 446, 1424
-
-\bibitem[{Rein \& Tamayo(2015)}]{ReinTamayo15}
-Rein, H., \& Tamayo, D. 2015, Monthly Notices of the Royal Astronomical
-  Society, 452, 376
+\bibitem[{{Rein} \& {Spiegel}(2015)}]{Rein2015a}
+{Rein}, H., \& {Spiegel}, D.~S. 2015, \mnras, 446, 1424
 
 \bibitem[{{Rein} \& {Tamayo}(2015)}]{Rein2015b}
 {Rein}, H., \& {Tamayo}, D. 2015, \mnras, 452, 376
+
+\bibitem[{{Rein} \& {Tamayo}(2017)}]{Rein2017}
+---. 2017, \mnras
 
 \bibitem[{{Robertson} {et~al.}(2012){Robertson}, {Endl}, {Cochran}, {MacQueen},
   {Wittenmyer}, {Horner}, {Brugamyer}, {Simon}, {Barnes}, \&
@@ -686,7 +639,7 @@ Rein, H., \& Tamayo, D. 2015, Monthly Notices of the Royal Astronomical
   {Moro-Martin}, {Tamura}, {Hinz}, \& {Rodigas}}]{Schneider2014}
 {Schneider}, G., {et~al.} 2014, \aj, 148, 59
 
-\bibitem[{{Smith} \& {Lissauer}(2009)}]{SmithLissauer}
+\bibitem[{{Smith} \& {Lissauer}(2009)}]{Smith2009}
 {Smith}, A.~W., \& {Lissauer}, J.~J. 2009, \icarus, 201, 381
 
 \bibitem[{Smith \& Lissauer(2009)}]{Smith09}
@@ -701,11 +654,6 @@ Smith, A.~W., \& Lissauer, J.~J. 2009, Icarus, 201, 381
   {Twicken}}]{Steffen2013}
 {Steffen}, J.~H., {et~al.} 2013, \mnras, 428, 1077
 
-\bibitem[{Steffen {et~al.}(2013)Steffen, Fabrycky, Agol, Ford, Morehead,
-  Cochran, Lissauer, Adams, Borucki, Bryson, {et~al.}}]{Steffen13}
-Steffen, J.~H., {et~al.} 2013, Monthly Notices of the Royal Astronomical
-  Society, 428, 1077
-
 \bibitem[{{Stevenson} {et~al.}(2016){Stevenson}, {Bean}, {Seifahrt}, {Gilbert},
   {Line}, {D{\'e}sert}, \& {Fortney}}]{Stevenson2016}
 {Stevenson}, K.~B., {Bean}, J.~L., {Seifahrt}, A., {Gilbert}, G.~J., {Line},
@@ -716,10 +664,6 @@ Steffen, J.~H., {et~al.} 2013, Monthly Notices of the Royal Astronomical
 
 \bibitem[{{Tamayo}(2014)}]{Tamayo14b}
 {Tamayo}, D. 2014, \mnras, 438, 3577
-
-\bibitem[{Tamayo {et~al.}(2015)Tamayo, Triaud, Menou, \& Rein}]{Tamayo15}
-Tamayo, D., Triaud, A.~H., Menou, K., \& Rein, H. 2015, The Astrophysical
-  Journal, 805, 100
 
 \bibitem[{{Tamayo} {et~al.}(2015){Tamayo}, {Triaud}, {Menou}, \&
   {Rein}}]{Tamayo2015}
@@ -760,11 +704,8 @@ Veras, D., \& Mustill, A.~J. 2013, Monthly Notices of the Royal Astronomical
 \bibitem[{{Weidenschilling}(1977{\natexlab{a}})}]{Weidenschilling1977b}
 {Weidenschilling}, S.~J. 1977{\natexlab{a}}, \mnras, 180, 57
 
-\bibitem[{{Weidenschilling}(1977{\natexlab{b}})}]{Weidenschilling}
----. 1977{\natexlab{b}}, \mnras, 180, 57
-
-\bibitem[{{Weidenschilling}(1977{\natexlab{c}})}]{Weidenschilling1977}
----. 1977{\natexlab{c}}, \apss, 51, 153
+\bibitem[{{Weidenschilling}(1977{\natexlab{b}})}]{Weidenschilling1977}
+---. 1977{\natexlab{b}}, \apss, 51, 153
 
 \bibitem[{{Weiss} \& {Marcy}(2014)}]{Weiss2014}
 {Weiss}, L.~M., \& {Marcy}, G.~W. 2014, ApJL, 783, 7

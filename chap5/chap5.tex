@@ -1,12 +1,18 @@
 \chapter[Stability of Planetary Systems]{A Machine Learns to Predict the Stability of Tightly Packed Planetary Systems}
+\label{chap:Stability}
 
 \section{Chapter Overview}
 
-An Overview of my chapter here.
+The requirement that planetary systems be dynamically stable is often used to vet new discoveries or set limits on unconstrained masses or orbital elements. 
+This is typically carried out via computationally expensive N-body simulations.
+We show that characterizing the complicated and multi-dimensional stability boundary of tightly packed systems is amenable to machine learning methods. 
+We find that training a state-of-the-art machine learning algorithm on physically motivated features yields an accurate classifier of stability in packed systems. 
+On the stability timescale investigated ($10^7$ orbits), it is 3 orders of magnitude faster than direct N-body simulations. 
+Optimized machine learning classifiers for dynamical stability may thus prove useful across the discipline, e.g., to characterize the exoplanet sample discovered by the upcoming Transiting Exoplanet Survey Satellite (TESS).
 
 \section{Introduction}
 \memoas{These citations are doubles of others. Need to go through this and replace them.}
-In order to characterize planetary systems, it is common practice to assume long-term stability in order to set upper limits on planetary masses and orbital eccentricities \citep[e.g.][]{Lissauer11, Steffen13, Tamayo14b, Tamayo15}.
+In order to characterize planetary systems, it is common practice to assume long-term stability in order to set upper limits on planetary masses and orbital eccentricities \citep[e.g.][]{Lissauer2011, Steffen2013, Tamayo14b, Tamayo2015}.
 This involves running grids of direct N-body integrations over the large multi-dimensional parameter space of initial conditions that are consistent with observational error.
 In practice, however, one can often explore only a minute fraction of the phase space; in the case of many systems discovered by the Kepler mission, each integration requires several weeks of computation to simulate timescales comparable to the star's age ($\gtrsim 10^{11}$ planetary orbits) with current hardware.
 An efficient classifier of dynamical stability would thus be invaluable.
@@ -19,15 +25,15 @@ $M_1, M_2$ and $M_\star$ are the masses of a pair of planets and the central sta
 This regime has long been recognized as important in the early stages of planetary systems when bodies are still merging, and has received much attention.
 
 For the special case of two-planet systems, one can prove that there exists a bifurcation in the dynamics that forbids planets from undergoing close encounters for all time \citep{Marchal82, Milani83}.
-In the case of co-planar, circular orbits, the transition occurs at a planetary separation of 3.46 $R_H$ \citep{Gladman93}.
+In the case of co-planar, circular orbits, the transition occurs at a planetary separation of 3.46 $R_H$ \citep{Gladman1993}.
 If the planets are more widely separated than this threshold, the system is Hill stable, i.e., close encounters are forbidden for all time.
-While there are ways for planets to escape or collide with the star without undergoing close encounters \citep[e.g.,][]{Deck12, Veras13hill}, and eccentric planets that fail this criterion can nevertheless be long-lived \citep[e.g.,][]{Gladman93}, the Hill criterion provides good guidance, particularly in the low-eccentricity regime \citep{Barnes06}.
+While there are ways for planets to escape or collide with the star without undergoing close encounters \citep[e.g.,][]{Deck12, Veras13hill}, and eccentric planets that fail this criterion can nevertheless be long-lived \citep[e.g.,][]{Gladman1993}, the Hill criterion provides good guidance, particularly in the low-eccentricity regime \citep{Barnes06}.
 
 In the general case with more than two planets, however, the additional degrees of freedom preclude a topological criterion for Hill stability.
 This has led many authors to perform suites of N-body simulations and fit empirical curves to the results.
-Because of the prohibitively large phase space of possible initial conditions, several authors \citep[][Obertas et al., submitted]{Chambers96, Faber07, Smith09} have considered the special case of initially circular, planar orbits with all planet pairs having equal Hill separations $\Delta$, defined as the difference in semimajor axis divided by $R_H$.
+Because of the prohibitively large phase space of possible initial conditions, several authors \citep[][Obertas et al., submitted]{Chambers1996, Faber07, Smith09} have considered the special case of initially circular, planar orbits with all planet pairs having equal Hill separations $\Delta$, defined as the difference in semimajor axis divided by $R_H$.
 They find that even in cases where each pair of planets satisfies the Hill criterion, the system nevertheless destabilizes, and that the associated timescale seems to grow exponentially with Hill separation.
-However, the fitted coefficients vary as the number of planets and planetary masses are varied, and introducing inclinations \citep{Marzari02}, eccentricities \citep{Ito99, Chatterjee08, Pu15}, or unequal spacings between planets \citep{Marzari14} change the instability timescales substantially.
+However, the fitted coefficients vary as the number of planets and planetary masses are varied, and introducing inclinations \citep{Marzari02}, eccentricities \citep{Ito99, Chatterjee08, Pu2015}, or unequal spacings between planets \citep{Marzari14} change the instability timescales substantially.
 For a given planetary system, it is therefore not always clear which scaling law is appropriate to apply, and what confidence one can have in the resulting estimate.
 
 For this investigation we take a machine learning approach.
@@ -53,7 +59,7 @@ The third planet's separation was then independently drawn from the same distrib
 The particular range of Hill-radius separations was chosen to capture the regime of interest on our adopted timescale of $10^7$ orbits and roughly generate a balanced dataset of stable and unstable systems (this yielded 1479 stable systems out of 5000).
 Eccentricities and inclinations were drawn independently for each planet from uniform distributions over [0, 0.02] and [0, 1$^\circ$], and the remaining angles were drawn randomly over [0,$2\pi$].
 
-All integrations were performed using the {\sc \tt WHFAST} integrator \citep{ReinTamayo15} in the open-source {\sc \tt REBOUND} N-body package \citep{Rein12}, which is written in \texttt{C99} and comes with an optional \texttt{python} interface.
+All integrations were performed using the {\sc \tt WHFAST} integrator \citep{Rein2015b} in the open-source {\sc \tt REBOUND} N-body package \citep{Rein2012}, which is written in \texttt{C99} and comes with an optional \texttt{python} interface.
 We adopted a timestep of 1\% of the innermost planet's orbital period, and classified systems as unstable if any pair of planets came within 1 Hill radius of each other during the simulation.
 
 \subsection{Metrics} \label{metrics}
@@ -125,7 +131,7 @@ For our purposes we argue it is logical to adopt a conservative threshold, in th
 This follows from the fact that it is computationally much faster to verify that a system is unstable (on short timescales) than it is to check that it is stable (on long timescales).
 We choose to require a precision of $90\%$ on our test dataset, which corresponded to the model only classifying systems as stable if their predicted stability probability is larger than a 0.785 threshold.
 
-Since previous works have identified the Hill separations between adjacent planets as important features \citep{Chambers96, Marzari14}, we plot the performance of the model projected onto this 2D plane (Fig.\:\ref{ariplot}).
+Since previous works have identified the Hill separations between adjacent planets as important features \citep{Chambers1996, Marzari14}, we plot the performance of the model projected onto this 2D plane (Fig.\:\ref{ariplot}).
 
 \begin{figure}
  \centering \resizebox{0.99\columnwidth}{!}{\includegraphics{chap5/figures/ICpredictions}}
@@ -140,7 +146,7 @@ Since previous works have identified the Hill separations between adjacent plane
 \end{figure}
 
 Looking at the dashed, black line in Figure~\ref{ariplot}, one can see that to first order, the model's prediction boundary roughly obeys the relation $\Delta_1 + \Delta_2 > 16.1$.
-This is in fact the form of the simple criterion suggested by \cite{Lissauer11}, who quote $\Delta_1 + \Delta_2 > 18$ for stability on timescales of $10^9$ orbits. 
+This is in fact the form of the simple criterion suggested by \cite{Lissauer2011}, who quote $\Delta_1 + \Delta_2 > 18$ for stability on timescales of $10^9$ orbits. 
 Because we consider stability on shorter timescales, the threshold number of Hill radii should be adjusted for a fair comparison.
 We term models of the form $\Delta_1 + \Delta_2 > x$ ``Lissauer-family" models, and find 16.1 is the threshold for Lissauer-family models that yields a precision of 90\% on this dataset.
 
@@ -158,7 +164,7 @@ An important factor determining the performance of a machine learning algorithm 
 To this end, we improved upon the previous model (Section~\ref{IC}) by generating new features from short N-body integrations.
 To create the new features, we performed simulations over $10^4$ orbits (0.1\% of the instability timescale probed) for each of the 5000 systems in the dataset, and recorded each planet's orbital elements and the current Lyapunov timescale every 5 orbits.
 
-Because we suspect that the instability is driven by overlapping mean-motion resonances, we first generated features that capture the variation in semimajor axes, which would vanish if the dynamics were purely secular \citep{Murray99}.  
+Because we suspect that the instability is driven by overlapping mean-motion resonances, we first generated features that capture the variation in semimajor axes, which would vanish if the dynamics were purely secular \citep{SSD1999}.  
 In particular, we generated features for the standard deviation and maximum value of each planet's semimajor axis over the $10^4$ orbits , normalized to the mean value over the same period  ({\tt std\_ai} and {\tt max\_ai}, where {\tt i} denotes the planet number) .  
 In addition, we generated features for the same quantities over only the first 50 orbital periods in order to capture the variations on orbital timescales ({\tt std\_window\_ai} and {\tt max\_window\_ai}).
 Furthermore, we noticed in early attempts that some misclassified systems exhibited drifts in semimajor axis, so we generated slope features from linear fits to each of the three planets' semimajor axes, normalized to the mean semimajor axis divided by the integration time ({\tt slope\_ai}).
@@ -245,7 +251,7 @@ Such classifiers could be used in many of the ways that direct N-body integratio
 \end{itemize}
 
 Such tools may be of particular interest for the upcoming Transiting Exoplanet Survey Satellite (TESS).
-While transit-timing variations (TTVs) have been powerful tools for constraining the masses and eccentricities of near-resonant Kepler systems \citep[e.g.,][]{Ford12, Steffen13, Deck15}, TESS' shorter time baselines and planets' smaller semimajor axes will render such analyses difficult or impossible.
+While transit-timing variations (TTVs) have been powerful tools for constraining the masses and eccentricities of near-resonant Kepler systems \citep[e.g.,][]{Ford12, Steffen2013, Deck15}, TESS' shorter time baselines and planets' smaller semimajor axes will render such analyses difficult or impossible.
 It is therefore likely that in many systems, stability considerations will provide the strongest constraints on planetary masses and eccentricities, and this will be important for guiding the substantial radial-velocity follow-up efforts from the ground. 
 
 More broadly, we have shown that machine learning can be a powerful tool for high-dimensional classification problems in dynamics and other fields.

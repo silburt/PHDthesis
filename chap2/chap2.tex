@@ -1,8 +1,38 @@
 \chapter[Statistical Reconstruction of Kepler Planets]{A Statistical Reconstruction of the Planet Population around Kepler Solar-Type Stars}
+\label{chap:Stats}
 
 \section{Chapter Overview}
 
-An Overview of my chapter here.
+  Using the most recent Kepler catalog, we reconstruct the
+  occurrence rate of small (Neptune-sized or below) planets as a
+  function of orbital period and planet radius, taking careful account
+  of various detection biases. We analyze a sample of $76,000$
+  Sun-like stars and their associated planet candidates with periods
+  between $20$ and $200$ days, and sizes between $1$ and $4
+  R_\oplus$. Such planets have likely experienced little
+  photoevaporation, and may reflect the ``primordial'' planet
+  population. Assuming that the size distribution of planets are
+  independent of their orbital periods (and vice versa), we
+  conclude that Kepler planets are preferentially peaked at $2-2.8
+  R_\oplus$, with their numbers decreasing gradually toward smaller
+  sizes. These planets are found roughly uniformly in logarithmic
+  period. The average number of planets per star, in the stated period
+  and size ranges, is $0.46 \pm 0.03$. This number rises by $\sim
+    0.2$ if one includes planets inward of $20$ days.
+  Upon extrapolation we obtain an occurrence rate, for
+    Earth-like planets within the ``habitable zone'' (as calculated by
+  1-D climate models), of $6.4^{+3.4}_{-1.1}\%$. We discuss the
+  astrophysical implications of our results.
+
+  In our study, we introduce a number of novel statistical approaches,
+  including the adoption of the ``iterative simulation'' technique (in
+  addition to the standard MCMC technique), incorporation of
+  uncertainties in planet radii, and an improved consideration of
+  detection bias. Our results largely agree with those from an earlier
+  work by \citet{Petigura2013}, based on different statistical
+  treatments and noise models. However, this agreement masks two 
+  substantial underlying discrepancies that (to first order) cancel each 
+  other out.
 
 \section{Introduction}
 \label{sec:introduction}
@@ -266,7 +296,7 @@ Assuming a Rayleigh distribution with
   is likely affected by uncertain stellar radii and may be an
   overestimate. TTV studies have led to much smaller eccentricity
   dispersion ($\sigma_e \sim$ a few percent), at least in multiple
-  planet systems \citep{WuLithwick,HaddenLithwick}. Here, we choose
+  planet systems \citep{WuLithwick,Hadden2014}. Here, we choose
 $\sigma_e = 0.18$ and show that our results are not sensitive to the
 exact value of $\sigma_e$ (\S \ref{sec:sensitivity}). 
 The underlying distribution of $\omega$ can be safely assumed to be
@@ -1116,7 +1146,7 @@ We speculate on one origin for the logarithmically flat feature.
 Imagine a set of planetary systems comprised of
 closely-packed, equal-mass planets. Dynamical stability requires that
 neighbouring planets be spaced apart by more than a few Hill radii
-\citep{Chambers,SmithLissauer}. Since the Hill radius scales linearly
+\citep{Chambers1996,Smith2009}. Since the Hill radius scales linearly
 with orbital semi-major axis, this means the separation between
 neighbouring planets grows linearly with their orbital
 span. This would then translate into a period
@@ -1135,7 +1165,7 @@ with the orbital separation $a$ as,
 \Sigma \propto a^{-2}\, .
 \end{equation}
 This is not vastly different from the theoretical MMSN profile:
-$\Sigma \propto a^{-3/2}$ \citep{Hayashi,Weidenschilling}, a
+$\Sigma \propto a^{-3/2}$ \citep{Hayashi1981,Weidenschilling1977b}, a
 useful benchmark to study proto-planetary disks.
 
 The radius distribution is equally intriguing. The radius of a 

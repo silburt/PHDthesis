@@ -12,57 +12,55 @@ The style file: apj.bst
 Database file #1: thesis.bib
 Warning--entry type for "NASAEA" isn't style-file defined
 --line 12 of file thesis.bib
-Repeated entry---line 2606 of file thesis.bib
+Repeated entry---line 2471 of file thesis.bib
  : @article{Baruteau2013
  :                      ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Pal2009"
-Warning--I didn't find a database entry for "Rein2017"
+Warning--I didn't find a database entry for "Lissauer"
 Warning--empty publisher in Armitage2010
-Warning--can't use both author and editor fields in Beauge2007
 Warning--empty publisher in Beauge2007
 Warning--empty publisher in SSD1999
 Warning--empty publisher in Plummer1918
 Warning--empty publisher in Press2002
-You've used 197 entries,
+You've used 183 entries,
             2988 wiz_defined-function locations,
-            1810 strings with 45085 characters,
-and the built_in function-call counts, 88258 in all, are:
-= -- 7123
-> -- 6387
-< -- 111
-+ -- 2143
-- -- 1921
-* -- 7583
-:= -- 16807
-add.period$ -- 197
-call.type$ -- 197
-change.case$ -- 1251
-chr.to.int$ -- 186
-cite$ -- 203
-duplicate$ -- 3632
-empty$ -- 5264
-format.name$ -- 2610
-if$ -- 17259
-int.to.chr$ -- 12
+            1756 strings with 42837 characters,
+and the built_in function-call counts, 82163 in all, are:
+= -- 6627
+> -- 5985
+< -- 102
++ -- 2004
+- -- 1804
+* -- 7029
+:= -- 15670
+add.period$ -- 183
+call.type$ -- 183
+change.case$ -- 1169
+chr.to.int$ -- 182
+cite$ -- 188
+duplicate$ -- 3374
+empty$ -- 4870
+format.name$ -- 2438
+if$ -- 16052
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 195
-newline$ -- 595
-num.names$ -- 789
-pop$ -- 1297
+missing$ -- 181
+newline$ -- 553
+num.names$ -- 732
+pop$ -- 1215
 preamble$ -- 1
-purify$ -- 1250
+purify$ -- 1168
 quote$ -- 0
-skip$ -- 3047
+skip$ -- 2848
 stack$ -- 0
-substring$ -- 3743
-swap$ -- 32
+substring$ -- 3479
+swap$ -- 13
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1743
-warning$ -- 6
-while$ -- 715
+type$ -- 1623
+warning$ -- 5
+while$ -- 665
 width$ -- 0
-write$ -- 1956
+write$ -- 1815
 (There was 1 error message)

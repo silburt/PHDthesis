@@ -397,7 +397,7 @@ The most popular symplectic integrator is the Wisdom-Holman mapping \citep{Wisdo
 Non-symplectic integrators do not require a fixed timestep and do not have a bounded energy error over time. 
 However, these integrators can employ very accurate and precise numerical convergence schemes, for example the Burlish-Stoer or predictor-corrector algorithms \citep{Press2002}.
 As a result, non-symplectic integrators are typically more accurate but slower than their symplectic counterparts, and can solve most classes of planetary physics problems. 
-A popular non-symplectic integrator is \ias \citep{Rein2015}.
+A popular non-symplectic integrator is \ias \citep{Rein2015a}.
 
 Hybrid integrators typically mix the symplectic and non-symplectic schemes, applying the symplectic component on bodies that are distant and non-symplectic component on bodies that are close. 
 However, there are hybrid schemes that purely rely on symplectic principles \citep[e.g.][]{Duncan1998}.
@@ -408,27 +408,27 @@ The most popular hybrid integrator is \mercury \citep{Chambers1999}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{This Work}
-The work presented in this thesis focusses on the statistics, formation and stability of planetary systems. 
-Section~\label{Fill} deals with a statistical analysis of \kep planets while incorporating the large radius errors present in the \kep data. 
+The work presented in this thesis focusses on the dynamics, formation and statistics of planetary systems. 
+Chapter~\ref{chap:Stats} deals with a statistical analysis of \kep planets while incorporating the large radius errors present in the \kep data. 
 As mentioned in Section~\ref{sec:stats}, the analyses by \citet{Fressin2013} and \citet{Petigura2013} ignored these large errors in planetary radius, affecting their calculations of planet occurrence.
 
-Section~\label{Fill} investigates the role of tides in transporting planets from exact MMR commensurability to a few percent wide. 
+Chapter~\ref{chap:Tides} investigates the role of tides in transporting planets from exact MMR commensurability to a few percent wide. 
 From Figure~\ref{fig:KepMMR}, an excess of planets is seen wide of the 3:2 MMR, and to some degree the 2:1 MMR as well. 
 As mentioned in Section~\ref{sec:MMR}, it is believed that these planets were originally trapped in MMR and some mechanism transported them a few percent wide. 
 Other studies have investigated the role of tides in transporting planets from MMR using analytical \citep{Lee2013, Delisle2014} means, but no one has yet investigated this question numerically.
 Although computationally expensive, N-body simulations are very accurate and avoid approximations. 
 
-Section~\label{Fill} presents \hermes, a hybrid integrator for simulating planetesimal migration, built from \ias \citep{Rein2015a} and \whfast \citep{Rein2015b}. 
+Chapter~\ref{chap:Hermes} presents \hermes, a hybrid integrator for simulating planetesimal migration, built from \ias \citep{Rein2015a} and \whfast \citep{Rein2015b}. 
 The primary motivation for building \hermes is to investigate the role of planetesimals in transporting planets from MMR. 
 Other scientists \citep{Chatterjee2015} have researched this question, but further investigation is required before conclusive answer is established.
 As outlined in Section~\ref{sec:inttypes}, hybrid integrators are best for simulating planets embedded in planetesimal disks. 
 
-In Section~\label{Fill} I co-investigate the role of machine learning in predicting the longterm stability of planetary systems. 
+Chapter~\ref{chap:Stability} investigates the role of machine learning in predicting the longterm stability of planetary systems. 
 As stated in Section~\ref{sec:stability}, due to the non-integrable and chaotic nature of multi-planet systems, classification of planetary stability is difficult without performing numerous costly N-body simulations. 
 However, using information from the initial conditions and early evolution, a trained machine learning algorithm can accurately predict whether a planetary system will be longterm stable.  
 This tool is useful to the scientific community due to its speed in classifying systems over brute-force N-body integrations.  
 
-Finally, in Section~\label{Fill} I analyze the radial velocity data of HD155358. 
+Finally, in Chapter~\ref{chap:RV} I analyze the radial velocity data of HD155358. 
 The system consists of two Jovian-sized planets orbiting a few percent from the 2:1 MMR around a $0.92M_{\odot}$ star. 
 This system was previously analyzed by \citet{Robertson2012}, but they did not account for gravitational planet-planet interactions when deriving the orbital parameters.
 As mentioned in Section~\ref{sec:RV}, neglecting planet-planet interactions in the orbital fit is only valid when the interactions are weak, and careful numerical treatments must otherwise be used. 

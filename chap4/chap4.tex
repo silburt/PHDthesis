@@ -1,8 +1,19 @@
 \chapter[\hermes: A hybrid integrator]{\hermes: a hybrid integrator for simulating close encounters and planetesimal migration}
+\label{chap:Hermes}
 
 \section{Chapter Overview}
 
-An Overview of my chapter here.
+We present \hermes, a new hybrid integration scheme for long-term simulations of planetary systems undergoing close encounters or planetesimal-driven migration. 
+Particles are integrated using \whfast, a fast and accurate symplectic integrator, unless a close encounter occurs.
+During a close encounter, a subset of particles is integrated with the high-order integrator \ias, while the rest of the particles continue to be integrated with \whfast.
+We created an adaptive routine for optimizing the close encounter boundary to help maintain accuracy whilst close encounters are occurring.
+
+{\memoas{Like most hybrid integrators, }the switching between integrators leads to \memoas{an additional,} finite energy error \memoas{above the standard oscillatory energy error arising from symplectic integration}.}
+\hermes takes a more direct approach when switching between integrators than previous schemes in the literature, allowing us to analytically estimate the numerical error of our algorithm. 
+Since \whfast is symplectic, \ias is accurate to machine precision and both of them are unbiased, the energy error grows sub-linearly with time under the assumption that either impact parameters are randomly distributed or close encounters are rare.
+
+We find that \hermes provides a good balance between speed and accuracy, neither achieved by the individual symplectic or non-symplectic integrators alone.
+In this paper, we describe the details of implementation, accuracy and performance, as well as its incorporation within the larger framework of the $N$-body package \reb. 
 
 \section{Introduction}
 \label{sec:intro}
