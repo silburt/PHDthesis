@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  17 APR 2017 10:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  18 APR 2017 12:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -294,19 +294,19 @@ LaTeX Warning: Label `sec:stability' multiply defined.
 ) (./conc/conc.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Try loading font information for T1+pplx on input line 147.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Try loading font information for T1+pplx on input line 108.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1pplx.fd
@@ -369,7 +369,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 147.
+LaTeX Info: Redefining \microtypecontext on input line 108.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -390,13 +390,13 @@ Package caption Info: End \AtBeginDocument code.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for OMS+pplx on input line 162
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 123
 .
-LaTeX Font Info:    No file OMSpplx.fd. on input line 162.
+LaTeX Font Info:    No file OMSpplx.fd. on input line 123.
 
 
 LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead on input line 162.
+(Font)              using `OMS/cmsy/m/n' instead on input line 123.
 
 [1
 
@@ -404,55 +404,55 @@ LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 [2
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 195
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 154
 .
  (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 195
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 154
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 195
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 154
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 195
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 154
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 195.
+(Font)              scaled to size 12.50409pt on input line 154.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 195.
+(Font)              scaled to size 9.37807pt on input line 154.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 195.
+(Font)              scaled to size 7.29405pt on input line 154.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 195.
+(Font)              scaled to size 12.50409pt on input line 154.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 195.
+(Font)              scaled to size 9.37807pt on input line 154.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 195.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 195.
+(Font)              scaled to size 7.29405pt on input line 154.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 154.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 195
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 154
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -551,7 +551,11 @@ Package pdftex.def Info: intro/PeriodRatios.pdf used on input line 198.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-[15] [16] [17] [18] [19] [20]) [21]
+[15] [16] [17]
+Underfull \vbox (badness 1968) has occurred while \output is active []
+
+ [18]
+[19] [20]) [21]
 \openout2 = `chap2/chap2.aux'.
 
  (./chap2/chap2.tex
@@ -640,6 +644,10 @@ File: chap2/Silburt_ISnobin.pdf Graphic file (type pdf)
 Package pdftex.def Info: chap2/Silburt_ISnobin.pdf used on input line 796.
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
  [43 <./chap2/Silburt_ISnobin.pdf>]
+
+Package natbib Warning: Citation `Lissauer' on page 44 undefined on input line 
+841.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1035,14 +1043,12 @@ Chapter 7.
 
 
 ] [139] [140] [141] [142] [143] [144] [145] [146]
-[147]) [148] (./thesis.aux (./intro/intro.aux) (./chap2/chap2.aux)
-(./chap3/chap3.aux) (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux)
-(./conc/conc.aux)
+[147])
 
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
+Package natbib Warning: There were undefined citations.
 
-)
+[148] (./thesis.aux (./intro/intro.aux) (./chap2/chap2.aux) (./chap3/chap3.aux)
+(./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./conc/conc.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1054,10 +1060,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8221 strings out of 493117
- 122224 string characters out of 6135433
- 216304 words of memory out of 5000000
- 10757 multiletter control sequences out of 15000+600000
+ 8207 strings out of 493117
+ 122165 string characters out of 6135433
+ 215554 words of memory out of 5000000
+ 10743 multiletter control sequences out of 15000+600000
  137853 words of font info for 637 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,17n,45p,1142b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1080,7 +1086,7 @@ ype1/public/cm-super/sftt2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
 e1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/
 palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatin
 o/uplri8a.pfb>
-Output written on thesis.pdf (166 pages, 2180641 bytes).
+Output written on thesis.pdf (166 pages, 2180954 bytes).
 PDF statistics:
  1305 PDF objects out of 1440 (max. 8388607)
  615 compressed objects within 7 object streams

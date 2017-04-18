@@ -8,7 +8,7 @@
 \subsection{Detection Methods}
 \subsubsection{Radial Velocity}
 \label{sec:RV}
-A planet and star orbit around their common centre of mass, and since all stars emits light a periodic wobble can be observed. 
+A periodic wobble will be observed in the lightcurve of a star with an orbiting planet due to their motion around the common centre of mass. 
 From the conservation of energy and angular momentum this wobble, or radial velocity, of a star due to a planetary companion can be calculated according to \citep{Beauge2007}:
 \begin{equation}
 V_r = K \cdot [\cos(\nu(t) + \omega) + e\cdot \cos(\omega) + \gamma]
@@ -18,11 +18,11 @@ where $K$ is the semi-amplitude:
 K = \frac{m_p \sin(i)}{m_* + m_p} \frac{2\pi a}{P\sqrt{1-e^2}}
 \label{eq:K}
 \end{equation}
-$a$ is the semi-major axis of the planet, $P$ is the orbital period, $m_p$ is the planet mass, $m_*$ is the stellar mass, $i$ is the inclination of the orbital planet, $e$ is the eccentricity of the planet, $\nu(t)$ is the true anomaly, $\omega$ is the argument of periastron, and $\gamma$ is the stellar drift in velocity.
+$a$ is the semi-major axis of the planet, $P$ is the orbital period, $m_p$ is the planet mass, $m_*$ is the stellar mass, $i$ is the inclination, $e$ is the eccentricity, $\nu(t)$ is the true anomaly, $\omega$ is the argument of periastron, and $\gamma$ is the stellar drift in velocity.
 Since the probability of detecting a planet is related to $K$, radial velocity preferentially detects massive planets on short orbits. 
 
-In theory, one can extract the orbital parameters of the planet from the radial velocity (mass, eccentricity, orbital period, etc.), however in practice it is more complicated.
-For example, successfully extracting orbital parameters requires accurate and precise knowledge of the stellar mass, which is typically difficult to obtain \citep[e.g.][]{Brown2011}.
+In theory one can extract the orbital parameters of the planet from the radial velocity (mass, eccentricity, orbital period, etc.), however in practice it is more complicated.
+For example, successful extraction of orbital parameters requires accurate and precise knowledge of the stellar mass, which is typically difficult to obtain \citep[e.g.][]{Brown2011}.
 Furthermore, only a lower limit $m\sin(i)$ estimate on planet mass can be calculated unless the inclination relative to Earth's line of sight is known. 
 In addition, the radius of the planet cannot be calculated from the radial velocity method, precluding any information about size and density.
 
@@ -46,7 +46,7 @@ The fraction of blocked flux is proportional to the relative areas of the star a
 where $r_p$ and $r_*$ are the planet and stellar radii, respectively. 
 In addition, the probability of a transiting planet $P_t$ is inversely proportional to its semi-major axis:
 \begin{equation}
-P_t = \frac{r_*}{a_p}
+P_t = \frac{r_*}{a}
 \label{eq:tp}
 \end{equation}
 Thus, from Equations~\ref{eq:F} and \ref{eq:tp} we see that large, short-period planets are preferentially detected by the transit method.
@@ -60,7 +60,7 @@ From the transit method one can determine the period and radius of the planet.
 In addition, the atmospheric properties of exoplanets can also be probed \citep{Kreidberg2014, Tsiaras2016, Stevenson2016}.
 In total, the transit method is able to provide essential information about the composition, formation and habitability of a planet. 
 However, the transit method is not without its limitations. 
-For example, most orbital parameters critical for dynamical analysis, like eccentricity and mass, cannot be determined for individual systems via the transit method.
+For example, most orbital parameters needed for dynamical studies, like eccentricity and mass, cannot be determined for individual systems via the transit method.
 In addition, false positives from eclipsing binaries and background targets are a huge source of contamination \citep{Fressin2013}, and confirmation via a different method is often required. 
 Smaller planets and/or planets belonging to multi-planet systems are much less likely to be false positives than large, single planets \citep{Fressin2013}.
 
@@ -69,13 +69,13 @@ Smaller planets and/or planets belonging to multi-planet systems are much less l
 %I'm assuming that since this section is meant to motivate my work, I should focus on the research leading up to mine, not the research that has happened since.
 The \kep mission is the most successful planet-finding mission to date, providing scientists for the first time a population of planets orbiting other stars. 
 Due to the selection bias of the transit method (see Section~\ref{sec:transit}), most of these planets have periods of less than 50 days and are larger than Earth. 
-However, sufficient detection across the full range of Earth-Jupiter sized planets has enabled scientists to calculate the occurrence of planets around other stars in our galaxy. 
+However, sufficient detection across the full range of Earth-to-Jupiter sized planets has enabled scientists to calculate the occurrence of planets around other stars in our galaxy. 
 
 Two seminal works analyzing the \kep population are \citet{Fressin2013} and \citet{Petigura2013}.
 \citet{Fressin2013} found that the global false positive rate of the \kep data is roughly $10\%$, the radius distribution peaks at mini-Neptune ($2<r_p/r_{\oplus}<2.8$, $r_{\oplus}$ is the radius of Earth) sized planets, and the occurrence of Neptune and Jupiter sized planets is significantly lower than the occurrence of $r_p/r_{\oplus}<2.8$ sized planets.
 Using a carefully vetted data sample, \citet{Petigura2013} found a similar result as \citet{Fressin2013}, i.e. that the radius distribution peaks at mini-Neptune and the occurrence of Neptune and Jupiter sized planets is much lower.
 
-The calculation for planet occurrence is usually performed by binning the planets in $r$--$P$ space (where $r$ is planet radius and $P$ is planet period), and calculating planet occurrence for each bin. 
+A calculation of planet occurrence is usually performed by binning the planets in $r$--$P$ space (where $r$ is planet radius and $P$ is planet period), and calculating planet occurrence for each bin. 
 The occurrence $f(P_i, r_j)$ of planets in bin $(i,j)$ for a population of planets is:
 \begin{equation}
 f(P_i, r_j) = \frac{1}{N_*} \sum_k^{n_p(i,j)} \left(\frac{a_k}{r_{*,k}} \frac{1}{\epsilon(i,j)} \right)
@@ -84,13 +84,13 @@ f(P_i, r_j) = \frac{1}{N_*} \sum_k^{n_p(i,j)} \left(\frac{a_k}{r_{*,k}} \frac{1}
 where $N_*$ is the total number of stars surveyed in the sample, $n_p(i, j)$ are the number of planets falling into bin $(i, j)$, $\frac{a_k}{r_{*,k}}$ is the geometric correction factor to account for missed non-transiting planets (inverse of Equation~\ref{eq:tp}) and $\epsilon(i,j)$ is the detection completeness of bin $(i, j)$ to account for missed transiting planets due to low signal-to-noise.
 
 Of the ingredients that go into a Equation~\ref{eq:occurence}, the most difficult quantity to accurately measure is the detection completeness. 
-Unlike \citet{Fressin2013} who used Combined Differential Photometric Precision (CDPP) values to estimate the detection completeness of known planets, \citet{Petigura2013} instead performed an injection and recovery of simulated light curves to calculate the detection completeness. 
-Although the injection and recovery technique is certainly a more accurate method to calculate detection completeness, \citet{Fressin2013} found that CDPP estimates were robust and could lead to accurate predictions. 
+Unlike \citet{Fressin2013} who used Combined Differential Photometric Precision (CDPP) values to estimate the detection completeness of known planets, \citet{Petigura2013} instead performed an injection and recovery of simulated light curves. 
+Although the injection and recovery technique is certainly a more accurate method for calculating detection completeness, \citet{Fressin2013} found that CDPP estimates were robust and could lead to accurate predictions. 
 
 One critical aspect of planet occurrence that \citet{Fressin2013} and \citet{Petigura2013} failed to incorporate into their calculations was the large error bars present in the \kep data.
 The mean planetary radius error in the \citet{Batalha2013} \kep dataset is $30\%$, meaning that, within 3 standard deviations a super-Earth sized planet could actually be Neptune or Earth-sized. 
 These errors primarily stem from the fact that the radii of \kep stars are not well known \citep{Brown2011}, also with a mean radius error of $30\%$.
-With such large error bars present in the \kep data, ignoring them can affect the resulting occurrence distribution.
+With such large error bars present in the \kep data, ignoring them can affect the resulting radius and planet occurrence distributions.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,13 +108,13 @@ This initial surface density distribution is known as the ``minimum mass solar n
 %berta, charbonneau 2012
 
 A second critical property of circumstellar disks is the location of the snowline. 
-In standard formation theory the snowline marks the region beyond which water ice forms, providing the additional solid material required to retain gases and form Jovian planets.
+In standard formation theory the snowline marks the boundary where water ice begins to form, providing the additional solid material required to make large cores and form Jovian planets.
 \citet{Hayashi1981} provided a benchmark temperature profile $T(d)$ for the Solar System:
 \begin{equation}
-T(d) = T_0 \left(\frac{r}{1 \textrm{AU}} \right)^{-1/2}
+T(d) = T_0 \left(\frac{d}{1 \textrm{AU}} \right)^{-1/2}
 \end{equation}
 where $T_0 = 280$K. 
-In this model, the radius at which the temperature drops to below freezing is $\sim 2.7$ AU. 
+In this model, the distance at which the temperature drops to below freezing is $\sim 2.7$ AU. 
 More recent models of the snowline \citep{Sasselov2000} include detailed radiative transfer physics and heating via accretion, and show that the primordial snow line in our Solar System could have been as close as 1 AU.
 
 Until recently, scientists have lacked the tools to observationally test these theories.  
@@ -125,33 +125,33 @@ In total, about 80 circumstellar and debris disks have been observed to date \ci
 
 \subsection{Planetesimal Formation}
 Before planets can form there must be an abundance of kilometre-sized planetesimals.
-At present there are two leading models for forming such kilometre-sized planetesimals -- coagulation (core-accretion) and gravitational instability. 
-In the coagulation model, pairwise collisions between sticky dust particles lead to steady growth up to a meter in size and beyond \citep{Weidenschilling1977b, Armitage2010}.
-However, mean collision velocities are strongly coupled to size, and destructive collisions occur for meter-sized objects \citep{Weidenschilling1977b, Blum2008}, hindering planetesimal growth. 
+There are currently two leading models for forming such kilometre-sized planetesimals -- coagulation (core-accretion) and gravitational instability. 
+In the coagulation model, pairwise collisions between sticky dust particles lead to steady growth up to meter-sized and beyond \citep{Weidenschilling1977b, Armitage2010}.
+However, mean collision velocities are strongly coupled to size and destructive collisions tend to occur for meter-sized objects \citep{Weidenschilling1977b, Blum2008}, hindering planetesimal growth. 
 In addition, meter-sized objects embedded in a protoplanetary disk will strongly couple to the gas and typically drift into the central star on a timescale of $10^3$ years \citep{Weidenschilling1977b}.
 Thus, a mechanism is required to quickly grow particles beyond a meter in size to avoid destruction. 
-Solutions to this ``meter-barrier problem" have been proposed \citep[e.g.][]{Boley2014}, however no clear consensus has yet emerged.  
+Solutions to this "meter-barrier problem" have been proposed \citep[e.g.][]{Boley2014}, however no clear consensus has yet emerged.  
 
-In the gravitational instability model, as the solar nebula cools dust particles settle in the mid plane, becoming vulnerable to collapse \citep{Goldreich1973}.
+In the gravitational instability model, as the solar nebula cools, dust particles settle in the mid plane, becoming vulnerable to collapse \citep{Goldreich1973}.
 These dust particles clump and eventually become gravitationally unstable, forming $\sim$100m sized particles \citep{Goldreich1973}. 
 This process then repeats, each time forming larger and larger planetesimals via gravitational instability.
 This model is attractive since it bypasses the scales most vulnerable to destructive collisions (i.e. the meter-barrier problem), and can form large planetesimals in $\sim 10^3$ years \citep{Goldreich1973, Armitage2007}.
-However, in practice it is very difficult to collect dust particles in densities high enough for gravitational instability and especially so in turbulent disks \citep{Armitage2007}.
+However, in practice it is very difficult to collect dust particles in densities high enough for gravitational instability, and especially so in turbulent disks \citep{Armitage2007}.
  
 The formation mechanism of planetesimals is still unclear, however, \textit{some} mechanism must exist since planetesimals are ubiquitous. 
 
 \subsection{Formation of Protoplanets}
 The formation of protoplanets occurs shortly after the formation of large, kilometre-sized planetesimals.
-In a pioneering study \citet{Greenberg1978} found that in the early stage of planet formation larger planetesimals grow more rapidly than smaller ones, resulting in the runaway growth of the largest planetesimal. 
+In a pioneering study, \citet{Greenberg1978} found that in the early stage of planet formation larger planetesimals grow more rapidly than smaller ones, resulting in the runaway growth of the largest planetesimal. 
 As a result, $1$--$10$km sized planetesimals at $1$AU can grow into $10^{22}$ -- $10^{24}$ kg protoplanets in $10^5$--$10^6$ years \citep{Wetherill1989}.
-This runaway process is initiated by the fact that $1$--$10$ km sized planetesimals are large enough to gravitationally focus each other yet are still dynamically cool via gas damping, resulting in a maximum collision cross section \citep{Armitage2010}.
-Since growth time is related to orbital frequency, more distant regions will have slower runaway timescales.
+This runaway process stems from the fact that $1$--$10$ km sized planetesimals are large enough to gravitationally focus each other yet are still dynamically cool via gas damping, resulting in a maximum collision cross section \citep{Armitage2010}.
+Since growth time is related to orbital frequency, more distant regions will have slower runaway growth timescales.
 
-Eventually, this runaway growth will transition into a slower, ``oligarchic" growth. 
-As protoplanets grow surrounding planetesimals are dynamically excited via gravitational stirring, decreasing the collision cross section and slowing the rate of protoplanetary growth \citep{Kokubo1998}.
+Eventually this runaway growth transitions into a slower, ``oligarchic" growth. 
+As protoplanets grow, surrounding planetesimals are dynamically excited via gravitational stirring, decreasing the collision cross section and slowing the rate of protoplanetary growth \citep{Kokubo1998}.
 By the end of oligarchic growth protoplanets have consumed most of the surrounding material and have reached their isolation mass \citep{Schlichting2014}.
 Beyond the snowline the isolation mass is roughly the mass of Neptune, however inside the snowline it is a fraction of an Earth mass \citep{Schlichting2014}.
-Since numerous Kepler planets larger than Earth reside inside the snowline of their host star, this suggests that either giant impacts between protoplanets, the inward drift of additional material or migration must have taken place \citep{Schlichting2014}.  
+Since numerous \kep planets larger than Earth reside inside the snowline of their host star, this suggests that either i) giant impacts between protoplanets, ii) inward drift of additional material, or iii) migration must have taken place \citep{Schlichting2014}.  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -173,7 +173,7 @@ For every $p:q$ MMR (where $p$ and $q$ are integers) there are two important res
 \end{split}
 \end{align}
 where $\lambda$ is the mean longitude and $\varpi$ is the longitude of periapse. 
-For planets in MMR the time variation of one or both of these resonant arguments must be zero.
+For planets in MMR the time variation of one or both resonant arguments must be zero.
 As a result, MMRs can be modelled in terms of a pendulum oscillating about a stable, fixed point. 
 After some algebra it can be shown that a MMR can be modelled as \citep{SSD1999}:
 \begin{equation}
@@ -182,8 +182,8 @@ After some algebra it can be shown that a MMR can be modelled as \citep{SSD1999}
 \end{equation}
 where $\omega_0$ is the amplitude of libration and is dependent upon the orbital parameters of the system (mass, eccentricity, semi-major axis).
 
-The pendulum model facilitates understanding about certain properties of MMR. 
-For energies larger than a critical energy $E_{crit}$, the pendulum will circulate over all possible values of $\phi$, while for energies smaller than $E_{crit}$ the pendulum will be in MMR and librate about $\phi = 0$.
+The pendulum model facilitates an understanding about certain properties of MMR. 
+For energies larger than a critical energy $E_{crit}$ the pendulum will circulate over all possible values of $\phi$, while for energies smaller than $E_{crit}$ the pendulum will be in MMR and librate about $\phi = 0$.
 The critical energy, $E_{crit}$, defines motion on the separatrix, which separates the circulation and libration regimes. 
 In context of a pendulum, this would correspond to the pendulum suspended vertically in the air with an infinite period of libration. 
 
@@ -213,16 +213,16 @@ The formation implications for each mechanism are different, and no clear consen
 \subsection{Migration}
 \label{sec:migration}
 Planetary migration is believed to be the best way to place planets in MMR \citep[e.g.][]{Lee2002}, making it very important for planetary formation.  
-Below outlines the two primary ways that planets can migrate -- via planetesimal-driven and/or gas-driven migration.
+Presented here are the two primary ways that planets can migrate -- planetesimal-driven and gas-driven migration.
 
 \subsubsection{Planetesimal-Driven Migration}
 Planetesimals passing through the Hill sphere of a planet will exchange angular momentum via gravity \citep{Ida2000, Kirsh2009}.
 If there is an asymmetry to the number of planetesimals interacting with the planet on its near and far sides, a net force will migrate the planet. 
-However, to guarantee a net migration planetesimal orbits must decouple from the planet. 
+However, to guarantee a net migration, planetesimal orbits must decouple from the planet. 
 A massive enough planet (e.g. Jupiter) will directly eject and decouple planetesimals from the system, however if the planet is smaller (e.g. Neptune) planetesimals must decouple by interacting with a neighbouring planet. 
 In addition, for sustained migration the planet must constantly encounter fresh, dynamically cold planetesimals \citep{Gomes2004}.  
 
-Since protoplanetary growth is proportional to orbital frequency \citep{Rafikov2003}, planetesimal disks are most likely to exist in the outer reaches of planetary systems where fewer orbital cycles have occurred. 
+Since protoplanetary growth is proportional to orbital frequency \citep[e.g.][]{Rafikov2003}, planetesimal disks are most likely to exist in the outer reaches of planetary systems where fewer orbital cycles have occurred. 
 In the Solar System, the primordial Kuiper belt is believed to have once been such a planetesimal disk, causing Neptune to migrate outwards into the Kuiper belt and shepherd planetesimals inwards to Jupiter, which subsequently ejected them from the Solar System \citep{Fernandez1984}.
 This idea is well supported by observations of the outer Solar System, which show that Pluto, along with a host of smaller bodies, orbit in stable 3:2 MMRs with Neptune \citep{Malhotra1993, Malhotra1995}.
 
@@ -233,7 +233,7 @@ The result of this exchange is planetary migration, and this scenario is believe
 Gas-driven migration comes in two main flavours -- Type I and Type II. 
 
 Type I migration occurs when low-mass planets are fully embedded in a protoplanetary disk and do not significantly perturb the disk structure \citep{Armitage2010}. 
-At particular resonant locations, known as ``Linblad resonances'', density waves are excited due to gravitational interactions between the planet and disk \citep{Goldreich1979}. 
+At particular resonant locations, known as "Linblad resonances", density waves are excited due to gravitational interactions between the planet and disk \citep{Goldreich1979}. 
 These density waves exchange angular momentum with the planet, and migration occurs when the inner and outer disk interact asymmetrically with the planet \citep{Goldreich1979}.
 In general, the direction of Type-I migration tends to be inwards towards the central star \citep{Ward1997}.
 
@@ -285,7 +285,8 @@ The coordinates ($\textbf{r}$,$\textbf{p}$) used in Hamiltonian mechanics are ca
 \{\textbf{p}_i, \textbf{p}_j\} = 0, \qquad
 \{\textbf{r}_i, \textbf{p}_j\} = \delta_{ij}
 \end{equation}
-A primary benefit of using a Hamiltonian framework is the ease of evolving a N-body system into the future or past via Hamilton's equations:
+where $\delta_{ij}$ is the Kronecker delta. 
+A primary benefit of using the Hamiltonian framework is the ease of evolving a N-body system into the future or past via Hamilton's equations:
 \begin{align}
 \begin{split}
 \frac{d\textbf{p}}{dt} &= -\frac{\partial H}{\partial \textbf{r}} \\
@@ -294,12 +295,12 @@ A primary benefit of using a Hamiltonian framework is the ease of evolving a N-b
 \end{split}
 \end{align}
 Numerically this is trivial to do, with the accuracy of the result being inversely proportional to the size of the timestep, $dt$.
-A second benefit is the inherent ``area preserving" or symplectic nature of Hamiltonian systems, where the energy error is bound to a finite value (excluding e.g. roundoff errors which grow with time).
+A second benefit is the inherent "area preserving" or symplectic nature of Hamiltonian systems, where the energy error is bound to a finite value (excluding e.g. numerical roundoff errors which grow with time).
 
-In the context of planetary systems, Equation~\ref{eq:H} can be modified to make integration more efficient.
-For example, we know that a planet will orbit in a Keplerian fashion around a central star, determined exactly by the planet's orbital parameters and stellar mass. 
-In multi-planet systems gravitational interactions between planets will occur, perturbing planets off their original Keplerian trajectories.
-From this a new Hamiltonian can be constructed, consisting of a "Keplerian" term, $\Ham_K$, and "Interaction" term, $\Ham_I$ according to \citep{Wisdom1991}:
+In the context of planetary systems Equation~\ref{eq:H} can be modified to make integration more efficient.
+For example, a planet will orbit in a Keplerian fashion around a central star, determined exactly by the planet's orbital parameters and stellar mass. 
+In addition, for multi-planet systems gravitational interactions between planets will occur, perturbing planets off their original Keplerian trajectories.
+Thus, a new Hamiltonian can be constructed consisting of a "Keplerian" term, $\Ham_K$, and "Interaction" term, $\Ham_I$ according to \citep{Wisdom1991}:
 \begin{equation*}
 \Ham = \Ham_K + \Ham_I
 \end{equation*}
@@ -344,7 +345,7 @@ The inverse transformations from Jacobi coordinates to cartesian coordinates can
 The benefit of Jacobi coordinates is that the kinetic terms remain a sum of squares \citep{Plummer1918}, making numerical integration a straightforward process according to Equation~\ref{eq:DKD}. 
 In addition, these coordinates solve the Two Body and Restricted Three Body Problems exactly. 
 However, the primary disadvantage is that a clear ordering of bodies is required for efficient integration in Jacobi coordinates. 
-For example, in a planetesimal disk orbits cross frequently, and there is no straightforward and (computationally) cheap way to order these bodies. 
+For example, orbits within a planetesimal disk frequently cross, and there is no straightforward and (computationally) cheap way to order these bodies. 
 
 \subsubsection{Democratic Heliocentric}
 \label{sec:DH}
@@ -360,9 +361,9 @@ For the special case of $i=0$:
 \textbf{P}_0 = \sum_{j=0}^{N} \textbf{p}_j
 \end{equation}
 
-The benefit of Democratic Heliocentric coordinates is that they do not directly require other bodies to derive their positions (unlike Jacobi coordinates) and are conceptually easy to understand. 
+The benefit of Democratic Heliocentric coordinates is that they do not directly require other bodies to derive their positions (unlike Jacobi coordinates) and thus are conceptually easier to understand. 
 However, these coordinates do not solve the Two Body Problem or Restricted Three Body Problems exactly. 
-In addition, $\Ham_K$ cannot be cleanly written as shown in Equation~\ref{eq:Hgeneral} due to several cross terms that arise when substituting in $\textbf{Q}$ and \textbf{P}.
+In addition, $\Ham_K$ cannot be cleanly written as shown in Equation~\ref{eq:Hgeneral} due to several cross terms that arise when substituting $\textbf{Q}$ and \textbf{P}.
 However, this problem can be rectified by transferring these cross terms into an additional ``Jump" Hamiltonian:
 \begin{equation}
 \Ham_J = \frac{1}{2m_0} \left|\sum_{i=1}^N \textbf{P}_i\right|^2
@@ -371,7 +372,7 @@ Therefore, the evolution of $\Ham$ in Equation~\ref{eq:DKD} must be modified to 
 Note that since $\{\Ham_J, \Ham_I\} = 0$, the ordering of $E_{\Ham_I}$ and $E_{\Ham_J}$ does not matter. 
 
 \subsubsection{WHDS}
-The WHDS is a modification of the Democratic Heliocentric mapping that splits the kinetic energy slightly differently. 
+The WHDS is a modification of the Democratic Heliocentric mapping and splits the kinetic energy slightly differently. 
 The canonical coordinates $\textbf{Q}$ and $\textbf{P}$ have the same form, but the Keplerian, Interaction and Jump steps are now \citep{Laskar1995, Wisdom2006, Hernandez2016}:
 \begin{align}
 \begin{split}
@@ -383,7 +384,7 @@ The canonical coordinates $\textbf{Q}$ and $\textbf{P}$ have the same form, but 
 where $\mu \equiv m_im_0/(m_0 + m_i)$.
 
 The benefit of these coordinates is that, unlike Democratic Heliocentric coordinates, the Two Body and Restricted Three Body Problems are now solved exactly. 
-In addition, like Democratic Heliocentric coordinates a particle's position are not dependent upon any other bodies. 
+In addition, (like Democratic Heliocentric coordinates) a particle's position are not dependent upon any other bodies. 
 One price to pay for these benefits is that $\{\Ham_J, \Ham_I\} \ne 0$, and in Equation~\ref{eq:DKD} $E_{\Ham_J}$ must be exactly nestled in between the $E_{\Ham_K}$ and $E_{\Ham_I}$ operators.
 In addition, the standard symplectic correctors of \citet{Wisdom2006} cannot be used in this coordinate system, however other correctors may be possible to construct. 
 
@@ -428,8 +429,9 @@ As stated in Section~\ref{sec:stability}, due to the non-integrable and chaotic 
 However, using information from the initial conditions and early evolution, a trained machine learning algorithm can accurately predict whether a planetary system will be longterm stable.  
 This tool is useful to the scientific community due to its speed in classifying systems over brute-force N-body integrations.  
 
-Finally, in Chapter~\ref{chap:RV} I analyze the radial velocity data of HD155358. 
+Finally, in Chapter~\ref{chap:RV} the radial velocity data of HD155358 is analyzed. 
 The system consists of two Jovian-sized planets orbiting a few percent from the 2:1 MMR around a $0.92M_{\odot}$ star. 
 This system was previously analyzed by \citet{Robertson2012}, but they did not account for gravitational planet-planet interactions when deriving the orbital parameters.
 As mentioned in Section~\ref{sec:RV}, neglecting planet-planet interactions in the orbital fit is only valid when the interactions are weak, and careful numerical treatments must otherwise be used. 
-As mentioned in Section~\ref{sec:migration}, planets near MMR are likely to have formed via migration, and in addition to deriving updated  orbital parameters I also analyze the formation and longterm stability of the system. 
+In addition, as mentioned in Section~\ref{sec:migration} planets near MMR are likely to have formed via migration.
+Thus, in addition to deriving updated orbital parameters I also assess the probability that the planets are in MMR, and analyze the formation and longterm stability of the system. 
