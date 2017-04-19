@@ -1,10 +1,43 @@
 \chapter{Conclusions \& Future Work}
 \label{chap:conc}
-This thesis analyzes the statistics, formation and stability of exoplanetary systems. 
+This thesis analyzed the statistics, formation and stability of exoplanetary systems. 
 Five main results have been presented, and are summarized below. 
 
-\section{Main Results}
+\section{Summary of Results}
+\subsection{Occurrence Rate of \kep Planets}
+In Chapter~\ref{chap:Stats} we used the \citet{Ramirez2014} \kep catalog to calculate the occurrence rate of small planets, accounting for detection biases and radius errors. 
+We found that Kepler planets are preferentially peaked at $2-2.8R_\oplus$, with their numbers decreasing gradually toward smaller sizes, with a roughly log-uniform period distribution.
+The average number of planets per star with periods between $20$ and $200$ days and radii between $1$ and $4R_\oplus$ is $0.46 \pm 0.03$. 
+Such planets have likely experienced little photoevaporation, and may reflect the "primordial'' planet population. 
+Upon extrapolation we obtain an occurrence rate, for Earth-like planets within the "habitable zone'' (as calculated by 1-D climate models), of $6.4^{+3.4}_{-1.1}\%$. 
 
+\subsection{Tides Can't Explain Planets Close to MMR}
+In Chapter~\ref{chap:Tides} we used an optimistic theoretical estimate for the minimum initial eccentricity required by \kep planets to explain the current observed spacing, and complimented these calculations with N-body simulations.
+Analyzing 27 \kep systems having planets within $6\%$ of the 2:1 MMR, we found that the initial eccentricities required to explain the observed spacings are unreasonable from simple dynamical arguments.
+Furthermore, our numerical simulations revealed "resonant tugging", an effect which conspires against the migration of resonant planets away from the 2:1 MMR, requiring even higher initial eccentricities in order to explain the current \kep distribution. 
+In summary, we found that tides alone cannot explain planets close to 2:1 MMR, and additional mechanisms are required to explain these systems. 
+
+\subsection{\hermes: A Hybrid Integrator}
+Chapter~\ref{chap:Hermes} presented \hermes, a new hybrid integration scheme for long-term simulations of planetary systems undergoing close encounters or planetesimal-driven migration. 
+Distant particles are integrated using \whfast, while close particles are integrated with \ias.
+In addition, we created an adaptive routine for optimizing the close encounter boundary to help maintain accuracy whilst close encounters are occurring.
+Since \whfast is symplectic, \ias is accurate to machine precision and both of them are unbiased, the energy error grows sub-linearly with time under the assumption that either impact parameters are randomly distributed or close encounters are rare.
+We found that \hermes provides a good balance between speed and accuracy, neither achieved by the individual symplectic or non-symplectic integrators alone.
+
+\subsection{Machine Learning and Planet Stability}
+In Chapter~\ref{chap:Stability} we showed that characterizing the complicated and multi-dimensional stability boundary of tightly packed systems is amenable to machine learning methods. 
+In particular, training a state-of-the-art machine learning algorithm on physically motivated features yields an accurate classifier of stability in packed systems. 
+On the stability timescale we investigated ($10^7$ orbits), our trained machine was 3 orders of magnitude faster than direct N-body simulations. 
+Optimized machine learning classifiers for dynamical stability may thus prove useful across the discipline, e.g., to characterize the exoplanet sample discovered by the upcoming Transiting Exoplanet Survey Satellite (TESS).
+
+\subsection{Analyzing HD155358}
+In Chapter~\ref{chap:HD155358} we analyzed the RV data for the star HD155358, which hosts two Jovian-sized planets near 2:1 MMR. 
+Using two distinct models parameterized by the orbital elements of each planet, we showed that excluding planet-planet interactions can yield statistically different orbital solutions, leading to different implications for formation and stability. 
+Using our updated orbital solution, we calculate a high likelihood that the planets are in MMR. 
+
+In addition, we conducted a stability analysis by drawing samples from our posterior distribution and simulating them for $10^9$ years, finding that our best-fit values land firmly in a stable region of parameter space.
+We also explored a series of formation models that migrate the planets into MMR and generate synthetic RV curves to fit directly to the observed data. 
+We found that a number of formation models fit the RV data surprisingly well, with some migration parameters being ruled out.
 
 \section{Future Work and Directions}
 From Chapter~\ref{chap:Tides}, a primary reason why tides cannot transport planets from exact MMR to a few percent wide is due to "Resonant Tugging" (Section~\ref{sec:restugg}).
@@ -30,11 +63,9 @@ In addition, for other scientists to use this tool, an easy-to-use pipeline must
 Finally, in Chapter~\ref{chap:HD155358} we used a simple formation model to fit the RV curve of HD155358 and determine the initial conditions of the system. 
 This simple model could be replaced with a full 3D hydrodynamical model, further constraining the initial conditions of the system. 
 
+\memoas{Other possible things to mention:
 \begin{enumerate}
-\item Further investigate Resonant Tugging.
-\item Use \hermes to investigate planetesimals near MMR.
-\item \memoas{Improve \hermes more? The ultimate integrator would be \mercury switching scheme + WHDS as the base integrator.}
-\item \memoas{Sophisticated Collisions a la Leinhardt \& Stewart.}
-\item Create a pipeline where scientists can input a planetary system into a trained machine learning model and receive an output probability of stability. 
-\item Develop a more sophisticated formation model for HD155358 and fit to the RV curve. This would constrain the formation scenario of HD155358 even further.
+\item Improve \hermes more? The ultimate integrator would be \mercury switching scheme + WHDS as the base integrator.
+\item Implement sophisticated collisions into \reb a la Leinhardt \& Stewart.
 \end{enumerate}
+}

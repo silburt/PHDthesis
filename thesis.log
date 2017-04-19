@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  19 APR 2017 12:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  19 APR 2017 14:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1035,19 +1035,27 @@ t line 305.
 
  (./conc/conc.tex
 Chapter 7.
-[137
+
+Underfull \vbox (badness 1163) has occurred while \output is active []
+
+ [137
 
 
 
-] [138]) [139] (./thesis.bbl [140
+]
+[138] [139]
+Underfull \vbox (badness 1087) has occurred while \output is active []
+
+ [140])
+[141] (./thesis.bbl [142
 
 
-] [141] [142] [143] [144] [145] [146]
-[147] [148] [149])
+] [143] [144] [145] [146] [147] [148] [149] [150]
+[151])
 
 Package natbib Warning: There were undefined citations.
 
-[150] (./thesis.aux (./intro/intro.aux) (./chap2/chap2.aux) (./chap3/chap3.aux)
+[152] (./thesis.aux (./intro/intro.aux) (./chap2/chap2.aux) (./chap3/chap3.aux)
 (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./conc/conc.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1060,11 +1068,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8208 strings out of 493117
- 122179 string characters out of 6135433
+ 8222 strings out of 493117
+ 122338 string characters out of 6135433
  215564 words of memory out of 5000000
- 10744 multiletter control sequences out of 15000+600000
- 137853 words of font info for 637 fonts, out of 8000000 for 9000
+ 10746 multiletter control sequences out of 15000+600000
+ 139408 words of font info for 644 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,17n,45p,1142b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -1086,10 +1094,10 @@ ype1/public/cm-super/sftt2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
 e1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/
 palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatin
 o/uplri8a.pfb>
-Output written on thesis.pdf (167 pages, 2184474 bytes).
+Output written on thesis.pdf (169 pages, 2190128 bytes).
 PDF statistics:
- 1308 PDF objects out of 1440 (max. 8388607)
- 617 compressed objects within 7 object streams
+ 1315 PDF objects out of 1440 (max. 8388607)
+ 622 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
- 91282 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 97426 words of extra memory for PDF output out of 106986 (max. 10000000)
 
