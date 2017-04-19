@@ -88,7 +88,7 @@ Unlike \citet{Fressin2013} who used Combined Differential Photometric Precision 
 Although the injection and recovery technique is certainly a more accurate method for calculating detection completeness, \citet{Fressin2013} found that CDPP estimates were robust and could lead to accurate predictions. 
 
 One critical aspect of planet occurrence that \citet{Fressin2013} and \citet{Petigura2013} failed to incorporate into their calculations was the large error bars present in the \kep data.
-The mean planetary radius error in the \citet{Batalha2013} \kep dataset is $30\%$, meaning that, within 3 standard deviations a super-Earth sized planet could actually be Neptune or Earth-sized. 
+The mean planetary radius error in the \citep{Ramirez2014} \kep dataset is $30\%$, meaning that, within 3 standard deviations a super-Earth sized planet could actually be Neptune or Earth-sized. 
 These errors primarily stem from the fact that the radii of \kep stars are not well known \citep{Brown2011}, also with a mean radius error of $30\%$.
 With such large error bars present in the \kep data, ignoring them can affect the resulting radius and planet occurrence distributions.
 
@@ -96,6 +96,7 @@ With such large error bars present in the \kep data, ignoring them can affect th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Planet Formation}
+\label{sec:PF}
 \subsection{Minimum Mass Solar Nebula and Snowline}
 The initial conditions of the Solar System are still largely unknown.
 \citet{Hayashi1981} and \citet{Weidenschilling1977} provided the first benchmarks for the initial mass of the Solar System by assuming a rocky core for all planets and calculating the initial surface density distribution $\Sigma$ as a function of distance $d$ required to produce the masses of the planets:
@@ -429,7 +430,7 @@ As stated in Section~\ref{sec:stability}, due to the non-integrable and chaotic 
 However, using information from the initial conditions and early evolution, a trained machine learning algorithm can accurately predict whether a planetary system will be longterm stable.  
 This tool is useful to the scientific community due to its speed in classifying systems over brute-force N-body integrations.  
 
-Finally, in Chapter~\ref{chap:RV} the radial velocity data of HD155358 is analyzed. 
+Finally, in Chapter~\ref{chap:HD155358} the radial velocity data of HD155358 is analyzed. 
 The system consists of two Jovian-sized planets orbiting a few percent from the 2:1 MMR around a $0.92M_{\odot}$ star. 
 This system was previously analyzed by \citet{Robertson2012}, but they did not account for gravitational planet-planet interactions when deriving the orbital parameters.
 As mentioned in Section~\ref{sec:RV}, neglecting planet-planet interactions in the orbital fit is only valid when the interactions are weak, and careful numerical treatments must otherwise be used. 

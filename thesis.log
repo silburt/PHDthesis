@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  18 APR 2017 12:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  19 APR 2017 12:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -473,7 +473,7 @@ Package microtype Info: Loading generic settings for font family
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 61.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 59.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -482,32 +482,32 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [7] [8])
+ [7])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [9]
+ [8]
 (./thesis.lot)
 \tf@lot=\write4
 \openout4 = `thesis.lot'.
 
- [10
+ [9
 
 ] (./thesis.lof
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11
+ [10
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
 Overfull \hbox (10.98679pt too wide) in paragraph at lines 22--22
  [][] []\T1/pplx/m/n/12 (-20) Final rel-a-tive en-ergy er-ror as a func-tion of
  $\OML/zplm/m/it/12 f[]$ \T1/pplx/m/n/12 (-20) for a star-planet-planetesimal 
@@ -516,18 +516,18 @@ Overfull \hbox (10.98679pt too wide) in paragraph at lines 22--22
 
 Underfull \vbox (badness 7221) has occurred while \output is active []
 
+ [14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [15]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17])
+ [16])
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
 
-[18]
+[17]
 \openout2 = `intro/intro.aux'.
 
  (./intro/intro.tex
@@ -540,11 +540,11 @@ Chapter 1.
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <12> not available
 (Font)              Font shape `T1/pplx/m/it' tried instead on input line 51.
  [2] [3] [4] [5] [6] [7] [8]
-<intro/PeriodRatios.pdf, id=96, 578.16pt x 433.62pt>
+<intro/PeriodRatios.pdf, id=93, 578.16pt x 433.62pt>
 File: intro/PeriodRatios.pdf Graphic file (type pdf)
 
 <use intro/PeriodRatios.pdf>
-Package pdftex.def Info: intro/PeriodRatios.pdf used on input line 198.
+Package pdftex.def Info: intro/PeriodRatios.pdf used on input line 199.
 (pdftex.def)             Requested size: 451.6875pt x 338.76479pt.
  [9] [10 <./intro/PeriodRatios.pdf>] [11] [12]
 [13]
@@ -597,7 +597,7 @@ Underfull \vbox (badness 1087) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [34]
-[35] <chap2/IStest.pdf, id=220, 505.89pt x 361.35pt>
+[35] <chap2/IStest.pdf, id=217, 505.89pt x 361.35pt>
 File: chap2/IStest.pdf Graphic file (type pdf)
  <use chap2/IStest.pdf>
 Package pdftex.def Info: chap2/IStest.pdf used on input line 564.
@@ -607,14 +607,14 @@ Package pdftex.def Info: chap2/IStest.pdf used on input line 564.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [36] [37 <./chap2/IStest.pdf>]
-<chap2/Silburt_completeness.pdf, id=236, 505.89pt x 361.35pt>
+<chap2/Silburt_completeness.pdf, id=232, 505.89pt x 361.35pt>
 File: chap2/Silburt_completeness.pdf Graphic file (type pdf)
 
 <use chap2/Silburt_completeness.pdf>
 Package pdftex.def Info: chap2/Silburt_completeness.pdf used on input line 659.
 
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
- [38] [39 <./chap2/Silburt_completeness.pdf>] <chap2/Silburt_period.pdf, id=253
+ [38] [39 <./chap2/Silburt_completeness.pdf>] <chap2/Silburt_period.pdf, id=250
 , 505.89pt x 361.35pt>
 File: chap2/Silburt_period.pdf Graphic file (type pdf)
 
@@ -630,14 +630,14 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 717.
  [40 <./chap2/Silburt_period.pdf>]
-<chap2/Silburt_Rdist_all.pdf, id=265, 505.89pt x 361.35pt>
+<chap2/Silburt_Rdist_all.pdf, id=262, 505.89pt x 361.35pt>
 File: chap2/Silburt_Rdist_all.pdf Graphic file (type pdf)
 
 <use chap2/Silburt_Rdist_all.pdf>
 Package pdftex.def Info: chap2/Silburt_Rdist_all.pdf used on input line 745.
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
  [41] [42 <./chap2/Silburt_Rdist_all.pdf>]
-<chap2/Silburt_ISnobin.pdf, id=280, 505.89pt x 361.35pt>
+<chap2/Silburt_ISnobin.pdf, id=277, 505.89pt x 361.35pt>
 File: chap2/Silburt_ISnobin.pdf Graphic file (type pdf)
 
 <use chap2/Silburt_ISnobin.pdf>
@@ -652,7 +652,7 @@ Package natbib Warning: Citation `Lissauer' on page 44 undefined on input line
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [44] [45]
-<chap2/Petigura_Sil_frac_completeness.pdf, id=299, 505.89pt x 361.35pt>
+<chap2/Petigura_Sil_frac_completeness.pdf, id=296, 505.89pt x 361.35pt>
 File: chap2/Petigura_Sil_frac_completeness.pdf Graphic file (type pdf)
 
 <use chap2/Petigura_Sil_frac_completeness.pdf>
@@ -660,7 +660,7 @@ Package pdftex.def Info: chap2/Petigura_Sil_frac_completeness.pdf used on input
  line 918.
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
  [46 <./chap2/Petigura_Sil_frac_completeness.pdf>] <chap2/PHM13_mastercomp.pdf,
- id=313, 505.89pt x 361.35pt>
+ id=310, 505.89pt x 361.35pt>
 File: chap2/PHM13_mastercomp.pdf Graphic file (type pdf)
 
 <use chap2/PHM13_mastercomp.pdf>
@@ -671,7 +671,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [47]
 [48 <./chap2/PHM13_mastercomp.pdf>]
-<chap2/Silburt_compvstars.pdf, id=328, 505.89pt x 361.35pt>
+<chap2/Silburt_compvstars.pdf, id=325, 505.89pt x 361.35pt>
 File: chap2/Silburt_compvstars.pdf Graphic file (type pdf)
 
 <use chap2/Silburt_compvstars.pdf>
@@ -703,7 +703,7 @@ Chapter 3.
 
 
 
-] <chap3/MMR.png, id=370, 578.16pt x 433.62pt>
+] <chap3/MMR.png, id=367, 578.16pt x 433.62pt>
 File: chap3/MMR.png Graphic file (type png)
  <use chap3/MMR.png>
 Package pdftex.def Info: chap3/MMR.png used on input line 30.
@@ -715,14 +715,14 @@ Underfull \vbox (badness 2318) has occurred while \output is active []
 
 LaTeX Warning: Reference `tab:kepsys' on page 62 undefined on input line 124.
 
-[62] [63] [64] <chap3/dDelta.png, id=392, 578.16pt x 433.62pt>
+[62] [63] [64] <chap3/dDelta.png, id=389, 578.16pt x 433.62pt>
 File: chap3/dDelta.png Graphic file (type png)
 
 <use chap3/dDelta.png>
 Package pdftex.def Info: chap3/dDelta.png used on input line 171.
 (pdftex.def)             Requested size: 270.68507pt x 194.47807pt.
  [65] [66 <./chap3/dDelta.png>]
-<chap3/tugg_v_repulse_July20.png, id=400, 578.16pt x 433.62pt>
+<chap3/tugg_v_repulse_July20.png, id=397, 578.16pt x 433.62pt>
 File: chap3/tugg_v_repulse_July20.png Graphic file (type png)
 
 <use chap3/tugg_v_repulse_July20.png>
@@ -741,7 +741,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 
 LaTeX Warning: Reference `app:min_e' on page 69 undefined on input line 241.
 
-<chap3/emin_Tconstraint.png, id=409, 578.16pt x 433.62pt>
+<chap3/emin_Tconstraint.png, id=406, 578.16pt x 433.62pt>
 File: chap3/emin_Tconstraint.png Graphic file (type png)
 
 <use chap3/emin_Tconstraint.png>
@@ -754,8 +754,8 @@ LaTeX Warning: Reference `app:emax' on page 69 undefined on input line 258.
 [69] [70 <./chap3/emin_Tconstraint.png>] [71] [72]
 Underfull \vbox (badness 1609) has occurred while \output is active []
 
- [73]
-[74]) [75]
+ [73])
+[74] [75]
 \openout2 = `chap4/chap4.aux'.
 
  (./chap4/chap4.tex
@@ -774,7 +774,7 @@ Underfull \vbox (badness 3375) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [79]
-<chap4/images/bodies.pdf, id=447, 273.02pt x 152.57pt>
+<chap4/images/bodies.pdf, id=443, 273.02pt x 152.57pt>
 File: chap4/images/bodies.pdf Graphic file (type pdf)
 
 <use chap4/images/bodies.pdf>
@@ -785,7 +785,7 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
  [81] [82]
-<chap4/images/CE_fig.pdf, id=462, 578.16pt x 433.62pt>
+<chap4/images/CE_fig.pdf, id=459, 578.16pt x 433.62pt>
 File: chap4/images/CE_fig.pdf Graphic file (type pdf)
 
 <use chap4/images/CE_fig.pdf>
@@ -795,7 +795,7 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
  [83 <./chap4/images/CE_fig.pdf>] [84]
-<chap4/images/AutoHSF.pdf, id=506, 439.6425pt x 186.6975pt>
+<chap4/images/AutoHSF.pdf, id=503, 439.6425pt x 186.6975pt>
 File: chap4/images/AutoHSF.pdf Graphic file (type pdf)
 
 <use chap4/images/AutoHSF.pdf>
@@ -815,7 +815,7 @@ x/m/n/12 (-20) al-go-rithm is switched off, set-ting \T1/cmtt/m/n/12 ri_hermes.
 hill_switch_factor
  []
 
-[87] [88] <chap4/images/R3B.pdf, id=523, 503.8825pt x 266.9975pt>
+[87] [88] <chap4/images/R3B.pdf, id=520, 503.8825pt x 266.9975pt>
 File: chap4/images/R3B.pdf Graphic file (type pdf)
 
 <use chap4/images/R3B.pdf>
@@ -832,14 +832,14 @@ Package microtype Info: Loading generic settings for font family
 
 LaTeX Font Warning: Command \sc invalid in math mode on input line 313.
 
-[90] <chap4/images/HSR_v_dE.pdf, id=534, 578.16pt x 433.62pt>
+[90] <chap4/images/HSR_v_dE.pdf, id=531, 578.16pt x 433.62pt>
 File: chap4/images/HSR_v_dE.pdf Graphic file (type pdf)
 
 <use chap4/images/HSR_v_dE.pdf>
 Package pdftex.def Info: chap4/images/HSR_v_dE.pdf used on input line 319.
 (pdftex.def)             Requested size: 260.16959pt x 195.1272pt.
  [91 <./chap4/images/HSR_v_dE.pdf>]
-<chap4/images/dt_v_dE.pdf, id=580, 578.16pt x 433.62pt>
+<chap4/images/dt_v_dE.pdf, id=576, 578.16pt x 433.62pt>
 File: chap4/images/dt_v_dE.pdf Graphic file (type pdf)
 
 <use chap4/images/dt_v_dE.pdf>
@@ -874,7 +874,7 @@ LaTeX Font Warning: Command \sc invalid in math mode on input line 356.
 
 LaTeX Font Warning: Command \sc invalid in math mode on input line 356.
 
-<chap4/images/CEvdE.pdf, id=626, 578.16pt x 433.62pt>
+<chap4/images/CEvdE.pdf, id=623, 578.16pt x 433.62pt>
 File: chap4/images/CEvdE.pdf Graphic file (type pdf)
 
 <use chap4/images/CEvdE.pdf>
@@ -895,14 +895,14 @@ LaTeX Font Warning: Command \sc invalid in math mode on input line 376.
 LaTeX Font Warning: Font shape `T1/cmtt/b/n' undefined
 (Font)              using `T1/cmtt/m/n' instead on input line 397.
 
-[94] [95] <chap4/images/Kirsh_avg_a.pdf, id=697, 578.16pt x 433.62pt>
+[94] [95] <chap4/images/Kirsh_avg_a.pdf, id=694, 578.16pt x 433.62pt>
 File: chap4/images/Kirsh_avg_a.pdf Graphic file (type pdf)
 
 <use chap4/images/Kirsh_avg_a.pdf>
 Package pdftex.def Info: chap4/images/Kirsh_avg_a.pdf used on input line 424.
 (pdftex.def)             Requested size: 260.16959pt x 195.1272pt.
  [96]
-<chap4/images/energy_avg_FULL.png, id=701, 578.16pt x 578.16pt>
+<chap4/images/energy_avg_FULL.png, id=698, 578.16pt x 578.16pt>
 File: chap4/images/energy_avg_FULL.png Graphic file (type png)
 
 <use chap4/images/energy_avg_FULL.png>
@@ -928,13 +928,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `model' on page 107 undefined on input line 129.
+LaTeX Warning: Reference `model' on page 107 undefined on input line 128.
 
-[107] <chap5/figures/ICpredictions.pdf, id=773, 578.16pt x 433.62pt>
+[107] <chap5/figures/ICpredictions.pdf, id=770, 578.16pt x 433.62pt>
 File: chap5/figures/ICpredictions.pdf Graphic file (type pdf)
 
 <use chap5/figures/ICpredictions.pdf>
-Package pdftex.def Info: chap5/figures/ICpredictions.pdf used on input line 137
+Package pdftex.def Info: chap5/figures/ICpredictions.pdf used on input line 136
 .
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 
@@ -945,21 +945,21 @@ Underfull \vbox (badness 7925) has occurred while \output is active []
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chap5/figures/histograms.pdf, id=848, 433.62pt x 289.08pt>
+<chap5/figures/histograms.pdf, id=845, 433.62pt x 289.08pt>
 File: chap5/figures/histograms.pdf Graphic file (type pdf)
 
 <use chap5/figures/histograms.pdf>
-Package pdftex.def Info: chap5/figures/histograms.pdf used on input line 206.
+Package pdftex.def Info: chap5/figures/histograms.pdf used on input line 205.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  [111] [112 <./chap5/figures/histograms.pdf>] <chap5/figures/prcurves.pdf, id=8
-92, 505.89pt x 505.89pt>
+89, 505.89pt x 505.89pt>
 File: chap5/figures/prcurves.pdf Graphic file (type pdf)
 
 <use chap5/figures/prcurves.pdf>
-Package pdftex.def Info: chap5/figures/prcurves.pdf used on input line 225.
+Package pdftex.def Info: chap5/figures/prcurves.pdf used on input line 224.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
- [113] [114 <./chap5/figures/prcurves.pdf>]
-[115]) [116] [117] [118]
+ [113] [114 <./chap5/figures/prcurves.pdf>])
+[115] [116] [117] [118]
 \openout2 = `chap6/chap6.aux'.
 
  (./chap6/chap6.tex
@@ -973,7 +973,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [121]
 [122]
-<chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf, id=966, 1445.4pt x 867.24pt>
+<chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf, id=963, 1445.4pt x 867.24pt>
 File: chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf Graphic file (type pdf)
 <use chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf>
 Package pdftex.def Info: chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf used 
@@ -1000,7 +1000,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--163
  []
 
 [126] [127] [128] [129]
-<chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf, id=1035, 144
+<chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf, id=1032, 144
 5.4pt x 867.24pt>
 File: chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf Graphic 
 file (type pdf)
@@ -1010,7 +1010,7 @@ Package pdftex.def Info: chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02
 _sd931.pdf used on input line 252.
 (pdftex.def)             Requested size: 451.6875pt x 253.11517pt.
 
-<chap6/images/plot_good_ones.pdf, id=1036, 578.16pt x 722.7pt>
+<chap6/images/plot_good_ones.pdf, id=1033, 578.16pt x 722.7pt>
 File: chap6/images/plot_good_ones.pdf Graphic file (type pdf)
 
 <use chap6/images/plot_good_ones.pdf>
@@ -1023,31 +1023,31 @@ LaTeX Warning: Float too large for page by 37.05823pt on input line 268.
 
 [130 <./chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf>]
 [131 <./chap6/images/plot_good_ones.pdf>]
-<chap6/images/stability_plot_histogram.pdf, id=1131, 1156.32pt x 1084.05pt>
+<chap6/images/stability_plot_histogram.pdf, id=1128, 1156.32pt x 1084.05pt>
 File: chap6/images/stability_plot_histogram.pdf Graphic file (type pdf)
 
 <use chap6/images/stability_plot_histogram.pdf>
 Package pdftex.def Info: chap6/images/stability_plot_histogram.pdf used on inpu
 t line 305.
 (pdftex.def)             Requested size: 451.6875pt x 513.74341pt.
- [132] [133] [134 <./chap6/images/stability_plot_histogram.pdf>] [135]) [136]
+ [132] [133] [134 <./chap6/images/stability_plot_histogram.pdf>]) [135] [136]
 \openout2 = `conc/conc.aux'.
 
  (./conc/conc.tex
 Chapter 7.
-) [137
+[137
 
 
 
-] (./thesis.bbl [138
+] [138]) [139] (./thesis.bbl [140
 
 
-] [139] [140] [141] [142] [143] [144] [145] [146]
-[147])
+] [141] [142] [143] [144] [145] [146]
+[147] [148] [149])
 
 Package natbib Warning: There were undefined citations.
 
-[148] (./thesis.aux (./intro/intro.aux) (./chap2/chap2.aux) (./chap3/chap3.aux)
+[150] (./thesis.aux (./intro/intro.aux) (./chap2/chap2.aux) (./chap3/chap3.aux)
 (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./conc/conc.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1060,10 +1060,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8207 strings out of 493117
- 122165 string characters out of 6135433
- 215554 words of memory out of 5000000
- 10743 multiletter control sequences out of 15000+600000
+ 8208 strings out of 493117
+ 122179 string characters out of 6135433
+ 215564 words of memory out of 5000000
+ 10744 multiletter control sequences out of 15000+600000
  137853 words of font info for 637 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,17n,45p,1142b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1086,10 +1086,10 @@ ype1/public/cm-super/sftt2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
 e1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/
 palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatin
 o/uplri8a.pfb>
-Output written on thesis.pdf (166 pages, 2180954 bytes).
+Output written on thesis.pdf (167 pages, 2184474 bytes).
 PDF statistics:
- 1305 PDF objects out of 1440 (max. 8388607)
- 615 compressed objects within 7 object streams
+ 1308 PDF objects out of 1440 (max. 8388607)
+ 617 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
  91282 words of extra memory for PDF output out of 106986 (max. 10000000)
 

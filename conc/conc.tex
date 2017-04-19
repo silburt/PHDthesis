@@ -1,10 +1,40 @@
 \chapter{Conclusions \& Future Work}
 \label{chap:conc}
+This thesis analyzes the statistics, formation and stability of exoplanetary systems. 
+Five main results have been presented, and are summarized below. 
 
-\section{Conclusions}
+\section{Main Results}
 
-My Conclusions
 
 \section{Future Work and Directions}
+From Chapter~\ref{chap:Tides}, a primary reason why tides cannot transport planets from exact MMR to a few percent wide is due to "Resonant Tugging" (Section~\ref{sec:restugg}).
+This effect was seen using two different tidal prescriptions, and is believed to be a real effect vs. a numerical artifact. 
+However, this effect was not analytically derived and is poorly understood. 
+Additional work is needed to understand the physics behind this process, as well as its range of applicability.
+Since the effect was seen for moderate-to-high eccentricities, a good starting point would be to expand the Resonant Hamiltonian to include higher-order terms. 
 
-My Future Work and Directions. 
+Chapter~\ref{chap:Hermes} presented \hermes, a hybrid integrator for planetesimal migration. 
+The integrator was originally designed to investigate the role of planetesimals in transporting planets from MMR, however this research was never realized during my thesis. 
+Among others, \citet{Chatterjee2015} investigated this question for two Neptune mass planets and found that $0.2m_N$ (where $m_N$ is the mass of Neptune) of nearby, dynamically cold, planetesimals was required to break the resonance. 
+However, this result warrants further investigation. 
+For example, given the process of planetary formation (Section~\ref{sec:PF}) is it reasonable to assume that $0.2m_N$ of nearby, dynamically cold planetesimals would be available?
+In addition, how would the initial migration phase into MMR further excite, eject and collide these nearby planetesimals?
+In summary, a self-consistent model of MMR planets embedded in a planetesimal disk has yet to be done, and \hermes would be perfect for the job.
+
+Chapter~\ref{chap:Stability} showed that a machine trained on sample N-body integrations can accurately predict the longterm stability of new systems based off their initial conditions and early evolution. 
+The training set consisted of equal mass planets on circular orbits and a limited separation range. 
+Substantial work can still be done to make this a valuable asset to the exoplanet community.
+Primarily, this work can be extended to planets more representative of the \kep population, having systems with unequal masses on non-circular orbits, and simulated for an order of magnitude longer. 
+In addition, for other scientists to use this tool, an easy-to-use pipeline must be created that can input a given planetary system and output a probability of longterm stability. 
+
+Finally, in Chapter~\ref{chap:HD155358} we used a simple formation model to fit the RV curve of HD155358 and determine the initial conditions of the system. 
+This simple model could be replaced with a full 3D hydrodynamical model, further constraining the initial conditions of the system. 
+
+\begin{enumerate}
+\item Further investigate Resonant Tugging.
+\item Use \hermes to investigate planetesimals near MMR.
+\item \memoas{Improve \hermes more? The ultimate integrator would be \mercury switching scheme + WHDS as the base integrator.}
+\item \memoas{Sophisticated Collisions a la Leinhardt \& Stewart.}
+\item Create a pipeline where scientists can input a planetary system into a trained machine learning model and receive an output probability of stability. 
+\item Develop a more sophisticated formation model for HD155358 and fit to the RV curve. This would constrain the formation scenario of HD155358 even further.
+\end{enumerate}
