@@ -132,8 +132,8 @@ Since the launch of the \textit{Kepler Space Telescope}, scientists have finally
 Thousands of exoplanets have been detected by a variety of methods, and collective properties of exoplanetary systems are emerging. 
 This thesis contributes to the exoplanet field by analyzing the statistics, formation and stability of exoplanetary systems.
 
-In the first part of this thesis we conduct a statistical reconstruction of the radius and period distributions for \kep planets. 
-Accounting for observation and detection biases, as well as measurement errors, we calculate the occurrence of planetary systems, including the prevalence of Earth-like planets.
+The first part of this thesis conducts a statistical reconstruction of the radius and period distributions for \kep planets. 
+Accounting for observation and detection biases, as well as measurement errors, we calculate the occurrence of planetary systems including the prevalence of Earth-like planets.
 This calculation is compared to related works, finding both similarities and differences. 
  
 The second part of this thesis investigates the formation of \kep planets near mean motion resonance (MMR).
@@ -141,16 +141,16 @@ In particular, 27 \kep systems near 2:1 MMR are analyzed to determine whether ti
 We find that tides alone cannot transport near-resonant planets from exact 2:1 MMR to their observed locations, and other mechanisms must be invoked to explain their formation.
 
 Third, a new hybrid integrator \hermes is presented, which is capable of simulating N-bodies undergoing close encounters.
-In particular, \hermes is designed for simulating planetary systems embedded in planetesimal disks. 
-\hermes is compared to other popular integrators, and we find \hermes to be a great balance of speed and accuracy.
+\hermes is specifically designed for planets in planetesimal disks, and includes an adaptive routine for optimizing the close encounter boundary to help maintain accuracy whilst close encounters are occurring.
+The performance of \hermes is compared to other popular integrators, and we find \hermes to be a great balance of speed and accuracy.
  
 Fourth, the longterm stability of planetary systems is investigated using machine learning techniques.
 Typical studies of longterm stability require thousands of realizations to acquire statistically rigorous results, which can take weeks or months to perform. 
 Here we find that a trained machine is capable of accurately classifying longterm planet stability, and is orders of magnitude faster than brute-force N-body integration. 
  
-Finally, the HD155358 system is investigated using previously collected radial velocity data. 
+Finally, the planetary system HD155358, which contains two Jovian-sized planets near 2:1 MMR, is investigated using previously collected radial velocity data. 
 New orbital parameters are derived using a Bayesian framework, and from this we find a high likelihood that the planets are in MMR.
-In addition, constraints are placed on the formation history of HD155358, and we find that our best-fit parameters are longterm stable. 
+In addition, constraints are placed on the formation history of HD155358, and our best-fit parameters land firmly in stable regions of parameter space. 
  
 \end{abstract}
 \cleardoublepage
