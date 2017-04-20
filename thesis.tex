@@ -90,7 +90,7 @@
 
 %% ***   Change this example to appropriate values.   ***
 \degree{Doctor of Philosophy} \department{Astronomy \& Astrophysics}
-\gradyear{2017} \author{Ari Silburt} \title{Dynamics, Formation and Statistics of Exoplanetary Systems}
+\gradyear{2017} \author{Ari Silburt} \title{Statistics, Formation and Stability of Exoplanetary Systems}
 
 %% ***   NOTE   ***
 %% Put here all other formatting commands that belong in the preamble.
@@ -128,22 +128,29 @@
 %% according to SGS guidelines.
 \begin{abstract}
   
-Since the launch of the \textit{Kepler Space Telescope}, scientists have, for the first time ever, had an opportunity to study planetary systems outside our own and test longstanding theories about planetary dynamics.
-Thousands of exoplanets have been detected by a variety of methods, and universal properties of exoplanetary systems are beginning to emerge. 
+Since the launch of the \textit{Kepler Space Telescope}, scientists have finally had an opportunity to study planetary systems outside the Solar System and test planetary theories against observations.
+Thousands of exoplanets have been detected by a variety of methods, and collective properties of exoplanetary systems are emerging. 
+This thesis contributes to the exoplanet field by analyzing the statistics, formation and stability of exoplanetary systems.
 
-In the first part of this thesis a statistical reconstruction of the radius and period distributions of \kep planets is performed. 
+In the first part of this thesis we conduct a statistical reconstruction of the radius and period distributions for \kep planets. 
 Accounting for observation and detection biases, as well as measurement errors, we calculate the occurrence of planetary systems, including the prevalence of Earth-like planets.
-This calculation is compared to other works in the field, and we find the broad details consistent with differing specifics.
+This calculation is compared to related works, finding both similarities and differences. 
  
-The second component of this thesis deals with the formation of exoplanetary systems.
-First, \kep systems near 2:1 mean motion resonance (MMR) are analyzed to determine whether tides alone can transport them from exact MMR to their observed locations.
-Second, a new hybrid integrator \hermes is presented, which is capable of simulating N-bodies undergoing close encounters, with the original intent of simulating the formation of planetary systems embedded in planetesimal disks. 
-Third, formation scenarios for 
+The second part of this thesis investigates the formation of \kep planets near mean motion resonance (MMR).
+In particular, 27 \kep systems near 2:1 MMR are analyzed to determine whether tides alone can transport \kep planets from exact MMR to their observed locations.
+We find that tides alone cannot transport near-resonant planets from exact 2:1 MMR to their observed locations, and other mechanisms must be invoked to explain their formation.
+
+Third, a new hybrid integrator \hermes is presented, which is capable of simulating N-bodies undergoing close encounters.
+In particular, \hermes is designed for simulating planetary systems embedded in planetesimal disks. 
+\hermes is compared to other popular integrators, and we find \hermes to be a great balance of speed and accuracy.
  
-Longterm stability is a 
+Fourth, the longterm stability of planetary systems is investigated using machine learning techniques.
+Typical studies of longterm stability require thousands of realizations to acquire statistically rigorous results, which can take weeks or months to perform. 
+Here we find that a trained machine is capable of accurately classifying longterm planet stability, and is orders of magnitude faster than brute-force N-body integration. 
  
-The statistics, formation and stability of HD155358 is investigated. 
-New orbital parameters are derived from previously observed radial velocity data using a Bayesian framework, constraints are placed on the viable parameters able to explain its formation, and a longterm stability analysis is conducted. 
+Finally, the HD155358 system is investigated using previously collected radial velocity data. 
+New orbital parameters are derived using a Bayesian framework, and from this we find a high likelihood that the planets are in MMR.
+In addition, constraints are placed on the formation history of HD155358, and we find that our best-fit parameters are longterm stable. 
  
 \end{abstract}
 \cleardoublepage
