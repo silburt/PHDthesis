@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  20 APR 2017 11:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  20 APR 2017 14:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -551,11 +551,7 @@ Package pdftex.def Info: intro/PeriodRatios.pdf used on input line 199.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-[15] [16] [17]
-Underfull \vbox (badness 1968) has occurred while \output is active []
-
- [18]
-[19] [20]) [21]
+[15] [16] [17] [18] [19] [20]) [21]
 \openout2 = `chap2/chap2.aux'.
 
  (./chap2/chap2.tex
@@ -1068,11 +1064,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8234 strings out of 493117
- 122451 string characters out of 6135433
+ 8226 strings out of 493117
+ 122377 string characters out of 6135433
  215565 words of memory out of 5000000
  10746 multiletter control sequences out of 15000+600000
- 140038 words of font info for 653 fonts, out of 8000000 for 9000
+ 139618 words of font info for 647 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,17n,45p,1142b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -1094,7 +1090,7 @@ ype1/public/cm-super/sftt2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
 e1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/
 palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatin
 o/uplri8a.pfb>
-Output written on thesis.pdf (170 pages, 2192661 bytes).
+Output written on thesis.pdf (170 pages, 2192456 bytes).
 PDF statistics:
  1318 PDF objects out of 1440 (max. 8388607)
  624 compressed objects within 7 object streams

@@ -8,8 +8,8 @@ Five main results have been presented, and are summarized below.
 In Chapter~\ref{chap:Stats} we used the \citet{Ramirez2014} \kep catalog to calculate the occurrence rate of small planets, accounting for detection biases and radius errors. 
 We found that Kepler planets are preferentially peaked at $2-2.8R_\oplus$, with their numbers decreasing gradually toward smaller sizes, with a roughly log-uniform period distribution.
 The average number of planets per star with periods between $20$ and $200$ days and radii between $1$ and $4R_\oplus$ is $0.46 \pm 0.03$. 
-Such planets have likely experienced little photoevaporation, and may reflect the "primordial'' planet population. 
-Upon extrapolation we obtain an occurrence rate, for Earth-like planets within the "habitable zone'' (as calculated by 1-D climate models), of $6.4^{+3.4}_{-1.1}\%$. 
+Such planets have likely experienced little photoevaporation, and may reflect the "primordial" planet population. 
+Upon extrapolation we obtain an occurrence rate, for Earth-like planets within the "habitable zone" (as calculated by 1-D climate models), of $6.4^{+3.4}_{-1.1}\%$. 
 
 \subsection{Tides Can't Explain Planets Close to MMR}
 In Chapter~\ref{chap:Tides} we used an optimistic theoretical estimate for the minimum initial eccentricity required by \kep planets to explain the current observed spacing, and complimented these calculations with N-body simulations.
@@ -32,11 +32,11 @@ Optimized machine learning classifiers for dynamical stability may thus prove us
 
 \subsection{Analyzing HD155358}
 In Chapter~\ref{chap:HD155358} we analyzed the RV data for the star HD155358, which hosts two Jovian-sized planets near 2:1 MMR. 
-Using two distinct models parameterized by the orbital elements of each planet, we showed that excluding planet-planet interactions can yield statistically different orbital solutions, leading to different implications for formation and stability. 
-Using our updated orbital solution, we calculate a high likelihood that the planets are in MMR. 
+Using a Bayesian model parameterized by the orbital elements of each planet, we showed that excluding planet-planet interactions can yield statistically different orbital solutions, leading to different implications for formation and stability. 
+Using our updated orbital solution we calculate a high likelihood that the planets are in MMR. 
 
 In addition, we conducted a stability analysis by drawing samples from our posterior distribution and simulating them for $10^9$ years, finding that our best-fit values land firmly in a stable region of parameter space.
-We also explored a series of formation models that migrate the planets into MMR and generate synthetic RV curves to fit directly to the observed data. 
+We also explored a series of formation models that migrate the planets into MMR and generated synthetic RV curves to fit directly to the observed data. 
 We found that a number of formation models fit the RV data surprisingly well, with some migration parameters being ruled out.
 
 \section{Future Work and Directions}
@@ -48,16 +48,16 @@ Since the effect was seen for moderate-to-high eccentricities, a good starting p
 
 Chapter~\ref{chap:Hermes} presented \hermes, a hybrid integrator for planetesimal migration. 
 The integrator was originally designed to investigate the role of planetesimals in transporting planets from MMR, however this research was never realized during my thesis. 
-Among others, \citet{Chatterjee2015} investigated this question for two Neptune mass planets and found that $0.2m_N$ (where $m_N$ is the mass of Neptune) of nearby, dynamically cold, planetesimals was required to break the resonance. 
+Most recently, \citet{Chatterjee2015} investigated this question for two Neptune mass planets and found that $0.2m_N$ (where $m_N$ is the mass of Neptune) of nearby, dynamically cold, planetesimals was required to break the resonance. 
 However, this result warrants further investigation. 
 For example, given the process of planetary formation (Section~\ref{sec:PF}) is it reasonable to assume that $0.2m_N$ of nearby, dynamically cold planetesimals would be available?
-In addition, how would the initial migration phase into MMR further excite, eject and collide these nearby planetesimals?
-In summary, a self-consistent model of MMR planets embedded in a planetesimal disk has yet to be done, and \hermes would be perfect for the job.
+In addition, how would the initial migration phase into MMR excite, eject and collide nearby planetesimals?
+In summary, a self-consistent model of MMR planets embedded in a planetesimal disk has yet to be made, and \hermes is perfect for the job.
 
 Chapter~\ref{chap:Stability} showed that a machine trained on sample N-body integrations can accurately predict the longterm stability of new systems based off their initial conditions and early evolution. 
-The training set consisted of equal mass planets on circular orbits and a limited separation range. 
+The training set consisted of equal mass planets on circular orbits and simulated for $10^7$ orbits. 
 Substantial work can still be done to make this a valuable asset to the exoplanet community.
-Primarily, this work can be extended to planets more representative of the \kep population, having systems with unequal masses on non-circular orbits, and simulated for an order of magnitude longer. 
+Primarily, this work can be extended to planetary systems more representative of the \kep population, with unequal mass planets on non-circular orbits simulated for an order of magnitude longer. 
 In addition, for other scientists to use this tool, an easy-to-use pipeline must be created that can input a given planetary system and output a probability of longterm stability. 
 
 Finally, in Chapter~\ref{chap:HD155358} we used a simple formation model to fit the RV curve of HD155358 and determine the initial conditions of the system. 
