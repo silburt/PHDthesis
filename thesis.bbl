@@ -1,4 +1,4 @@
-\begin{thebibliography}{183}
+\begin{thebibliography}{182}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Akeson} {et~al.}(2013){Akeson}, {Chen}, {Ciardi}, \&
@@ -47,20 +47,6 @@
 \bibitem[{{Bastien} {et~al.}(2014){Bastien}, {Stassun}, \&
   {Pepper}}]{Bastien2014}
 {Bastien}, F.~A., {Stassun}, K.~G., \& {Pepper}, J. 2014, ArXiv e-prints
-
-\bibitem[{{Batalha} {et~al.}(2013){Batalha}, {Rowe}, {Bryson}, {Barclay},
-  {Burke}, {Caldwell}, {Christiansen}, {Mullally}, {Thompson}, {Brown},
-  {Dupree}, {Fabrycky}, {Ford}, {Fortney}, {Gilliland}, {Isaacson}, {Latham},
-  {Marcy}, {Quinn}, {Ragozzine}, {Shporer}, {Borucki}, {Ciardi}, {Gautier},
-  {Haas}, {Jenkins}, {Koch}, {Lissauer}, {Rapin}, {Basri}, {Boss}, {Buchhave},
-  {Carter}, {Charbonneau}, {Christensen-Dalsgaard}, {Clarke}, {Cochran},
-  {Demory}, {Desert}, {Devore}, {Doyle}, {Esquerdo}, {Everett}, {Fressin},
-  {Geary}, {Girouard}, {Gould}, {Hall}, {Holman}, {Howard}, {Howell},
-  {Ibrahim}, {Kinemuchi}, {Kjeldsen}, {Klaus}, {Li}, {Lucas}, {Meibom},
-  {Morris}, {Pr{\v s}a}, {Quintana}, {Sanderfer}, {Sasselov}, {Seader},
-  {Smith}, {Steffen}, {Still}, {Stumpe}, {Tarter}, {Tenenbaum}, {Torres},
-  {Twicken}, {Uddin}, {Van Cleve}, {Walkowicz}, \& {Welsh}}]{Batalha2013}
-{Batalha}, N.~M., {et~al.} 2013, \apjs, 204, 24
 
 \bibitem[{{Batygin} {et~al.}(2016){Batygin}, {Bodenheimer}, \&
   {Laughlin}}]{Batygin2016}

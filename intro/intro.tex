@@ -12,6 +12,7 @@ A periodic wobble will be observed in the lightcurve of a star with an orbiting 
 From the conservation of energy and angular momentum, a star's wobble (or radial velocity) due to a planetary companion can be calculated according to \citep{Beauge2007}:
 \begin{equation}
 V_r = K \cdot [\cos(\nu + \omega) + e\cdot \cos(\omega) + \gamma]
+\label{eq:RV}
 \end{equation}
 where $K$ is the semi-amplitude:
 \begin{equation}
@@ -21,12 +22,12 @@ K = \frac{m_p \sin(i)}{m_* + m_p} \frac{2\pi a}{P\sqrt{1-e^2}}
 $a$ is the semi-major axis of the planet, $P$ is the orbital period, $m_p$ is the planet mass, $m_*$ is the stellar mass, $i$ is the inclination, $e$ is the eccentricity, $\nu$ is the true anomaly, $\omega$ is the argument of periastron, and $\gamma$ is the stellar drift in velocity.
 Since the probability of detecting a planet is related to $K$, radial velocity preferentially detects massive planets on short orbits. 
 
-In theory one can extract the planet's orbital parameters from the radial velocity (mass, eccentricity, orbital period, etc.), however in practice this is more difficult.
-For example, successful extraction of orbital parameters requires accurate and precise knowledge of the stellar mass, which is typically difficult to obtain \citep[e.g.][]{Brown2011}.
+Using Equations~\ref{eq:RV} and \ref{eq:K} one can extract the orbital parameters of the planet like eccentricity, semi-major axis, etc.
+However, successful extraction of these orbital parameters requires accurate and precise knowledge of the stellar mass, which is typically difficult to obtain \citep[e.g.][]{Brown2011}.
 Furthermore, only a lower limit $m\sin(i)$ estimate on planet mass can be calculated unless the inclination relative to Earth's line of sight is known. 
 In addition, the radius of the planet cannot be calculated from the radial velocity method, precluding any information about size and density.
 
-When multiple planets orbit a star the radial velocity signal becomes more complicated, though it is still quasi-periodic in nature (assuming orbital stability). 
+When multiple planets orbit a star the radial velocity signal becomes more complicated.
 Assuming that the planets are well-separated such that their mutual gravitational interactions are weak, the radial velocity of the star can be approximated as the sum of planetary Keplerian orbits:
 \begin{equation}
 V_r = \gamma + \sum_{i=1}^{n_p} K_i \cdot [\cos(\nu_i + \omega_i) + e_i\cdot \cos(\omega_i)]
@@ -34,6 +35,7 @@ V_r = \gamma + \sum_{i=1}^{n_p} K_i \cdot [\cos(\nu_i + \omega_i) + e_i\cdot \co
 \end{equation}
 where $n_p$ is the number of planets in the system. 
 If however the planet-planet gravitational interactions are strong, Equation~\ref{eq:RVsum} is invalid and must be replaced with a more careful numerical treatment. 
+Chapter~\ref{chap:HD155358} presents such a detailed numerical treatment, building off an original analysis by \citet{Robertson2012} that used Equation~\ref{eq:RVsum} to extract the orbital parameters of two Jovian-sized planets near mean motion resonance. 
 
 \subsubsection{Transit Method}
 \label{sec:transit}
@@ -61,7 +63,7 @@ In addition, the atmospheric properties of exoplanets can also be probed \citep{
 In total, the transit method is able to provide essential information about the composition, formation and habitability of a planet. 
 However, the transit method has several weaknesses. 
 For example, most orbital parameters needed for dynamical studies, like eccentricity and mass, cannot be determined for individual systems via the transit method.
-In addition, false positives from eclipsing binaries and background targets are a huge source of contamination \citep{Fressin2013}, and confirmation via a different method is often required. 
+In addition, false positives from eclipsing binaries and background targets are a significant source of contamination \citep{Fressin2013}, and confirmation via a different method is often required. 
 Smaller planets and/or planets belonging to multi-planet systems are much less likely to be false positives than large, single planets \citep{Fressin2013}.
 
 \subsection{Statistics of Kepler Planets}
@@ -72,7 +74,7 @@ Due to the selection bias of the transit method (see Section~\ref{sec:transit}),
 However, sufficient detection across the full range of Earth-to-Jupiter sized planets has enabled scientists to calculate the occurrence of planets around other stars in our galaxy. 
 
 Two seminal works analyzing the \kep population are \citet{Fressin2013} and \citet{Petigura2013}.
-\citet{Fressin2013} found that the global false positive rate of the \kep data is roughly $10\%$, the radius distribution peaks at mini-Neptune ($2<r_p/r_{\oplus}<2.8$, $r_{\oplus}$ is the radius of Earth) sized planets, and the occurrence of Neptune and Jupiter sized planets is significantly lower than the occurrence of $r_p/r_{\oplus}<2.8$ sized planets.
+\citet{Fressin2013} found that the global false positive rate of the \kep data is roughly $10\%$, the radius distribution peaks at mini-Neptune sized planets ($2<r_p/r_{\oplus}<2.8$, $r_{\oplus}$ is the radius of Earth), and the occurrence of Neptune and Jupiter sized planets is significantly lower than the occurrence of $r_p/r_{\oplus}<2.8$ sized planets.
 Using a carefully vetted data sample, \citet{Petigura2013} found a similar result as \citet{Fressin2013}, i.e. that the radius distribution peaks at mini-Neptune and the occurrence of Neptune and Jupiter sized planets is much lower.
 
 A calculation of planet occurrence is usually performed by binning the planets in $r$--$P$ space (where $r$ is planet radius and $P$ is planet period), and calculating planet occurrence for each bin. 
@@ -91,6 +93,7 @@ One critical aspect of planet occurrence that \citet{Fressin2013} and \citet{Pet
 The mean planetary radius error in the \citep{Ramirez2014} \kep dataset is $30\%$, meaning that, within 3 standard deviations a super-Earth sized planet could actually be Neptune or Earth-sized. 
 These errors primarily stem from the fact that the radii of \kep stars are not well known \citep{Brown2011}, also with a mean radius error of $30\%$.
 With such large error bars present in the \kep data, ignoring them can affect the resulting radius and planet occurrence distributions.
+Chapter~\ref{chap:Stats} performs a planet occurrence calculation similar to \citet{Fressin2013} and \citet{Petigura2013} whilst incorporating these large errors into the analysis. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -104,7 +107,7 @@ The initial conditions of the Solar System are still largely unknown.
 \Sigma(d) = \Sigma_0\left(\frac{d}{1 \textrm{AU}} \right)^{-3/2}
 \end{equation}
 where $\Sigma_0 = 1700 \textrm{g/cm}^{2}$. 
-This initial surface density distribution is known as the ``minimum mass solar nebula" (MMSN), and is a benchmark against which most planet formation studies are compared to.
+This initial surface density distribution is known as the Minimum Mass Solar Nebula (MMSN), and is a benchmark against which most planet formation studies are compared to.
 
 %berta, charbonneau 2012
 
@@ -144,11 +147,11 @@ The formation mechanism of planetesimals is still unclear, however, \textit{some
 \subsection{Formation of Protoplanets}
 The formation of protoplanets occurs shortly after the formation of large, kilometre-sized planetesimals.
 In a pioneering study, \citet{Greenberg1978} found that in the early stages of planet formation larger planetesimals grow more rapidly than smaller ones, resulting in the runaway growth of the largest planetesimal. 
-As a result, $1$--$10$km sized planetesimals at $1$AU can grow into $10^{22}$ -- $10^{24}$ kg protoplanets in $10^5$--$10^6$ years \citep{Wetherill1989}.
+As a result, $1$--$10$ km sized planetesimals at $1$AU can grow into $10^{22}$ -- $10^{24}$ kg protoplanets in $10^5$--$10^6$ years \citep{Wetherill1989}.
 This runaway process stems from the fact that $1$--$10$ km sized planetesimals are large enough to gravitationally focus each other yet are still dynamically cool via damping from surrounding gas, resulting in a maximum collision cross section \citep{Armitage2010}.
 Since proplanetary growth rates are related to orbital frequency, more distant regions will have slower growth timescales.
 
-Eventually this runaway growth transitions into a slower, "oligarchic" growth. 
+Eventually this runaway growth transitions into a slower, oligarchic growth. 
 As protoplanets grow surrounding planetesimals are dynamically excited via gravitational stirring, decreasing the collision cross section and slowing the rate of protoplanetary growth \citep{Kokubo1998}.
 By the end of oligarchic growth protoplanets have consumed most of the surrounding material and have reached their isolation mass \citep{Schlichting2014}.
 Beyond the snowline the isolation mass is roughly the mass of Neptune, however inside the snowline it is a fraction of an Earth mass \citep{Schlichting2014}.
@@ -207,14 +210,12 @@ Cumulative distribution of period ratios of neighbouring planets in all known mu
 Planets from these statistical pileups are typically a few percent away from exact MMR commensurability, and dissipative mechanisms have been proposed to transport these planets from exact MMR. 
 The most popular of these mechanisms are tidal \citep{LithwickWu2012, Batygin2013, Delisle2014}, protoplanetary \citep{Rein2012b, Baruteau2013, Goldreich2014}, and planetesimal \citep{Moore2013, Chatterjee2015}.
 The formation implications for each mechanism are different, and no clear consensus has yet emerged.
-
-%Structure of MMR -- pendulum model, Separatrix, libration of resonant angles. 
-%With the exception of a these statistically significant excesses at first order resonances, the period distribution of planets is to first order uniform.
+Chapter~\ref{chap:Tides} critically examines the role of tidal forces in transporting \kep planets from exact MMR to their observed locations, using analytical and numerical means. 
 
 \subsection{Migration}
 \label{sec:migration}
-Planetary migration is believed to be the most effective way to trap planets in MMR \citep[e.g.][]{Lee2002}, making it a very important process for planet formation.  
-Presented here are the two primary ways that planets can migrate -- planetesimal-driven and gas-driven migration.
+Planetary migration is believed to be the most effective way of trapping planets in MMR \citep[e.g.][]{Lee2002}, making it a very important process for planet formation.  
+Throughout this thesis (Chapters~\ref{chap:Tides}, \ref{chap:Hermes} and \ref{chap:HD155358}) migration physics is utilized, and presented here are the two primary ways that planets can migrate -- via planetesimals and gas.
 
 \subsubsection{Planetesimal-Driven Migration}
 Planetesimals passing through the Hill sphere of a planet will exchange angular momentum via gravity \citep{Ida2000, Kirsh2009}.
@@ -234,7 +235,7 @@ The result of this exchange is planetary migration, and this scenario is believe
 Gas-driven migration comes in two main flavours -- Type I and Type II. 
 
 Type I migration occurs when low-mass planets are fully embedded in a protoplanetary disk and do not significantly perturb the disk structure \citep{Armitage2010}. 
-At particular resonant locations, known as "Linblad resonances", density waves are excited due to gravitational interactions between the planet and disk \citep{Goldreich1979}. 
+At particular resonant locations, known as Linblad resonances, density waves are excited due to gravitational interactions between the planet and disk \citep{Goldreich1979}. 
 These density waves exchange angular momentum with the planet, and migration occurs when the inner and outer disk interact asymmetrically with the planet \citep{Goldreich1979}.
 In general, the direction of Type-I migration tends to be inwards towards the central star \citep{Ward1997}.
 
@@ -265,6 +266,8 @@ Since the discovery of numerous exoplanetary systems via \kep, longterm stabilit
 If one assumes that an observed system is stable over billions of years, grids of N-body integrations can be used to find stable regions of parameter space, further narrowing the range of valid solutions originally constrained by observations. 
 Although this brute-force method is certainly useful, it is not without its costs. 
 A 10 billion year integration or the Solar System takes weeks to complete, and due to the chaotic nature of planetary systems hundreds to thousands of realizations must be simulated to acquire statistically rigorous results. 
+Chapter~\ref{chap:Stability} shows that using machine learning techniques, accurate predictions of longterm stability can be made. 
+These predictions are orders of magnitude faster than direct N-body integrations. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -296,16 +299,16 @@ A primary benefit of using this Hamiltonian framework is the ease of evolving a 
 \end{split}
 \end{align}
 Numerically this is trivial to do, with the accuracy of the result being inversely proportional to the size of the timestep, $dt$.
-A second benefit is the inherent "area preserving" or symplectic nature of Hamiltonian systems, with the energy error bound to a finite value (excluding e.g. numerical roundoff errors which grow with time).
+A second benefit is the inherent area preserving or symplectic nature of Hamiltonian systems, with the energy error bound to a finite value (excluding e.g. numerical roundoff errors which grow with time).
 
 Within the context of planetary systems, Equation~\ref{eq:H} can be modified to make integration more efficient.
 For example, a single planet will orbit in a Keplerian fashion around a star, determined exactly by the planet's orbital parameters and stellar mass. 
 In addition, for multi-planet systems gravitational interactions between planets will occur, perturbing planets off their original Keplerian trajectories.
-Thus, a new Hamiltonian can be constructed consisting of a "Keplerian" term, $\Ham_K$, and "Interaction" term, $\Ham_I$ according to \citep{Wisdom1991}:
+Thus, a new Hamiltonian can be constructed consisting of a Keplerian term, $\Ham_K$, and Interaction term, $\Ham_I$ according to \citep{Wisdom1991}:
 \begin{equation*}
 \Ham = \Ham_K + \Ham_I
 \end{equation*}
-If the planets are well-separated these gravitational interactions are small and the system can be numerically integrated by applying Keplerian and Interaction operators in a "leapfrog" manner:
+If the planets are well-separated these gravitational interactions are small and the system can be numerically integrated by applying Keplerian and Interaction operators in a leapfrog manner:
 \begin{equation}
 E_{\Ham}(dt) = E_{\Ham_K}(dt/4) \cdot E_{\Ham_I}(dt/2) \cdot E_{\Ham_K}(dt/4)
 \label{eq:DKD}
@@ -365,7 +368,7 @@ For the special case of $i=0$:
 The benefit of Democratic Heliocentric coordinates is that positions are not dependent upon other bodies (unlike Jacobi coordinates) and are thus conceptually easier to understand. 
 However, these coordinates do not solve the Two Body Problem or Restricted Three Body Problems exactly. 
 In addition, $\Ham_K$ cannot be cleanly written as shown in Equation~\ref{eq:Hgeneral} due to several cross terms that arise when substituting $\textbf{Q}$ and \textbf{P}.
-However, this problem can be rectified by transferring these cross terms into an additional ``Jump" Hamiltonian:
+However, this problem can be rectified by transferring these cross terms into an additional Jump Hamiltonian:
 \begin{equation}
 \Ham_J = \frac{1}{2m_0} \left|\sum_{i=1}^N \textbf{P}_i\right|^2
 \end{equation}
@@ -405,6 +408,7 @@ Hybrid integrators typically mix the symplectic and non-symplectic schemes, appl
 However, there are hybrid schemes that purely rely on symplectic principles \citep[e.g.][]{Duncan1998}.
 As a result, hybrid integrators are often an optimal balance between speed and accuracy, especially for problems involving numerous close encounters. 
 The most popular hybrid integrator is \mercury \citep{Chambers1999}.
+Chapter~\ref{chap:Hermes} presents \hermes, a new hybrid integrator designed for the migration of planets embedded in planetesimal disks. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
