@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  27 APR 2017 13:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  27 APR 2017 14:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -317,7 +317,23 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-)) (./thesis.aux)
+)) (./thesis.aux
+(./intro/intro.aux) (./chap2/chap2.aux) (./chap3/chap3.aux
+
+LaTeX Warning: Label `sec:introduction' multiply defined.
+
+) (./chap4/chap4.aux
+
+LaTeX Warning: Label `sec:Conclusion' multiply defined.
+
+) (./chap5/chap5.aux) (./chap6/chap6.aux
+
+LaTeX Warning: Label `sec:intro' multiply defined.
+
+
+LaTeX Warning: Label `sec:stability' multiply defined.
+
+) (./conc/conc.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
@@ -539,706 +555,54 @@ Package microtype Info: Loading generic settings for font family
 ] [5
 
 ]
-(./thesis.toc)
+(./thesis.toc [6
+
+] [7])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [6
+ [8] (./thesis.lot
+Overfull \hbox (13.13286pt too wide) in paragraph at lines 7--7
+ [][] []\T1/pplx/m/n/10 (-20) Hyperparameters used for the initial-conditions (
+IC) model (Sec.5.4.1[]) and short-integrations 
+ []
 
-] (./thesis.lot)
+)
 \tf@lot=\write4
 \openout4 = `thesis.lot'.
 
- [7
+ [9
 
-] (./thesis.lof)
+] (./thesis.lof [10
+
+] [11] [12])
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [8
-
-]
+ [13]
 \openout2 = `intro/intro.aux'.
 
  (./intro/intro.tex
 Chapter 1.
-
-Package natbib Warning: Citation `Beauge2007' on page 1 undefined on input line
- 12.
-
-
-LaTeX Warning: Reference `eq:RV' on page 1 undefined on input line 25.
-
-
-LaTeX Warning: Reference `eq:K' on page 1 undefined on input line 25.
-
-
-Package natbib Warning: Citation `Brown2011' on page 1 undefined on input line 
-26.
-
-
-LaTeX Warning: Reference `eq:RVsum' on page 1 undefined on input line 37.
-
-
-LaTeX Warning: Reference `chap:HD155358' on page 1 undefined on input line 38.
-
-
-Package natbib Warning: Citation `Robertson2012' on page 1 undefined on input l
-ine 38.
-
-
-LaTeX Warning: Reference `eq:RVsum' on page 1 undefined on input line 38.
-
 [1
 
 
 
 ]
-
-LaTeX Warning: Reference `eq:F' on page 2 undefined on input line 54.
-
-
-LaTeX Warning: Reference `eq:tp' on page 2 undefined on input line 54.
-
-
-Package natbib Warning: Citation `Henry1999' on page 2 undefined on input line 
-56.
-
-
-Package natbib Warning: Citation `Charbonneau2000' on page 2 undefined on input
- line 56.
-
-
-Package natbib Warning: Citation `NASAEA' on page 2 undefined on input line 57.
-
-
-
-LaTeX Warning: Reference `sec:RV' on page 2 undefined on input line 59.
-
-
-Package natbib Warning: Citation `NASAEA' on page 2 undefined on input line 59.
-
-
-
-Package natbib Warning: Citation `Kreidberg2014' on page 2 undefined on input l
-ine 62.
-
-
-Package natbib Warning: Citation `Tsiaras2016' on page 2 undefined on input lin
-e 62.
-
-
-Package natbib Warning: Citation `Stevenson2016' on page 2 undefined on input l
-ine 62.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 2 undefined on input lin
-e 66.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 2 undefined on input lin
-e 67.
-
-
-LaTeX Warning: Reference `sec:transit' on page 2 undefined on input line 73.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 2 undefined on input lin
-e 76.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 2 undefined on input li
-ne 76.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 2 undefined on input lin
-e 77.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 2 undefined on input li
-ne 78.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 2 undefined on input lin
-e 78.
-
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 80.
-[2]
-
-LaTeX Warning: Reference `eq:tp' on page 3 undefined on input line 86.
-
-
-LaTeX Warning: Reference `eq:occurence' on page 3 undefined on input line 88.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 3 undefined on input lin
-e 89.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 3 undefined on input li
-ne 89.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 3 undefined on input lin
-e 90.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 3 undefined on input lin
-e 92.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 3 undefined on input li
-ne 92.
-
-
-Package natbib Warning: Citation `Ramirez2014' on page 3 undefined on input lin
-e 93.
-
-
-Package natbib Warning: Citation `Brown2011' on page 3 undefined on input line 
-94.
-
-
-LaTeX Warning: Reference `chap:Stats' on page 3 undefined on input line 96.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 3 undefined on input lin
-e 96.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 3 undefined on input li
-ne 96.
-
-
-Package natbib Warning: Citation `Hayashi1981' on page 3 undefined on input lin
-e 105.
-
-
-Package natbib Warning: Citation `Weidenschilling1977' on page 3 undefined on i
-nput line 105.
-
-
-Package natbib Warning: Citation `Hayashi1981' on page 3 undefined on input lin
-e 116.
-
-[3]
-
-Package natbib Warning: Citation `Sasselov2000' on page 4 undefined on input li
-ne 122.
-
-
-Package natbib Warning: Citation `ALMA2015' on page 4 undefined on input line 1
-25.
-
-
-Package natbib Warning: Citation `Schneider2014' on page 4 undefined on input l
-ine 126.
-
-
-Package natbib Warning: Citation `Choquet2016' on page 4 undefined on input lin
-e 126.
-
-
-Package natbib Warning: Citation `Tamayo2015' on page 4 undefined on input line
- 126.
-
-
-Package natbib Warning: Citation `Weidenschilling1977b' on page 4 undefined on 
-input line 133.
-
-
-Package natbib Warning: Citation `Armitage2010' on page 4 undefined on input li
-ne 133.
-
-
-Package natbib Warning: Citation `Weidenschilling1977b' on page 4 undefined on 
-input line 134.
-
-
-Package natbib Warning: Citation `Blum2008' on page 4 undefined on input line 1
-34.
-
-
-Package natbib Warning: Citation `Weidenschilling1977b' on page 4 undefined on 
-input line 135.
-
-
-Package natbib Warning: Citation `Boley2014' on page 4 undefined on input line 
-137.
-
-
-Package natbib Warning: Citation `Goldreich1973' on page 4 undefined on input l
-ine 139.
-
-
-Package natbib Warning: Citation `Goldreich1973' on page 4 undefined on input l
-ine 140.
-
-
-Package natbib Warning: Citation `Goldreich1973' on page 4 undefined on input l
-ine 142.
-
-
-Package natbib Warning: Citation `Armitage2007' on page 4 undefined on input li
-ne 142.
-
-
-Package natbib Warning: Citation `Armitage2007' on page 4 undefined on input li
-ne 143.
-
-
-Package natbib Warning: Citation `Greenberg1978' on page 4 undefined on input l
-ine 149.
-
-
-Package natbib Warning: Citation `Wetherill1989' on page 4 undefined on input l
-ine 150.
-
-
-Package natbib Warning: Citation `Armitage2010' on page 4 undefined on input li
-ne 151.
-
-[4]
-
-Package natbib Warning: Citation `Kokubo1998' on page 5 undefined on input line
- 155.
-
-
-Package natbib Warning: Citation `Schlichting2014' on page 5 undefined on input
- line 156.
-
-
-Package natbib Warning: Citation `Schlichting2014' on page 5 undefined on input
- line 157.
-
-
-Package natbib Warning: Citation `Schlichting2014' on page 5 undefined on input
- line 158.
-
-
-Package natbib Warning: Citation `SSD1999' on page 5 undefined on input line 16
-7.
-
-
-Package natbib Warning: Citation `SSD1999' on page 5 undefined on input line 18
-2.
-
-
-Package natbib Warning: Citation `SSD1999' on page 5 undefined on input line 19
-4.
-
-
-Package natbib Warning: Citation `SSD1999' on page 5 undefined on input line 19
-5.
-
-
-LaTeX Warning: Reference `fig:KepMMR' on page 5 undefined on input line 197.
-
-
-Package natbib Warning: Citation `Lissauer2011' on page 5 undefined on input li
-ne 198.
-
-
-Package natbib Warning: Citation `Fabrycky2014' on page 5 undefined on input li
-ne 198.
-
-
-Package natbib Warning: Citation `Steffen2015' on page 5 undefined on input lin
-e 198.
-
-[5] <intro/PeriodRatios.pdf, id=55, 578.16pt x 433.62pt>
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 79.
+ [2] [3] [4] [5] <intro/PeriodRatios.pdf, id=70, 578.16pt x 433.62pt>
 File: intro/PeriodRatios.pdf Graphic file (type pdf)
 
 <use intro/PeriodRatios.pdf>
 Package pdftex.def Info: intro/PeriodRatios.pdf used on input line 202.
 (pdftex.def)             Requested size: 451.68752pt x 338.76479pt.
-
-
-Package natbib Warning: Citation `NASAEA' on page 6 undefined on input line 206
-.
-
-
-Package natbib Warning: Citation `NASAEA' on page 6 undefined on input line 206
-.
-
-
-Package natbib Warning: Citation `LithwickWu2012' on page 6 undefined on input 
-line 211.
-
-
-Package natbib Warning: Citation `Batygin2013' on page 6 undefined on input lin
-e 211.
-
-
-Package natbib Warning: Citation `Delisle2014' on page 6 undefined on input lin
-e 211.
-
-
-Package natbib Warning: Citation `Rein2012b' on page 6 undefined on input line 
-211.
-
-
-Package natbib Warning: Citation `Baruteau2013' on page 6 undefined on input li
-ne 211.
-
-
-Package natbib Warning: Citation `Goldreich2014' on page 6 undefined on input l
-ine 211.
-
-
-Package natbib Warning: Citation `Moore2013' on page 6 undefined on input line 
-211.
-
-
-Package natbib Warning: Citation `Chatterjee2015' on page 6 undefined on input 
-line 211.
-
-
-LaTeX Warning: Reference `chap:Tides' on page 6 undefined on input line 213.
-
-
-Package natbib Warning: Citation `Lee2002' on page 6 undefined on input line 21
-7.
-
-
-LaTeX Warning: Reference `chap:Tides' on page 6 undefined on input line 218.
-
-
-LaTeX Warning: Reference `chap:Hermes' on page 6 undefined on input line 218.
-
-
-LaTeX Warning: Reference `chap:HD155358' on page 6 undefined on input line 218.
-
-
-
-Package natbib Warning: Citation `Ida2000' on page 6 undefined on input line 22
-1.
-
-
-Package natbib Warning: Citation `Kirsh2009' on page 6 undefined on input line 
-221.
-
-
-Package natbib Warning: Citation `Gomes2004' on page 6 undefined on input line 
-225.
-
-[6 <./intro/PeriodRatios.pdf>]
-
-Package natbib Warning: Citation `Rafikov2003' on page 7 undefined on input lin
-e 227.
-
-
-Package natbib Warning: Citation `Fernandez1984' on page 7 undefined on input l
-ine 228.
-
-
-Package natbib Warning: Citation `Malhotra1993' on page 7 undefined on input li
-ne 229.
-
-
-Package natbib Warning: Citation `Malhotra1995' on page 7 undefined on input li
-ne 229.
-
-
-Package natbib Warning: Citation `Mayor1995' on page 7 undefined on input line 
-232.
-
-
-Package natbib Warning: Citation `Lin1996' on page 7 undefined on input line 23
-2.
-
-
-Package natbib Warning: Citation `Goldreich1980' on page 7 undefined on input l
-ine 233.
-
-
-Package natbib Warning: Citation `Armitage2010' on page 7 undefined on input li
-ne 237.
-
-
-Package natbib Warning: Citation `Goldreich1979' on page 7 undefined on input l
-ine 238.
-
-
-Package natbib Warning: Citation `Goldreich1979' on page 7 undefined on input l
-ine 239.
-
-
-Package natbib Warning: Citation `Ward1997' on page 7 undefined on input line 2
-40.
-
-
-Package natbib Warning: Citation `Lin1986' on page 7 undefined on input line 24
-3.
-
-
-Package natbib Warning: Citation `Ward1997' on page 7 undefined on input line 2
-44.
-
-
-Package natbib Warning: Citation `Lin1986' on page 7 undefined on input line 24
-7.
-
-
-Package natbib Warning: Citation `Tanaka2002' on page 7 undefined on input line
- 247.
-
-
-Package natbib Warning: Citation `Fung2017' on page 7 undefined on input line 2
-48.
-
-
-Package natbib Warning: Citation `Lissauer2011' on page 7 undefined on input li
-ne 249.
-
-
-Package natbib Warning: Citation `Fabrycky2014' on page 7 undefined on input li
-ne 249.
-
-
-Package natbib Warning: Citation `Steffen2015' on page 7 undefined on input lin
-e 249.
-
-
-Package natbib Warning: Citation `Chirikov1979' on page 7 undefined on input li
-ne 255.
-
-
-Package natbib Warning: Citation `Lecar2001' on page 7 undefined on input line 
-255.
-
-
-Package natbib Warning: Citation `Sussman1988' on page 7 undefined on input lin
-e 257.
-
-
-Package natbib Warning: Citation `Laskar1994' on page 7 undefined on input line
- 257.
-
-
-Package natbib Warning: Citation `Lecar2001' on page 7 undefined on input line 
-257.
-
-
-Package natbib Warning: Citation `Laskar2009' on page 7 undefined on input line
- 257.
-
-
-Package natbib Warning: Citation `Fang2013' on page 7 undefined on input line 2
-58.
-
-
-Package natbib Warning: Citation `Pu2015' on page 7 undefined on input line 258
-.
-
-[7]
-
-Package natbib Warning: Citation `Wisdom1980' on page 8 undefined on input line
- 261.
-
-
-Package natbib Warning: Citation `Duncan1989' on page 8 undefined on input line
- 261.
-
-
-Package natbib Warning: Citation `Gladman1993' on page 8 undefined on input lin
-e 263.
-
-
-Package natbib Warning: Citation `Lissauer2011' on page 8 undefined on input li
-ne 265.
-
-
-Package natbib Warning: Citation `Steffen2013' on page 8 undefined on input lin
-e 265.
-
-
-Package natbib Warning: Citation `Jontof-Hutter2014' on page 8 undefined on inp
-ut line 265.
-
-
-Package natbib Warning: Citation `Tamayo2015' on page 8 undefined on input line
- 265.
-
-
-LaTeX Warning: Reference `chap:Stability' on page 8 undefined on input line 269
-.
-
-
-LaTeX Warning: Reference `eq:H' on page 8 undefined on input line 284.
-
-[8]
-
-LaTeX Warning: Reference `eq:H' on page 9 undefined on input line 304.
-
-
-Package natbib Warning: Citation `Wisdom1991' on page 9 undefined on input line
- 307.
-
-
-LaTeX Warning: Reference `eq:DKD' on page 9 undefined on input line 317.
-
-
-Package natbib Warning: Citation `Wisdom1991' on page 9 undefined on input line
- 317.
-
-[9]
-
-Package natbib Warning: Citation `SSD1999' on page 10 undefined on input line 3
-36.
-
-
-Package natbib Warning: Citation `SSD1999' on page 10 undefined on input line 3
-47.
-
-
-Package natbib Warning: Citation `Plummer1918' on page 10 undefined on input li
-ne 349.
-
-
-LaTeX Warning: Reference `eq:DKD' on page 10 undefined on input line 349.
-
-
-Package natbib Warning: Citation `Duncan1998' on page 10 undefined on input lin
-e 357.
-
-
-LaTeX Warning: Reference `eq:Hgeneral' on page 10 undefined on input line 370.
-
-[10]
-
-LaTeX Warning: Reference `eq:DKD' on page 11 undefined on input line 375.
-
-
-Package natbib Warning: Citation `Laskar1995' on page 11 undefined on input lin
-e 380.
-
-
-Package natbib Warning: Citation `Wisdom2006' on page 11 undefined on input lin
-e 380.
-
-
-Package natbib Warning: Citation `Hernandez2016' on page 11 undefined on input 
-line 380.
-
-
-LaTeX Warning: Reference `eq:DKD' on page 11 undefined on input line 392.
-
-
-Package natbib Warning: Citation `Wisdom2006' on page 11 undefined on input lin
-e 393.
-
-
-Package natbib Warning: Citation `Wisdom1991' on page 11 undefined on input lin
-e 400.
-
-
-Package natbib Warning: Citation `Press2002' on page 11 undefined on input line
- 403.
-
-
-Package natbib Warning: Citation `Rein2015a' on page 11 undefined on input line
- 405.
-
-
-Package natbib Warning: Citation `Duncan1998' on page 11 undefined on input lin
-e 408.
-
-
-Package natbib Warning: Citation `Chambers1999' on page 11 undefined on input l
-ine 410.
-
-
-LaTeX Warning: Reference `chap:Hermes' on page 11 undefined on input line 411.
-
-[11]
-
-LaTeX Warning: Reference `chap:Stats' on page 12 undefined on input line 418.
-
-
-LaTeX Warning: Reference `sec:stats' on page 12 undefined on input line 419.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 12 undefined on input li
-ne 419.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 12 undefined on input l
-ine 419.
-
-
-LaTeX Warning: Reference `chap:Tides' on page 12 undefined on input line 421.
-
-
-LaTeX Warning: Reference `fig:KepMMR' on page 12 undefined on input line 422.
-
-
-LaTeX Warning: Reference `sec:MMR' on page 12 undefined on input line 423.
-
-
-Package natbib Warning: Citation `Lee2013' on page 12 undefined on input line 4
-24.
-
-
-Package natbib Warning: Citation `Delisle2014' on page 12 undefined on input li
-ne 424.
-
-
-LaTeX Warning: Reference `chap:Hermes' on page 12 undefined on input line 427.
-
-
-Package natbib Warning: Citation `Rein2015a' on page 12 undefined on input line
- 427.
-
-
-Package natbib Warning: Citation `Rein2015b' on page 12 undefined on input line
- 427.
-
-
-Package natbib Warning: Citation `Chatterjee2015' on page 12 undefined on input
- line 429.
-
-
-LaTeX Warning: Reference `sec:inttypes' on page 12 undefined on input line 430.
-
-
-
-LaTeX Warning: Reference `chap:Stability' on page 12 undefined on input line 43
-3.
-
-
-LaTeX Warning: Reference `sec:stability' on page 12 undefined on input line 434
-.
-
-
-LaTeX Warning: Reference `chap:HD155358' on page 12 undefined on input line 438
-.
-
-
-Package natbib Warning: Citation `Robertson2012' on page 12 undefined on input 
-line 439.
-
-
-LaTeX Warning: Reference `sec:RV' on page 12 undefined on input line 440.
-
-
-LaTeX Warning: Reference `sec:migration' on page 12 undefined on input line 442
-.
-
-) [12]
+ [6 <./intro/PeriodRatios.pdf>] [7] [8] [9]
+[10] [11] [12]) [13]
 \openout2 = `chap2/chap2.aux'.
 
  (./chap2/chap2.tex
 Chapter 2.
-
-Package natbib Warning: Citation `Ramirez2014' on page 13 undefined on input li
-ne 6.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 13 undefined on input l
-ine 32.
-
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 43.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -1247,430 +611,32 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 43.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 43.
+[14
 
-Package natbib Warning: Citation `Borucki2010' on page 13 undefined on input li
-ne 51.
 
-[13
 
-
-
-]
-
-Package natbib Warning: Citation `Benz2014' on page 14 undefined on input line 
-59.
-
-
-Package natbib Warning: Citation `HansenMurray' on page 14 undefined on input l
-ine 62.
-
-
-Package natbib Warning: Citation `Baruteau2013' on page 14 undefined on input l
-ine 62.
-
-
-Package natbib Warning: Citation `Chiang2013' on page 14 undefined on input lin
-e 65.
-
-
-Package natbib Warning: Citation `Raymond2014' on page 14 undefined on input li
-ne 65.
-
-
-Package natbib Warning: Citation `Catanzarite' on page 14 undefined on input li
-ne 71.
-
-
-Package natbib Warning: Citation `Youdin' on page 14 undefined on input line 71
-.
-
-
-Package natbib Warning: Citation `Traub2012' on page 14 undefined on input line
- 71.
-
-
-Package natbib Warning: Citation `Howard2012' on page 14 undefined on input lin
-e 71.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 14 undefined on input li
-ne 71.
-
-
-Package natbib Warning: Citation `Dressing2013' on page 14 undefined on input l
-ine 71.
-
-
-Package natbib Warning: Citation `Gaidos2013' on page 14 undefined on input lin
-e 71.
-
-
-Package natbib Warning: Citation `Dong2013' on page 14 undefined on input line 
-71.
-
-
-Package natbib Warning: Citation `Kopparapu2013b' on page 14 undefined on input
- line 71.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 14 undefined on input l
-ine 71.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 14 undefined on input l
-ine 78.
-
-
-Package natbib Warning: Citation `Morton2011' on page 14 undefined on input lin
-e 99.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 14 undefined on input li
-ne 99.
-
-
-Package natbib Warning: Citation `Santerne2013' on page 14 undefined on input l
-ine 100.
-
-
-Package natbib Warning: Citation `Brown2011' on page 14 undefined on input line
- 106.
-
-
-Package natbib Warning: Citation `Pinsonneault2012' on page 14 undefined on inp
-ut line 109.
-
-
-Package natbib Warning: Citation `Mann2012' on page 14 undefined on input line 
-110.
-
-
-Package natbib Warning: Citation `Huber2014' on page 14 undefined on input line
- 112.
-
-
-Package natbib Warning: Citation `Huber2014' on page 14 undefined on input line
- 114.
-
-
-Package natbib Warning: Citation `Gaidos2013' on page 14 undefined on input lin
-e 122.
-
-
-Package natbib Warning: Citation `Mann2013' on page 14 undefined on input line 
-122.
-
-[14]
-
-Package natbib Warning: Citation `Mann2012' on page 15 undefined on input line 
-130.
-
-
-Package natbib Warning: Citation `GaidosMann2013' on page 15 undefined on input
- line 139.
-
-
-Package natbib Warning: Citation `Bastien2014' on page 15 undefined on input li
-ne 145.
-
-
-Package natbib Warning: Citation `Everett2013' on page 15 undefined on input li
-ne 145.
-
-
-Package natbib Warning: Citation `Verner2011' on page 15 undefined on input lin
-e 145.
-
-
-Package natbib Warning: Citation `Gaidos2013' on page 15 undefined on input lin
-e 156.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 15 undefined on input l
-ine 160.
-
-
-Package natbib Warning: Citation `Howard2012' on page 15 undefined on input lin
-e 160.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 15 undefined on input l
-ine 163.
-
-
-Package natbib Warning: Citation `Jackson2008' on page 15 undefined on input li
-ne 174.
-
-
-Package natbib Warning: Citation `Tian2005' on page 15 undefined on input line 
-174.
-
-
-Package natbib Warning: Citation `Batygin2011' on page 15 undefined on input li
-ne 175.
-
-
-Package natbib Warning: Citation `Marcus2009' on page 15 undefined on input lin
-e 175.
-
-
-Package natbib Warning: Citation `Owen2013' on page 15 undefined on input line 
-177.
-
-
-Package natbib Warning: Citation `Lopez2012' on page 15 undefined on input line
- 182.
-
-
-Package natbib Warning: Citation `Youdin' on page 15 undefined on input line 18
-4.
-
-
-LaTeX Warning: Reference `sec:completeness' on page 15 undefined on input line 
-188.
-
-[15]
-
-Package natbib Warning: Citation `Santerne2012' on page 16 undefined on input l
-ine 197.
-
-
-Package natbib Warning: Citation `Colon2012' on page 16 undefined on input line
- 197.
-
-
-Package natbib Warning: Citation `Huber2014' on page 16 undefined on input line
- 223.
-
-
-Package natbib Warning: Citation `Ramirez2014' on page 16 undefined on input li
-ne 230.
-
-
-Package natbib Warning: Citation `Huber2014' on page 16 undefined on input line
- 231.
-
-
-LaTeX Warning: Reference `sec:plerr' on page 16 undefined on input line 237.
-
-
-LaTeX Warning: Reference `sec:intperiod' on page 16 undefined on input line 240
-.
-
-
-Package natbib Warning: Citation `Huber2014' on page 16 undefined on input line
- 246.
-
-
-LaTeX Warning: Reference `sec:plerr' on page 16 undefined on input line 256.
-
-[16]
+] [15] [16] [17]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 268.
 
-
-LaTeX Warning: Reference `sec:sensitivity' on page 17 undefined on input line 2
-75.
-
-
-Package natbib Warning: Citation `Winn' on page 17 undefined on input line 284.
-
-
-
-Package natbib Warning: Citation `Moorhead2011' on page 17 undefined on input l
-ine 294.
-
-
-Package natbib Warning: Citation `WuLithwick' on page 17 undefined on input lin
-e 299.
-
-
-Package natbib Warning: Citation `Hadden2014' on page 17 undefined on input lin
-e 299.
-
-
-LaTeX Warning: Reference `sec:sensitivity' on page 17 undefined on input line 3
-01.
-
-
-LaTeX Warning: Reference `eqn.probtransit' on page 17 undefined on input line 3
-05.
-
-
-Package natbib Warning: Citation `Gaidos2013' on page 17 undefined on input lin
-e 314.
-
-
-LaTeX Warning: Reference `eqn.delta' on page 17 undefined on input line 349.
-
-[17]
-
-Package natbib Warning: Citation `Fressin2013' on page 18 undefined on input li
-ne 367.
-
-
-Package natbib Warning: Citation `Koch2010' on page 18 undefined on input line 
-372.
-
-
-Package natbib Warning: Citation `Christiansen2012' on page 18 undefined on inp
-ut line 375.
-
-
-LaTeX Warning: Reference `eq:SNR' on page 18 undefined on input line 391.
-
-
-LaTeX Warning: Reference `sec:petcomp' on page 18 undefined on input line 396.
-
-
-LaTeX Warning: Reference `sec:introduction' on page 18 undefined on input line 
-402.
-
-
-LaTeX Warning: Reference `sec:completeness' on page 18 undefined on input line 
-416.
-
-[18]
-
-LaTeX Warning: Reference `eq:P' on page 19 undefined on input line 468.
-
-
-LaTeX Warning: Reference `sec:geneq' on page 19 undefined on input line 472.
-
-
-LaTeX Warning: Reference `sec:plerr' on page 19 undefined on input line 474.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 19 undefined on input li
-ne 477.
-
-[19]
-
-LaTeX Warning: Reference `sec:geneq' on page 20 undefined on input line 504.
-
-
-Package natbib Warning: Citation `Gelman92' on page 20 undefined on input line 
-511.
-
-
-LaTeX Warning: Reference `sec:geneq' on page 20 undefined on input line 515.
-
-
-LaTeX Warning: Reference `sec:mcmc' on page 20 undefined on input line 519.
-
-
-LaTeX Warning: Reference `sec:geneq' on page 20 undefined on input line 521.
-
-
-LaTeX Warning: Reference `sec:plerr' on page 20 undefined on input line 523.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 20 undefined on input li
-ne 525.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 20 undefined on input li
-ne 537.
-
-
-LaTeX Warning: Reference `sec:plerr' on page 20 undefined on input line 538.
-
-
-LaTeX Warning: Reference `fig:IS' on page 20 undefined on input line 546.
-
-
-LaTeX Warning: Reference `fig:IS' on page 20 undefined on input line 557.
-
-<chap2/IStest.pdf, id=137, 505.89pt x 361.35pt>
+[18] [19] [20] [21] <chap2/IStest.pdf, id=159, 505.89pt x 361.35pt>
 File: chap2/IStest.pdf Graphic file (type pdf)
- <use chap2/IStest.pdf>
+
+<use chap2/IStest.pdf>
 Package pdftex.def Info: chap2/IStest.pdf used on input line 564.
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `sec:geneq' on page 20 undefined on input line 580.
-
-[20]
-
-Package natbib Warning: Citation `Fressin2013' on page 21 undefined on input li
-ne 588.
-
-
-LaTeX Warning: Reference `sec:completeness' on page 21 undefined on input line 
-595.
-
-
-LaTeX Warning: Reference `sec:plerr' on page 21 undefined on input line 599.
-
-
-LaTeX Warning: Reference `sec:completeness' on page 21 undefined on input line 
-607.
-
-
-LaTeX Warning: Reference `eq:occtw' on page 21 undefined on input line 616.
-
-[21 <./chap2/IStest.pdf>]
-
-LaTeX Warning: Reference `eq:occtw' on page 22 undefined on input line 630.
-
-
-LaTeX Warning: Reference `eq:occ' on page 22 undefined on input line 631.
-
-
-LaTeX Warning: Reference `sec:petcomp' on page 22 undefined on input line 633.
-
-
-LaTeX Warning: Reference `fig:sil_compl' on page 22 undefined on input line 656
-.
-
-<chap2/Silburt_completeness.pdf, id=152, 505.89pt x 361.35pt>
+ [22 <./chap2/IStest.pdf>]
+<chap2/Silburt_completeness.pdf, id=171, 505.89pt x 361.35pt>
 File: chap2/Silburt_completeness.pdf Graphic file (type pdf)
 
 <use chap2/Silburt_completeness.pdf>
 Package pdftex.def Info: chap2/Silburt_completeness.pdf used on input line 659.
 
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
-
-
-LaTeX Warning: Reference `fig:sil_compl' on page 22 undefined on input line 667
-.
-
-
-LaTeX Warning: Reference `sec:petcomp' on page 22 undefined on input line 685.
-
-
-Package natbib Warning: Citation `Youdin' on page 22 undefined on input line 69
-8.
-
-
-Package natbib Warning: Citation `Howard2012' on page 22 undefined on input lin
-e 698.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 22 undefined on input l
-ine 698.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 22 undefined on input li
-ne 698.
-
-
-LaTeX Warning: Reference `fig:period' on page 22 undefined on input line 700.
-
-
-Package natbib Warning: Citation `Youdin' on page 22 undefined on input line 70
-4.
-
-
-Package natbib Warning: Citation `Howard2012' on page 22 undefined on input lin
-e 704.
-
-[22] <chap2/Silburt_period.pdf, id=156, 505.89pt x 361.35pt>
+ [23]
+<chap2/Silburt_period.pdf, id=175, 505.89pt x 361.35pt>
 File: chap2/Silburt_period.pdf Graphic file (type pdf)
 
 <use chap2/Silburt_period.pdf>
@@ -1686,757 +652,93 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.29405pt on input line 717.
 
 
-LaTeX Warning: Reference `eq:P' on page 23 undefined on input line 717.
-
-
-LaTeX Warning: Reference `eq:P' on page 23 undefined on input line 717.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `fig:raddist' on page 23 undefined on input line 725.
-
-
-LaTeX Warning: Reference `sec:catalogs' on page 23 undefined on input line 732.
-
-
-
-LaTeX Warning: Reference `sec:geneq' on page 23 undefined on input line 733.
-
-
-LaTeX Warning: Reference `fig:raddist' on page 23 undefined on input line 738.
-
-
-LaTeX Warning: Reference `eq:occtw' on page 23 undefined on input line 739.
-
-<chap2/Silburt_Rdist_all.pdf, id=157, 505.89pt x 361.35pt>
+[24 <./chap2/Silburt_completeness.pdf>]
+<chap2/Silburt_Rdist_all.pdf, id=190, 505.89pt x 361.35pt>
 File: chap2/Silburt_Rdist_all.pdf Graphic file (type pdf)
 
 <use chap2/Silburt_Rdist_all.pdf>
 Package pdftex.def Info: chap2/Silburt_Rdist_all.pdf used on input line 745.
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
 
-
-LaTeX Warning: Reference `sec:plerr' on page 23 undefined on input line 760.
-
-
-LaTeX Warning: Reference `sec:plerr' on page 23 undefined on input line 760.
-
-
-LaTeX Warning: Reference `sec:plerr' on page 23 undefined on input line 764.
-
-
-LaTeX Warning: Reference `sec:plerr' on page 23 undefined on input line 771.
-
-
-LaTeX Warning: Reference `fig:raddist' on page 23 undefined on input line 781.
-
-
-LaTeX Warning: Reference `sec:sensitivity' on page 23 undefined on input line 7
-83.
-
-
-LaTeX Warning: Reference `sec:sensitivity' on page 23 undefined on input line 7
-88.
-
-[23 <./chap2/Silburt_completeness.pdf>]
-
-LaTeX Warning: Reference `sec:improvements' on page 24 undefined on input line 
-793.
-
-<chap2/Silburt_ISnobin.pdf, id=172, 505.89pt x 361.35pt>
+<chap2/Silburt_ISnobin.pdf, id=191, 505.89pt x 361.35pt>
 File: chap2/Silburt_ISnobin.pdf Graphic file (type pdf)
 
 <use chap2/Silburt_ISnobin.pdf>
 Package pdftex.def Info: chap2/Silburt_ISnobin.pdf used on input line 796.
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
-
-
-LaTeX Warning: Reference `fig:isnobin' on page 24 undefined on input line 807.
-
-
-LaTeX Warning: Reference `sec:IS' on page 24 undefined on input line 808.
-
-
-LaTeX Warning: Reference `tab:occ' on page 24 undefined on input line 822.
-
-
-LaTeX Warning: Reference `fig:raddist' on page 24 undefined on input line 824.
-
-
-LaTeX Warning: Reference `sec:petcomp' on page 24 undefined on input line 835.
-
-
-Package natbib Warning: Citation `Youdin' on page 24 undefined on input line 83
-9.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 24 undefined on input li
-ne 839.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 24 undefined on input l
-ine 839.
-
-
-Package natbib Warning: Citation `Lissauer2011' on page 24 undefined on input l
-ine 841.
-
-[24 <./chap2/Silburt_period.pdf>] [25 <./chap2/Silburt_Rdist_all.pdf> <./chap2/
-Silburt_ISnobin.pdf>]
-
-Package natbib Warning: Citation `Kasting' on page 26 undefined on input line 8
-70.
-
-
-Package natbib Warning: Citation `Kopparapu2013a' on page 26 undefined on input
- line 870.
-
-
-Package natbib Warning: Citation `Kopparapu2013a' on page 26 undefined on input
- line 873.
-
-
-LaTeX Warning: Reference `fig:raddist' on page 26 undefined on input line 888.
-
-
-LaTeX Warning: Reference `eq:P' on page 26 undefined on input line 889.
-
-
-Package natbib Warning: Citation `Kopparapu2013a' on page 26 undefined on input
- line 890.
-
-
-Package natbib Warning: Citation `Kopparapu2013a' on page 26 undefined on input
- line 898.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 26 undefined on input l
-ine 907.
-
-[26]
-
-LaTeX Warning: Reference `fig:comp_comp' on page 27 undefined on input line 916
-.
-
-<chap2/Petigura_Sil_frac_completeness.pdf, id=207, 505.89pt x 361.35pt>
+ [25 <./chap2/Silburt_period.pdf>] [26 <./chap2/Silburt_Rdist_all.pdf> <./chap2
+/Silburt_ISnobin.pdf>] [27]
+<chap2/Petigura_Sil_frac_completeness.pdf, id=226, 505.89pt x 361.35pt>
 File: chap2/Petigura_Sil_frac_completeness.pdf Graphic file (type pdf)
 
 <use chap2/Petigura_Sil_frac_completeness.pdf>
 Package pdftex.def Info: chap2/Petigura_Sil_frac_completeness.pdf used on input
  line 918.
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
-
-<chap2/PHM13_mastercomp.pdf, id=208, 505.89pt x 361.35pt>
+ [28 <./chap2/Petigura_Sil_frac_completeness.pdf>] <chap2/PHM13_mastercomp.pdf,
+ id=240, 505.89pt x 361.35pt>
 File: chap2/PHM13_mastercomp.pdf Graphic file (type pdf)
 
 <use chap2/PHM13_mastercomp.pdf>
 Package pdftex.def Info: chap2/PHM13_mastercomp.pdf used on input line 951.
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
-
-
-LaTeX Warning: Reference `eq:occtw' on page 27 undefined on input line 961.
-
-
-LaTeX Warning: Reference `eq:occtw' on page 27 undefined on input line 961.
-
-
-LaTeX Warning: Reference `eq:occ' on page 27 undefined on input line 961.
-
-
-LaTeX Warning: Reference `eq:occtw' on page 27 undefined on input line 961.
-
-
-LaTeX Warning: Reference `eq:occtw' on page 27 undefined on input line 961.
-
-
-LaTeX Warning: Reference `eq:occ' on page 27 undefined on input line 961.
-
-
-LaTeX Warning: Reference `fig:mastercomp' on page 27 undefined on input line 96
-6.
-
-
-LaTeX Warning: Reference `sec:catalogs' on page 27 undefined on input line 967.
-
-
-
-LaTeX Warning: Reference `eq:occtw' on page 27 undefined on input line 968.
-
-
-LaTeX Warning: Reference `sec:geneq' on page 27 undefined on input line 968.
-
-
-LaTeX Warning: Reference `fig:mastercomp' on page 27 undefined on input line 97
-0.
-
-
-LaTeX Warning: Reference `eq:occtw' on page 27 undefined on input line 971.
-
-
-LaTeX Warning: Reference `fig:mastercomp' on page 27 undefined on input line 97
-3.
-
-
-LaTeX Warning: Reference `fig:mastercomp' on page 27 undefined on input line 97
-5.
-
-
-LaTeX Warning: Reference `fig:comp_comp' on page 27 undefined on input line 977
-.
-
-[27 <./chap2/Petigura_Sil_frac_completeness.pdf>]
-
-LaTeX Warning: Reference `eq:occ' on page 28 undefined on input line 985.
-
-
-LaTeX Warning: Reference `sec:introduction' on page 28 undefined on input line 
-987.
-
-
-LaTeX Warning: Reference `eq:occtw' on page 28 undefined on input line 993.
-
-
-LaTeX Warning: Reference `fig:sil_compl' on page 28 undefined on input line 997
-.
-
-
-LaTeX Warning: Reference `fig:compvstars' on page 28 undefined on input line 10
-01.
-
-<chap2/Silburt_compvstars.pdf, id=222, 505.89pt x 361.35pt>
+ [29 <./chap2/PHM13_mastercomp.pdf>]
+<chap2/Silburt_compvstars.pdf, id=252, 505.89pt x 361.35pt>
 File: chap2/Silburt_compvstars.pdf Graphic file (type pdf)
 
 <use chap2/Silburt_compvstars.pdf>
 Package pdftex.def Info: chap2/Silburt_compvstars.pdf used on input line 1018.
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
- [28 <./chap2/PHM13_mastercomp.pdf>]
-
-LaTeX Warning: Reference `fig:mastercomp' on page 29 undefined on input line 10
-34.
-
-
-LaTeX Warning: Reference `eq:occ' on page 29 undefined on input line 1037.
-
-
-LaTeX Warning: Reference `eq:occtw' on page 29 undefined on input line 1039.
-
-
-LaTeX Warning: Reference `fig:mastercomp' on page 29 undefined on input line 10
-45.
-
-
-LaTeX Warning: Reference `eq:occtw' on page 29 undefined on input line 1055.
-
-
-LaTeX Warning: Reference `eq:occ' on page 29 undefined on input line 1056.
-
-
-LaTeX Warning: Reference `fig:mastercomp' on page 29 undefined on input line 10
-57.
-
-
-LaTeX Warning: Reference `fig:mastercomp' on page 29 undefined on input line 10
-61.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 29 undefined on input l
-ine 1062.
-
-
-LaTeX Warning: Reference `sec:radiusdist' on page 29 undefined on input line 10
-69.
-
-[29 <./chap2/Silburt_compvstars.pdf>]
-
-LaTeX Warning: Reference `eq:assumption' on page 30 undefined on input line 108
-8.
-
-
-LaTeX Warning: Reference `eq:assumption' on page 30 undefined on input line 109
-4.
-
-
-Package natbib Warning: Citation `Brown2011' on page 30 undefined on input line
- 1102.
-
-
-Package natbib Warning: Citation `Pinsonneault2012' on page 30 undefined on inp
-ut line 1104.
-
-
-Package natbib Warning: Citation `Gaidos2013' on page 30 undefined on input lin
-e 1104.
-
-
-Package natbib Warning: Citation `GaidosMann2013' on page 30 undefined on input
- line 1108.
-
-
-Package natbib Warning: Citation `Verner2011' on page 30 undefined on input lin
-e 1110.
-
-
-Package natbib Warning: Citation `Everett2013' on page 30 undefined on input li
-ne 1110.
-
-
-Package natbib Warning: Citation `Bastien2014' on page 30 undefined on input li
-ne 1110.
-
-
-LaTeX Warning: Reference `fig:raddist' on page 30 undefined on input line 1122.
-
-
-
-Package natbib Warning: Citation `Youdin' on page 30 undefined on input line 11
-39.
-
-
-Package natbib Warning: Citation `Howard2012' on page 30 undefined on input lin
-e 1139.
-
-
-LaTeX Warning: Reference `fig:period' on page 30 undefined on input line 1142.
-
-
-Package natbib Warning: Citation `Petigura2013' on page 30 undefined on input l
-ine 1142.
-
-
-Package natbib Warning: Citation `Fressin2013' on page 30 undefined on input li
-ne 1142.
-
-
-Package natbib Warning: Citation `Chambers1996' on page 30 undefined on input l
-ine 1149.
-
-
-Package natbib Warning: Citation `Smith2009' on page 30 undefined on input line
- 1149.
-
-[30]
-
-Package natbib Warning: Citation `Hayashi1981' on page 31 undefined on input li
-ne 1168.
-
-
-Package natbib Warning: Citation `Weidenschilling1977b' on page 31 undefined on
- input line 1168.
-
-
-LaTeX Warning: Reference `fig:raddist' on page 31 undefined on input line 1176.
-
-
-
-Package natbib Warning: Citation `WuLithwick' on page 31 undefined on input lin
-e 1180.
-
-
-Package natbib Warning: Citation `Rafikov' on page 31 undefined on input line 1
-183.
-
-
-Package natbib Warning: Citation `Kopparapu2013a' on page 31 undefined on input
- line 1202.
-
-
-Package natbib Warning: Citation `Kopparapu2014' on page 31 undefined on input 
-line 1203.
-
-
-Package natbib Warning: Citation `Pierrehumbert2011' on page 31 undefined on in
-put line 1204.
-
-
-Package natbib Warning: Citation `Bonfils2013' on page 31 undefined on input li
-ne 1208.
-
-
-Package natbib Warning: Citation `Kopparapu2013b' on page 31 undefined on input
- line 1208.
-
-
-Package natbib Warning: Citation `Gaidos2013' on page 31 undefined on input lin
-e 1208.
-
-
-Package natbib Warning: Citation `deBruijne2012' on page 31 undefined on input 
-line 1222.
-
-
-Package natbib Warning: Citation `Liu2012' on page 31 undefined on input line 1
-222.
-
-[31]
-
-Package natbib Warning: Citation `Huber2014' on page 32 undefined on input line
- 1232.
-
-
-Package natbib Warning: Citation `Hill2010' on page 32 undefined on input line 
-1234.
-
-
-Package natbib Warning: Citation `Bastien2014' on page 32 undefined on input li
-ne 1239.
-
-
+ [30 <./chap2/Silburt_compvstars.pdf>]
+[31] [32] [33]
 Underfull \hbox (badness 10000) in paragraph at lines 1273--1276
 
  []
 
-[32]) [33]
+) [34]
 \openout2 = `chap3/chap3.aux'.
 
  (./chap3/chap3.tex
 Chapter 3.
-
-Package natbib Warning: Citation `Akeson2013' on page 34 undefined on input lin
-e 16.
-
-
-Package natbib Warning: Citation `Rowe2014' on page 34 undefined on input line 
-16.
-
-
-Package natbib Warning: Citation `Lissauer2011' on page 34 undefined on input l
-ine 18.
-
-
-Package natbib Warning: Citation `Fabrycky2014' on page 34 undefined on input l
-ine 18.
-
-
-Package natbib Warning: Citation `Steffen2015' on page 34 undefined on input li
-ne 18.
-
-
-Package natbib Warning: Citation `Lee2002' on page 34 undefined on input line 1
-9.
-
-
-Package natbib Warning: Citation `LithwickWu2012' on page 34 undefined on input
- line 20.
-
-
-Package natbib Warning: Citation `Batygin2013' on page 34 undefined on input li
-ne 20.
-
-
-Package natbib Warning: Citation `Delisle2014' on page 34 undefined on input li
-ne 20.
-
-
-Package natbib Warning: Citation `Rein2012b' on page 34 undefined on input line
- 20.
-
-
-Package natbib Warning: Citation `Baruteau2013' on page 34 undefined on input l
-ine 20.
-
-
-Package natbib Warning: Citation `Goldreich2014' on page 34 undefined on input 
-line 20.
-
-
-Package natbib Warning: Citation `Moore2013' on page 34 undefined on input line
- 20.
-
-
-Package natbib Warning: Citation `Chatterjee2015' on page 34 undefined on input
- line 20.
-
-
-Package natbib Warning: Citation `LithwickWu2012' on page 34 undefined on input
- line 23.
-
-
-Package natbib Warning: Citation `Batygin2013' on page 34 undefined on input li
-ne 23.
-
-
-Package natbib Warning: Citation `Delisle2014' on page 34 undefined on input li
-ne 23.
-
-
-Package natbib Warning: Citation `Lee2013' on page 34 undefined on input line 2
-3.
-
-
-Package natbib Warning: Citation `LithwickWu2012' on page 34 undefined on input
- line 24.
-
-
-Package natbib Warning: Citation `Batygin2013' on page 34 undefined on input li
-ne 25.
-
-
-Package natbib Warning: Citation `Lee2013' on page 34 undefined on input line 2
-6.
-
-
-Package natbib Warning: Citation `Delisle2014' on page 34 undefined on input li
-ne 27.
-
-[34
+[35
 
 
 
-] <chap3/MMR.png, id=261, 578.16pt x 433.62pt>
+] <chap3/MMR.png, id=280, 578.16pt x 433.62pt>
 File: chap3/MMR.png Graphic file (type png)
  <use chap3/MMR.png>
 Package pdftex.def Info: chap3/MMR.png used on input line 30.
 (pdftex.def)             Requested size: 283.30087pt x 212.47566pt.
+ [36 <./chap3/MMR.png>] [37]
 
+LaTeX Warning: Reference `tab:kepsys' on page 38 undefined on input line 124.
 
-LaTeX Warning: Reference `fig:MMR' on page 35 undefined on input line 38.
-
-
-LaTeX Warning: Reference `sec:meth' on page 35 undefined on input line 43.
-
-
-LaTeX Warning: Reference `sec:results' on page 35 undefined on input line 43.
-
-
-LaTeX Warning: Reference `sec:Discussion' on page 35 undefined on input line 43
-.
-
-
-LaTeX Warning: Reference `sec:Conclusion' on page 35 undefined on input line 43
-.
-
-
-Package natbib Warning: Citation `Barnes2008' on page 35 undefined on input lin
-e 53.
-
-
-Package natbib Warning: Citation `LithwickWu2012' on page 35 undefined on input
- line 53.
-
-
-Package natbib Warning: Citation `Lee2013' on page 35 undefined on input line 5
-3.
-
-[35 <./chap3/MMR.png>]
-
-Package natbib Warning: Citation `Goldreich1966' on page 36 undefined on input 
-line 62.
-
-
-LaTeX Warning: Reference `eq:tidee' on page 36 undefined on input line 63.
-
-
-LaTeX Warning: Reference `eq:tidea' on page 36 undefined on input line 63.
-
-
-LaTeX Warning: Reference `eq:LiWu' on page 36 undefined on input line 70.
-
-
-LaTeX Warning: Reference `eq:ae' on page 36 undefined on input line 80.
-
-
-LaTeX Warning: Reference `eq:ae' on page 36 undefined on input line 81.
-
-
-Package natbib Warning: Citation `Lee2013' on page 36 undefined on input line 9
-1.
-
-
-Package natbib Warning: Citation `LithwickWu2012' on page 36 undefined on input
- line 91.
-
-
-LaTeX Warning: Reference `eq:ae' on page 36 undefined on input line 93.
-
-
-LaTeX Warning: Reference `eq:Delta' on page 36 undefined on input line 93.
-
-
-LaTeX Warning: Reference `sec:Discussion' on page 36 undefined on input line 10
-1.
-
-[36]
-
-LaTeX Warning: Reference `eq:DeltaFinal' on page 37 undefined on input line 107
-.
-
-
-LaTeX Warning: Reference `eq:DeltaFinal' on page 37 undefined on input line 108
-.
-
-
-Package natbib Warning: Citation `LithwickWu2012' on page 37 undefined on input
- line 109.
-
-
-Package natbib Warning: Citation `Batygin2013' on page 37 undefined on input li
-ne 109.
-
-
-LaTeX Warning: Reference `eq:DeltaFinal' on page 37 undefined on input line 110
-.
-
-
-Package natbib Warning: Citation `Wisdom1991' on page 37 undefined on input lin
-e 116.
-
-
-Package natbib Warning: Citation `Rein2012' on page 37 undefined on input line 
-116.
-
-
-LaTeX Warning: Reference `fig:MMR' on page 37 undefined on input line 118.
-
-
-Package natbib Warning: Citation `LithwickWu2012' on page 37 undefined on input
- line 119.
-
-
-LaTeX Warning: Reference `tab:kepsys' on page 37 undefined on input line 124.
-
-
-Package natbib Warning: Citation `Weiss2014' on page 37 undefined on input line
- 127.
-
-
-Package natbib Warning: Citation `Hadden2014' on page 37 undefined on input lin
-e 128.
-
-
-Package natbib Warning: Citation `Demircan1991' on page 37 undefined on input l
-ine 129.
-
-
-Package natbib Warning: Citation `Lee2013' on page 37 undefined on input line 1
-32.
-
-
-Package natbib Warning: Citation `Delisle2014' on page 37 undefined on input li
-ne 135.
-
-
-Package natbib Warning: Citation `Lee2002' on page 37 undefined on input line 1
-42.
-
-
-Package natbib Warning: Citation `Goldreich2014' on page 37 undefined on input 
-line 143.
-
-[37]
-
-LaTeX Warning: Reference `eq:tidee' on page 38 undefined on input line 150.
-
-
-LaTeX Warning: Reference `eq:tidea' on page 38 undefined on input line 150.
-
-
-LaTeX Warning: Reference `eq:DeltaFinal' on page 38 undefined on input line 160
-.
-
-
-LaTeX Warning: Reference `eq:DeltaInitial' on page 38 undefined on input line 1
-60.
-
-
-LaTeX Warning: Reference `fig:th_v_num' on page 38 undefined on input line 161.
-
-
-
-Package natbib Warning: Citation `LithwickWu2012' on page 38 undefined on input
- line 163.
-
-
-LaTeX Warning: Reference `eq:DeltaFinal' on page 38 undefined on input line 163
-.
-
-
-LaTeX Warning: Reference `eq:DeltaFinal' on page 38 undefined on input line 164
-.
-
-<chap3/dDelta.png, id=274, 578.16pt x 433.62pt>
+[38] <chap3/dDelta.png, id=293, 578.16pt x 433.62pt>
 File: chap3/dDelta.png Graphic file (type png)
  <use chap3/dDelta.png>
 Package pdftex.def Info: chap3/dDelta.png used on input line 171.
 (pdftex.def)             Requested size: 270.68507pt x 194.47807pt.
 
-
-LaTeX Warning: Reference `fig:th_v_num' on page 38 undefined on input line 177.
-
-
-
-LaTeX Warning: Reference `eq:Delta' on page 38 undefined on input line 177.
-
-
-LaTeX Warning: Reference `eq:ae' on page 38 undefined on input line 182.
-
-
-LaTeX Warning: Reference `sec:mine' on page 38 undefined on input line 184.
-
-[38]
-
-LaTeX Warning: Reference `fig:repulse' on page 39 undefined on input line 194.
-
-
-LaTeX Warning: Reference `fig:repulse' on page 39 undefined on input line 200.
-
-
-LaTeX Warning: Reference `fig:repulse' on page 39 undefined on input line 204.
-
-<chap3/tugg_v_repulse_July20.png, id=278, 578.16pt x 433.62pt>
+[39] [40 <./chap3/dDelta.png>]
+<chap3/tugg_v_repulse_July20.png, id=301, 578.16pt x 433.62pt>
 File: chap3/tugg_v_repulse_July20.png Graphic file (type png)
 
 <use chap3/tugg_v_repulse_July20.png>
 Package pdftex.def Info: chap3/tugg_v_repulse_July20.png used on input line 207
 .
 (pdftex.def)             Requested size: 263.85649pt x 194.47807pt.
-
-
-Package natbib Warning: Citation `LithwickWu2012' on page 39 undefined on input
- line 216.
-
-[39 <./chap3/dDelta.png>]
-
-LaTeX Warning: Reference `fig:repulse' on page 40 undefined on input line 224.
-
-
-LaTeX Warning: Reference `fig:repulse' on page 40 undefined on input line 228.
-
-
-Package natbib Warning: Citation `Delisle2014' on page 40 undefined on input li
-ne 231.
-
-
-LaTeX Warning: Reference `fig:th_v_num' on page 40 undefined on input line 233.
-
-
-
-LaTeX Warning: Reference `fig:repulse' on page 40 undefined on input line 234.
-
+ [41 <./chap3/tugg_v_repulse_July20.png>]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 238.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 238.
 
-LaTeX Warning: Reference `sec:th_v_num' on page 40 undefined on input line 240.
 
+LaTeX Warning: Reference `app:min_e' on page 42 undefined on input line 241.
 
-
-LaTeX Warning: Reference `eq:LiWu' on page 40 undefined on input line 241.
-
-
-LaTeX Warning: Reference `sec:th_v_num' on page 40 undefined on input line 241.
-
-
-
-LaTeX Warning: Reference `app:min_e' on page 40 undefined on input line 241.
-
-[40 <./chap3/tugg_v_repulse_July20.png>]
-
-LaTeX Warning: Reference `eq:emin' on page 41 undefined on input line 247.
-
-<chap3/emin_Tconstraint.png, id=287, 578.16pt x 433.62pt>
+<chap3/emin_Tconstraint.png, id=306, 578.16pt x 433.62pt>
 File: chap3/emin_Tconstraint.png Graphic file (type png)
 
 <use chap3/emin_Tconstraint.png>
@@ -2444,114 +746,9 @@ Package pdftex.def Info: chap3/emin_Tconstraint.png used on input line 250.
 (pdftex.def)             Requested size: 263.85649pt x 194.47807pt.
 
 
-LaTeX Warning: Reference `fig:emin' on page 41 undefined on input line 255.
+LaTeX Warning: Reference `app:emax' on page 42 undefined on input line 258.
 
-
-LaTeX Warning: Reference `eq:emin' on page 41 undefined on input line 255.
-
-
-LaTeX Warning: Reference `sec:Discussion' on page 41 undefined on input line 25
-5.
-
-
-LaTeX Warning: Reference `app:emax' on page 41 undefined on input line 258.
-
-
-LaTeX Warning: Reference `fig:emin' on page 41 undefined on input line 259.
-
-
-LaTeX Warning: Reference `fig:emin' on page 41 undefined on input line 261.
-
-
-LaTeX Warning: Reference `fig:emin' on page 41 undefined on input line 271.
-
-[41 <./chap3/emin_Tconstraint.png>]
-
-LaTeX Warning: Reference `sec:th_v_num' on page 42 undefined on input line 273.
-
-
-
-LaTeX Warning: Reference `sec:restugg' on page 42 undefined on input line 273.
-
-
-LaTeX Warning: Reference `eq:emin' on page 42 undefined on input line 273.
-
-
-LaTeX Warning: Reference `sec:restugg' on page 42 undefined on input line 275.
-
-
-LaTeX Warning: Reference `fig:emin' on page 42 undefined on input line 275.
-
-
-LaTeX Warning: Reference `fig:emin' on page 42 undefined on input line 281.
-
-
-Package natbib Warning: Citation `Pu2015' on page 42 undefined on input line 28
-2.
-
-
-LaTeX Warning: Reference `fig:emin' on page 42 undefined on input line 287.
-
-
-LaTeX Warning: Reference `fig:emin' on page 42 undefined on input line 289.
-
-
-LaTeX Warning: Reference `eq:DeltaFinal' on page 42 undefined on input line 291
-.
-
-
-LaTeX Warning: Reference `fig:emin' on page 42 undefined on input line 294.
-
-
-LaTeX Warning: Reference `eq:emin' on page 42 undefined on input line 294.
-
-
-Package natbib Warning: Citation `Delisle2014' on page 42 undefined on input li
-ne 294.
-
-
-LaTeX Warning: Reference `sec:restugg' on page 42 undefined on input line 296.
-
-
-LaTeX Warning: Reference `fig:emin' on page 42 undefined on input line 298.
-
-
-Package natbib Warning: Citation `Delisle2014' on page 42 undefined on input li
-ne 299.
-
-
-LaTeX Warning: Reference `eq:tidee' on page 42 undefined on input line 301.
-
-
-LaTeX Warning: Reference `eq:tidea' on page 42 undefined on input line 301.
-
-
-Package natbib Warning: Citation `Papaloizou2000' on page 42 undefined on input
- line 301.
-
-[42]
-
-Package natbib Warning: Citation `SSD1999' on page 43 undefined on input line 3
-18.
-
-
-LaTeX Warning: Reference `eq:tidea' on page 43 undefined on input line 324.
-
-
-LaTeX Warning: Reference `eq:spina' on page 43 undefined on input line 324.
-
-
-Package natbib Warning: Citation `WuMurray2003' on page 43 undefined on input l
-ine 329.
-
-
-LaTeX Warning: Reference `fig:emin' on page 43 undefined on input line 338.
-
-
-LaTeX Warning: Reference `fig:th_v_num' on page 43 undefined on input line 342.
-
-
-) [43] [44]
+[42 <./chap3/emin_Tconstraint.png>] [43] [44]) [45]
 \openout2 = `chap4/chap4.aux'.
 
  (./chap4/chap4.tex
@@ -2559,120 +756,21 @@ Chapter 4.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/24.88'.
 (microtype)             Ignoring protrusion settings for this character.
-
-Package natbib Warning: Citation `Wisdom1991' on page 45 undefined on input lin
-e 21.
-
-
-Package natbib Warning: Citation `Wisdom1991' on page 45 undefined on input lin
-e 22.
-
-
-Package natbib Warning: Citation `Saha1992' on page 45 undefined on input line 
-22.
-
-
-Package natbib Warning: Citation `Yoshida1990' on page 45 undefined on input li
-ne 24.
-
-[45
+[46
 
 
 
-]
-
-Package natbib Warning: Citation `Yoshida1993' on page 46 undefined on input li
-ne 28.
-
-
-Package natbib Warning: Citation `Saha1994' on page 46 undefined on input line 
-31.
-
-
-Package natbib Warning: Citation `Rein2015a' on page 46 undefined on input line
- 38.
-
-
-Package natbib Warning: Citation `Duncan1998' on page 46 undefined on input lin
-e 44.
-
-
-Package natbib Warning: Citation `Chambers1999' on page 46 undefined on input l
-ine 44.
-
-
-Package natbib Warning: Citation `BS1988' on page 46 undefined on input line 53
-.
-
-[46]
-
-Package natbib Warning: Citation `Rein2015b' on page 47 undefined on input line
- 56.
-
-
-Package natbib Warning: Citation `Rein2015a' on page 47 undefined on input line
- 57.
-
-
-Package natbib Warning: Citation `Rein2012' on page 47 undefined on input line 
-58.
-
-
-LaTeX Warning: Reference `sec:Methods' on page 47 undefined on input line 60.
-
-
-LaTeX Warning: Reference `sec:Error' on page 47 undefined on input line 60.
-
-
-LaTeX Warning: Reference `sec:Examples' on page 47 undefined on input line 60.
-
-
-LaTeX Warning: Reference `sec:Conclusion' on page 47 undefined on input line 60
-.
-
-
-LaTeX Warning: Reference `fig:bodies' on page 47 undefined on input line 73.
-
-<chap4/images/bodies.pdf, id=309, 273.02pt x 152.57pt>
+] [47] <chap4/images/bodies.pdf, id=328, 273.02pt x 152.57pt>
 File: chap4/images/bodies.pdf Graphic file (type pdf)
 
 <use chap4/images/bodies.pdf>
 Package pdftex.def Info: chap4/images/bodies.pdf used on input line 76.
 (pdftex.def)             Requested size: 163.81326pt x 91.5427pt.
-
-
-Package natbib Warning: Citation `Rein2015b' on page 47 undefined on input line
- 84.
-
-
-Package natbib Warning: Citation `Duncan1998' on page 47 undefined on input lin
-e 90.
-
-
-Package natbib Warning: Citation `Chambers1999' on page 47 undefined on input l
-ine 90.
-
-
-Package natbib Warning: Citation `Wisdom2006' on page 47 undefined on input lin
-e 91.
-
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/8'.
 (microtype)             Ignoring protrusion settings for this character.
-[47 <./chap4/images/bodies.pdf>]
-
-LaTeX Warning: Reference `step1' on page 48 undefined on input line 105.
-
-
-LaTeX Warning: Reference `fig:bodies' on page 48 undefined on input line 115.
-
-
-LaTeX Warning: Reference `fig:CE_fig' on page 48 undefined on input line 130.
-
-
-LaTeX Warning: Reference `fig:CE_fig' on page 48 undefined on input line 135.
-
-[48] <chap4/images/CE_fig.pdf, id=322, 578.16pt x 433.62pt>
+ [48 <./chap4/images/bodies.pdf>] [49]
+<chap4/images/CE_fig.pdf, id=341, 578.16pt x 433.62pt>
 File: chap4/images/CE_fig.pdf Graphic file (type pdf)
 
 <use chap4/images/CE_fig.pdf>
@@ -2681,102 +779,28 @@ Package pdftex.def Info: chap4/images/CE_fig.pdf used on input line 139.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/9'.
 (microtype)             Ignoring protrusion settings for this character.
- [49 <./chap4/images/CE_fig.pdf>]
-
-LaTeX Warning: Reference `sec:Error' on page 50 undefined on input line 175.
-
-<chap4/images/AutoHSF.pdf, id=363, 439.6425pt x 186.6975pt>
+ [50 <./chap4/images/CE_fig.pdf>]
+<chap4/images/AutoHSF.pdf, id=382, 439.6425pt x 186.6975pt>
 File: chap4/images/AutoHSF.pdf Graphic file (type pdf)
 
 <use chap4/images/AutoHSF.pdf>
 Package pdftex.def Info: chap4/images/AutoHSF.pdf used on input line 186.
 (pdftex.def)             Requested size: 263.78752pt x 112.01935pt.
-
-
-LaTeX Warning: Reference `fig:AutoHSF' on page 50 undefined on input line 192.
-
-
-LaTeX Warning: Reference `fig:bodies' on page 50 undefined on input line 200.
-
-[50]
-
-LaTeX Warning: Reference `sec:Error' on page 51 undefined on input line 209.
-
-
+ [51]
 Overfull \hbox (55.92296pt too wide) in paragraph at lines 213--215
 []\T1/pplx/m/n/10 (-20) The adap-tive $\OML/zplm/m/it/10 f[]$ \T1/pplx/m/n/10 (
 -20) al-go-rithm can be switched off by set-ting the vari-able \T1/cmtt/m/n/10 
 ri_hermes.adaptive_hill_switch_factor
  []
 
-
-Package natbib Warning: Citation `Rein2015a' on page 51 undefined on input line
- 223.
-
-[51 <./chap4/images/AutoHSF.pdf>]
-
-LaTeX Warning: Reference `eq:error' on page 52 undefined on input line 239.
-
-
-Package natbib Warning: Citation `Rein2015a' on page 52 undefined on input line
- 243.
-
-
-LaTeX Warning: Reference `sec:Alg' on page 52 undefined on input line 250.
-
-
-Package natbib Warning: Citation `Saha1994' on page 52 undefined on input line 
-251.
-
-
-Package natbib Warning: Citation `Wisdom2006' on page 52 undefined on input lin
-e 251.
-
-
-LaTeX Warning: Reference `eq:WHerr' on page 52 undefined on input line 257.
-
-
-LaTeX Warning: Reference `eq:WHerr' on page 52 undefined on input line 258.
-
-<chap4/images/R3B.pdf, id=373, 503.8825pt x 266.9975pt>
+[52 <./chap4/images/AutoHSF.pdf>]
+<chap4/images/R3B.pdf, id=393, 503.8825pt x 266.9975pt>
 File: chap4/images/R3B.pdf Graphic file (type pdf)
 
 <use chap4/images/R3B.pdf>
 Package pdftex.def Info: chap4/images/R3B.pdf used on input line 261.
 (pdftex.def)             Requested size: 226.74503pt x 120.14775pt.
-
-
-LaTeX Warning: Reference `fig:R3B' on page 52 undefined on input line 270.
-
-
-LaTeX Warning: Reference `fig:R3B' on page 52 undefined on input line 272.
-
-
-LaTeX Warning: Reference `fig:R3B' on page 52 undefined on input line 273.
-
-[52 <./chap4/images/R3B.pdf>]
-
-LaTeX Warning: Reference `eq:WHerr' on page 53 undefined on input line 280.
-
-
-LaTeX Warning: Reference `eq:Hbasic' on page 53 undefined on input line 281.
-
-
-Package natbib Warning: Citation `Duncan1998' on page 53 undefined on input lin
-e 281.
-
-
-LaTeX Warning: Reference `eq:WHerr' on page 53 undefined on input line 304.
-
-
-LaTeX Warning: Reference `eq:H_K' on page 53 undefined on input line 304.
-
-
-LaTeX Warning: Reference `eq:H_I' on page 53 undefined on input line 304.
-
-
-LaTeX Warning: Reference `eq:WHerr' on page 53 undefined on input line 306.
-
+ [53]
 
 LaTeX Font Warning: Command \sc invalid in math mode on input line 313.
 
@@ -2787,77 +811,20 @@ Package microtype Info: Loading generic settings for font family
 
 LaTeX Font Warning: Command \sc invalid in math mode on input line 313.
 
-<chap4/images/HSR_v_dE.pdf, id=380, 578.16pt x 433.62pt>
+[54 <./chap4/images/R3B.pdf>]
+<chap4/images/HSR_v_dE.pdf, id=405, 578.16pt x 433.62pt>
 File: chap4/images/HSR_v_dE.pdf Graphic file (type pdf)
 
 <use chap4/images/HSR_v_dE.pdf>
 Package pdftex.def Info: chap4/images/HSR_v_dE.pdf used on input line 319.
 (pdftex.def)             Requested size: 260.16959pt x 195.1272pt.
 
-
-LaTeX Warning: Reference `eq:Escheme' on page 53 undefined on input line 322.
-
-
-LaTeX Warning: Reference `eq:Escheme' on page 53 undefined on input line 322.
-
-
-LaTeX Warning: Reference `eq:Escheme' on page 53 undefined on input line 325.
-
-
-LaTeX Warning: Reference `fig:HSFdE' on page 53 undefined on input line 325.
-
-
-LaTeX Warning: Reference `fig:dtdE' on page 53 undefined on input line 325.
-
-
-LaTeX Warning: Reference `fig:dtdE' on page 53 undefined on input line 330.
-
-
-LaTeX Warning: Reference `fig:HSFdE' on page 53 undefined on input line 330.
-
-[53]
-
-LaTeX Warning: Reference `fig:HSFdE' on page 54 undefined on input line 332.
-
-
-LaTeX Warning: Reference `eq:Escheme' on page 54 undefined on input line 332.
-
-
-LaTeX Warning: Reference `fig:R3B' on page 54 undefined on input line 334.
-
-
-LaTeX Warning: Reference `fig:R3B' on page 54 undefined on input line 334.
-
-
-LaTeX Warning: Reference `fig:dtdE' on page 54 undefined on input line 335.
-
-
-LaTeX Warning: Reference `eq:Escheme' on page 54 undefined on input line 335.
-
-
-LaTeX Warning: Reference `fig:HSFdE' on page 54 undefined on input line 336.
-
-
-LaTeX Warning: Reference `fig:dtdE' on page 54 undefined on input line 336.
-
-
-LaTeX Warning: Reference `eq:Escheme' on page 54 undefined on input line 336.
-
-
-LaTeX Warning: Reference `eq:Escheme' on page 54 undefined on input line 337.
-
-<chap4/images/dt_v_dE.pdf, id=387, 578.16pt x 433.62pt>
+<chap4/images/dt_v_dE.pdf, id=406, 578.16pt x 433.62pt>
 File: chap4/images/dt_v_dE.pdf Graphic file (type pdf)
 
 <use chap4/images/dt_v_dE.pdf>
 Package pdftex.def Info: chap4/images/dt_v_dE.pdf used on input line 341.
 (pdftex.def)             Requested size: 260.16959pt x 195.1272pt.
-
-
-LaTeX Warning: Reference `eq:Escheme' on page 54 undefined on input line 344.
-
-
-LaTeX Warning: Reference `eq:Escheme' on page 54 undefined on input line 344.
 
 
 LaTeX Font Warning: Command \sc invalid in math mode on input line 349.
@@ -2886,11 +853,8 @@ LaTeX Font Warning: Command \sc invalid in math mode on input line 356.
 
 LaTeX Font Warning: Command \sc invalid in math mode on input line 356.
 
-[54 <./chap4/images/HSR_v_dE.pdf>]
-
-LaTeX Warning: Reference `eq:Etot' on page 55 undefined on input line 360.
-
-<chap4/images/CEvdE.pdf, id=431, 578.16pt x 433.62pt>
+[55 <./chap4/images/HSR_v_dE.pdf>]
+<chap4/images/CEvdE.pdf, id=450, 578.16pt x 433.62pt>
 File: chap4/images/CEvdE.pdf Graphic file (type pdf)
 
 <use chap4/images/CEvdE.pdf>
@@ -2898,592 +862,95 @@ Package pdftex.def Info: chap4/images/CEvdE.pdf used on input line 366.
 (pdftex.def)             Requested size: 260.16959pt x 195.1272pt.
 
 
-LaTeX Warning: Reference `eq:Etot' on page 55 undefined on input line 369.
-
-
-LaTeX Warning: Reference `eq:Etot' on page 55 undefined on input line 369.
-
-
-LaTeX Warning: Reference `fig:HSFratio' on page 55 undefined on input line 373.
-
-
-
-Package natbib Warning: Citation `Scipy2016' on page 55 undefined on input line
- 374.
-
-
-LaTeX Warning: Reference `fig:HSFratio' on page 55 undefined on input line 374.
-
-
-
 LaTeX Font Warning: Command \sc invalid in math mode on input line 375.
 
 
 LaTeX Font Warning: Command \sc invalid in math mode on input line 375.
-
-
-LaTeX Warning: Reference `eq:Etot' on page 55 undefined on input line 375.
 
 
 LaTeX Font Warning: Command \sc invalid in math mode on input line 376.
 
-
-LaTeX Warning: Reference `eq:Etot' on page 55 undefined on input line 378.
-
-
-LaTeX Warning: Reference `eq:WHerr' on page 55 undefined on input line 378.
-
-
-LaTeX Warning: Reference `fig:HSFratio' on page 55 undefined on input line 380.
-
-
-
-LaTeX Warning: Reference `eq:Escheme' on page 55 undefined on input line 382.
-
-
-LaTeX Warning: Reference `eq:Etot' on page 55 undefined on input line 384.
-
-[55 <./chap4/images/dt_v_dE.pdf>]
-
-LaTeX Warning: Reference `sec:HSFop' on page 56 undefined on input line 397.
-
+[56 <./chap4/images/dt_v_dE.pdf>]
 
 LaTeX Font Warning: Font shape `T1/cmtt/b/n' undefined
 (Font)              using `T1/cmtt/m/n' instead on input line 397.
 
-
-Package natbib Warning: Citation `Duncan1998' on page 56 undefined on input lin
-e 401.
-
-
-Package natbib Warning: Citation `Chambers1999' on page 56 undefined on input l
-ine 401.
-
-
-Package natbib Warning: Citation `Chambers1999' on page 56 undefined on input l
-ine 402.
-
-
-Package natbib Warning: Citation `Duncan1998' on page 56 undefined on input lin
-e 402.
-
-
-Package natbib Warning: Citation `Chambers1999' on page 56 undefined on input l
-ine 404.
-
-
-Package natbib Warning: Citation `Duncan1998' on page 56 undefined on input lin
-e 404.
-
-[56 <./chap4/images/CEvdE.pdf>]
-
-Package natbib Warning: Citation `Kirsh2009' on page 57 undefined on input line
- 406.
-
-
-Package natbib Warning: Citation `Kirsh2009' on page 57 undefined on input line
- 407.
-
-
-Package natbib Warning: Citation `Kirsh2009' on page 57 undefined on input line
- 414.
-
-
-LaTeX Warning: Reference `sec:HSFop' on page 57 undefined on input line 415.
-
-
-LaTeX Warning: Reference `fig:Kirsh' on page 57 undefined on input line 418.
-
-
-Package natbib Warning: Citation `Kirsh2009' on page 57 undefined on input line
- 419.
-
-
-Package natbib Warning: Citation `Kirsh2009' on page 57 undefined on input line
- 420.
-
-<chap4/images/Kirsh_avg_a.pdf, id=541, 578.16pt x 433.62pt>
+[57 <./chap4/images/CEvdE.pdf>]
+<chap4/images/Kirsh_avg_a.pdf, id=560, 578.16pt x 433.62pt>
 File: chap4/images/Kirsh_avg_a.pdf Graphic file (type pdf)
 
 <use chap4/images/Kirsh_avg_a.pdf>
 Package pdftex.def Info: chap4/images/Kirsh_avg_a.pdf used on input line 424.
 (pdftex.def)             Requested size: 260.16959pt x 195.1272pt.
-
-
-Package natbib Warning: Citation `Kirsh2009' on page 57 undefined on input line
- 428.
-
-
-Package natbib Warning: Citation `Kirsh2009' on page 57 undefined on input line
- 428.
-
-
-LaTeX Warning: Reference `sec:HSFop' on page 57 undefined on input line 437.
-
-[57 <./chap4/images/Kirsh_avg_a.pdf>]
-
-LaTeX Warning: Reference `fig:Np100test' on page 58 undefined on input line 444
-.
-
-<chap4/images/energy_avg_FULL.png, id=579, 578.16pt x 578.16pt>
+ [58 <./chap4/images/Kirsh_avg_a.pdf>]
+<chap4/images/energy_avg_FULL.png, id=598, 578.16pt x 578.16pt>
 File: chap4/images/energy_avg_FULL.png Graphic file (type png)
 
 <use chap4/images/energy_avg_FULL.png>
 Package pdftex.def Info: chap4/images/energy_avg_FULL.png used on input line 44
 8.
 (pdftex.def)             Requested size: 260.16959pt x 260.16959pt.
- [58 <./chap4/images/energy_avg_FULL.png>]
-
-LaTeX Warning: Reference `sec:HSFop' on page 59 undefined on input line 464.
-
-
-LaTeX Warning: Reference `eq:Escheme' on page 59 undefined on input line 479.
-
-
-LaTeX Warning: Reference `eq:Etot' on page 59 undefined on input line 480.
-
-
-LaTeX Warning: Reference `fig:bodies' on page 59 undefined on input line 484.
-
-) [59]
+ [59 <./chap4/images/energy_avg_FULL.png>]) [60]
 \openout2 = `chap5/chap5.aux'.
 
  (./chap5/chap5.tex
 Chapter 5.
+[61
 
-Package natbib Warning: Citation `Lissauer2011' on page 60 undefined on input l
-ine 14.
 
 
-Package natbib Warning: Citation `Steffen2013' on page 60 undefined on input li
-ne 14.
-
-
-Package natbib Warning: Citation `Tamayo14b' on page 60 undefined on input line
- 14.
-
-
-Package natbib Warning: Citation `Tamayo2015' on page 60 undefined on input lin
-e 14.
-
-[60
-
-
-
-]
-
-Package natbib Warning: Citation `Marchal82' on page 61 undefined on input line
- 26.
-
-
-Package natbib Warning: Citation `Milani83' on page 61 undefined on input line 
-26.
-
-
-Package natbib Warning: Citation `Gladman1993' on page 61 undefined on input li
-ne 27.
-
-
-Package natbib Warning: Citation `Deck12' on page 61 undefined on input line 29
-.
-
-
-Package natbib Warning: Citation `Veras13hill' on page 61 undefined on input li
-ne 29.
-
-
-Package natbib Warning: Citation `Gladman1993' on page 61 undefined on input li
-ne 29.
-
-
-Package natbib Warning: Citation `Barnes06' on page 61 undefined on input line 
-29.
-
-
-Package natbib Warning: Citation `Chambers1996' on page 61 undefined on input l
-ine 33.
-
-
-Package natbib Warning: Citation `Faber07' on page 61 undefined on input line 3
-3.
-
-
-Package natbib Warning: Citation `Smith09' on page 61 undefined on input line 3
-3.
-
-
-Package natbib Warning: Citation `Marzari02' on page 61 undefined on input line
- 35.
-
-
-Package natbib Warning: Citation `Ito99' on page 61 undefined on input line 35.
-
-
-
-Package natbib Warning: Citation `Chatterjee08' on page 61 undefined on input l
-ine 35.
-
-
-Package natbib Warning: Citation `Pu2015' on page 61 undefined on input line 35
-.
-
-
-Package natbib Warning: Citation `Marzari14' on page 61 undefined on input line
- 35.
-
-
-Package natbib Warning: Citation `Collister04' on page 61 undefined on input li
-ne 40.
-
-
-Package natbib Warning: Citation `Petrovich15' on page 61 undefined on input li
-ne 40.
-
-[61]
-
-Package natbib Warning: Citation `Rein2015b' on page 62 undefined on input line
- 61.
-
-
-Package natbib Warning: Citation `Rein2012' on page 62 undefined on input line 
-61.
-
-
-Package natbib Warning: Citation `Friedman01' on page 62 undefined on input lin
-e 74.
-
-
-Package natbib Warning: Citation `Chen16' on page 62 undefined on input line 74
-.
-
-
-LaTeX Warning: Reference `metrics' on page 62 undefined on input line 78.
-
-[62]
-
-LaTeX Warning: Reference `metrics' on page 63 undefined on input line 88.
-
-
-LaTeX Warning: Reference `IC' on page 63 undefined on input line 89.
-
-
-LaTeX Warning: Reference `shortintegrations' on page 63 undefined on input line
- 89.
-
-
-LaTeX Warning: Reference `hyper' on page 63 undefined on input line 89.
-
-
-LaTeX Warning: Reference `IC' on page 63 undefined on input line 93.
-
-
-LaTeX Warning: Reference `shortintegrations' on page 63 undefined on input line
- 93.
-
-
-LaTeX Warning: Reference `IC' on page 63 undefined on input line 93.
-
-
-LaTeX Warning: Reference `shortintegrations' on page 63 undefined on input line
- 93.
-
+] [62] [63]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `training' on page 63 undefined on input line 126.
+LaTeX Warning: Reference `model' on page 64 undefined on input line 128.
 
-
-LaTeX Warning: Reference `model' on page 63 undefined on input line 128.
-
-
-Package natbib Warning: Citation `Chambers1996' on page 63 undefined on input l
-ine 133.
-
-
-Package natbib Warning: Citation `Marzari14' on page 63 undefined on input line
- 133.
-
-
-LaTeX Warning: Reference `ariplot' on page 63 undefined on input line 133.
-
-<chap5/figures/ICpredictions.pdf, id=598, 578.16pt x 433.62pt>
+<chap5/figures/ICpredictions.pdf, id=617, 578.16pt x 433.62pt>
 File: chap5/figures/ICpredictions.pdf Graphic file (type pdf)
 
 <use chap5/figures/ICpredictions.pdf>
 Package pdftex.def Info: chap5/figures/ICpredictions.pdf used on input line 136
 .
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
-
-
-LaTeX Warning: Reference `ariplot' on page 63 undefined on input line 147.
-
-
-Package natbib Warning: Citation `Lissauer2011' on page 63 undefined on input l
-ine 148.
-
-[63] [64 <./chap5/figures/ICpredictions.pdf>]
-
-LaTeX Warning: Reference `ariplot' on page 65 undefined on input line 153.
-
-
-LaTeX Warning: Reference `IC' on page 65 undefined on input line 163.
-
-[65]
-
-Package natbib Warning: Citation `SSD1999' on page 66 undefined on input line 1
-66.
-
-
-LaTeX Warning: Reference `features' on page 66 undefined on input line 175.
-
-
-LaTeX Warning: Reference `dianaplot' on page 66 undefined on input line 200.
-
-<chap5/figures/histograms.pdf, id=673, 433.62pt x 289.08pt>
+ [64] [65] [66 <./chap5/figures/ICpredictions.pdf>] [67] <chap5/figures/histogr
+ams.pdf, id=696, 433.62pt x 289.08pt>
 File: chap5/figures/histograms.pdf Graphic file (type pdf)
 
 <use chap5/figures/histograms.pdf>
 Package pdftex.def Info: chap5/figures/histograms.pdf used on input line 205.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 
-
-LaTeX Warning: Reference `IC' on page 66 undefined on input line 216.
-
-
-LaTeX Warning: Reference `shortintegrations' on page 66 undefined on input line
- 216.
-
-[66] [67 <./chap5/figures/histograms.pdf>]
-
-LaTeX Warning: Reference `prcurves' on page 68 undefined on input line 219.
-
-<chap5/figures/prcurves.pdf, id=716, 505.89pt x 505.89pt>
+<chap5/figures/prcurves.pdf, id=697, 505.89pt x 505.89pt>
 File: chap5/figures/prcurves.pdf Graphic file (type pdf)
 
 <use chap5/figures/prcurves.pdf>
 Package pdftex.def Info: chap5/figures/prcurves.pdf used on input line 224.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
-
-
-Package natbib Warning: Citation `Ford12' on page 68 undefined on input line 25
-3.
-
-
-Package natbib Warning: Citation `Steffen2013' on page 68 undefined on input li
-ne 253.
-
-
-Package natbib Warning: Citation `Deck15' on page 68 undefined on input line 25
-3.
-
-[68] [69 <./chap5/figures/prcurves.pdf>]
-
-Package natbib Warning: Citation `Lithwick11secularchaos' on page 70 undefined 
-on input line 259.
-
-
-Package natbib Warning: Citation `Batygin15' on page 70 undefined on input line
- 259.
-
-) [70]
+ [68 <./chap5/figures/histograms.pdf>] [69 <./chap5/figures/prcurves.pdf>]) [70
+]
 \openout2 = `chap6/chap6.aux'.
 
  (./chap6/chap6.tex
 Chapter 6.
-
-Package natbib Warning: Citation `Robertson2012' on page 71 undefined on input 
-line 7.
-
-
-Package natbib Warning: Citation `NASAEA' on page 71 undefined on input line 22
-.
-
-
-Package natbib Warning: Citation `Hayashi1981' on page 71 undefined on input li
-ne 24.
-
-
-Package natbib Warning: Citation `Boley2016' on page 71 undefined on input line
- 24.
-
-
-Package natbib Warning: Citation `Huang2016' on page 71 undefined on input line
- 24.
-
-
-Package natbib Warning: Citation `Batygin2016' on page 71 undefined on input li
-ne 24.
-
-
-Package natbib Warning: Citation `Mayor1995' on page 71 undefined on input line
- 24.
-
-
-Package natbib Warning: Citation `Lin1996' on page 71 undefined on input line 2
-4.
-
-
-Package natbib Warning: Citation `Pollack1996' on page 71 undefined on input li
-ne 24.
-
-
-Package natbib Warning: Citation `Lee2002' on page 71 undefined on input line 2
-5.
-
-
-Package natbib Warning: Citation `Rein2009' on page 71 undefined on input line 
-25.
-
-
-Package natbib Warning: Citation `NASAEA' on page 71 undefined on input line 26
-.
-
 [71
 
 
 
-]
-
-Package natbib Warning: Citation `Robertson2012' on page 72 undefined on input 
-line 29.
-
-
-Package natbib Warning: Citation `Cochran2007' on page 72 undefined on input li
-ne 30.
-
-
-Package natbib Warning: Citation `Cochran2007' on page 72 undefined on input li
-ne 33.
-
-
-Package natbib Warning: Citation `Fuhrmann2008' on page 72 undefined on input l
-ine 33.
-
-
-Package natbib Warning: Citation `Robertson2012' on page 72 undefined on input 
-line 33.
-
-
-Package natbib Warning: Citation `Andre2016' on page 72 undefined on input line
- 33.
-
-
-Package natbib Warning: Citation `Cochran2007' on page 72 undefined on input li
-ne 34.
-
-
-Package natbib Warning: Citation `Jefferys1988' on page 72 undefined on input l
-ine 35.
-
-
-Package natbib Warning: Citation `Meschiari2009' on page 72 undefined on input 
-line 35.
-
-
-LaTeX Warning: Reference `sec:orb' on page 72 undefined on input line 41.
-
-
-LaTeX Warning: Reference `sec:form' on page 72 undefined on input line 42.
-
-
-LaTeX Warning: Reference `sec:stability' on page 72 undefined on input line 42.
-
-
-
-LaTeX Warning: Reference `sec:conc' on page 72 undefined on input line 43.
-
-
-Package natbib Warning: Citation `Rein2012' on page 72 undefined on input line 
-52.
-
-
-Package natbib Warning: Citation `Gregory2005' on page 72 undefined on input li
-ne 61.
-
-[72]
-
-Package natbib Warning: Citation `Foreman-Mackey2013' on page 73 undefined on i
-nput line 69.
-
-
-Package natbib Warning: Citation `Rein2015b' on page 73 undefined on input line
- 79.
-
-
-<chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf, id=775, 1445.4pt x 867.24pt>
+] [72]
+<chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf, id=791, 1445.4pt x 867.24pt>
 File: chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf Graphic file (type pdf)
 <use chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf>
 Package pdftex.def Info: chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf used 
 on input line 86.
 (pdftex.def)             Requested size: 451.68752pt x 242.33513pt.
-
-
-LaTeX Warning: Reference `tab:MCMC' on page 73 undefined on input line 94.
-
-
-LaTeX Warning: Reference `fig:stability' on page 73 undefined on input line 96.
-
-
-
-LaTeX Warning: Reference `tab:MCMC' on page 73 undefined on input line 96.
-
-
-LaTeX Warning: Reference `fig:stability' on page 73 undefined on input line 98.
-
-
-
-LaTeX Warning: Reference `tab:MCMC' on page 73 undefined on input line 100.
-
-
-LaTeX Warning: Reference `fig:MCMC' on page 73 undefined on input line 127.
-
-
-Package natbib Warning: Citation `Pal2009' on page 73 undefined on input line 1
-32.
-
-
-LaTeX Warning: Reference `sec:MC' on page 73 undefined on input line 133.
-
-[73] [74 <./chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf>]
-
-LaTeX Warning: Reference `sec:Results' on page 75 undefined on input line 139.
-
-
+ [73] [74 <./chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 161--161
 []|\T1/pplx/m/n/10 (+20) noPPI
  []
 
-
-LaTeX Warning: Reference `tab:res' on page 75 undefined on input line 174.
-
-[75]
-
-Package natbib Warning: Citation `Papaloizou2000' on page 76 undefined on input
- line 191.
-
-
-Package natbib Warning: Citation `Papaloizou2000' on page 76 undefined on input
- line 199.
-
-
-LaTeX Warning: Reference `sec:Results' on page 76 undefined on input line 206.
-
-
-Package natbib Warning: Citation `Goldreich2014' on page 76 undefined on input 
-line 208.
-
-[76]
-
-Package natbib Warning: Citation `Gregory2005' on page 77 undefined on input li
-ne 233.
-
-
-Package natbib Warning: Citation `Gregory2005' on page 77 undefined on input li
-ne 243.
-
-
-<chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf, id=834, 1445
+[75] [76]
+<chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf, id=850, 1445
 .4pt x 867.24pt>
 File: chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf Graphic 
 file (type pdf)
@@ -3493,168 +960,38 @@ Package pdftex.def Info: chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02
 _sd931.pdf used on input line 252.
 (pdftex.def)             Requested size: 451.68752pt x 253.11517pt.
 
-<chap6/images/plot_good_ones.pdf, id=835, 578.16pt x 722.7pt>
+<chap6/images/plot_good_ones.pdf, id=851, 578.16pt x 722.7pt>
 File: chap6/images/plot_good_ones.pdf Graphic file (type pdf)
 
 <use chap6/images/plot_good_ones.pdf>
 Package pdftex.def Info: chap6/images/plot_good_ones.pdf used on input line 261
 .
 (pdftex.def)             Requested size: 451.68752pt x 564.60799pt.
-
-
-LaTeX Warning: Reference `eq:GL' on page 77 undefined on input line 270.
-
-
-Package natbib Warning: Citation `Kass1995' on page 77 undefined on input line 
-270.
-
-
-Package natbib Warning: Citation `Gregory2005' on page 77 undefined on input li
-ne 270.
-
-
-LaTeX Warning: Reference `eq:PO' on page 77 undefined on input line 276.
-
-[77 <./chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf>]
-[78 <./chap6/images/plot_good_ones.pdf>]
-
-LaTeX Warning: Reference `eq:POapprox' on page 79 undefined on input line 282.
-
-
-LaTeX Warning: Reference `fig:bestform' on page 79 undefined on input line 289.
-
-
-
-Package natbib Warning: Citation `Kass1995' on page 79 undefined on input line 
-294.
-
-
-LaTeX Warning: Reference `fig:goodones' on page 79 undefined on input line 294.
-
-
-
-LaTeX Warning: Reference `fig:goodones' on page 79 undefined on input line 295.
-
-
-
-LaTeX Warning: Reference `fig:goodones' on page 79 undefined on input line 297.
-
-
-<chap6/images/stability_plot_histogram.pdf, id=931, 1156.32pt x 1084.05pt>
+ [77]
+<chap6/images/stability_plot_histogram.pdf, id=855, 1156.32pt x 1084.05pt>
 File: chap6/images/stability_plot_histogram.pdf Graphic file (type pdf)
 
 <use chap6/images/stability_plot_histogram.pdf>
 Package pdftex.def Info: chap6/images/stability_plot_histogram.pdf used on inpu
 t line 305.
 (pdftex.def)             Requested size: 451.68752pt x 513.74341pt.
-
-
-Package natbib Warning: Citation `Marshall2010' on page 79 undefined on input l
-ine 312.
-
-
-Package natbib Warning: Citation `Horner2011' on page 79 undefined on input lin
-e 312.
-
-
-Package natbib Warning: Citation `Rein2017' on page 79 undefined on input line 
-320.
-
-
-LaTeX Warning: Reference `fig:stability' on page 79 undefined on input line 323
-.
-
-
-LaTeX Warning: Reference `fig:stability' on page 79 undefined on input line 328
-.
-
-[79] [80 <./chap6/images/stability_plot_histogram.pdf>]
-
-LaTeX Warning: Reference `sec:orb' on page 81 undefined on input line 339.
-
-
-LaTeX Warning: Reference `sec:form' on page 81 undefined on input line 339.
-
-
-LaTeX Warning: Reference `tab:MCMC' on page 81 undefined on input line 340.
-
-
-LaTeX Warning: Reference `tab:res' on page 81 undefined on input line 340.
-
-
-LaTeX Warning: Reference `sec:Results' on page 81 undefined on input line 342.
-
-
-Package natbib Warning: Citation `Rein2010' on page 81 undefined on input line 
-346.
-
-) [81]
+ [78 <./chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf>] [79 
+<./chap6/images/plot_good_ones.pdf>] [80 <./chap6/images/stability_plot_histogr
+am.pdf>]) [81]
 \openout2 = `conc/conc.aux'.
 
  (./conc/conc.tex
 Chapter 7.
-
-LaTeX Warning: Reference `chap:Stats' on page 82 undefined on input line 4.
-
-
-Package natbib Warning: Citation `Ramirez2014' on page 82 undefined on input li
-ne 4.
-
-
-LaTeX Warning: Reference `chap:Stats' on page 82 undefined on input line 10.
-
-
-LaTeX Warning: Reference `chap:Tides' on page 82 undefined on input line 10.
-
-
-LaTeX Warning: Reference `chap:Tides' on page 82 undefined on input line 16.
-
-
-LaTeX Warning: Reference `chap:Hermes' on page 82 undefined on input line 17.
-
-
-LaTeX Warning: Reference `chap:Tides' on page 82 undefined on input line 58.
-
-
-LaTeX Warning: Reference `sec:restugg' on page 82 undefined on input line 58.
-
-
-LaTeX Warning: Reference `chap:Hermes' on page 82 undefined on input line 64.
-
-
-Package natbib Warning: Citation `Chatterjee2015' on page 82 undefined on input
- line 66.
-
-
-LaTeX Warning: Reference `sec:PF' on page 82 undefined on input line 68.
-
 [82
 
 
 
-]
-
-LaTeX Warning: Reference `chap:Stability' on page 83 undefined on input line 72
-.
+] [83]) [84] (./thesis.bbl [85
 
 
-LaTeX Warning: Reference `chap:HD155358' on page 83 undefined on input line 78.
-
-
-) [83] (./thesis.bbl [84
-
-
-] [85] [86] [87] [88] [89])
-
-Package natbib Warning: There were undefined citations.
-
-[90] (./thesis.aux (./intro/intro.aux) (./chap2/chap2.aux) (./chap3/chap3.aux)
-(./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./conc/conc.aux)
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+] [86] [87] [88] [89] [90]) [91] (./thesis.aux (./intro/intro.aux) (./chap2/cha
+p2.aux) (./chap3/chap3.aux) (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/ch
+ap6.aux) (./conc/conc.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3662,17 +999,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8763 strings out of 493117
- 130132 string characters out of 6135433
- 214510 words of memory out of 5000000
- 11260 multiletter control sequences out of 15000+600000
- 141281 words of font info for 657 fonts, out of 8000000 for 9000
+ 8769 strings out of 493117
+ 130330 string characters out of 6135433
+ 233231 words of memory out of 5000000
+ 11263 multiletter control sequences out of 15000+600000
+ 136247 words of font info for 645 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,17n,52p,1277b,729s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,17n,45p,1142b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
@@ -3692,10 +1029,10 @@ ype1/public/cm-super/sftt2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
 e1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/
 palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatin
 o/uplri8a.pfb>
-Output written on thesis.pdf (98 pages, 2135961 bytes).
+Output written on thesis.pdf (104 pages, 2152715 bytes).
 PDF statistics:
- 1086 PDF objects out of 1200 (max. 8388607)
- 466 compressed objects within 5 object streams
+ 1105 PDF objects out of 1200 (max. 8388607)
+ 479 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 88722 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 87698 words of extra memory for PDF output out of 89155 (max. 10000000)
 
