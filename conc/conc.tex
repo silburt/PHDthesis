@@ -1,8 +1,43 @@
 \chapter{Conclusions \& Future Work}
-\label{chap:conc}
-This thesis analyzed the statistics, formation and stability of exoplanetary systems. 
-Five main results have been presented, and are summarized below. 
+This thesis dealt with the statistics, formation and stability of exoplanetary system. 
 
+In Chapter~\ref{chap:Stats} I performed a general analysis of the \kep catalog, using the \citet{Ramirez2014} data to calculate the occurrence rate of small planets, accounting for detection biases and radius errors. 
+I found that Kepler planets are preferentially peaked at $2-2.8R_\oplus$, with their numbers decreasing gradually toward smaller sizes, with a roughly log-uniform period distribution.
+The average number of planets per star with periods between $20$ and $200$ days and radii between $1$ and $4R_\oplus$ is $0.46 \pm 0.03$. 
+Such planets have likely experienced little photoevaporation, and may reflect the "primordial" planet population. 
+Upon extrapolation I obtained an occurrence rate for Earth-like planets within the "habitable zone" (as calculated by 1-D climate models), of $6.4^{+3.4}_{-1.1}\%$. 
+
+Through my analysis of the \kep catalog in Chapter~\ref{chap:Stats}, I became interested in the statistical excess of planets wide of MMR, motivating the work in Chapter~\ref{chap:Tides}.
+Here I used an optimistic theoretical estimate for the minimum initial eccentricity required by \kep planets to explain their offset from MMR, and complimented these calculations with N-body simulations.
+Analyzing 27 \kep systems having planets within $6\%$ of the 2:1 MMR, I found that the initial eccentricities required to explain the observed spacings are unreasonable from simple dynamical arguments.
+Furthermore, our numerical simulations revealed "resonant tugging", an effect which conspires against the migration of resonant planets away from the 2:1 MMR, requiring even higher initial eccentricities in order to explain the current \kep distribution. 
+In summary, I found that tides alone cannot explain planets close to 2:1 MMR, and additional mechanisms are required to explain these systems. 
+
+Since I found in Chapter~\ref{chap:Tides} that tidal forces alone cannot explain planets close to 2:1 MMR, I sought other mechanisms capable of transporting planets from MMR. 
+Planetesimals seems like a promising phenomena, motivating my work in Chapter~\ref{chap:Hermes}.
+In Chapter~\ref{chap:Hermes} presented \hermes, a new hybrid integration scheme for long-term simulations of planetary systems undergoing close encounters or planetesimal-driven migration. 
+Distant particles are integrated using \whfast, while close particles are integrated with \ias.
+In addition, I created an adaptive routine for optimizing the close encounter boundary to help maintain accuracy whilst close encounters are occurring.
+Since \whfast is symplectic, \ias is accurate to machine precision and both of them are unbiased, the energy error grows sub-linearly with time under the assumption that either impact parameters are randomly distributed or close encounters are rare.
+I found that \hermes provides a good balance between speed and accuracy, neither achieved by the individual symplectic or non-symplectic integrators alone.
+
+In addition to my work analyzing \kep planets, I have also been taking part in machine learning workshops held frequently at the Centre for Planetary Science. 
+In particular, a group of us became interested in applying machine learning to the problem of planetary stability. 
+In Chapter~\ref{chap:Stability} we showed that characterizing the complicated and multi-dimensional stability boundary of tightly packed systems is amenable to machine learning methods. 
+In particular, training a state-of-the-art machine learning algorithm on physically motivated features yields an accurate classifier of stability in packed systems. 
+On the stability timescale I investigated ($10^7$ orbits), our trained machine was 3 orders of magnitude faster than direct N-body simulations. 
+Optimized machine learning classifiers for dynamical stability may thus prove useful across the discipline, e.g., to characterize the exoplanet sample discovered by the upcoming Transiting Exoplanet Survey Satellite (TESS).
+
+Finally, I became interested in the planetary system HD155358 since it drew on a number of topics have expertise in, namely MMR, formation and stability. 
+in Chapter~\ref{chap:HD155358} I analyzed the RV data for the star HD155358, which hosts two Jovian-sized planets near 2:1 MMR. 
+Using a Bayesian model parameterized by the orbital elements of each planet, I showed that excluding planet-planet interactions can yield statistically different orbital solutions, leading to different implications for formation and stability. 
+Using our updated orbital solution I calculated a high likelihood that the planets are in MMR. 
+In addition, I conducted a stability analysis by drawing samples from our posterior distribution and simulating them for $10^9$ years, finding that our best-fit values land firmly in a stable region of parameter space.
+I also explored a series of formation models that migrate the planets into MMR and generated synthetic RV curves to fit directly to the observed data. 
+I found that a number of formation models fit the RV data surprisingly well, with some migration parameters being ruled out.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\if{false}
 \section{Summary of Results}
 \subsection{Occurrence Rate of \kep Planets}
 In Chapter~\ref{chap:Stats} we used the \citet{Ramirez2014} \kep catalog to calculate the occurrence rate of small planets, accounting for detection biases and radius errors. 
@@ -38,6 +73,8 @@ Using our updated orbital solution we calculate a high likelihood that the plane
 In addition, we conducted a stability analysis by drawing samples from our posterior distribution and simulating them for $10^9$ years, finding that our best-fit values land firmly in a stable region of parameter space.
 We also explored a series of formation models that migrate the planets into MMR and generated synthetic RV curves to fit directly to the observed data. 
 We found that a number of formation models fit the RV data surprisingly well, with some migration parameters being ruled out.
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Future Work and Directions}
 From Chapter~\ref{chap:Tides}, a primary reason why tides cannot transport planets from exact MMR to a few percent wide is due to "Resonant Tugging" (Section~\ref{sec:restugg}).
@@ -60,7 +97,7 @@ Substantial work can still be done to make this a valuable asset to the exoplane
 Primarily, this work can be extended to planetary systems more representative of the \kep population, with unequal mass planets on non-circular orbits simulated for an order of magnitude longer. 
 In addition, for other scientists to use this tool, an easy-to-use pipeline must be created that can input a given planetary system and output a probability of longterm stability. 
 
-Finally, in Chapter~\ref{chap:HD155358} we used a simple formation model to fit the RV curve of HD155358 and determine the initial conditions of the system. 
+Finally, in Chapter~\ref{chap:HD155358} I used a simple formation model to fit the RV curve of HD155358 and determine the initial conditions of the system. 
 This simple model could be replaced with a full 3D hydrodynamical model, further constraining the initial conditions of the system. 
 
 \memoas{Other possible things to mention:
