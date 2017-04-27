@@ -1,35 +1,34 @@
 \chapter{Conclusions \& Future Work}
 This thesis dealt with the statistics, formation and stability of exoplanetary system. 
 
-In Chapter~\ref{chap:Stats} I performed a general analysis of the \kep catalog, using the \citet{Ramirez2014} data to calculate the occurrence rate of small planets, accounting for detection biases and radius errors. 
-I found that Kepler planets are preferentially peaked at $2-2.8R_\oplus$, with their numbers decreasing gradually toward smaller sizes, with a roughly log-uniform period distribution.
+In Chapter~\ref{chap:Stats}, I performed a general analysis of the \kep catalog using the \citet{Ramirez2014} data to calculate the occurrence rate of small planets, accounting for detection biases and radius errors. 
+Here I found that Kepler planets are preferentially peaked at $2-2.8R_\oplus$, with their numbers decreasing gradually toward smaller sizes, with a roughly log-uniform period distribution.
 The average number of planets per star with periods between $20$ and $200$ days and radii between $1$ and $4R_\oplus$ is $0.46 \pm 0.03$. 
 Such planets have likely experienced little photoevaporation, and may reflect the "primordial" planet population. 
-Upon extrapolation I obtained an occurrence rate for Earth-like planets within the "habitable zone" (as calculated by 1-D climate models), of $6.4^{+3.4}_{-1.1}\%$. 
+Upon extrapolation I obtained an occurrence rate for Earth-like planets within the "habitable zone" (as calculated by 1-D climate models) of $6.4^{+3.4}_{-1.1}\%$. 
 
 Through my analysis of the \kep catalog in Chapter~\ref{chap:Stats}, I became interested in the statistical excess of planets wide of MMR, motivating the work in Chapter~\ref{chap:Tides}.
-Here I used an optimistic theoretical estimate for the minimum initial eccentricity required by \kep planets to explain their offset from MMR, and complimented these calculations with N-body simulations.
-Analyzing 27 \kep systems having planets within $6\%$ of the 2:1 MMR, I found that the initial eccentricities required to explain the observed spacings are unreasonable from simple dynamical arguments.
+Here I used optimistic theoretical estimates for the minimum initial eccentricity required to explain the offset of \kep planets from MMR due to tidal forces alone, complimenting these calculations with N-body simulations.
+Analyzing 27 \kep systems having planets within $6\%$ of the 2:1 MMR, I found that the initial eccentricities required to explain the observed spacings due to tides alone are unreasonable from simple dynamical arguments.
 Furthermore, our numerical simulations revealed "resonant tugging", an effect which conspires against the migration of resonant planets away from the 2:1 MMR, requiring even higher initial eccentricities in order to explain the current \kep distribution. 
 In summary, I found that tides alone cannot explain planets close to 2:1 MMR, and additional mechanisms are required to explain these systems. 
 
-Since I found in Chapter~\ref{chap:Tides} that tidal forces alone cannot explain planets close to 2:1 MMR, I sought other mechanisms capable of transporting planets from MMR. 
-Planetesimals seems like a promising phenomena, motivating my work in Chapter~\ref{chap:Hermes}.
-In Chapter~\ref{chap:Hermes} presented \hermes, a new hybrid integration scheme for long-term simulations of planetary systems undergoing close encounters or planetesimal-driven migration. 
+After my work in Chapter~\ref{chap:Tides}, I sought other mechanisms capable of transporting planets from MMR. 
+Planetesimals are a promising candidate for transporting planets from MMR, motivating my work in Chapter~\ref{chap:Hermes} where I presented \hermes, a new hybrid integration scheme for long-term simulations of planetary systems undergoing close encounters or planetesimal-driven migration. 
 Distant particles are integrated using \whfast, while close particles are integrated with \ias.
 In addition, I created an adaptive routine for optimizing the close encounter boundary to help maintain accuracy whilst close encounters are occurring.
 Since \whfast is symplectic, \ias is accurate to machine precision and both of them are unbiased, the energy error grows sub-linearly with time under the assumption that either impact parameters are randomly distributed or close encounters are rare.
 I found that \hermes provides a good balance between speed and accuracy, neither achieved by the individual symplectic or non-symplectic integrators alone.
 
 In addition to my work analyzing \kep planets, I have also been taking part in machine learning workshops held frequently at the Centre for Planetary Science. 
-In particular, a group of us became interested in applying machine learning to the problem of planetary stability. 
+From these workshops, a group of us became interested in applying machine learning to the problem of planetary stability. 
 In Chapter~\ref{chap:Stability} we showed that characterizing the complicated and multi-dimensional stability boundary of tightly packed systems is amenable to machine learning methods. 
 In particular, training a state-of-the-art machine learning algorithm on physically motivated features yields an accurate classifier of stability in packed systems. 
 On the stability timescale I investigated ($10^7$ orbits), our trained machine was 3 orders of magnitude faster than direct N-body simulations. 
 Optimized machine learning classifiers for dynamical stability may thus prove useful across the discipline, e.g., to characterize the exoplanet sample discovered by the upcoming Transiting Exoplanet Survey Satellite (TESS).
 
-Finally, I became interested in the planetary system HD155358 since it drew on a number of topics have expertise in, namely MMR, formation and stability. 
-in Chapter~\ref{chap:HD155358} I analyzed the RV data for the star HD155358, which hosts two Jovian-sized planets near 2:1 MMR. 
+Finally, my previous research experience motivated me to work on the planetary system HD155358, since it drew on a number of familiar topics like MMR, formation and stability. 
+In Chapter~\ref{chap:HD155358}, I analyzed the RV data for the star HD155358, which hosts two Jovian-sized planets near 2:1 MMR. 
 Using a Bayesian model parameterized by the orbital elements of each planet, I showed that excluding planet-planet interactions can yield statistically different orbital solutions, leading to different implications for formation and stability. 
 Using our updated orbital solution I calculated a high likelihood that the planets are in MMR. 
 In addition, I conducted a stability analysis by drawing samples from our posterior distribution and simulating them for $10^9$ years, finding that our best-fit values land firmly in a stable region of parameter space.
