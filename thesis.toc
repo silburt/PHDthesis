@@ -10,18 +10,18 @@
 \contentsline {subsection}{\numberline {1.2.3}Formation of Protoplanets}{5}
 \contentsline {section}{\numberline {1.3}Planetary Dynamics}{5}
 \contentsline {subsection}{\numberline {1.3.1}Mean Motion Resonance}{5}
-\contentsline {subsection}{\numberline {1.3.2}Migration}{7}
-\contentsline {subsubsection}{Planetesimal-Driven Migration}{7}
-\contentsline {subsubsection}{Gas-Driven migration}{7}
+\contentsline {subsection}{\numberline {1.3.2}Migration}{6}
+\contentsline {subsubsection}{Planetesimal-Driven Migration}{6}
+\contentsline {subsubsection}{Gas-Driven migration}{8}
 \contentsline {subsection}{\numberline {1.3.3}Stability}{8}
 \contentsline {section}{\numberline {1.4}Numerical Integration}{9}
 \contentsline {subsection}{\numberline {1.4.1}Hamiltonian Dynamics}{9}
 \contentsline {subsection}{\numberline {1.4.2}Coordinate Systems}{10}
-\contentsline {subsubsection}{Jacobi}{10}
+\contentsline {subsubsection}{Jacobi}{11}
 \contentsline {subsubsection}{Democratic Heliocentric}{11}
-\contentsline {subsubsection}{WHDS}{11}
+\contentsline {subsubsection}{WHDS}{12}
 \contentsline {subsection}{\numberline {1.4.3}Integrator Types}{12}
-\contentsline {section}{\numberline {1.5}This Work}{12}
+\contentsline {section}{\numberline {1.5}This Work}{13}
 \contentsline {chapter}{\numberline {2}Statistical Reconstruction of Kepler Planets}{14}
 \contentsline {section}{\numberline {2.1}Chapter Overview}{14}
 \contentsline {section}{\numberline {2.2}Introduction}{15}
@@ -96,5 +96,6 @@
 \contentsline {section}{\numberline {6.5}Stability}{78}
 \contentsline {section}{\numberline {6.6}Discussion and Conclusion}{81}
 \contentsline {chapter}{\numberline {7}Conclusions \& Future Work}{82}
-\contentsline {section}{\numberline {7.1}Future Work and Directions}{83}
+\contentsline {section}{\numberline {7.1}Summary}{82}
+\contentsline {section}{\numberline {7.2}Future Work and Directions}{83}
 \contentsline {chapter}{Bibliography}{85}

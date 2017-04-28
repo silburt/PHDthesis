@@ -1,4 +1,4 @@
-\begin{thebibliography}{182}
+\begin{thebibliography}{185}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Akeson} {et~al.}(2013){Akeson}, {Chen}, {Ciardi}, \&
@@ -75,6 +75,15 @@
 
 \bibitem[{{Blum} \& {Wurm}(2008)}]{Blum2008}
 {Blum}, J., \& {Wurm}, G. 2008, \araa, 46, 21
+
+\bibitem[{{Boccaletti} {et~al.}(2015){Boccaletti}, {Thalmann}, {Lagrange},
+  {Janson}, {Augereau}, {Schneider}, {Milli}, {Grady}, {Debes}, {Langlois},
+  {Mouillet}, {Henning}, {Dominik}, {Maire}, {Beuzit}, {Carson}, {Dohlen},
+  {Engler}, {Feldt}, {Fusco}, {Ginski}, {Girard}, {Hines}, {Kasper}, {Mawet},
+  {M{\'e}nard}, {Meyer}, {Moutou}, {Olofsson}, {Rodigas}, {Sauvage},
+  {Schlieder}, {Schmid}, {Turatto}, {Udry}, {Vakili}, {Vigan}, {Wahhaj}, \&
+  {Wisniewski}}]{Boccaletti2015}
+{Boccaletti}, A., {et~al.} 2015, \nat, 526, 230
 
 \bibitem[{{Boley} {et~al.}(2016){Boley}, {Granados Contreras}, \&
   {Gladman}}]{Boley2016}
@@ -305,6 +314,14 @@ Gelman, A., \& Rubin, D. 1992, Statistical Science, 7, 457,
 {Hill}, G.~J., {et~al.} 2010, in Society of Photo-Optical Instrumentation
   Engineers (SPIE) Conference Series, Vol. 7735, Society of Photo-Optical
   Instrumentation Engineers (SPIE) Conference Series
+
+\bibitem[{{Hines} {et~al.}(2007){Hines}, {Schneider}, {Hollenbach}, {Mamajek},
+  {Hillenbrand}, {Metchev}, {Meyer}, {Carpenter}, {Moro-Mart{\'{\i}}n},
+  {Silverstone}, {Kim}, {Henning}, {Bouwman}, \& {Wolf}}]{Hines2007}
+{Hines}, D.~C., {et~al.} 2007, \apjl, 671, L165
+
+\bibitem[{{Holman} \& {Murray}(2005)}]{Holman2005}
+{Holman}, M.~J., \& {Murray}, N.~W. 2005, Science, 307, 1288
 
 \bibitem[{{Horner} {et~al.}(2011){Horner}, {Marshall}, {Wittenmyer}, \&
   {Tinney}}]{Horner2011}

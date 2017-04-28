@@ -16,52 +16,50 @@ Repeated entry---line 2471 of file thesis.bib
  : @article{Baruteau2013
  :                      ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Robsertson2012"
-Warning--I didn't find a database entry for "Lissauer"
 Warning--empty publisher in Armitage2010
 Warning--empty publisher in Beauge2007
 Warning--empty publisher in SSD1999
 Warning--empty publisher in Plummer1918
 Warning--empty publisher in Press2002
-You've used 182 entries,
+You've used 185 entries,
             2988 wiz_defined-function locations,
-            1752 strings with 41250 characters,
-and the built_in function-call counts, 80864 in all, are:
-= -- 6595
-> -- 5753
-< -- 102
-+ -- 1927
-- -- 1728
-* -- 6852
-:= -- 15386
-add.period$ -- 182
-call.type$ -- 182
-change.case$ -- 1164
-chr.to.int$ -- 181
-cite$ -- 187
-duplicate$ -- 3356
-empty$ -- 4844
-format.name$ -- 2358
-if$ -- 15835
+            1766 strings with 42539 characters,
+and the built_in function-call counts, 82631 in all, are:
+= -- 6701
+> -- 5942
+< -- 103
++ -- 1989
+- -- 1787
+* -- 7043
+:= -- 15736
+add.period$ -- 185
+call.type$ -- 185
+change.case$ -- 1180
+chr.to.int$ -- 184
+cite$ -- 190
+duplicate$ -- 3411
+empty$ -- 4927
+format.name$ -- 2430
+if$ -- 16167
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 180
-newline$ -- 550
-num.names$ -- 728
-pop$ -- 1211
+missing$ -- 183
+newline$ -- 559
+num.names$ -- 740
+pop$ -- 1228
 preamble$ -- 1
-purify$ -- 1163
+purify$ -- 1179
 quote$ -- 0
-skip$ -- 2833
+skip$ -- 2881
 stack$ -- 0
-substring$ -- 3461
+substring$ -- 3530
 swap$ -- 13
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1614
+type$ -- 1641
 warning$ -- 5
-while$ -- 663
+while$ -- 671
 width$ -- 0
-write$ -- 1805
+write$ -- 1835
 (There was 1 error message)
