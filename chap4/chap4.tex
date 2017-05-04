@@ -13,7 +13,7 @@ We created an adaptive routine for optimizing the close encounter boundary to he
 Since \whfast is symplectic, \ias is accurate to machine precision and both of them are unbiased, the energy error grows sub-linearly with time under the assumption that either impact parameters are randomly distributed or close encounters are rare.
 
 We find that \hermes provides a good balance between speed and accuracy, neither achieved by the individual symplectic or non-symplectic integrators alone.
-In this paper, we describe the details of implementation, accuracy and performance, as well as its incorporation within the larger framework of the $N$-body package \reb. 
+In this Chapter, we describe the details of implementation, accuracy and performance, as well as its incorporation within the larger framework of the $N$-body package \reb. 
 
 \section{Introduction}
 \label{sec:intro}
@@ -52,12 +52,12 @@ When particles are distant, interactive forces between particles are small and e
 When particles are close, interactive forces become large and are transferred to $H_K$, thus keeping $H_I$ small. 
 This makes $H_K$ a three body problem (central body plus two particles undergoing a close encounter) which cannot be solved analytically but is straightforward to integrate numerically to high precision using a Bulirsch-Stoer routine \citep{BS1988}. 
  
-In this paper we present a new integration method, \hermes, which borrows ideas from the integrators mentioned above, but takes a more direct approach to handling close encounters.
+In this Chapter we present a new integration method, \hermes, which borrows ideas from the integrators mentioned above, but takes a more direct approach to handling close encounters.
 It combines two existing integrators, \whfast \citep{Rein2015b} 
  which is a fast and unbiased implementation of the WH method, and the high-order \ias integrator \citep{Rein2015a}. 
 \hermes has been seamlessly incorporated into \reb \citep{Rein2012}, adding further flexibility to the modular $N$-body package. 
 
-The outline for the paper is as follows: Section~\ref{sec:Methods} describes the algorithm for \hermes, Section~\ref{sec:Error} characterizes error, Section~\ref{sec:Examples} shows standard tests of \hermes as well as a comparison to \symba and \mercury, and we conclude in Section~\ref{sec:Conclusion}.
+The outline for the Chapter is as follows: Section~\ref{sec:Methods} describes the algorithm for \hermes, Section~\ref{sec:Error} characterizes error, Section~\ref{sec:Examples} shows standard tests of \hermes as well as a comparison to \symba and \mercury, and we conclude in Section~\ref{sec:Conclusion}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,7 +89,7 @@ We call it \whfasthelio.
 We use it as the symplectic integrator in \hermes but note that \whfasthelio can also be used by itself. 
 We choose the specific splitting of the Hamiltonian by \cite{Duncan1998} and \cite{Chambers1999}.
 For a discussion on the different splittings, their advantages and disadvantages, see \cite{Wisdom2006}. 
-For the remainder of this paper we will refer to \whfasthelio simply as \whfast as both integrators use the same Kepler solver.
+For the remainder of this Chapter we will refer to \whfasthelio simply as \whfast as both integrators use the same Kepler solver.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Algorithm}
@@ -470,7 +470,7 @@ In summary, these simulations show that \hermes provides a good balance between 
 
 \section{Conclusion}
 \label{sec:Conclusion}
-In this paper we have presented \hermes, a hybrid integrator capable of integrating close encounters and collisions. 
+In this Chapter we have presented \hermes, a hybrid integrator capable of integrating close encounters and collisions. 
 \hermes integrator is composed of two parts, a global simulation which contains all particles and a mini simulation which contains all active particles (e.g. stars and planets) plus any semi-active/test particles (e.g., planetesimals) involved in a close encounter.
 The global simulation is integrated with \whfast while the mini simulation is integrated with \ias.
 Comparing \hermes to the openly available \mercury and \symba we find that \hermes provides a good balance between accuracy and speed.

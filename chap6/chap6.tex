@@ -11,11 +11,11 @@ In addition, our new PPI model strongly favours the planets being in MMR while o
 We conduct a stability analysis by drawing samples from our PPI model's posterior distribution and simulating them for $10^9$ years, finding that our best-fit values land firmly in a stable region of parameter space.
 
 We explore a series of formation models that migrate the planets into their observed MMR.
-We then use our formation models to directly fit to the observed RV data, where each model is uniquely parameterized by only three constants describing its migration history.
-Using a Bayesian framework we find that a number of formation models fit the RV data surprisingly well, with some migration parameters being ruled out.
+We then use these models to directly fit to the observed RV data, where each model is uniquely parameterized by only three constants describing its migration history.
+Using a Bayesian framework we find that a number of migration models fit the RV data surprisingly well, with some migration parameters being ruled out.
 
 Our analysis shows that planet-planet interactions are important to take into account when modelling observations of multi-planetary systems.
-The additional information that one can gain from interacting models can help constrain planet formation parameters.
+The additional information that one can gain from interacting models can help constrain planet migration parameters.
 
 \section{Introduction}
 \label{sec:intro}
@@ -39,7 +39,7 @@ In particular, without planet-planet interactions one cannot draw any conclusion
 
 In this work we re-analyze HD155358 using the RV observations collected by \R.
 In Sect.~\ref{sec:orb}, we derive new orbital parameters using a Bayesian framework coupled to direct N-body integrations and assess the probability that the system is in resonance.
-In Sect.~\ref{sec:form}, we perform simulations constraining the formation history, and in Sect.~\ref{sec:stability} conduct a stability analysis. 
+In Sect.~\ref{sec:form}, we perform simulations constraining the migration history, and in Sect.~\ref{sec:stability} conduct a stability analysis. 
 We conclude with a discussion in Sect.~\ref{sec:conc}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -83,9 +83,9 @@ In \reb we use the \whfast integrator \citep{Rein2015b} with a timestep of $P_1/
 \subsection{Best Fit Parameters}
 \label{sec:Results}
 \begin{figure*}
-\includegraphics[trim=4.4cm 8cm 4.5cm 0cm, width=\textwidth]{chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf}
+\includegraphics[trim=4.4cm 8cm 4.5cm 0cm, width=\textwidth]{images/hk_400walk_5000it_chkpt1_MAP_RV.pdf}
 \caption{RV data and PPI model fit. 
-Top panel shows the RV data points, MCMC MAP value (green), and 100 randomly plotted samples from the posterior (black). 
+Top panel shows the RV data points, MCMC MAP value (green), and 80 randomly plotted samples from the posterior (black). 
 Bottom panel shows the residuals for the MAP fit to the RV data. 
  }
 \label{fig:MCMC}
@@ -130,8 +130,9 @@ As can be seen, our PPI model represents a good fit to the data.
 
 We also try adding two additional parameters to our PPI model to account for mutual inclination between the planets.
 For this inclination model we add $i_{x,2} = 2\textrm{sin}(i_2/2)\textrm{cos}(\Omega_2)$ and $i_{y,2} = 2\textrm{sin}(i_2/2)\textrm{sin}(\Omega_2)$, where $i_2$ is the inclination of the outer planet (with respect to the inner planet and star) and $\Omega_2$ is the longitude of ascending node of the outer planet \citep{Pal2009}. 
+The mutual inclination returned by this model is $i_2 = 30^{\circ +22^{\circ}}_{\ \ -37^{\circ}}$, being consistent with 0 and ruling out large mutual inclinations. 
 Comparing this inclination model to our original PPI model using a posterior odds ratio (see Section~\ref{sec:MC}) yields a value of 0.4, indicating a slight preference over the inclination model.
-In addition, since our original PPI model is simpler and the model parameters between models are similar, we choose to stick with our PPI model for the remainder of our analysis. 
+Since our original PPI model is simpler and the model parameters between models are similar, we choose to stick with our PPI model for the remainder of our analysis. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -180,15 +181,15 @@ Given our analysis, there is a high likelihood that the HD155358 system is in MM
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Formation}
+\section{Formation via Migration}
 \label{sec:form}
 \subsection{Methods}
-We now use the results found in the previous section to explore the formation of HD155358.
+We now use the results found in the previous section to explore the formation of HD155358 via migration.
 We use a simple model by which the outer planet is migrated into 2:1 MMR using a parametric model, mimicking the presence of a protoplanetary disk.
-Specifically, we introduce semi-major axis and eccentricity damping rates, $\tau_a = a/\dot{a}$ and $\tau_e = e/\dot{e}$, respectively, where the two are related by a constant $K = \tau_a / \tau_e$. 
+Specifically, we introduce semi-major axis and eccentricity damping timescales, $\tau_a = a/\dot{a}$ and $\tau_e = e/\dot{e}$, respectively, where the two are related by a constant $K = \tau_a / \tau_e$. 
 We refer to this class of convergent-migration models as ``CM models". 
 
-We follow the implementation by \cite{Papaloizou2000} and add an additional acceleration on each planet according to:
+We follow the implementation by \cite{Papa2000} and add an additional acceleration on each planet according to:
 \begin{align*}
 \begin{split}
 \textbf{a}_{\rm mig} &=  -\frac{\textbf{v}}{\tau_a} \\
@@ -196,12 +197,12 @@ We follow the implementation by \cite{Papaloizou2000} and add an additional acce
 \end{split}
 \end{align*}
 where $\textbf{v}$ is the velocity and $\textbf{r}$ is the position of the planet relative to the star. 
-The migration prescriptions of \citet{Papaloizou2000} were designed with Type-I migration in mind, yet our planets likely lie in the Type-II migration regime.
+The migration prescriptions of \citet{Papa2000} were designed with Type-I migration in mind, yet our planets likely lie in the Type-II migration regime.
 However, since we are interested primarily in seeing whether a simple migration model can reproduce the data, this model choice will suffice. 
 More accurate, 3-D hydrodynamical simulations of Type-II planetary migration are significantly more complex and beyond the scope of this paper. 
 
-For each simulation three parameters are independently varied -- the eccentricity damping rate of the inner planet $\tau_{e_1}$, the eccentricity damping rate of the outer planet, $\tau_{e_2}$, and the migration rate of the outer planet, $\tau_{a_2}$.
-The inner planet does not undergo migration by itself, i.e. $\tau_{a_1} = 0$.
+For each simulation three parameters are independently varied -- the eccentricity damping timescale of the inner planet $\tau_{e_1}$, the eccentricity damping timescale of the outer planet, $\tau_{e_2}$, and the migration timescale of the outer planet, $\tau_{a_2}$.
+The inner planet does not undergo migration by itself, i.e. $\tau_{a_1} = \infty$.
 Initial values for $\tau_{a_2}$ are drawn from a uniform distribution in log-space between $10^{2.5}$ and $10^7$ years, while initial values for $K_1$ and $K_2$ are drawn between $10^{-1}$ and $10^3$.
 Planet masses are drawn from our posterior distribution (Section~\ref{sec:Results}), all eccentricity and inclination values are initialized to zero, and the remaining orbital parameters are randomly drawn from uniform distributions. 
 
@@ -249,16 +250,16 @@ where $p(D|\theta, M)$ is the likelihood and $p(\theta|M)$ is the prior.
 The marginal likelihood represents the probability of the data given the model. 
 
 \begin{figure*}
-\includegraphics[trim=4.4cm 7cm 4.5cm 0cm, width=\textwidth]{chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931}
+\includegraphics[trim=4.4cm 7cm 4.5cm 0cm, width=\textwidth]{images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf}
 \caption{RV data and $\theta_{\rm mig,best}$ fit.
-Top panel shows the RV data points, MCMC MAP value (green), and 100 randomly plotted samples from the posterior (black). 
+Top panel shows the RV data points, MCMC MAP value (green), and 80 randomly plotted samples from the posterior (black). 
 Bottom panel shows the residuals for the MAP fit to the RV data. 
  }
 \label{fig:bestform}
 \end{figure*}
 
 \begin{figure}
-\includegraphics[width=\columnwidth]{chap6/images/plot_good_ones.pdf}
+\includegraphics[width=\columnwidth]{images/plot_good_ones.pdf}
 \caption{The best 45 models $\theta_{\rm model}$ = \{$\tau_{a_1}$, $K_1$, $K_2$\} with Bayes' factors less than 100 when compared against the best model in our sample of 3000 simulations. 
 Top panel presents the data in ($K_1$, $K_2$) space, and the parameters from our 3000 simulations were uniformly sampled from the region displayed. 
 Bottom panel displays the same data in ($\tau_{e_2}$, $\tau_{e_2}$) space. 
@@ -302,7 +303,7 @@ In the bottom panel, positive correlation can be seen between $\tau_{a_2}$ and $
 \section{Stability}
 \label{sec:stability}
 \begin{figure*}
-\includegraphics[trim=4.4cm 2cm 4.5cm 0cm, width=\textwidth]{chap6/images/stability_plot_histogram}
+\includegraphics[trim=4.4cm 2cm 4.5cm 0cm, width=\textwidth]{images/stability_plot_histogram}
 \caption{
     Histograms of each parameter showing the distribution of 2000 stable (green) and unstable (red) systems drawn from our PPI model's posterior distribution and simulated for $10^9$ years.
 The black vertical dashed line in each histogram represents our MAP estimate for that parameter. 
@@ -336,15 +337,17 @@ Although not shown, we find no clustering of unstable systems in ($m_1$, $m_2$) 
 \section{Discussion and Conclusion}
 \label{sec:conc}
 In this work we used three different model types to analyze the RV curve of HD155358 -- the PPI, noPPI and CM models. 
-Our PPI (planet-planet interactions) and noPPI (no planet-planet interactions) models fit the RV curve to a model parameterized by the orbital elements of each planet (Section~\ref{sec:orb}), while our CM model was parameterized by formation parameters and fit the result of planet migration to the RV curve (Section~\ref{sec:form}).
+Our PPI (planet-planet interactions) and noPPI (no planet-planet interactions) models fit the RV curve to a model parameterized by the orbital elements of each planet (Section~\ref{sec:orb}), while our CM model was parameterized by migration parameters and fit this result to the RV curve (Section~\ref{sec:form}).
 The best-fit parameters from our PPI and noPPI models are shown in Table~\ref{tab:MCMC}, while Table~\ref{tab:res} shows that there is a high likelihood that the planets of HD155358 are in MMR. 
 
-The noPPI model is an approximation to the PPI model, and we have shown in Section~\ref{sec:Results} that planet-planet interactions are strong enough in the HD155358 system to make this approximation inaccurate.
-More specifically, the orbital parameters returned by our PPI and noPPI models differ by up to $2\sigma$.
+The noPPI model is an approximation to the PPI model, and we have shown in Section~\ref{sec:Results} that planet-planet interactions are strong enough in the HD155358 system to yield differing conclusions about the resonant structure. 
+More specifically, our PPI model predicts a high likelihood that the planets are in MMR, while our noPPI model predicts a low likelihood that the planets are in MMR. 
+Since planets in MMR are highly likely to have formed via migration, by extension the PPI and noPPI models have different formation implications. 
+Quantitatively, the orbital parameters returned by our PPI and noPPI models differ by up to $2\sigma$.
 
 Our CM model has demonstrated that formation models of this style can be used to fit RV curves and constrain the initial conditions of a given system. 
 One possibility for future work is to make the CM model more sophisticated, for example by modelling the planet-disk interactions in more realistic hydrodynamic simulations \citep{Rein2010}. 
-With such a model, one could place even more constraints on the formation of HD155358.
+With such a model, one could place further constraints on the formation of HD155358.
 
 From a frequentist's point of view, the reduced $\chi^2$ values for our PPI, noPPI and best CM model are 1.4, 1.6 and 0.7 respectively, indicating that all three models are capable of fitting the data well.
 However, our PPI model should be considered the only valid model when it comes to determining the true values of the observed system.
