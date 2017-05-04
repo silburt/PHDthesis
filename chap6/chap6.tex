@@ -83,7 +83,7 @@ In \reb we use the \whfast integrator \citep{Rein2015b} with a timestep of $P_1/
 \subsection{Best Fit Parameters}
 \label{sec:Results}
 \begin{figure*}
-\includegraphics[trim=4.4cm 8cm 4.5cm 0cm, width=\textwidth]{images/hk_400walk_5000it_chkpt1_MAP_RV.pdf}
+\includegraphics[trim=4.4cm 8cm 4.5cm 0cm, width=\textwidth]{chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf}
 \caption{RV data and PPI model fit. 
 Top panel shows the RV data points, MCMC MAP value (green), and 80 randomly plotted samples from the posterior (black). 
 Bottom panel shows the residuals for the MAP fit to the RV data. 
@@ -199,7 +199,7 @@ We follow the implementation by \cite{Papa2000} and add an additional accelerati
 where $\textbf{v}$ is the velocity and $\textbf{r}$ is the position of the planet relative to the star. 
 The migration prescriptions of \citet{Papa2000} were designed with Type-I migration in mind, yet our planets likely lie in the Type-II migration regime.
 However, since we are interested primarily in seeing whether a simple migration model can reproduce the data, this model choice will suffice. 
-More accurate, 3-D hydrodynamical simulations of Type-II planetary migration are significantly more complex and beyond the scope of this paper. 
+More accurate, 3-D hydrodynamical simulations of Type-II planetary migration are significantly more complex and beyond the scope of this chapter. 
 
 For each simulation three parameters are independently varied -- the eccentricity damping timescale of the inner planet $\tau_{e_1}$, the eccentricity damping timescale of the outer planet, $\tau_{e_2}$, and the migration timescale of the outer planet, $\tau_{a_2}$.
 The inner planet does not undergo migration by itself, i.e. $\tau_{a_1} = \infty$.
@@ -250,7 +250,7 @@ where $p(D|\theta, M)$ is the likelihood and $p(\theta|M)$ is the prior.
 The marginal likelihood represents the probability of the data given the model. 
 
 \begin{figure*}
-\includegraphics[trim=4.4cm 7cm 4.5cm 0cm, width=\textwidth]{images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf}
+\includegraphics[trim=4.4cm 7cm 4.5cm 0cm, width=\textwidth]{chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf}
 \caption{RV data and $\theta_{\rm mig,best}$ fit.
 Top panel shows the RV data points, MCMC MAP value (green), and 80 randomly plotted samples from the posterior (black). 
 Bottom panel shows the residuals for the MAP fit to the RV data. 
@@ -259,7 +259,7 @@ Bottom panel shows the residuals for the MAP fit to the RV data.
 \end{figure*}
 
 \begin{figure}
-\includegraphics[width=\columnwidth]{images/plot_good_ones.pdf}
+\includegraphics[width=\columnwidth]{chap6/images/plot_good_ones.pdf}
 \caption{The best 45 models $\theta_{\rm model}$ = \{$\tau_{a_1}$, $K_1$, $K_2$\} with Bayes' factors less than 100 when compared against the best model in our sample of 3000 simulations. 
 Top panel presents the data in ($K_1$, $K_2$) space, and the parameters from our 3000 simulations were uniformly sampled from the region displayed. 
 Bottom panel displays the same data in ($\tau_{e_2}$, $\tau_{e_2}$) space. 
@@ -303,7 +303,7 @@ In the bottom panel, positive correlation can be seen between $\tau_{a_2}$ and $
 \section{Stability}
 \label{sec:stability}
 \begin{figure*}
-\includegraphics[trim=4.4cm 2cm 4.5cm 0cm, width=\textwidth]{images/stability_plot_histogram}
+\includegraphics[trim=4.4cm 2cm 4.5cm 0cm, width=\textwidth]{chap6/images/stability_plot_histogram}
 \caption{
     Histograms of each parameter showing the distribution of 2000 stable (green) and unstable (red) systems drawn from our PPI model's posterior distribution and simulated for $10^9$ years.
 The black vertical dashed line in each histogram represents our MAP estimate for that parameter. 
