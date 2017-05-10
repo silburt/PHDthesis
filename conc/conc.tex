@@ -1,20 +1,20 @@
 \chapter{Conclusions \& Future Work}
 \section{Summary}
-Over the last decade, with the launch of \kep and other space missions, we have seen an explosion in the number of discovered exoplanetary systems. 
-For the first time ever, scientists have had an opportunity to study planetary systems other than our own, and compare the Solar System to this population of discovered exoplanets.
-Broadly speaking, scientists are interested in understanding three things about planetary systems -- their past formation, present conditions and future evolution. 
+Over the last decade we have seen an explosion in the number of discovered exoplanetary systems, and for the first time ever scientists have had an opportunity to study and compare other planetary systems to our own. 
+Broadly speaking, scientists are interested in understanding three main things about planetary systems -- their past formation, present conditions and future evolution. 
 This thesis has contributed to all three domains by analyzing the statistics, formation and stability of exoplanetary systems. 
 
-In Chapter~\ref{chap:Stats}, I performed a statistical analysis of the \kep catalog using the \citet{Ramirez2014} data to calculate the occurrence rate of small planets, accounting for detection biases and radius errors. 
+In Chapter~\ref{chap:Stats}, I performed a statistical analysis of the \kep catalog using the \citet{Ramirez2014} dataset to calculate the occurrence rate of small planets, accounting for detection biases and radius errors. 
 Here I found that the occurrence of Kepler planets are preferentially peaked at $2-2.8R_\oplus$, with their numbers decreasing gradually toward smaller sizes, with a roughly log-uniform period distribution.
 Our work is compared to \citet{Petigura2013}, who finds a similar peak but different occurrence values for Neptune-sized planets. 
-The average number of planets per star with periods between $20$ and $200$ days and radii between $1$ and $4R_\oplus$ is $0.46 \pm 0.03$. 
+From Chapter~\ref{chap:Stats}, the average number of planets per star with periods between $20$ and $200$ days and radii between $1$ and $4R_\oplus$ is $0.46 \pm 0.03$. 
 Such planets have likely experienced little photoevaporation, and may reflect the "primordial" planet population. 
 Upon extrapolation I obtained an occurrence rate for Earth-like planets within the "habitable zone" (as calculated by 1-D climate models) of $6.4^{+3.4}_{-1.1}\%$. 
-As mentioned in Section~\ref{sec:stats}, the most difficult aspect of calculating planet occurrence is accurately measuring the detection completeness, and our method is validated by successfully reproducing the work of \citet{Petigura2013} by applying our detection completeness calculations to their dataset.
+As mentioned in Section~\ref{sec:stats}, the most difficult aspect of calculating planet occurrence is accurately measuring the detection completeness, and our method was validated by successfully reproducing the work of \citet{Petigura2013} through applying our detection completeness calculations to their dataset.
 
-My analysis of the \kep catalog in Chapter~\ref{chap:Stats} revealed additional structures in the \kep data. 
-In particular, there are statistical excesses of planets wide of first-order MMR, motivating the work in Chapter~\ref{chap:Tides}.
+The analysis in Chapter~\ref{chap:Stats} revealed additional structures in the \kep data, and in particular there are statistical excesses of planets wide of first-order MMR.
+It is believed that these planets were originally trapped in exact MMR and a dynamical mechanism transported them a few percent wide.
+The specific mechanism for transporting these planets is still unclear, motivating my work in Chapter~\ref{chap:Tides}.
 Here I used optimistic theoretical estimates for the minimum initial eccentricity required to explain the offset of \kep planets from MMR due to tidal forces alone, complimenting these calculations with N-body simulations.
 Analyzing 27 \kep systems with period ratios within $6\%$ of the 2:1 MMR, I found that the initial eccentricities required to explain the observed spacings due to tides alone are unreasonable from simple dynamical arguments.
 Furthermore, our numerical simulations revealed "resonant tugging", an effect which conspires against the migration of resonant planets away from the 2:1 MMR, requiring even higher initial eccentricities in order to explain the current \kep distribution. 
@@ -37,7 +37,7 @@ Optimized machine learning classifiers for dynamical stability may thus prove us
 Finally, my previous research experience motivated me to work on the planetary system HD155358, since it drew on a number of familiar topics like MMR, formation and stability. 
 In Chapter~\ref{chap:HD155358}, I analyzed the RV data for the star HD155358, which hosts two Jovian-sized planets near 2:1 MMR. 
 Using a Bayesian model parameterized by the orbital elements of each planet, I showed that excluding planet-planet interactions can yield statistically different orbital solutions, leading to different implications for formation and stability. 
-IFrom our updated orbital solution I calculated a high likelihood that the planets are in MMR. 
+From my updated orbital solutions I calculated a high likelihood that the planets are in MMR. 
 In addition, I conducted a stability analysis by drawing samples from our posterior distribution and simulating them for $10^9$ years, finding that our best-fit values land firmly in a stable region of parameter space.
 Furthermore, I also explored a series of formation models that migrate the planets into MMR and generated synthetic RV curves to fit directly to the observed data. 
 I found that a number of formation models fit the RV data surprisingly well, with some migration parameters being ruled out.
@@ -45,7 +45,7 @@ I found that a number of formation models fit the RV data surprisingly well, wit
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Future Work and Directions}
 \label{sec:Future}
-From Chapter~\ref{chap:Tides}, a primary reason why tides cannot transport planets from exact MMR to a few percent wide is due to "Resonant Tugging" (Section~\ref{sec:restugg}).
+From Chapter~\ref{chap:Tides}, I found that a primary reason why tides cannot transport planets from exact MMR to a few percent wide is due to "Resonant Tugging" (Section~\ref{sec:restugg}).
 This effect was seen using two different tidal prescriptions, and is believed to be a real effect vs. a numerical artifact. 
 However, this effect was not analytically derived and is poorly understood. 
 Additional work is needed to understand the physics behind this process, as well as its range of applicability.
