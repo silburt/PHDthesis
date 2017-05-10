@@ -4,9 +4,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Hyperparameters used for the initial-conditions (IC) model (Sec.\tmspace +\medmuskip {.2222em}5.4.1\hbox {}) and short-integrations (SI) model (Sec.\tmspace +\medmuskip {.2222em}5.4.2\hbox {}), and their associated performance. \relax }}{65}
-\contentsline {table}{\numberline {5.2}{\ignorespaces `Short-Integration' Model Feature Importances. See text for a description of the gain and of the features. \relax }}{67}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Hyperparameters used for the initial-conditions (IC) model (Sec.\tmspace +\medmuskip {.2222em}5.4.1\hbox {}) and short-integrations (SI) model (Sec.\tmspace +\medmuskip {.2222em}5.4.2\hbox {}), and their associated performance. \relax }}{66}
+\contentsline {table}{\numberline {5.2}{\ignorespaces `Short-Integration' Model Feature Importances. See text for a description of the gain and of the features. \relax }}{68}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Best-fit model parameters from our MCMC samples. Our PPI model includes planet-planet interactions, while our noPPI model excludes planet-planet interactions. The derived parameters from R2012\xspace are also listed for ease of comparison.\relax }}{74}
-\contentsline {table}{\numberline {6.2}{\ignorespaces The percent of randomly drawn samples with $\phi _1$ and $\phi _2$ librating, for our PPI and noPPI models. Error bars calculated from simple Poisson statistics. \relax }}{75}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Best-fit model parameters from our MCMC samples. Our PPI model includes planet-planet interactions, while our noPPI model excludes planet-planet interactions. The derived parameters from R2012\xspace are also listed for ease of comparison.\relax }}{75}
+\contentsline {table}{\numberline {6.2}{\ignorespaces The percent of randomly drawn samples with $\phi _1$ and $\phi _2$ librating, for our PPI and noPPI models. Error bars calculated from simple Poisson statistics. \relax }}{76}
 \addvspace {10\p@ }

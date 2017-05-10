@@ -8,7 +8,7 @@ Particles are integrated using \whfast, a fast and accurate symplectic integrato
 During a close encounter, a subset of particles is integrated with the high-order integrator \ias, while the rest of the particles continue to be integrated with \whfast.
 We created an adaptive routine for optimizing the close encounter boundary to help maintain accuracy whilst close encounters are occurring.
 
-{\memoas{Like most hybrid integrators, }the switching between integrators leads to \memoas{an additional,} finite energy error \memoas{above the standard oscillatory energy error arising from symplectic integration}.}
+Like most hybrid integrators, the switching between integrators leads to an additional, finite energy error above the standard oscillatory energy error arising from symplectic integration.
 \hermes takes a more direct approach when switching between integrators than previous schemes in the literature, allowing us to analytically estimate the numerical error of our algorithm. 
 Since \whfast is symplectic, \ias is accurate to machine precision and both of them are unbiased, the energy error grows sub-linearly with time under the assumption that either impact parameters are randomly distributed or close encounters are rare.
 
@@ -21,13 +21,13 @@ Over the last 25 years scientists have made considerable progress integrating $N
 The most widely used integrator today for solving Solar System type problems is the Wisdom-Holman integrator \citep[hereafter WH]{Wisdom1991}, which decomposes the system's Hamiltonian, $H$, into a Keplerian and an interaction component, $H_K$ and $H_I$. 
 Symplectic integrators which split the Hamiltonian in this way are known as mixed-variable symplectic integrators \citep{Wisdom1991, Saha1992}.
 The system is then evolved in a second-order leapfrog manner, taking the form of $K($dt$/2) I($dt$) K($dt$/2)$, where $K$ represents evolution under $H_K$, $I$ represents evolution under $H_I$, and $dt$ is the timestep.
-Although higher-order algorithms are possible \citep[e.g.][]{Yoshida1990}, the second-order WH method is \memoas{an ideal balance of speed and accuracy,} since the \memoas{marginal} increase in accuracy of higher-order methods comes at the cost of \memoas{significant} additional calculation. 
+Although higher-order algorithms are possible \citep[e.g.][]{Yoshida1990}, the second-order WH method is an ideal balance of speed and accuracy, since the marginal increase in accuracy of higher-order methods comes at the cost of significant additional calculation. 
 The evolution under the interaction Hamiltonian is trivial to solve exactly in Cartesian coordinates, whereas the evolution under the Keplerian Hamiltonian is easy to solve exactly using orbital elements. 
 This algorithm therefore converts between the two coordinate systems each timestep.
 
 Since the WH scheme breaks the evolution into operators that both derive from Hamiltonians, the algorithm is symplectic (for a review on symplectic algorithms see \citet{Yoshida1993}).
 This implies that the numerical solution conserves quantities closely related to the integrals of motion, such as the total energy. 
-\memoas{In practice these integrals of motion are not constant, but oscillate in a bounded manner.}
+In practice these integrals of motion are not constant, but oscillate in a bounded manner.
 The relative energy error scales as $O(\epsilon dt^2)$ if the magnitude of $H_I$ remains $O(\epsilon)$ smaller than $H_K$, where $\epsilon \ll 1$ \citep{Saha1994}. 
 For distant particles in non-overlapping orbits $\epsilon$ is typically much less than unity.
 This is one motivation for splitting $H$ into $H_K$ and $H_I$, as it allows for longer timesteps (and thus shorter integration times) than conventional integration schemes. 
@@ -81,6 +81,7 @@ Figure~\ref{fig:bodies} summarizes these interactions, where arrows represent di
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Heliocentric version of \whfast}
+\memoas{If cant get WHDS to work, remove this paragraph}
 The original \whfast algorithm described in  \cite{Rein2015b} was implemented in Jacobi coordinates.
 Jacobi coordinates lead to a better precision compared to heliocentric coordinates if orbits are well separated and do not cross each other. 
 If close encounter occur, then heliocentric coordinates can help improve the integrator's accuracy.
@@ -102,21 +103,20 @@ To evolve the system for a single timestep \hermes performs the following steps:
 \begin{enumerate}
 \item \label{step1} \textbf{Check for close encounters.} If any particle (active, semi-active, or test) has a close encounter with an active particle, then copy the particles involved in the close encounter plus all active particles to the mini simulation. 
 \item \textbf{Integrate the global simulation} using the \whfast integrator for one timestep, $dt$.
-\item \textbf{Integrate the mini simulation} using the \ias integrator if a close encounter \memoas{was identified in step~\ref{step1}.} 
-\item \textbf{Update the particles in the global simulation} \memoas{using the mini simulation} if the mini simulation was active this timestep.
+\item \textbf{Integrate the mini simulation} using the \ias integrator if a close encounter was identified in step~\ref{step1}.
+\item \textbf{Update the particles in the global simulation} using the mini simulation if the mini simulation was active this timestep.
 \end{enumerate}
 
 Although the algorithm is simple to write down in the above form, there are several caveats to point out.
 For all particles excluding the central body, we define the parameter $\HSF$, which we dub the Hill Switch Factor. 
-A spherical shell is of radius $\HSF r_H$ is constructed around each body, 
-\memoas{, where $r_H$ is the Hill radius and defines the region surrounding each body where its local gravity dominates that of central body.
-If the shells of any two particles overlap it is deemed a close encounter.}
+A spherical shell is of radius $\HSF r_H$ is constructed around each body, where $r_H$ is the Hill radius and defines the region surrounding each body where its local gravity dominates that of central body.
+If the shells of any two particles overlap it is deemed a close encounter.
 Since all semi-active and test particles are invisible to each other they cannot be involved in close encounters with one another.
 Only particles that gravitationally interact with each other can participate in close encounters (see Fig.~\ref{fig:bodies}).
 Whenever there is at least one close-encounter the mini simulation is integrated, if no close-encounters occur, the mini simulation is not active and the integrator defaults to \whfast. 
 Since the central object has no Hill sphere this motivates us to define the Solar Switch Factor, $\SSF$, which only applies to the central body. 
 Like $\HSF$ it also defines a spherical shell except is in units of the central object's physical radius instead of Hill radii.
-\memoas{Therefore, when a body passes within $\SSF r_{\odot}$ of the central object it is deemed a close encounter, where $r_{\odot}$ is the radius of the central object.}
+Therefore, when a body passes within $\SSF r_{\odot}$ of the central object it is deemed a close encounter, where $r_{\odot}$ is the radius of the central object.
 
 During a close encounter, \whfast still integrates all particles (including those involved in the close encounter) leading to momentarily large errors for the particles involved in the close encounter.
 One might expect that this poses a real problem for the accuracy, but that is not the case, since all particles involved in the close encounter plus all active particles are overwritten at the end of the timestep using the accurate results from the mini simulation.
@@ -144,7 +144,7 @@ When active, the mini simulation takes many sub-timesteps for each $dt$ and inte
 \label{fig:CE_fig}
 \end{figure}
 
-\memoas{We briefly discuss the speed of the algorithm.}
+We briefly discuss the speed of the algorithm.
 If no particles are integrated with \ias, then the speed is effectively that of \whfast with a small overhead due to collision checks.
 If all particles are integrated with \ias, then the speed is that of a simulation running only \ias, again with a small and in general negligible overhead due to collision checks. 
 Consider a typical simulation of multiple active particles undergoing planetesimal migration from a large number of semi-active particles with a reasonable $\HSF$ value.
@@ -246,7 +246,7 @@ For typical parameters $E^{WH}_{\rm scheme} \sim 10^{-9}$, and only for very lon
 For biased implementations, $E_{\rm bias}$ will dominate the error budget at earlier times.  
 
 For typical simulations integrated with \hermes, $E_{\rm scheme}$ will dominate. 
-The WH algorithm integrates a slightly different Hamiltonian from the true Hamiltonian described by the system, leading to an error that \memoas{oscillates in a bounded manner} as long as the integrated Hamiltonian remains constant.
+The WH algorithm integrates a slightly different Hamiltonian from the true Hamiltonian described by the system, leading to an error that oscillates in a bounded manner as long as the integrated Hamiltonian remains constant.
 However each time a particle is transferred to or from the global simulation (see Section~\ref{sec:Alg}), the WH-integrated Hamiltonian changes, and thus the error will change too.
 For a typical WH integration, working in democratic heliocentric coordinates, $E_{\rm scheme}$ is \citep[e.g.][]{Saha1994,Wisdom2006}:
 \begin{equation}
