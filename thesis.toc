@@ -17,7 +17,7 @@
 \contentsline {section}{\numberline {1.4}Numerical Integration}{9}
 \contentsline {subsection}{\numberline {1.4.1}Hamiltonian Dynamics}{9}
 \contentsline {subsection}{\numberline {1.4.2}Coordinate Systems}{10}
-\contentsline {subsubsection}{Jacobi}{11}
+\contentsline {subsubsection}{Jacobi}{10}
 \contentsline {subsubsection}{Democratic Heliocentric}{11}
 \contentsline {subsubsection}{WHDS}{12}
 \contentsline {subsection}{\numberline {1.4.3}Integrator Types}{12}

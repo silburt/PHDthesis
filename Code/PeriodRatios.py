@@ -30,7 +30,8 @@ if cdf == 1:    #cdf
     max = max(cdf)
     plt.ylabel('Noramlized Cumulative Distribution')
 else:           #histogram
-    n, bins, patches = plt.hist(Pratios, 90, normed=1, facecolor='green', alpha=0.75)
+    nbins = 70
+    n, bins, patches = plt.hist(Pratios, nbins, normed=1, facecolor='green', alpha=0.75)
     max = max(n)
     plt.ylabel('Normalized Counts')
 
