@@ -1,19 +1,19 @@
 \chapter{Conclusions \& Future Work}
 \section{Summary}
-Over the last decade we have seen an explosion in the number of discovered exoplanetary systems, and for the first time ever scientists have had an opportunity to study and compare other planetary systems to our own. 
-Broadly speaking, scientists are interested in understanding three main things about planetary systems -- their past formation, present conditions and future evolution. 
+The number of discovered exoplanetary systems has dramatically increased over the past decade, permitting scientists the opportunity to study the planetary systems outside the Solar System. 
+Broadly speaking, scientists are interested in understanding three things about planetary systems -- their past formation, present conditions and future evolution. 
 This thesis has contributed to all three domains by analyzing the statistics, formation and stability of exoplanetary systems. 
 
 In Chapter~\ref{chap:Stats}, I performed a statistical analysis of the \kep catalog using the \citet{Ramirez2014} dataset to calculate the occurrence rate of small planets, accounting for detection biases and radius errors. 
 Here I found that the occurrence of Kepler planets are preferentially peaked at $2-2.8R_\oplus$, with their numbers decreasing gradually toward smaller sizes, with a roughly log-uniform period distribution.
 Our work is compared to \citet{Petigura2013}, who finds a similar peak but different occurrence values for Neptune-sized planets. 
-From Chapter~\ref{chap:Stats}, the average number of planets per star with periods between $20$ and $200$ days and radii between $1$ and $4R_\oplus$ is $0.46 \pm 0.03$. 
+I calculated an average number of planets per star with periods between $20$ and $200$ days and radii between $1$ and $4R_\oplus$ of $0.46 \pm 0.03$. 
 Such planets have likely experienced little photoevaporation, and may reflect the "primordial" planet population. 
 Upon extrapolation I obtained an occurrence rate for Earth-like planets within the "habitable zone" (as calculated by 1-D climate models) of $6.4^{+3.4}_{-1.1}\%$. 
 As mentioned in Section~\ref{sec:stats}, the most difficult aspect of calculating planet occurrence is accurately measuring the detection completeness, and our method was validated by successfully reproducing the work of \citet{Petigura2013} through applying our detection completeness calculations to their dataset.
 
-The analysis in Chapter~\ref{chap:Stats} revealed additional structures in the \kep data, and in particular there are statistical excesses of planets wide of first-order MMR.
-It is believed that these planets were originally trapped in exact MMR and a dynamical mechanism transported them a few percent wide.
+The analysis in Chapter~\ref{chap:Stats} revealed additional structures in the \kep data, particularly the statistical excesses of planets wide of MMRs.
+One belief is that these planets were originally trapped in exact MMR and a dynamical mechanism transported them a few percent wide.
 The specific mechanism for transporting these planets is still unclear, motivating my work in Chapter~\ref{chap:Tides}.
 Here I used optimistic theoretical estimates for the minimum initial eccentricity required to explain the offset of \kep planets from MMR due to tidal forces alone, complimenting these calculations with N-body simulations.
 Analyzing 27 \kep systems with period ratios within $6\%$ of the 2:1 MMR, I found that the initial eccentricities required to explain the observed spacings due to tides alone are unreasonable from simple dynamical arguments.
@@ -21,15 +21,15 @@ Furthermore, our numerical simulations revealed "resonant tugging", an effect wh
 In summary, I found that tides alone cannot explain planets close to 2:1 MMR, and additional mechanisms are required to explain these systems. 
 
 After my work in Chapter~\ref{chap:Tides}, I sought other mechanisms capable of transporting planets from MMR. 
-Planetesimals are a promising candidate for transporting planets from MMR, motivating my work in Chapter~\ref{chap:Hermes} where I presented \hermes, a new hybrid integration scheme for long-term simulations of planetary systems undergoing close encounters or planetesimal-driven migration. 
+Planetesimals are a promising candidate for transporting planets from MMR, motivating my work in Chapter~\ref{chap:Hermes} where I presented \hermes, a new hybrid integration scheme for long-term simulations of planetary systems undergoing close encounters and planetesimal-driven migration. 
 Distant particles are integrated using \whfast, while close particles are integrated with \ias.
 In addition, I created an adaptive routine for optimizing the close encounter boundary to help maintain accuracy whilst close encounters are occurring.
 Since \whfast is symplectic, \ias is accurate to machine precision and both of them are unbiased, the energy error grows sub-linearly with time under the assumption that either impact parameters are randomly distributed or close encounters are rare.
 I found that \hermes provides a good balance between speed and accuracy, neither achieved by the individual symplectic or non-symplectic integrators alone.
 
 In addition to my work analyzing \kep planets, I have also been taking part in machine learning workshops held frequently at the Centre for Planetary Science. 
-From these workshops, a group of us became interested in applying machine learning to the problem of planetary stability. 
-In Chapter~\ref{chap:Stability} we showed that characterizing the complicated and multi-dimensional stability boundary of tightly packed systems is amenable to machine learning methods. 
+From these workshops, I became interested in applying machine learning to the problem of planetary stability. 
+In Chapter~\ref{chap:Stability}, I showed that characterizing the complicated and multi-dimensional stability boundary of tightly packed systems is amenable to machine learning methods. 
 In particular, training a state-of-the-art machine learning algorithm on physically motivated features yields an accurate classifier of stability in packed systems. 
 On the stability timescale we investigated ($10^7$ orbits), our trained machine was 3 orders of magnitude faster than direct N-body simulations. 
 Optimized machine learning classifiers for dynamical stability may thus prove useful across the discipline, e.g., to characterize the exoplanet sample discovered by the upcoming Transiting Exoplanet Survey Satellite (TESS).
@@ -70,7 +70,7 @@ This simple model could be replaced with a full 3D hydrodynamical model, further
 
 \memoas{Other possible things to mention:
 \begin{enumerate}
-\item Improve \hermes more? The ultimate integrator would be \mercury switching scheme + WHDS as the base integrator.
+\item Improve \hermes more? The ultimate integrator would be \mercury switching scheme + WHDS as the base integrator. Also, if whds doesn't work out then just keep WHFAST and say an improvement is to have WHDS.
 \item Implement sophisticated collisions into \reb a la Leinhardt \& Stewart.
 \end{enumerate}
 }
