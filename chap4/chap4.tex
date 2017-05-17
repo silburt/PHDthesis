@@ -80,17 +80,17 @@ Figure~\ref{fig:bodies} summarizes these interactions, where arrows represent di
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Heliocentric version of \whfast}
-\memoas{If cant get WHDS to work, remove this paragraph}
-The original \whfast algorithm described in  \cite{Rein2015b} was implemented in Jacobi coordinates.
-Jacobi coordinates lead to a better precision compared to heliocentric coordinates if orbits are well separated and do not cross each other. 
-If close encounter occur, then heliocentric coordinates can help improve the integrator's accuracy.
-For that reason we implemented a heliocentric version of \whfast in \reb.
-We call it \whfasthelio.
-We use it as the symplectic integrator in \hermes but note that \whfasthelio can also be used by itself. 
-We choose the specific splitting of the Hamiltonian by \cite{Duncan1998} and \cite{Chambers1999}.
-For a discussion on the different splittings, their advantages and disadvantages, see \cite{Wisdom2006}. 
-For the remainder of this Chapter we will refer to \whfasthelio simply as \whfast as both integrators use the same Kepler solver.
+%\subsection{Heliocentric version of \whfast}
+%\memoas{If cant get WHDS to work, remove this paragraph}
+%The original \whfast algorithm described in  \cite{Rein2015b} was implemented in Jacobi coordinates.
+%Jacobi coordinates lead to a better precision compared to heliocentric coordinates if orbits are well separated and do not cross each other. 
+%If close encounter occur, then heliocentric coordinates can help improve the integrator's accuracy.
+%For that reason we implemented a heliocentric version of \whfast in \reb.
+%We call it \whfasthelio.
+%We use it as the symplectic integrator in \hermes but note that \whfasthelio can also be used by itself. 
+%We choose the specific splitting of the Hamiltonian by \cite{Duncan1998} and \cite{Chambers1999}.
+%For a discussion on the different splittings, their advantages and disadvantages, see \cite{Wisdom2006}. 
+%For the remainder of this Chapter we will refer to \whfasthelio simply as \whfast as both integrators use the same Kepler solver.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Algorithm}
@@ -389,12 +389,8 @@ We plan to study this issue in more detail in the future.
 
 \section{Examples}
 \label{sec:Examples}
-\memoas{\hermes is well suited for a number of astrophysical problems.
-For example, planets embedded in planetesimal disks are ideal for \hermes, and was the primary motivation for building this integrator.
-Planet-planet scattering can also be easily simulated with \hermes, especially since our adaptive $\HSF$ algorithm (Section~\ref{sec:HSFop}) protects close encounters from being missed. 
-High eccentricity cometary clouds (e.g. the Oort cloud) are also efficiently integrated with \hermes since (by enlarging $\SSF$) pericenter passages can be resolved in the mini simulation while the remainder of the orbit is integrated in the global simulation using a large timestep. 
-Other examples include star clusters orbiting about a central potential, tidal migration and longterm stability of planetary systems, etc.
-Many example problems can be found at \url{https://github.com/hannorein/rebound/tree/master/ipython_examples}.}
+\hermes is well suited for a number of astrophysical problems, including planets embedded in planetesimal disks, high eccentricity comets, planet-planet scattering, star clusters orbiting a central potential, and more. 
+Many example problems can be found at \url{https://github.com/hannorein/rebound/tree/master/ipython_examples}.
 Below, we highlight just a few example problems that can be simulated with \hermes.
 
 \subsection{Massive Outer Solar System}
