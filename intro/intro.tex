@@ -346,7 +346,6 @@ The inverse transformations from Jacobi coordinates to cartesian coordinates can
 The benefit of Jacobi coordinates is that the kinetic terms remain a sum of squares \citep{Plummer1918}, making numerical integration a straightforward process according to Equation~\ref{eq:DKD}. 
 In addition, these coordinates solve the Two Body and Restricted Three Body Problems exactly. 
 However, the primary disadvantage is that a clear ordering of bodies is required for efficient integration in Jacobi coordinates. 
-For example, orbits within a planetesimal disk frequently cross, and there is no straightforward and (computationally) cheap way to order these bodies. 
 
 \subsubsection{Democratic Heliocentric}
 \label{sec:DH}
@@ -373,6 +372,7 @@ Therefore, the evolution of $\Ham$ in Equation~\ref{eq:DKD} must be modified to 
 Note that since $\{\Ham_J, \Ham_I\} = 0$, the ordering of $E_{\Ham_I}$ and $E_{\Ham_J}$ does not matter. 
 
 \subsubsection{WHDS}
+\label{sec:whds}
 The WHDS is a modification of the Democratic Heliocentric mapping and splits the kinetic energy slightly differently. 
 The canonical coordinates $\textbf{Q}$ and $\textbf{P}$ have the same form, but the Keplerian, Interaction and Jump steps are now \citep{Laskar1995, Wisdom2006, Hernandez2016}:
 \begin{align}

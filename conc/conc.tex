@@ -1,6 +1,6 @@
 \chapter{Conclusions \& Future Work}
 \section{Summary}
-The number of discovered exoplanetary systems has dramatically increased over the past decade, permitting scientists the opportunity to study the planetary systems outside the Solar System. 
+The number of discovered exoplanets has dramatically increased in the past decade, allowing scientists to study planetary systems outside the Solar System. 
 Broadly speaking, scientists are interested in understanding three things about planetary systems -- their past formation, present conditions and future evolution. 
 This thesis has contributed to all three domains by analyzing the statistics, formation and stability of exoplanetary systems. 
 
@@ -52,12 +52,17 @@ Additional work is needed to understand the physics behind this process, as well
 Since the effect was seen for moderate-to-high eccentricities, a good starting point would be to expand the Resonant Hamiltonian to include higher-order eccentricity terms. 
 
 Chapter~\ref{chap:Hermes} presented \hermes, a hybrid integrator for planetesimal migration. 
-The integrator was originally designed to investigate the role of planetesimals in transporting planets from MMR, however this research was never realized during my thesis. 
-Most recently, \citet{Chatterjee2015} investigated this question for two Neptune mass planets and found that $0.2m_N$ (where $m_N$ is the mass of Neptune) of nearby, dynamically cold, planetesimals was required to break the resonance. 
+The base integrator used in \hermes is \whfast, which employs Jacobi coordinates to integrate particles.
+However, as mentioned in Section~\ref{sec:Jacobi} this is not the best choice since a clear ordering of bodies is required for efficient integration.
+Instead, the WHDS integrator (Section~\ref{sec:whds}) is the optimal choice, since it relies on heliocentric coordinates for integrating bodies and solves the two-body and restricted three-body problems exactly. 
+However, at the time of writing this thesis this goal could not be fully realized. 
+
+In addition, \hermes was originally designed to investigate the role of planetesimals in transporting planets from MMR, however this research was never realized during my thesis. 
+Most recently, \citet{Chatterjee2015} investigated planetesimal migration for two Neptune mass planets, finding that $0.2m_N$ (where $m_N$ is the mass of Neptune) of nearby, dynamically cold, planetesimals was required to break the resonance. 
 However, this result warrants further investigation. 
 For example, given the process of planetary formation (Section~\ref{sec:PF}) is it reasonable to assume that $0.2m_N$ of nearby, dynamically cold planetesimals would be available?
 In addition, how would the initial migration phase into MMR excite, eject and collide nearby planetesimals?
-In summary, a self-consistent model of MMR planets embedded in a planetesimal disk has yet to be made, and \hermes is perfect for the job.
+In summary, a self-consistent model of MMR planets embedded in a planetesimal disk has yet to be made, which can be accomplished with \hermes.
 
 Chapter~\ref{chap:Stability} showed that a machine trained on sample N-body integrations can accurately predict the longterm stability of new systems based off their initial conditions and early evolution. 
 The training set consisted of equal mass planets on circular orbits and simulated for $10^7$ orbits. 
@@ -68,9 +73,3 @@ In addition, for other scientists to use this tool, an easy-to-use pipeline must
 Finally, in Chapter~\ref{chap:HD155358} I used a simple formation model to fit the RV curve of HD155358 and determine the initial conditions of the system. 
 This simple model could be replaced with a full 3D hydrodynamical model, further constraining the initial conditions of the system. 
 
-\memoas{Other possible things to mention:
-\begin{enumerate}
-\item Improve \hermes more? The ultimate integrator would be \mercury switching scheme + WHDS as the base integrator. Also, if whds doesn't work out then just keep WHFAST and say an improvement is to have WHDS.
-\item Implement sophisticated collisions into \reb a la Leinhardt \& Stewart.
-\end{enumerate}
-}
