@@ -1,12 +1,12 @@
 \chapter{Conclusions \& Future Work}
 \section{Summary}
-The number of discovered exoplanets has dramatically increased in the past decade, allowing scientists to study planetary systems outside the Solar System. 
+The number of discovered exoplanets has dramatically increased over the past decade, allowing scientists to study planetary systems outside the Solar System. 
 Broadly speaking, scientists are interested in understanding three things about planetary systems -- their past formation, present conditions and future evolution. 
 This thesis has contributed to all three domains by analyzing the statistics, formation and stability of exoplanetary systems. 
 
 In Chapter~\ref{chap:Stats}, I performed a statistical analysis of the \kep catalog using the \citet{Ramirez2014} dataset to calculate the occurrence rate of small planets, accounting for detection biases and radius errors. 
 Here I found that the occurrence of Kepler planets are preferentially peaked at $2-2.8R_\oplus$, with their numbers decreasing gradually toward smaller sizes, with a roughly log-uniform period distribution.
-Our work is compared to \citet{Petigura2013}, who finds a similar peak but different occurrence values for Neptune-sized planets. 
+These results were compared to \citet{Petigura2013}, who finds a similar peak but different occurrence values for Neptune-sized planets. 
 I calculated an average number of planets per star with periods between $20$ and $200$ days and radii between $1$ and $4R_\oplus$ of $0.46 \pm 0.03$. 
 Such planets have likely experienced little photoevaporation, and may reflect the "primordial" planet population. 
 Upon extrapolation I obtained an occurrence rate for Earth-like planets within the "habitable zone" (as calculated by 1-D climate models) of $6.4^{+3.4}_{-1.1}\%$. 
@@ -54,7 +54,7 @@ Since the effect was seen for moderate-to-high eccentricities, a good starting p
 Chapter~\ref{chap:Hermes} presented \hermes, a hybrid integrator for planetesimal migration. 
 The base integrator used in \hermes is \whfast, which employs Jacobi coordinates to integrate particles.
 However, as mentioned in Section~\ref{sec:Jacobi} this is not the best choice since a clear ordering of bodies is required for efficient integration.
-Instead, the WHDS integrator (Section~\ref{sec:whds}) is the optimal choice, since it relies on heliocentric coordinates for integrating bodies and solves the two-body and restricted three-body problems exactly. 
+Instead, the WHDS integrator (Section~\ref{sec:whds}) is likely the optimal choice, since it relies on heliocentric coordinates for integrating bodies and solves the two-body and restricted three-body problems exactly. 
 However, at the time of writing this thesis this goal could not be fully realized. 
 
 In addition, \hermes was originally designed to investigate the role of planetesimals in transporting planets from MMR, however this research was never realized during my thesis. 
