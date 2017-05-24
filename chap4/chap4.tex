@@ -248,7 +248,7 @@ For biased implementations, $E_{\rm bias}$ will dominate the error budget at ear
 For typical simulations integrated with \hermes, $E_{\rm scheme}$ will dominate. 
 The WH algorithm integrates a slightly different Hamiltonian from the true Hamiltonian described by the system, leading to an error that oscillates in a bounded manner as long as the integrated Hamiltonian remains constant.
 However each time a particle is transferred to or from the global simulation (see Section~\ref{sec:Alg}), the WH-integrated Hamiltonian changes, and thus the error will change too.
-For a typical WH integration, working in democratic heliocentric coordinates\footnote{Although Figures~\ref{fig:HSFdE}, \ref{fig:dtdE}, and \ref{fig:HSFratio} along with the results in Section~\ref{sec:Examples} are all performed using \hermes with \whfast in Jacobi coordinates, we derive the error using democratic heliocentric coordinates. This is because, a) it is much simpler to do, and b) as discussed in Section~\ref{sec:Future} we believe that \hermes with \whfast in heliocentric coordinates is ultimately a better choice. At the time of this thesis, the transition from \hermes with \whfast in Jacobi to heliocentric coordinates was underway. However, as shown in Figures~\ref{fig:HSFdE} and \ref{fig:dtdE} the error derived from heliocentric coordinates (Equation~\ref{eq:Escheme}) agrees with the numerical experiments performed with \whfast in Jacobi coordinates.}, $E_{\rm scheme}$ is \citep[e.g.][]{Saha1994,Wisdom2006}:
+For a typical WH integration, working in democratic heliocentric coordinates\footnote{Although Figures~\ref{fig:HSFdE}, \ref{fig:dtdE}, and \ref{fig:HSFratio} along with the results in Section~\ref{sec:Examples} are all performed using \hermes with \whfast in Jacobi coordinates, we derive the error using democratic heliocentric coordinates. This is because, a) it is much simpler to do, and b) as discussed in Section~\ref{sec:Future} we believe that \hermes with \whfast in heliocentric coordinates is ultimately a better choice. At the time of this thesis, the transition from \hermes with \whfast in Jacobi to heliocentric coordinates was underway. However, as shown in Figures~\ref{fig:HSFdE}, \ref{fig:dtdE} and \ref{fig:HSFratio} the error derived from heliocentric coordinates (Equation~\ref{eq:Escheme}) agrees well with the numerical experiments performed with \whfast in Jacobi coordinates.}, $E_{\rm scheme}$ is \citep[e.g.][]{Saha1994,Wisdom2006}:
 \begin{equation}
 E_{\rm scheme}^{\rm WH} = \frac{dt^2}{12} \left \{ \left \{H_K, H_{\beta} \right \},  0.5H_K + H_{\beta} \right \} + O(dt^4)
 \label{eq:WHerr}
@@ -272,7 +272,7 @@ The planetesimal is initially placed inside $\HSF$ with sufficient velocity such
 While the planetesimal is inside $\HSF$ (panel a. in Fig.~\ref{fig:R3B}) the system is integrated to machine precision by \ias.
 However once the planetesimal leaves $\HSF$ (panel b. in Fig.~\ref{fig:R3B}) the system switches to being integrated by \whfast, and an error of size $E_{\rm scheme}^{\rm WH}$ is introduced.
 
-To estimate  $E_{\rm scheme}^{\rm WH}$, we start from the general Hamiltonian for an $N$-body system in Democratic Heliocentric coordinates:
+To estimate  $E_{\rm scheme}^{\rm WH}$, we start from the general Hamiltonian for an $N$-body system in democratic heliocentric coordinates:
 \begin{equation*}
 H = H_0 + H_K + H_C + H_I
 \label{eq:Hbasic}
@@ -477,7 +477,7 @@ The total energy error of \hermes for an $N$-body simulation is well described b
 
 We have also developed an adaptive algorithm that chooses the optimal Hill switch factor, $\HSF$, which governs the size of the close encounter region surrounding each particle.
 This frees the user from optimizing integrator parameters for typical cases. 
-Finally, we have introduced a number of new features in \reb, including a new heliocentric version of \whfast, semi-active particles (see Fig.~\ref{fig:bodies}) and inelastic collisions.
+Finally, we have introduced a number of new features in \reb, including semi-active particles (see Fig.~\ref{fig:bodies}) and inelastic collisions.
 
 We have showcased a number of problems well-suited for \hermes, and compared our integrator's performance to similar integrators in the literature. 
 In particular, we integrated the outer Solar System with planetary masses increased by a factor of 50, and we simulated a planet migrating through a disk of planetesimals, both in the limit of many planetesimals ($\sim 10^5$) and short times ($\sim 10^3$ orbits), and few planetesimals (100) and long times ($\sim 10^8$ orbits).
