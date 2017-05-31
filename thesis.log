@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  31 MAY 2017 16:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  31 MAY 2017 17:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -491,56 +491,56 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [2]
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 175
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 176
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 175
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 176
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 175
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 176
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 175
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 176
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 175.
+(Font)              scaled to size 10.42007pt on input line 176.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 175.
+(Font)              scaled to size 7.91925pt on input line 176.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 175.
+(Font)              scaled to size 6.25204pt on input line 176.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 175.
+(Font)              scaled to size 10.42007pt on input line 176.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 175.
+(Font)              scaled to size 7.91925pt on input line 176.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 175.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 175.
+(Font)              scaled to size 6.25204pt on input line 176.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 176.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 175
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 176
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -1059,7 +1059,7 @@ ype1/public/cm-super/sftt2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
 e1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/
 palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatin
 o/uplri8a.pfb>
-Output written on thesis.pdf (105 pages, 2062888 bytes).
+Output written on thesis.pdf (105 pages, 2063328 bytes).
 PDF statistics:
  1108 PDF objects out of 1200 (max. 8388607)
  481 compressed objects within 5 object streams
