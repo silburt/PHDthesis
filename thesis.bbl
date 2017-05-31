@@ -1,4 +1,4 @@
-\begin{thebibliography}{185}
+\begin{thebibliography}{189}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Akeson} {et~al.}(2013){Akeson}, {Chen}, {Ciardi}, \&
@@ -642,6 +642,15 @@ Petrovich, C. 2015, The Astrophysical Journal, 808, 120
   {Moro-Martin}, {Tamura}, {Hinz}, \& {Rodigas}}]{Schneider2014}
 {Schneider}, G., {et~al.} 2014, \aj, 148, 59
 
+\bibitem[{{Silburt} {et~al.}(2015){Silburt}, {Gaidos}, \& {Wu}}]{Silburt2015}
+{Silburt}, A., {Gaidos}, E., \& {Wu}, Y. 2015, \apj, 799, 180
+
+\bibitem[{{Silburt} \& {Rein}(2015)}]{Silburt2015b}
+{Silburt}, A., \& {Rein}, H. 2015, \mnras, 453, 4089
+
+\bibitem[{{Silburt} \& {Rein}(2017)}]{Silburt2017}
+---. 2017, ArXiv e-prints
+
 \bibitem[{{Smith} \& {Lissauer}(2009)}]{Smith2009}
 {Smith}, A.~W., \& {Lissauer}, J.~J. 2009, \icarus, 201, 381
 
@@ -672,6 +681,11 @@ Smith, A.~W., \& Lissauer, J.~J. 2009, Icarus, 201, 381
   {Rein}}]{Tamayo2015}
 {Tamayo}, D., {Triaud}, A.~H.~M.~J., {Menou}, K., \& {Rein}, H. 2015, \apj,
   805, 100
+
+\bibitem[{{Tamayo} {et~al.}(2016){Tamayo}, {Silburt}, {Valencia}, {Menou},
+  {Ali-Dib}, {Petrovich}, {Huang}, {Rein}, {van Laerhoven}, {Paradise},
+  {Obertas}, \& {Murray}}]{Tamayo2016}
+{Tamayo}, D., {et~al.} 2016, \apjl, 832, L22
 
 \bibitem[{{Tanaka} {et~al.}(2002){Tanaka}, {Takeuchi}, \& {Ward}}]{Tanaka2002}
 {Tanaka}, H., {Takeuchi}, T., \& {Ward}, W.~R. 2002, \apj, 565, 1257

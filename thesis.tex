@@ -128,25 +128,24 @@
 %% according to SGS guidelines.
 \begin{abstract}
   
-Over the past two decades scientists have had an opportunity to study planetary systems outside the Solar System and test planetary theories against observations.
-In particular, the past decade has yielded thousands of exoplanet detections through a variety of methods, and collective properties of exoplanetary systems are now emerging. 
+Over the past two decades scientists have detected thousands of exoplanet detections through a variety of methods, and collective properties of exoplanetary systems are now emerging. 
 This thesis contributes to the exoplanet field by analyzing the statistics, formation and stability of exoplanetary systems.
 
 The first part of this thesis conducts a statistical reconstruction of the radius and period distributions of \kep planets. 
 Accounting for observation and detection biases, as well as measurement errors, we calculate the occurrence of planetary systems, including the prevalence of Earth-like planets.
 This calculation is compared to related works, finding both similarities and differences. 
  
-The second part of this thesis investigates the formation of \kep planets near mean motion resonance (MMR).
+Second, the formation of \kep planets near mean motion resonance (MMR) is investigated.
 In particular, 27 \kep systems near 2:1 MMR are analyzed to determine whether tides are a viable mechanism for transporting \kep planets from MMR.
 We find that tides alone cannot transport near-resonant planets from exact 2:1 MMR to their observed locations, and other mechanisms must be invoked to explain their formation.
 
 Third, a new hybrid integrator \hermes is presented, which is capable of simulating N-bodies undergoing close encounters.
-\hermes is specifically designed for planets embedded in planetesimal disks, and includes an adaptive routine for optimizing the close encounter boundary to help maintain accuracy whilst close encounters are occurring.
-The performance of \hermes is compared to other popular integrators, and we find \hermes to be a great balance of speed and accuracy.
+\hermes is specifically designed for planets embedded in planetesimal disks, and includes an adaptive routine for optimizing the close encounter boundary to help maintain accuracy.
+We find the performance of \hermes comparable to other popular hybrid integrators.
  
 Fourth, the longterm stability of planetary systems is investigated using machine learning techniques.
 Typical studies of longterm stability require thousands of realizations to acquire statistically rigorous results, which can take weeks or months to perform. 
-Here we find that a trained machine is capable of accurately classifying longterm planet stability, and is orders of magnitude faster than direct N-body integration. 
+Here we find that a trained machine is capable of quickly and accurately classifying longterm planet stability. 
  
 Finally, the planetary system HD155358, consisting of two Jovian-sized planets near 2:1 MMR, is investigated using previously collected radial velocity data. 
 New orbital parameters are derived using a Bayesian framework, and from this we find a high likelihood that the planets are in MMR.
@@ -187,13 +186,39 @@ In addition, constraints are placed on the formation history of HD155358, and ou
 %% (uncomment to have it appear in the document)
 \begin{acknowledgements}
 %Hanno + Hanno's razor
+First and foremost I would like to thank my supervisor, Hanno Rein. 
+Looking back to the beginning of my doctorate program, I realize now that, at the time I did not really know how to conduct quality research, or even how ask the right questions.
+Through your supervision I have gained a solid research foundation, and although there is still so much more growing to do, because of you I feel more confident in my abilities as a researcher than I ever thought possible. 
+You are the greatest academic mentor that I've had in my life.
+
 %Dan
+Next, I would like to thank Dan Tamayo, who is overall one of the greatest humans I have met. 
+Compassionate, intelligent, patient and humble, he has done so much for me as well as the Centre for Planetary Science and exoplanet community. 
+From hosting machine learning workshops and dynamics discussion groups, to late-night collaborations for impending postdoc deadlines, to answering my endless stream of incompetent questions, Dan is a role model for the kind of person I would like to be. 
+
 %Eric, Yanqin
-%CPS 
+Eric Gaidos and Yanqin Wu have been invaluable throughout my doctorate, and I owe a world of thanks to them for their guidance. 
+Our publication was my first real introduction to research, and it is only through their kindness, patience and intelligence that we were able to see the job through to the end. 
+I'm grateful that they trusted in my abilities, wrote endless reference letters for me, and continually supported me throughout my doctorate.
+
 %Joey, Bruce, Barbara.
+My family has always been endlessly supportive of who I am, and especially so during my doctorate.
+To my parents, Bruce and Barbara, I remember as a young child looking up at the stars with you in our backyard in Guelph, questioning the big mysteries of the universe and igniting my passion for science.
+This thesis is a realization of that dream; a flame that never burned out through all these years. 
+To Joey, who has talked through countless science problems with me and has been an amazing brother.
+I've cherished the time we've lived together in Toronto. 
+
 %Max, Charles & Yev, Lisa, 
-%Everyone else
-My Acknowledgements go here.
+Many friends and colleagues at the department have made my time in Toronto very special. 
+In particular, Max Millar-Blanchaer who has been an incredible friend, role model, and advisor in times of need, Yevgeni Kissin and Chenchong Zhu who have been my machine learning buddies over the last few years as well as amazing mentors throughout my degree, Lisa Esteves who I've had awesome chills, exoplanet discussions and philosophical conversations with during my time at U of T, and my graduation year who I've spent five years with in the trenches.  
+
+%CPS
+I would like to thank the Centre for Planetary Science (CPS) in Scarborough, Canada, which has been an integral part of my development as a researcher. 
+Through machine learning workshops, CPS planet days, lunchtime discussions and more, I have become a much more competent researcher than I otherwise would have ever been had CPS not been in my life. 
+
+%Money sources - U of T, NSERC CGS M, PGS D.
+Lastly, I would like to thank the institutions and people that have funded me throughout this doctoral degree. 
+In particular are the Natural Sciences and Engineering Research Council of Canada (NSERC) for CGS M and PGS D grants, the University of Toronto Reinhardt fund for travel funds, the Walter C Sumner Memorial Fellowship Foundation, the University of Toronto Department of Astronomy \& Astrophysics, and my supervisor Hanno Rein for providing me the necessary funds to complete my research. 
 
 \end{acknowledgements}
 

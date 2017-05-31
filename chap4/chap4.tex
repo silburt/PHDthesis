@@ -2,6 +2,13 @@
 \label{chap:Hermes}
 
 \section{Chapter Overview}
+	\begin{center}
+	\begin{minipage}[c]{4.75in}
+	The work from this Chapter has been done in collaboration with my supervisor Hanno Rein and Centre for Planetary Science postdoc Daniel Tamayo. 
+	A publication is currently in preparation. 
+	\vspace{2em}
+	\end{minipage}
+	\end{center}
 
 We present \hermes, a new hybrid integration scheme for long-term simulations of planetary systems undergoing close encounters or planetesimal-driven migration. 
 Particles are integrated using \whfast, a fast and accurate symplectic integrator, unless a close encounter occurs.
@@ -248,7 +255,7 @@ For biased implementations, $E_{\rm bias}$ will dominate the error budget at ear
 For typical simulations integrated with \hermes, $E_{\rm scheme}$ will dominate. 
 The WH algorithm integrates a slightly different Hamiltonian from the true Hamiltonian described by the system, leading to an error that oscillates in a bounded manner as long as the integrated Hamiltonian remains constant.
 However each time a particle is transferred to or from the global simulation (see Section~\ref{sec:Alg}), the WH-integrated Hamiltonian changes, and thus the error will change too.
-For a typical WH integration, working in democratic heliocentric coordinates\footnote{\memoas{Hanno Rein}Although Figures~\ref{fig:HSFdE}, \ref{fig:dtdE}, and \ref{fig:HSFratio} along with the results in Section~\ref{sec:Examples} are all performed using \hermes with \whfast in Jacobi coordinates, we derive the error using democratic heliocentric coordinates. This is because, a) it is much simpler to do, and b) as discussed in Section~\ref{sec:Future} we believe that \hermes with \whfast in heliocentric coordinates is ultimately a better choice. At the time of this thesis, the transition from \hermes with \whfast in Jacobi to heliocentric coordinates was underway. However, as shown in Figures~\ref{fig:HSFdE}, \ref{fig:dtdE} and \ref{fig:HSFratio} the error derived from heliocentric coordinates (Equation~\ref{eq:Escheme}) agrees well with the numerical experiments performed with \whfast in Jacobi coordinates.}, $E_{\rm scheme}$ is \citep[e.g.][]{Saha1994,Wisdom2006}:
+For a typical WH integration, working in democratic heliocentric coordinates\footnote{Although Figures~\ref{fig:HSFdE}, \ref{fig:dtdE}, and \ref{fig:HSFratio} along with the results in Section~\ref{sec:Examples} are all performed using \hermes with \whfast in Jacobi coordinates, we derive the error using democratic heliocentric coordinates. This is because, a) it is much simpler to do, and b) as discussed in Section~\ref{sec:Future} we believe that \hermes with \whfast in heliocentric coordinates is ultimately a better choice. At the time of this thesis, the transition from \hermes with \whfast in Jacobi to heliocentric coordinates was underway. However, as shown in Figures~\ref{fig:HSFdE}, \ref{fig:dtdE} and \ref{fig:HSFratio} the error derived from democratic heliocentric coordinates (Equation~\ref{eq:Escheme}) agrees well with the numerical experiments performed with \whfast in Jacobi coordinates.}, $E_{\rm scheme}$ is \citep[e.g.][]{Saha1994,Wisdom2006}:
 \begin{equation}
 E_{\rm scheme}^{\rm WH} = \frac{dt^2}{12} \left \{ \left \{H_K, H_{\beta} \right \},  0.5H_K + H_{\beta} \right \} + O(dt^4)
 \label{eq:WHerr}
