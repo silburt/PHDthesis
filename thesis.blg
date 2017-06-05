@@ -11,56 +11,55 @@ A level-1 auxiliary file: conc/conc.aux
 The style file: apj.bst
 Database file #1: thesis.bib
 Warning--entry type for "NASAEA" isn't style-file defined
---line 42 of file thesis.bib
-Repeated entry---line 2501 of file thesis.bib
+--line 99 of file thesis.bib
+Repeated entry---line 2558 of file thesis.bib
  : @article{Baruteau2013
  :                      ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Papa2000"
 Warning--empty publisher in Armitage2010
 Warning--empty publisher in Beauge2007
 Warning--empty publisher in SSD1999
 Warning--empty publisher in Plummer1918
 Warning--empty publisher in Press2002
-You've used 189 entries,
+You've used 195 entries,
             2988 wiz_defined-function locations,
-            1787 strings with 43250 characters,
-and the built_in function-call counts, 84343 in all, are:
-= -- 6845
-> -- 6056
-< -- 105
-+ -- 2026
-- -- 1820
-* -- 7188
-:= -- 16058
-add.period$ -- 189
-call.type$ -- 189
-change.case$ -- 1204
-chr.to.int$ -- 188
-cite$ -- 194
-duplicate$ -- 3485
-empty$ -- 5031
-format.name$ -- 2480
-if$ -- 16505
-int.to.chr$ -- 2
+            1813 strings with 44082 characters,
+and the built_in function-call counts, 86855 in all, are:
+= -- 7063
+> -- 6228
+< -- 108
++ -- 2087
+- -- 1871
+* -- 7395
+:= -- 16534
+add.period$ -- 195
+call.type$ -- 195
+change.case$ -- 1245
+chr.to.int$ -- 192
+cite$ -- 200
+duplicate$ -- 3596
+empty$ -- 5176
+format.name$ -- 2555
+if$ -- 16990
+int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 187
-newline$ -- 571
-num.names$ -- 756
-pop$ -- 1254
+missing$ -- 193
+newline$ -- 589
+num.names$ -- 780
+pop$ -- 1302
 preamble$ -- 1
-purify$ -- 1203
+purify$ -- 1244
 quote$ -- 0
-skip$ -- 2943
+skip$ -- 3021
 stack$ -- 0
-substring$ -- 3607
-swap$ -- 13
+substring$ -- 3699
+swap$ -- 17
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1677
+type$ -- 1731
 warning$ -- 5
-while$ -- 684
+while$ -- 705
 width$ -- 0
-write$ -- 1874
+write$ -- 1931
 (There was 1 error message)

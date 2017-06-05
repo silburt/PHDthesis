@@ -1,4 +1,4 @@
-\begin{thebibliography}{189}
+\begin{thebibliography}{195}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Akeson} {et~al.}(2013){Akeson}, {Chen}, {Ciardi}, \&
@@ -123,9 +123,14 @@
 \bibitem[{{Chambers}(1999)}]{Chambers1999}
 {Chambers}, J.~E. 1999, \mnras, 304, 793
 
-\bibitem[{{Chambers} {et~al.}(1996){Chambers}, {Wetherill}, \&
+\bibitem[{{Chambers} {et~al.}(1996{\natexlab{a}}){Chambers}, {Wetherill}, \&
   {Boss}}]{Chambers1996}
-{Chambers}, J.~E., {Wetherill}, G.~W., \& {Boss}, A.~P. 1996, Icarus, 119, 261
+{Chambers}, J.~E., {Wetherill}, G.~W., \& {Boss}, A.~P. 1996{\natexlab{a}},
+  Icarus, 119, 261
+
+\bibitem[{{Chambers} {et~al.}(1996{\natexlab{b}}){Chambers}, {Wetherill}, \&
+  {Boss}}]{Chambers}
+---. 1996{\natexlab{b}}, \icarus, 119, 261
 
 \bibitem[{{Charbonneau} {et~al.}(2000){Charbonneau}, {Brown}, {Latham}, \&
   {Mayor}}]{Charbonneau2000}
@@ -218,6 +223,9 @@ Faber, P., \& Quillen, A.~C. 2007, Monthly Notices of the Royal Astronomical
 {Fabrycky}, D.~C., {Lissauer}, J.~J., {Ragozzine}, D., {Rowe}, J.~F., \&
   {Steffen}, J.~H. 2014, ApJ, 790, 12
 
+\bibitem[{Fang \& Margot(2012)}]{Fang12}
+Fang, J., \& Margot, J.-L. 2012, The Astrophysical Journal, 761, 92
+
 \bibitem[{{Fang} \& {Margot}(2013)}]{Fang2013}
 {Fang}, J., \& {Margot}, J.-L. 2013, \apj, 767, 115
 
@@ -290,8 +298,11 @@ Gelman, A., \& Rubin, D. 1992, Statistical Science, 7, 457,
   Sciences: A Comparative Approach with `Mathematica' Support} (Cambridge
   University Press)
 
-\bibitem[{{Hadden} \& {Lithwick}(2014)}]{Hadden2014}
-{Hadden}, S., \& {Lithwick}, Y. 2014, ApJ, 787, 7
+\bibitem[{{Hadden} \& {Lithwick}(2014{\natexlab{a}})}]{HaddenLithwick}
+{Hadden}, S., \& {Lithwick}, Y. 2014{\natexlab{a}}, \apj, 787, 80
+
+\bibitem[{{Hadden} \& {Lithwick}(2014{\natexlab{b}})}]{Hadden2014}
+---. 2014{\natexlab{b}}, ApJ, 787, 7
 
 \bibitem[{{Hansen} \& {Murray}(2013)}]{HansenMurray}
 {Hansen}, B.~M.~S., \& {Murray}, N. 2013, \apj, 775, 53
@@ -519,6 +530,9 @@ Ito, T., \& Tanikawa, K. 1999, Icarus, 139, 336
 \bibitem[{{NASA Exoplanet Archive}(2017)}]{NASAEA}
 {NASA Exoplanet Archive}. 2017, Nasa Exoplanet Archive
 
+\bibitem[{{Olivier} {et~al.}(2007){Olivier}, {Simon}, \& {Eric}}]{Olivier2007}
+{Olivier}, C., {Simon}, G., \& {Eric}, M. 2007, SPIE
+
 \bibitem[{{Owen} \& {Wu}(2013)}]{Owen2013}
 {Owen}, J.~E., \& {Wu}, Y. 2013, \apj, 775, 105
 
@@ -642,6 +656,11 @@ Petrovich, C. 2015, The Astrophysical Journal, 808, 120
   {Moro-Martin}, {Tamura}, {Hinz}, \& {Rodigas}}]{Schneider2014}
 {Schneider}, G., {et~al.} 2014, \aj, 148, 59
 
+\bibitem[{{Schneider} {et~al.}(2011){Schneider}, {Dedieu}, {Le Sidaner},
+  {Savalle}, \& {Zolotukhin}}]{Schneider2011}
+{Schneider}, J., {Dedieu}, C., {Le Sidaner}, P., {Savalle}, R., \&
+  {Zolotukhin}, I. 2011, AA
+
 \bibitem[{{Silburt} {et~al.}(2015){Silburt}, {Gaidos}, \& {Wu}}]{Silburt2015}
 {Silburt}, A., {Gaidos}, E., \& {Wu}, Y. 2015, \apj, 799, 180
 
@@ -741,6 +760,9 @@ Veras, D., \& Mustill, A.~J. 2013, Monthly Notices of the Royal Astronomical
 
 \bibitem[{{Wisdom} \& {Holman}(1991)}]{Wisdom1991}
 {Wisdom}, J., \& {Holman}, M. 1991, \aj, 102, 1528
+
+\bibitem[{{Wolfgang} \& {Lopez}(2014)}]{Wolfgang2014}
+{Wolfgang}, A., \& {Lopez}, E. 2014, ApJ
 
 \bibitem[{{Wu} \& {Lithwick}(2013)}]{WuLithwick}
 {Wu}, Y., \& {Lithwick}, Y. 2013, \apj, 772, 74

@@ -198,7 +198,7 @@ We use a simple model by which the outer planet is migrated into 2:1 MMR using a
 Specifically, we introduce semi-major axis and eccentricity damping timescales, $\tau_a = a/\dot{a}$ and $\tau_e = e/\dot{e}$, respectively, where the two are related by a constant $K = \tau_a / \tau_e$. 
 We refer to this class of convergent-migration models as ``CM models". 
 
-We follow the implementation by \cite{Papa2000} and add an additional acceleration on each planet according to:
+We follow the implementation by \cite{Papaloizou2000} and add an additional acceleration on each planet according to:
 \begin{align*}
 \begin{split}
 \textbf{a}_{\rm mig} &=  -\frac{\textbf{v}}{\tau_a} \\
@@ -206,7 +206,7 @@ We follow the implementation by \cite{Papa2000} and add an additional accelerati
 \end{split}
 \end{align*}
 where $\textbf{v}$ is the velocity and $\textbf{r}$ is the position of the planet relative to the star. 
-The migration prescriptions of \citet{Papa2000} were designed with Type-I migration in mind, yet our planets likely lie in the Type-II migration regime.
+The migration prescriptions of \citet{Papaloizou2000} were designed with Type-I migration in mind, yet our planets likely lie in the Type-II migration regime.
 However, since we are interested primarily in seeing whether a simple migration model can reproduce the data, this model choice will suffice. 
 More accurate, 3-D hydrodynamical simulations of Type-II planetary migration are significantly more complex and beyond the scope of this chapter. 
 

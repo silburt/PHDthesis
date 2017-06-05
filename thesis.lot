@@ -1,12 +1,14 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Planet Occurrence for $20<P<200$\nobreakspace {}days, $1<R_p<4$$R_{\oplus }${}.\relax }}{27}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Planet Occurrence for $20<P<200$\nobreakspace {}d, $1<R_p<4$$R_{\oplus }${}.\relax }}{28}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Differences in raw counts between our work and PHM13\relax }}{31}
+\contentsline {table}{\numberline {2.3}{\ignorespaces False positive ratios, calculated according to FP/(FP+CAND)\relax }}{33}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Hyperparameters used for the initial-conditions (IC) model (Sec.\tmspace +\medmuskip {.2222em}5.4.1\hbox {}) and short-integrations (SI) model (Sec.\tmspace +\medmuskip {.2222em}5.4.2\hbox {}), and their associated performance. \relax }}{65}
-\contentsline {table}{\numberline {5.2}{\ignorespaces `Short-Integration' Model Feature Importances. See text for a description of the gain and of the features. \relax }}{68}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Hyperparameters used for the initial-conditions (IC) model (Sec.\tmspace +\medmuskip {.2222em}5.4.1\hbox {}) and short-integrations (SI) model (Sec.\tmspace +\medmuskip {.2222em}5.4.2\hbox {}), and their associated performance. \relax }}{67}
+\contentsline {table}{\numberline {5.2}{\ignorespaces `Short-Integration' Model Feature Importances. See text for a description of the gain and of the features. \relax }}{70}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Best-fit model parameters from our MCMC samples. Our PPI model includes planet-planet interactions, while our noPPI model excludes planet-planet interactions. The derived parameters from R2012\xspace are also listed for ease of comparison.\relax }}{76}
-\contentsline {table}{\numberline {6.2}{\ignorespaces The percent of randomly drawn samples with $\phi _1$ and $\phi _2$ librating, for our PPI and noPPI models. Error bars calculated from simple Poisson statistics. \relax }}{76}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Best-fit model parameters from our MCMC samples. Our PPI model includes planet-planet interactions, while our noPPI model excludes planet-planet interactions. The derived parameters from R2012\xspace are also listed for ease of comparison.\relax }}{78}
+\contentsline {table}{\numberline {6.2}{\ignorespaces The percent of randomly drawn samples with $\phi _1$ and $\phi _2$ librating, for our PPI and noPPI models. Error bars calculated from simple Poisson statistics. \relax }}{78}
 \addvspace {10\p@ }
