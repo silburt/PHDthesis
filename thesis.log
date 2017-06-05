@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  5 JUN 2017 12:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  5 JUN 2017 15:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -337,7 +337,7 @@ LaTeX Warning: Label `sec:intro' multiply defined.
 
 LaTeX Warning: Label `sec:stability' multiply defined.
 
-) (./conc/conc.aux))
+) (./conc/conc.aux) (./appendix/appendix.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
@@ -736,17 +736,14 @@ File: chap3/MMR.png Graphic file (type png)
  <use chap3/MMR.png>
 Package pdftex.def Info: chap3/MMR.png used on input line 39.
 (pdftex.def)             Requested size: 283.30087pt x 212.47566pt.
- [38 <./chap3/MMR.png>] [39]
-
-LaTeX Warning: Reference `tab:kepsys' on page 40 undefined on input line 133.
-
-[40] <chap3/dDelta.png, id=308, 578.16pt x 433.62pt>
+ [38 <./chap3/MMR.png>] [39] [40] <chap3/dDelta.png, id=308, 578.16pt x 433.62p
+t>
 File: chap3/dDelta.png Graphic file (type png)
- <use chap3/dDelta.png>
+
+<use chap3/dDelta.png>
 Package pdftex.def Info: chap3/dDelta.png used on input line 180.
 (pdftex.def)             Requested size: 270.68507pt x 194.47807pt.
-
-[41] [42 <./chap3/dDelta.png>]
+ [41] [42 <./chap3/dDelta.png>]
 <chap3/tugg_v_repulse_July20.png, id=317, 578.16pt x 433.62pt>
 File: chap3/tugg_v_repulse_July20.png Graphic file (type png)
 
@@ -760,20 +757,14 @@ LaTeX Font Info:    Font shape `U/msa/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 247.
 
-
-LaTeX Warning: Reference `app:min_e' on page 44 undefined on input line 250.
-
 <chap3/emin_Tconstraint.png, id=322, 578.16pt x 433.62pt>
 File: chap3/emin_Tconstraint.png Graphic file (type png)
 
 <use chap3/emin_Tconstraint.png>
 Package pdftex.def Info: chap3/emin_Tconstraint.png used on input line 259.
 (pdftex.def)             Requested size: 263.85649pt x 194.47807pt.
-
-
-LaTeX Warning: Reference `app:emax' on page 44 undefined on input line 267.
-
-[44] [45 <./chap3/emin_Tconstraint.png>] [46]) [47]
+ [44] [45 <./chap3/emin_Tconstraint.png>]
+[46]) [47]
 \openout2 = `chap4/chap4.aux'.
 
  (./chap4/chap4.tex
@@ -1023,8 +1014,54 @@ Chapter 7.
 
 
 ] [89] [90] [91] [92] [93] [94]) [95]
-(./thesis.aux (./intro/intro.aux) (./chap2/chap2.aux) (./chap3/chap3.aux)
-(./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./conc/conc.aux))
+\openout2 = `appendix/appendix.aux'.
+
+
+(./appendix/appendix.tex
+Appendix A.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 6.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 6.
+[96
+
+
+] <appendix/e_max_dyn.png, id=1071, 578.16pt x 433.62pt>
+File: appendix/e_max_dyn.png Graphic file (type png)
+
+<use appendix/e_max_dyn.png>
+Package pdftex.def Info: appendix/e_max_dyn.png used on input line 65.
+(pdftex.def)             Requested size: 270.68507pt x 201.30666pt.
+ [97 <./appendix/e_max_dyn.png>]
+Overfull \hbox (28.4551pt too wide) in alignment at lines 83--96
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (28.4551pt too wide) in alignment at lines 96--126
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (28.4551pt too wide) in alignment at lines 126--152
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (28.4551pt too wide) in alignment at lines 152--180
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+[98
+
+]
+Overfull \hbox (28.4551pt too wide) in alignment at lines 180--203
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+[99] (./thesis.aux (./intro/intro.aux) (./chap2/chap2.aux) (./chap3/chap3.aux)
+(./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./conc/conc.aux)
+(./appendix/appendix.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1034,38 +1071,40 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
- ) 
+ ) )
+(\end occurred when \iftrue on line 285 was incomplete)
+(\end occurred when \ifnum on line 285 was incomplete) 
 Here is how much of TeX's memory you used:
- 8815 strings out of 493117
- 131213 string characters out of 6135433
- 233664 words of memory out of 5000000
- 11310 multiletter control sequences out of 15000+600000
- 138108 words of font info for 646 fonts, out of 8000000 for 9000
+ 8870 strings out of 493117
+ 132107 string characters out of 6135433
+ 255984 words of memory out of 5000000
+ 11344 multiletter control sequences out of 15000+600000
+ 143195 words of font info for 666 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,17n,45p,1119b,623s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2014/texmf-dist
-/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2014/texmf-dist/f
-onts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
-ype1/public/cm-super/sftt2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
-e1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/
-palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatin
-o/uplri8a.pfb>
-Output written on thesis.pdf (108 pages, 2091029 bytes).
+ 43i,17n,46p,1147b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/
+texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2014/te
+xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
+ublic/mathpazo/fplmr.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/mathpazo/fplmri.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/fpl
+/fplrc8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msam10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-supe
+r/sftt0800.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/
+sftt0900.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sf
+tt1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sftt
+1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sftt24
+88.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (112 pages, 2121031 bytes).
 PDF statistics:
- 1126 PDF objects out of 1200 (max. 8388607)
- 494 compressed objects within 5 object streams
+ 1143 PDF objects out of 1200 (max. 8388607)
+ 504 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
- 88215 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 90268 words of extra memory for PDF output out of 106986 (max. 10000000)
 

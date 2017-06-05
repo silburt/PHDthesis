@@ -1,4 +1,4 @@
-\begin{thebibliography}{195}
+\begin{thebibliography}{196}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Akeson} {et~al.}(2013){Akeson}, {Chen}, {Ciardi}, \&
@@ -255,6 +255,11 @@ Friedman, J., Hastie, T., \& Tibshirani, R. 2001, The elements of statistical
 
 \bibitem[{{Fung} \& {Chiang}(2017)}]{Fung2017}
 {Fung}, J., \& {Chiang}, E. 2017, ArXiv e-prints
+
+\bibitem[{{Funk} {et~al.}(2010){Funk}, {Wuchterl}, {Schwarz}, {Pilat-Lohinger},
+  \& {Eggl}}]{Funk2010}
+{Funk}, B., {Wuchterl}, G., {Schwarz}, R., {Pilat-Lohinger}, E., \& {Eggl}, S.
+  2010, A\&A, 516, 6
 
 \bibitem[{{Gaidos}(2013)}]{Gaidos2013}
 {Gaidos}, E. 2013, \apj, 770, 90

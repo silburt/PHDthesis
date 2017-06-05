@@ -9,6 +9,7 @@ A level-1 auxiliary file: chap5/chap5.aux
 A level-1 auxiliary file: chap6/chap6.aux
 A level-1 auxiliary file: conc/conc.aux
 The style file: apj.bst
+A level-1 auxiliary file: appendix/appendix.aux
 Database file #1: thesis.bib
 Warning--entry type for "NASAEA" isn't style-file defined
 --line 99 of file thesis.bib
@@ -21,45 +22,45 @@ Warning--empty publisher in Beauge2007
 Warning--empty publisher in SSD1999
 Warning--empty publisher in Plummer1918
 Warning--empty publisher in Press2002
-You've used 195 entries,
+You've used 196 entries,
             2988 wiz_defined-function locations,
-            1813 strings with 44082 characters,
-and the built_in function-call counts, 86855 in all, are:
-= -- 7063
-> -- 6228
+            1819 strings with 44257 characters,
+and the built_in function-call counts, 87375 in all, are:
+= -- 7104
+> -- 6274
 < -- 108
-+ -- 2087
-- -- 1871
-* -- 7395
-:= -- 16534
-add.period$ -- 195
-call.type$ -- 195
-change.case$ -- 1245
-chr.to.int$ -- 192
-cite$ -- 200
-duplicate$ -- 3596
-empty$ -- 5176
-format.name$ -- 2555
-if$ -- 16990
++ -- 2105
+- -- 1886
+* -- 7443
+:= -- 16634
+add.period$ -- 196
+call.type$ -- 196
+change.case$ -- 1254
+chr.to.int$ -- 193
+cite$ -- 201
+duplicate$ -- 3615
+empty$ -- 5201
+format.name$ -- 2573
+if$ -- 17087
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 193
-newline$ -- 589
-num.names$ -- 780
-pop$ -- 1302
+missing$ -- 194
+newline$ -- 592
+num.names$ -- 784
+pop$ -- 1311
 preamble$ -- 1
-purify$ -- 1244
+purify$ -- 1253
 quote$ -- 0
-skip$ -- 3021
+skip$ -- 3035
 stack$ -- 0
-substring$ -- 3699
+substring$ -- 3716
 swap$ -- 17
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1731
+type$ -- 1740
 warning$ -- 5
-while$ -- 705
+while$ -- 709
 width$ -- 0
-write$ -- 1931
+write$ -- 1941
 (There was 1 error message)
