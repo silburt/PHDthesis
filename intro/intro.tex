@@ -8,7 +8,7 @@
 \subsection{Detection Methods}
 \subsubsection{Radial Velocity}
 \label{sec:RV}
-A periodic wobble will be observed in the lightcurve of a star with an orbiting planet, due to their coupled motion around the common centre of mass. 
+A periodic wobble will be observed in the lightcurve of a star with an orbiting planet due to their coupled motion around the common centre of mass. 
 From the conservation of energy and angular momentum, a star's wobble (or radial velocity) due to a planetary companion can be calculated according to \citep{Beauge2007}:
 \begin{equation}
 V_r = K \cdot [\cos(\nu + \omega) + e\cdot \cos(\omega) + \gamma]
@@ -54,9 +54,9 @@ P_t = \frac{r_*}{a}
 Thus, from Equations~\ref{eq:F} and \ref{eq:tp} we see that large, short-period planets are preferentially detected by the transit method.
 
 The first transiting planet was detected by \citet{Henry1999} and independently by \citet{Charbonneau2000}.
-Since then the transit method has become the most successful detection technique, with over 2,700 confirmed planets to date \citep{NASAEA}. 
+Since then the transit method has become the most successful detection technique, with over 2,700 confirmed planets to date \citep{Akeson2013}. 
 Most of these discoveries have come from the \textit{Kepler Space Telescope} (hereafter \kep).
-For reference, the next most successful detection technique is the radial velocity method (Section~\ref{sec:RV}) with over 600 confirmed planets to date \citep{NASAEA}.
+For reference, the next most successful detection technique is the radial velocity method (Section~\ref{sec:RV}) with over 600 confirmed planets to date \citep{Akeson2013}.
 
 From the transit method one can determine the period and radius of the planet. 
 In addition, the atmospheric properties of exoplanets can also be probed \citep{Kreidberg2014, Tsiaras2016, Stevenson2016}.
@@ -176,7 +176,7 @@ For every $p:q$ MMR (where $p$ and $q$ are integers) there are two important res
 \end{split}
 \end{align}
 where $\lambda$ is the mean longitude and $\varpi$ is the longitude of periapse. 
-For planets in MMR the time variation of one or both resonant arguments must be zero.
+For planets to be in MMR, the time variation of one or both resonant arguments must be zero.
 As a result, MMRs can be modelled in terms of a pendulum oscillating about a stable, fixed point. 
 After some algebra it can be shown that a MMR can be modelled as \citep{SSD1999}:
 \begin{equation}
@@ -205,7 +205,7 @@ Chapter~\ref{chap:Tides} critically examines the role of tidal forces in transpo
 \caption{
 Cumulative distribution of period ratios of neighbouring planets in all known multi-planet systems.
  First and second-order mean motion resonances are displayed as dotted lines, and labelled at the top of the figure. 
- Data from \citet{NASAEA}.}
+ Data from \citet{Akeson2013}.}
 \label{fig:KepMMR}
 \end{figure}
 
@@ -260,7 +260,7 @@ Also associated with the R3BP is the Jacobi constant, which can be used to const
 For two massive planets, \citet{Gladman1993} showed that orbits are Hill stable if $\Delta a \ge 3.46 R_H$ (where $R_H$ is the mutual Hill radius), forbidding close encounters for all time.
 
 Since the discovery of numerous exoplanetary systems via \kep, longterm stability has become a popular way to constrain orbital parameters \citep{Lissauer2011, Steffen2013, Jontof-Hutter2014, Tamayo2015}. 
-If one assumes that an observed system is stable over billions of years, grids of N-body integrations can be used to find stable regions of parameter space, further narrowing the range of valid solutions originally constrained by observations. 
+If one assumes that an observed system is stable over billions of years, grids of N-body integrations can be used to find stable regions of parameter space, further narrowing the range of valid solutions constrained by observations. 
 Although this brute-force method is certainly useful, it is not without its costs. 
 A 10 billion year integration or the Solar System takes weeks to complete, and due to the chaotic nature of planetary systems hundreds to thousands of realizations must be simulated to acquire statistically rigorous results. 
 Chapter~\ref{chap:Stability} shows that using machine learning techniques, accurate predictions of longterm stability can be made. 
@@ -412,14 +412,14 @@ Chapter~\ref{chap:Hermes} presents \hermes, a new hybrid integrator designed for
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{This Work}
-The work presented in this thesis focusses on the statistics, formation and stability of planetary systems. 
+The work presented in this thesis focuses on the statistics, formation and stability of planetary systems. 
 Chapter~\ref{chap:Stats} deals with a statistical analysis of \kep planets while incorporating the large radius errors present in the \kep data. 
 As mentioned in Section~\ref{sec:stats}, the analyses by \citet{Fressin2013} and \citet{Petigura2013} ignored these large errors in planetary radius, potentially affecting their calculations of planet occurrence.
 
 Chapter~\ref{chap:Tides} investigates the role of tides in transporting planets from exact MMR commensurability to a few percent wide. 
 From Figure~\ref{fig:KepMMR}, an excess of planets is seen wide of the 3:2 MMR and 2:1 MMR. 
 As mentioned in Section~\ref{sec:MMR}, it is believed that these planets were once closer to MMR and some mechanism transported them a few percent wide. 
-Other studies have investigated the role of tides in transporting planets from MMR using analytical \citep{Lee2013, Delisle2014} means, but no one has yet investigated this question numerically.
+Other studies have investigated the role of tides in transporting planets from MMR using analytical means \citep{Lee2013, Delisle2014}, but no one has yet investigated this question numerically.
 Although computationally expensive, N-body simulations are very accurate and avoid approximations. 
 
 Chapter~\ref{chap:Hermes} presents \hermes, a hybrid integrator for simulating planetesimal migration, built from \ias \citep{Rein2015a} and \whfast \citep{Rein2015b}. 
@@ -430,7 +430,7 @@ As outlined in Section~\ref{sec:inttypes}, hybrid integrators are best for simul
 Chapter~\ref{chap:Stability} investigates the role of machine learning in predicting longterm planet stability. 
 As stated in Section~\ref{sec:stability}, due to the non-integrable and chaotic nature of multi-planet systems, classification of planetary stability is difficult without performing numerous costly N-body simulations. 
 However, using information from the initial conditions and early evolution, we show that a trained machine learning algorithm can accurately predict whether a planetary system will be longterm stable.  
-This tool is useful to the scientific community due to its speed in classifying systems over direct N-body integrations.  
+This tool will be useful to the scientific community due to its speed and accuracy in classifying systems over direct N-body integrations.  
 
 Finally, in Chapter~\ref{chap:HD155358} the HD155358 system is analyzed, which consists of two Jovian-sized planets orbiting a few percent from the 2:1 MMR around a $0.92M_{\odot}$ star. 
 Radial velocity data for HD155358 was previously collected and analyzed by \citet{Robertson2012}, but they did not account for gravitational planet-planet interactions when deriving the orbital parameters.
