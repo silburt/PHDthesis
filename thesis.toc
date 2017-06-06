@@ -87,14 +87,14 @@
 \contentsline {section}{\numberline {6.3}Best-Fit Parameters and Resonance Analysis}{75}
 \contentsline {subsection}{\numberline {6.3.1}Methods}{75}
 \contentsline {subsection}{\numberline {6.3.2}Best Fit Parameters}{76}
-\contentsline {subsection}{\numberline {6.3.3}Resonance Analysis}{77}
+\contentsline {subsection}{\numberline {6.3.3}Resonance Analysis}{78}
 \contentsline {section}{\numberline {6.4}Formation via Migration}{79}
 \contentsline {subsection}{\numberline {6.4.1}Methods}{79}
 \contentsline {subsection}{\numberline {6.4.2}Model Comparison}{80}
-\contentsline {subsection}{\numberline {6.4.3}Results}{80}
+\contentsline {subsection}{\numberline {6.4.3}Results}{81}
 \contentsline {section}{\numberline {6.5}Stability}{81}
 \contentsline {section}{\numberline {6.6}Discussion and Conclusion}{84}
-\contentsline {chapter}{\numberline {7}Conclusions \& Future Work}{85}
-\contentsline {section}{\numberline {7.1}Summary}{85}
-\contentsline {section}{\numberline {7.2}Future Work and Directions}{86}
-\contentsline {chapter}{Bibliography}{88}
+\contentsline {chapter}{\numberline {7}Conclusions \& Future Work}{86}
+\contentsline {section}{\numberline {7.1}Summary}{86}
+\contentsline {section}{\numberline {7.2}Future Work and Directions}{87}
+\contentsline {chapter}{Bibliography}{89}

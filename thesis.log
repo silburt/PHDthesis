@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  6 JUN 2017 09:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  6 JUN 2017 10:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -962,10 +962,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 File: chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf Graphic file (type pdf)
 <use chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf>
 Package pdftex.def Info: chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf used 
-on input line 95.
+on input line 94.
 (pdftex.def)             Requested size: 451.68752pt x 242.33513pt.
  [76] [77 <./chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 171--171
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
 []|\T1/pplx/m/n/10 (+20) noPPI
  []
 
@@ -977,14 +977,14 @@ file (type pdf)
 
 <use chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf>
 Package pdftex.def Info: chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02
-_sd931.pdf used on input line 262.
+_sd931.pdf used on input line 261.
 (pdftex.def)             Requested size: 451.68752pt x 253.11517pt.
 
 <chap6/images/plot_good_ones.pdf, id=870, 578.16pt x 722.7pt>
 File: chap6/images/plot_good_ones.pdf Graphic file (type pdf)
 
 <use chap6/images/plot_good_ones.pdf>
-Package pdftex.def Info: chap6/images/plot_good_ones.pdf used on input line 271
+Package pdftex.def Info: chap6/images/plot_good_ones.pdf used on input line 270
 .
 (pdftex.def)             Requested size: 451.68752pt x 564.60799pt.
  [80]
@@ -993,23 +993,24 @@ File: chap6/images/stability_plot_histogram.pdf Graphic file (type pdf)
 
 <use chap6/images/stability_plot_histogram.pdf>
 Package pdftex.def Info: chap6/images/stability_plot_histogram.pdf used on inpu
-t line 315.
+t line 314.
 (pdftex.def)             Requested size: 451.68752pt x 513.74341pt.
  [81 <./chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf>] [82 
 <./chap6/images/plot_good_ones.pdf>] [83 <./chap6/images/stability_plot_histogr
-am.pdf>]) [84]
+am.pdf>]) [84] [85]
 \openout2 = `conc/conc.aux'.
 
- (./conc/conc.tex
+
+(./conc/conc.tex
 Chapter 7.
-[85
+[86
 
 
 
-] [86]) [87] (./thesis.bbl [88
+] [87]) [88] (./thesis.bbl [89
 
 
-] [89] [90] [91] [92] [93] [94]) [95]
+] [90] [91] [92] [93] [94] [95]) [96]
 \openout2 = `appendix/appendix.aux'.
 
 
@@ -1019,16 +1020,16 @@ LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 15.0049pt on input line 6.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 15.0049pt on input line 6.
-[96
+[97
 
 
-] <appendix/e_max_dyn.png, id=1071, 578.16pt x 433.62pt>
+] <appendix/e_max_dyn.png, id=1074, 578.16pt x 433.62pt>
 File: appendix/e_max_dyn.png Graphic file (type png)
 
 <use appendix/e_max_dyn.png>
 Package pdftex.def Info: appendix/e_max_dyn.png used on input line 65.
 (pdftex.def)             Requested size: 270.68507pt x 201.30666pt.
- [97 <./appendix/e_max_dyn.png>]
+ [98 <./appendix/e_max_dyn.png>]
 Overfull \hbox (28.4551pt too wide) in alignment at lines 83--96
  [] [] [] [] [] [] [] [] [] 
  []
@@ -1048,14 +1049,14 @@ Overfull \hbox (28.4551pt too wide) in alignment at lines 152--180
  [] [] [] [] [] [] [] [] [] 
  []
 
-[98
+[99
 
 ]
 Overfull \hbox (28.4551pt too wide) in alignment at lines 180--203
  [] [] [] [] [] [] [] [] [] 
  []
 
-[99] (./thesis.aux (./intro/intro.aux) (./chap2/chap2.aux) (./chap3/chap3.aux)
+[100] (./thesis.aux (./intro/intro.aux) (./chap2/chap2.aux) (./chap3/chap3.aux)
 (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./conc/conc.aux)
 (./appendix/appendix.aux))
 
@@ -1068,10 +1069,10 @@ LaTeX Warning: There were multiply-defined labels.
 (\end occurred when \iftrue on line 285 was incomplete)
 (\end occurred when \ifnum on line 285 was incomplete) 
 Here is how much of TeX's memory you used:
- 8869 strings out of 493117
- 132100 string characters out of 6135433
- 255984 words of memory out of 5000000
- 11343 multiletter control sequences out of 15000+600000
+ 8870 strings out of 493117
+ 132112 string characters out of 6135433
+ 255998 words of memory out of 5000000
+ 11344 multiletter control sequences out of 15000+600000
  143195 words of font info for 666 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,17n,46p,1147b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1094,10 +1095,10 @@ tt1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sftt
 88.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/l
 ocal/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (112 pages, 2120567 bytes).
+Output written on thesis.pdf (113 pages, 2120981 bytes).
 PDF statistics:
- 1143 PDF objects out of 1200 (max. 8388607)
- 504 compressed objects within 6 object streams
+ 1146 PDF objects out of 1200 (max. 8388607)
+ 506 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
  90268 words of extra memory for PDF output out of 106986 (max. 10000000)
 

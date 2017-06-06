@@ -28,11 +28,10 @@ The additional information that one can gain from interacting models can help co
 
 \section{Introduction}
 \label{sec:intro}
-The past decade has marked an explosion in the number of discovered multi-planet systems, with almost 600 known to date \citep{NASAEA}. 
-Jovian planets have been detected in these exoplanetary systems, and the range of conditions under which they can form is uncertain.
-For example, many Jovian planets are observed inside the snowline of their host star \citep[e.g.][]{Hayashi1981}, and it is unclear whether they formed in-situ \citep{Boley2016, Huang2016, Batygin2016} or beyond the snowline and migrated in afterwards \citep{Mayor1995, Lin1996, Pollack1996}.
+Many Jovian planets have been detected in exoplanetary systems, and the range of conditions under which they can form is uncertain.
+In particular, many Jovian planets are observed inside the snowline of their host star \citep[e.g.][]{Hayashi1981}, and it is unclear whether they formed in-situ \citep{Boley2016, Huang2016, Batygin2016} or beyond the snowline and migrated in afterwards \citep{Mayor1995, Lin1996, Pollack1996}.
 For systems near mean motion resonance (MMR), planetary migration offers a natural formation mechanism \citep[e.g.][]{Lee2002, Rein2009}.
-Since roughly $30\%$ of Jovian-sized planets with a detected planet companion are near a first-order MMR \citep{NASAEA}, at least a substantial fraction of planetary systems are likely to have formed via migration. 
+Since roughly $30\%$ of Jovian-sized planets with a detected planet companion are near a first-order MMR \citep{Akeson2013}, at least a substantial fraction of planetary systems are likely to have formed via migration. 
 
 The star HD155358 hosts two observed Jovian-sized planets orbiting inside the snowline near a MMR. 
 The star has a mass of $0.92~M_{\odot}$, and the planets have orbital periods $P_1 = 194$ and $P_2 = 392$~days, respectively, about 2\% away from the exact 2:1 commensurability \citep[][hereafter \R]{Robertson2012}. 
@@ -46,7 +45,7 @@ For well-separated orbits this assumption is valid and simplifies the analysis.
 However, near a MMR this approximation can lead to different orbital solutions and therefore different formation constraints and evolutionary predictions. 
 In particular, without planet-planet interactions one cannot draw any conclusion as to whether the system is in resonance or not. 
 
-In this work we re-analyze HD155358 using the RV observations collected by \R.
+In this Chapter we re-analyze HD155358 using the RV observations collected by \R.
 In Sect.~\ref{sec:orb}, we derive new orbital parameters using a Bayesian framework coupled to direct N-body integrations and assess the probability that the system is in resonance.
 In Sect.~\ref{sec:form}, we perform simulations constraining the migration history, and in Sect.~\ref{sec:stability} conduct a stability analysis. 
 We conclude with a discussion in Sect.~\ref{sec:conc}.
@@ -61,7 +60,7 @@ The RV data used for this analysis comes from Table 2 of \R.
 We model this system using \reb \citep{Rein2012}, an open-source N-body code for simulating problems in planetary dynamics.
 Using \reb we can extract the motion of the central star over the course of our simulation, comparing it directly to the RV data. 
 
-In this work we explore two different models -- one that includes the planet-planet gravitational interactions, abbreviated as PPI model, and one that excludes planet-planet gravitational interactions, abbreviated as noPPI model. 
+In this Chapter we explore two different models -- one that includes the planet-planet gravitational interactions, abbreviated as PPI model, and one that excludes planet-planet gravitational interactions, abbreviated as noPPI model. 
 This is achieved in \reb by initializing each planet as either a massive body (PPI model) or a semi-active particle (noPPI model).
 Semi-active particles can gravitationally interact with massive bodies (e.g. the central star), but cannot interact with other semi-active particles. 
 For reference, \R does not include the gravitational interactions between the planets, and is analogous to our noPPI model.  
@@ -345,7 +344,7 @@ Although not shown, we find no clustering of unstable systems in ($m_1$, $m_2$) 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion and Conclusion}
 \label{sec:conc}
-In this work we used three different model types to analyze the RV curve of HD155358 -- the PPI, noPPI and CM models. 
+In this Chapter we used three different model types to analyze the RV curve of HD155358 -- the PPI, noPPI and CM models. 
 Our PPI (planet-planet interactions) and noPPI (no planet-planet interactions) models fit the RV curve to a model parameterized by the orbital elements of each planet (Section~\ref{sec:orb}), while our CM model was parameterized by migration parameters and fit this result to the RV curve (Section~\ref{sec:form}).
 The best-fit parameters from our PPI and noPPI models are shown in Table~\ref{tab:MCMC}, while Table~\ref{tab:res} shows that there is a high likelihood that the planets of HD155358 are in MMR. 
 
