@@ -4,13 +4,13 @@
 \section{Chapter Overview}
 	\begin{center}
 	\begin{minipage}[c]{4.75in}
-	The work and figures from this Chapter has been done in collaboration with my supervisor Hanno Rein and Center for Planetary Science postdoc Daniel Tamayo. 
+	The work and figures from this Chapter have been done in collaboration with Hanno Rein and Daniel Tamayo. 
 	A publication is currently in preparation. 
 	\vspace{2em}
 	\end{minipage}
 	\end{center}
 
-We present \hermes, a new hybrid integration scheme for long-term simulations of planetary systems undergoing close encounters or planetesimal-driven migration. 
+We present \hermes, a new hybrid integration scheme for long-term simulations of planetary systems undergoing close encounters and planetesimal-driven migration. 
 Particles are integrated using \whfast, a fast and accurate symplectic integrator, unless a close encounter occurs.
 During a close encounter, a subset of particles is integrated with the high-order integrator \ias, while the rest of the particles continue to be integrated with \whfast.
 We created an adaptive routine for optimizing the close encounter boundary to help maintain accuracy whilst close encounters are occurring.
