@@ -134,7 +134,7 @@ Values of the final adopted hyperparameters for the algorithm are discussed in S
 We begin by considering as features the initial orbital elements and orbital period of each planet, and the interplanetary separations between adjacent planets in units of mutual Hill radii. 
 We then trained an {\tt XGBoost} classifier on these features (Section~\ref{training}), allowing us to predict the stability of each system in the test set in the form of an estimated probability. 
 
-As discussed in Section~\ref{model}, a threshold probability is required for classifying a system as stable/unstable, and is a subjective choice that depends on the desired qualities of the classifier.
+As discussed in Section~\ref{metrics}, a threshold probability is required for classifying a system as stable/unstable, and is a subjective choice that depends on the desired qualities of the classifier.
 For our purposes we argue it is logical to adopt a conservative threshold, in the sense that if the model predicts stability, there is a strong likelihood that the system is actually stable (high precision).
 This follows from the fact that it is computationally much faster to verify that a system is unstable (on short timescales) than it is to check that it is stable (on long timescales).
 We choose to require a precision of $90\%$ on our test dataset, which corresponded to the model only classifying systems as stable if their predicted stability probability is larger than a 0.785 threshold.
@@ -173,7 +173,7 @@ To this end, we improved upon the previous model (Section~\ref{IC}) by generatin
 To create the new features, we performed simulations over $10^4$ orbits (0.1\% of the instability timescale probed) for each of the 5000 systems in the dataset, and recorded each planet's orbital elements and the current Lyapunov timescale every 5 orbits.
 
 Because we suspect that the instability is driven by overlapping mean-motion resonances, we first generated features that capture the variation in semimajor axes, which would vanish if the dynamics were purely secular \citep{SSD1999}.  
-In particular, we generated features for the standard deviation and maximum value of each planet's semimajor axis over the $10^4$ orbits , normalized to the mean value over the same period  ({\tt std\_ai} and {\tt max\_ai}, where {\tt i} denotes the planet number) .  
+In particular, we generated features for the standard deviation and maximum value of each planet's semimajor axis over the $10^4$ orbits, normalized to the mean value over the same period  ({\tt std\_ai} and {\tt max\_ai}, where {\tt i} denotes the planet number) .  
 In addition, we generated features for the same quantities over only the first 50 orbital periods in order to capture the variations on orbital timescales ({\tt std\_window\_ai} and {\tt max\_window\_ai}).
 Furthermore, we noticed in early attempts that some misclassified systems exhibited drifts in semimajor axis, so we generated slope features from linear fits to each of the three planets' semimajor axes, normalized to the mean semimajor axis divided by the integration time ({\tt slope\_ai}).
 For the eccentricities of each planet, we generated features for the mean, standard deviation, maximum and minimum values over the full $10^4$ orbits, and normalized them to the eccentricity that planet would require to reach its nearest neighbor's semimajor axis ({\tt avg\_ei}, {\tt std\_ei}, {\tt max\_ei}, {\tt min\_ei}).
