@@ -809,7 +809,7 @@ by varying the bin sizes in both radius and period space. Using the
 logarithmic binning scheme to describe the width, $w$, of each bin:
 \begin{equation}
 w(n) = 10^{Kn}
-\label{eq:K}
+\label{eq:KMCMC}
 \end{equation}
 where $n$ is the bin number and $K$ is a constant, we 
 investigate the effect of varying $K$ (and thus bin size) on occurrence.  
@@ -830,7 +830,7 @@ Fig.~\ref{fig:raddist} are $K_p$=0.301 and $K_r$=0.150515.
 \centerline{\includegraphics[scale=0.55]{chap2/Silburt_mcmcbin_decRp3.pdf}}
 \caption{Investigating the effect of binning on the MCMC results. The IS result from Figure~\ref{fig:raddist} is shown as a dotted, black line, 
 while our MCMC results using various bin sizes are the coloured curves. Using
-Equation~\ref{eq:K}, we vary $K_r$ from 0.09 to 0.19, keeping $K_p$ fixed. 
+Equation~\ref{eq:KMCMC}, we vary $K_r$ from 0.09 to 0.19, keeping $K_p$ fixed. 
 As can be seen, the results can change noticeably depending on
 the binning choice. This illustrates the usefulness of the IS method, which does not 
 require any binning. To clarify, we do not change the number of free parameters in our

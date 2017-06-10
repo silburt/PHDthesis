@@ -8,7 +8,7 @@
 \subsection{Detection Methods}
 \subsubsection{Radial Velocity}
 \label{sec:RV}
-A periodic wobble will be observed in the lightcurve of a star with an orbiting planet due to their coupled motion around the common centre of mass. 
+A periodic wobble will be observed in the lightcurve of a star with an orbiting planet, due to their coupled motion around the common centre of mass. 
 From the conservation of energy and angular momentum, a star's wobble (or radial velocity) due to a planetary companion can be calculated according to \citep{Beauge2007}:
 \begin{equation}
 V_r = K \cdot [\cos(\nu + \omega) + e\cdot \cos(\omega) + \gamma]
@@ -25,7 +25,7 @@ Since the probability of detecting a planet is related to $K$, radial velocity p
 From Equations~\ref{eq:RV} and \ref{eq:K}, one can extract many orbital parameters of the planet including $e$, $a$, and $m_p\sin(i)$.
 However, successful extraction of these orbital parameters requires accurate and precise knowledge of the stellar mass, which is often difficult to obtain \citep[e.g.][]{Brown2011}.
 Furthermore, only a lower limit estimate on planet mass can be calculated unless the inclination relative to Earth's line of sight is known. 
-In addition, the radius of the planet cannot be calculated from the radial velocity method, precluding any information about size and density.
+In addition, the radius of the planet cannot be determined from the radial velocity method, precluding information about size and density.
 
 When multiple planets orbit a star, the radial velocity signal becomes more complicated.
 Assuming that the planets are well-separated such that their mutual gravitational interactions are weak, the radial velocity of the star can be approximated as the sum of planetary Keplerian orbits:
@@ -35,7 +35,7 @@ V_r = \gamma + \sum_{i=1}^{n_p} K_i \cdot [\cos(\nu_i + \omega_i) + e_i\cdot \co
 \end{equation}
 where $n_p$ is the number of planets in the system. 
 If however the planet-planet gravitational interactions are strong, Equation~\ref{eq:RVsum} is invalid and must be replaced with a more careful numerical treatment. 
-Chapter~\ref{chap:HD155358} presents such a detailed numerical treatment, which builds off the work of  \citet{Robertson2012} that used Equation~\ref{eq:RVsum} to extract the orbital parameters of the HD155358 system, which hosts two Jovian-sized planets near mean motion resonance. 
+Chapter~\ref{chap:HD155358} presents such a detailed numerical treatment, which builds off the work of  \citet{Robertson2012} who used Equation~\ref{eq:RVsum} to extract the orbital parameters of the HD155358 system, which hosts two Jovian-sized planets near mean motion resonance. 
 
 \subsubsection{Transit Method}
 \label{sec:transit}
@@ -64,14 +64,14 @@ In total, the transit method is able to provide essential information about the 
 However, the transit method has several weaknesses. 
 For example, most orbital parameters required for dynamical studies, like eccentricity and mass, cannot be determined for individual systems via the transit method alone\footnote{When neighbouring planets exhibit Transit Timing Variations, information can be collected about eccentricity and mass \citep{Holman2005}.}.
 In addition, false positives from eclipsing binaries and background targets are a significant source of contamination \citep{Fressin2013}, and confirmation via a different method is often required. 
-Smaller planets and/or planets belonging to multi-planet systems are much less likely to be false positives than large, single planets \citep{Fressin2013}.
+Smaller planets and/or planets belonging to multi-planet systems are much less likely to be false positives than large, single planets \citep{Fressin2013, Lissauer2011}.
 
 \subsection{Statistics of Kepler Planets}
 \label{sec:stats}
 %I'm assuming that since this section is meant to motivate my work, I should focus on the research leading up to mine, not the research that has happened since.
 The \kep mission is the most successful planet-finding mission to date, providing scientists for the first time a population of planets orbiting other stars. 
 Due to the selection bias of the transit method (see Section~\ref{sec:transit}), most of these planets have periods of less than 50 days and are larger than Earth. 
-However, sufficient detection across the full range of Earth-to-Jupiter sized planets has enabled scientists to calculate the occurrence of planets around other stars in our galaxy. 
+However, sufficient detection across the full range of Earth-to-Jupiter sized planets has enabled scientists to calculate the occurrence of planets around stars in our galaxy. 
 
 Two seminal works analyzing the \kep population are \citet{Fressin2013} and \citet{Petigura2013}.
 \citet{Fressin2013} found that the global false positive rate of the \kep data is roughly $10\%$, the radius distribution peaks at mini-Neptune sized planets ($2<r_p/r_{\oplus}<2.8$, $r_{\oplus}$ is the radius of Earth), and the occurrence of Neptune and Jupiter sized planets is significantly lower than the occurrence of $r_p/r_{\oplus}<2.8$ sized planets.
