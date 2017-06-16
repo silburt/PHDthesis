@@ -9,7 +9,7 @@
 \subsubsection{Radial Velocity}
 \label{sec:RV}
 A periodic wobble will be observed in the lightcurve of a star with an orbiting planet, due to their coupled motion around the common centre of mass. 
-From the conservation of energy and angular momentum, a star's wobble (or radial velocity) due to a planetary companion can be calculated according to \citep{Beauge2007}:
+The star's wobble (or radial velocity) due to a planetary companion can be modelled as \citep{Beauge2007}:
 \begin{equation}
 V_r = K \cdot [\cos(\nu + \omega) + e\cdot \cos(\omega) + \gamma]
 \label{eq:RV}
@@ -23,7 +23,7 @@ $a$ is the semi-major axis of the planet, $P$ is the orbital period, $m_p$ is th
 Since the probability of detecting a planet is related to $K$, radial velocity preferentially detects massive planets on short orbits. 
 
 From Equations~\ref{eq:RV} and \ref{eq:K}, one can extract many orbital parameters of the planet including $e$, $a$, and $m_p\sin(i)$.
-However, successful extraction of these orbital parameters requires accurate and precise knowledge of the stellar mass, which is often difficult to obtain \citep[e.g.][]{Brown2011}.
+However, successful extraction of these orbital parameters requires accurate and precise knowledge of the stellar mass, which can be difficult to obtain \citep[e.g.][]{Brown2011}.
 Furthermore, only a lower limit estimate on planet mass can be calculated unless the inclination relative to Earth's line of sight is known. 
 In addition, the radius of the planet cannot be determined from the radial velocity method, precluding information about size and density.
 
@@ -218,7 +218,7 @@ Throughout this thesis (Chapters~\ref{chap:Tides}, \ref{chap:Hermes} and \ref{ch
 Planetesimals passing through the Hill sphere of a planet will exchange angular momentum via gravity \citep{Ida2000, Kirsh2009}.
 If there is an asymmetry to the mass of planetesimals interacting with the planet on its near and far sides, a net force will migrate the planet. 
 However, to guarantee a net migration planetesimal orbits must decouple from the planet. 
-A massive enough planet (e.g. Jupiter) will directly eject and decouple planetesimals from the system, however if the planet is smaller (e.g. Neptune) planetesimals must decouple by interacting with a neighbouring planet. 
+A massive enough planet (e.g. Jupiter) will directly eject and decouple planetesimals from the system, however if the planet is smaller (e.g. Neptune) planetesimals must decouple via external means (e.g. neighbouring planet, passing star, etc.). 
 In addition, for sustained migration the planet must constantly encounter fresh, dynamically cold planetesimals \citep{Gomes2004}.  
 
 Since protoplanetary growth is proportional to orbital frequency \citep[e.g.][]{Rafikov2003}, planetesimal disks are most likely to exist in the outer reaches of planetary systems where fewer orbital cycles have occurred. 
@@ -423,12 +423,12 @@ Other studies have investigated the role of tides in transporting planets from M
 Although computationally expensive, N-body simulations are very accurate and avoid approximations. 
 
 Chapter~\ref{chap:Hermes} presents \hermes, a hybrid integrator for simulating planetesimal migration, built from \ias \citep{Rein2015a} and \whfast \citep{Rein2015b}. 
-An adaptive switching radius is also available for \hermes, optimizing the close-encounter boundary and ensuring accurate integration.
+An adaptive switching radius is also available for \hermes, optimizing the switching boundary between integrators and ensuring that close-encounters are not missed.
 In addition, \hermes is compared to other popular hybrid integrators. 
 As outlined in Section~\ref{sec:inttypes}, hybrid integrators are best for simulating planets embedded in planetesimal disks, which I plan to investigate in future works (Chapter~\ref{sec:Future}). 
 
 Chapter~\ref{chap:Stability} investigates the role of machine learning in predicting longterm planet stability. 
-As stated in Section~\ref{sec:stability}, due to the non-integrable and chaotic nature of multi-planet systems, classification of planetary stability is difficult without performing numerous costly N-body simulations. 
+As stated in Section~\ref{sec:stability}, due to the non-integrable and chaotic nature of multi-planet systems, classification of planetary stability requires performing numerous costly N-body simulations. 
 However, using information from the initial conditions and early evolution, we show that a trained machine learning algorithm can accurately predict whether a planetary system will be longterm stable.  
 This tool will be useful to the scientific community due to its speed and accuracy in classifying systems over direct N-body integrations.  
 

@@ -5,43 +5,43 @@ The number of discovered exoplanets has dramatically increased over the past dec
 Broadly speaking, scientists are interested in understanding three things about planetary systems -- their past formation, present archetechtures and future evolution. 
 This thesis has contributed to all three domains by analyzing the statistics, formation and stability of exoplanetary systems. 
 
-In Chapter~\ref{chap:Stats}, I performed a statistical analysis of the \kep catalog using the \citet{Ramirez2014} dataset to calculate the occurrence rate of small planets, accounting for detection biases and radius errors. 
-Here I found that the occurrence of Kepler planets are preferentially peaked at $2-2.8R_\oplus$, with their numbers decreasing gradually toward smaller sizes, with a roughly log-uniform period distribution.
+In Chapter~\ref{chap:Stats}, we performed a statistical analysis of the \kep catalog using the \citet{Ramirez2014} dataset to calculate the occurrence rate of small planets, accounting for detection biases and radius errors. 
+Here we found that the occurrence of Kepler planets are preferentially peaked at $2-2.8R_\oplus$, with their numbers decreasing gradually toward smaller sizes, with a roughly log-uniform period distribution.
 These results were compared to \citet{Petigura2013}, who finds a similar peak but different occurrence values for Neptune-sized planets. 
-I calculated an average number of planets per star with periods between $20$ and $200$ days and radii between $1$ and $4R_\oplus$ of $0.46 \pm 0.03$. 
+We calculated an average number of planets per star with periods between $20$ and $200$ days and radii between $1$ and $4R_\oplus$ of $0.46 \pm 0.03$. 
 Such planets have likely experienced little photoevaporation, and may reflect the "primordial" planet population. 
-Upon extrapolation I obtained an occurrence rate for Earth-like planets within the "habitable zone" (as calculated by 1-D climate models) of $6.4^{+3.4}_{-1.1}\%$. 
+Upon extrapolation we obtained an occurrence rate for Earth-like planets within the "habitable zone" (as calculated by 1-D climate models) of $6.4^{+3.4}_{-1.1}\%$. 
 As mentioned in Section~\ref{sec:stats}, the most difficult aspect of calculating planet occurrence is accurately measuring the detection completeness, and our method was validated by successfully reproducing the work of \citet{Petigura2013} through applying our detection completeness calculations to their dataset.
 
 The analysis in Chapter~\ref{chap:Stats} revealed additional structures in the \kep data, particularly the statistical excesses of planets wide of MMRs.
-It is believed that these planets were originally closer to MMR and a dynamical mechanism transported them to larger distances.
+It is believed that these planets were originally closer to MMR, and a dynamical mechanism transported them to larger distances.
 The specific mechanism for transporting these planets is still unclear, motivating my work in Chapter~\ref{chap:Tides}.
-Here I used optimistic theoretical estimates for the minimum initial eccentricity required to explain the offset of \kep planets from MMR due to tidal forces alone, complimenting these calculations with N-body simulations.
-Analyzing 27 \kep systems with period ratios within $6\%$ of the 2:1 MMR, I found that the initial eccentricities required to explain the observed spacings due to tides alone are unreasonable from simple dynamical arguments.
+Here we used optimistic theoretical estimates for the minimum initial eccentricity required to explain the offset of \kep planets from MMR due to tidal forces alone, complimenting these calculations with N-body simulations.
+Analyzing 27 \kep systems with period ratios within $6\%$ of the 2:1 MMR, we found that the initial eccentricities required to explain the observed spacings due to tides alone are unreasonable from simple dynamical arguments.
 Furthermore, our numerical simulations revealed "resonant tugging", an effect which conspires against the migration of resonant planets away from the 2:1 MMR, requiring even higher initial eccentricities in order to explain the current \kep distribution. 
-In summary, I found that tides alone cannot explain planets close to 2:1 MMR, and additional mechanisms are required to explain these systems. 
+In summary, we found that tides alone cannot explain planets close to 2:1 MMR, and additional mechanisms are required to explain these systems. 
 
 After my work in Chapter~\ref{chap:Tides}, I sought other mechanisms capable of transporting planets from MMR. 
-Planetesimals are a promising candidate for transporting planets from MMR, motivating my work in Chapter~\ref{chap:Hermes} where I presented \hermes, a new hybrid integration scheme for long-term simulations of planetary systems undergoing close encounters and planetesimal-driven migration. 
+Planetesimals are a promising candidate for transporting planets from MMR, motivating my work in Chapter~\ref{chap:Hermes} where we presented \hermes, a new hybrid integration scheme for long-term simulations of planetary systems undergoing close encounters and planetesimal-driven migration. 
 Distant particles are integrated using \whfast, while close particles are integrated with \ias.
-In addition, I created an adaptive routine for optimizing the close encounter boundary to help maintain accuracy whilst close encounters are occurring.
+In addition, we created an adaptive routine for optimizing the close encounter boundary to help maintain accuracy whilst close encounters are occurring.
 Since \whfast is symplectic, \ias is accurate to machine precision and both of them are unbiased, the energy error grows sub-linearly with time under the assumption that either impact parameters are randomly distributed or close encounters are rare.
 I found that \hermes provides a good balance between speed and accuracy, neither achieved by the individual symplectic or non-symplectic integrators alone.
 
 In addition to my work analyzing \kep planets, I have also been taking part in machine learning workshops held frequently at the Centre for Planetary Science. 
 From these workshops, I became interested in applying machine learning to the problem of planetary stability. 
-In Chapter~\ref{chap:Stability}, I showed that characterizing the complicated and multi-dimensional stability boundary of tightly packed systems is amenable to machine learning methods. 
+In Chapter~\ref{chap:Stability}, we showed that characterizing the complicated and multi-dimensional stability boundary of tightly packed systems is amenable to machine learning methods. 
 In particular, training a state-of-the-art machine learning algorithm on physically motivated features yields an accurate classifier of stability in packed systems. 
 On the stability timescale we investigated ($10^7$ orbits), our trained machine was 3 orders of magnitude faster than direct N-body simulations. 
 Optimized machine learning classifiers for dynamical stability may thus prove useful across the discipline, e.g., to characterize the exoplanet sample discovered by the upcoming Transiting Exoplanet Survey Satellite (TESS).
 
 Finally, my previous research experience motivated me to work on the planetary system HD155358, since it drew on a number of familiar topics like MMR, formation and stability. 
-In Chapter~\ref{chap:HD155358}, I analyzed the RV data for the star HD155358, which hosts two Jovian-sized planets near 2:1 MMR. 
-Using a Bayesian model parameterized by the orbital elements of each planet, I showed that excluding planet-planet interactions can yield statistically different orbital solutions, leading to different implications for formation and stability. 
+In Chapter~\ref{chap:HD155358}, we analyzed the RV data for the star HD155358, which hosts two Jovian-sized planets near 2:1 MMR. 
+Using a Bayesian model parameterized by the orbital elements of each planet, we showed that excluding planet-planet interactions can yield statistically different orbital solutions, leading to different implications for formation and stability. 
 From my updated orbital solutions I calculated a high likelihood that the planets are in MMR. 
-In addition, I conducted a stability analysis by drawing samples from our posterior distribution and simulating them for $10^9$ years, finding that our best-fit values land firmly in a stable region of parameter space.
-Furthermore, I also explored a series of formation models that migrate the planets into MMR and generated synthetic RV curves to fit directly to the observed data. 
-I found that a number of formation models fit the RV data surprisingly well, with some migration parameters being ruled out.
+In addition, we conducted a stability analysis by drawing samples from our posterior distribution and simulating them for $10^9$ years, finding that our best-fit values land firmly in a stable region of parameter space.
+Furthermore, we also explored a series of formation models that migrate the planets into MMR and generated synthetic RV curves to fit directly to the observed data. 
+We found that a number of formation models fit the RV data surprisingly well, with some migration parameters being ruled out.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Future Work and Directions}
@@ -62,15 +62,15 @@ However, at the time of writing this thesis this goal could not be fully realize
 In addition, \hermes was originally designed to investigate the role of planetesimals in transporting planets from MMR, however this was never completed during my thesis. 
 Most recently, \citet{Chatterjee2015} investigated planetesimal migration for two Neptune mass planets, finding that $0.2m_N$ (where $m_N$ is the mass of Neptune) of nearby, dynamically cold, planetesimals was required to break the resonance. 
 However, this result warrants further investigation. 
-For example, given the process of planetary formation (Section~\ref{sec:PF}) is it reasonable to assume that $0.2m_N$ of nearby, dynamically cold planetesimals would be available to migrate planets?
-In addition, how would the initial migration phase of planets into MMR excite, eject and collide nearby planetesimals?
+For example, given the process of planetary formation (Section~\ref{sec:PF}) is it reasonable to assume that $0.2m_N$ of nearby, dynamically cold planetesimals would be available to migrate planets \textit{after} planets have been trapped in MMR?
+In addition, how would the initial formation of these planets excite, eject and collide nearby planetesimals?
 In short, a self-consistent model of MMR planets embedded in a planetesimal disk has yet to be researched, and such a project can be accomplished with \hermes in the future.
 
 Chapter~\ref{chap:Stability} showed that a machine trained on sample N-body integrations can accurately predict the longterm stability of new systems based off their initial conditions and early evolution. 
-The training set consisted of equal mass planets on circular orbits and simulated for $10^7$ orbits. 
-Substantial work can still be done to make this a valuable asset to the exoplanet community.
-Primarily, this work can be extended to planetary systems more representative of the \kep population, with unequal mass planets on non-circular orbits simulated for an order of magnitude longer. 
-In addition, for other scientists to use this tool, an easy-to-use pipeline must be created that can take a given planetary system as input and output a probability of longterm stability. 
+The training set for this work consisted of equal mass planets on circular orbits, simulated for $10^7$ orbits. 
+Substantial work must still be done to make this a valuable asset to the exoplanet community.
+First, this work should be extended to include planetary systems more representative of the \kep population, i.e. unequal mass planets on non-circular orbits simulated for billions of orbits. 
+In addition, for other scientists to use this tool, an easy-to-use pipeline must be created that can accept a planetary system as input and output a probability of longterm stability. 
 
 Finally, in Chapter~\ref{chap:HD155358} I used a simple formation model to fit the RV curve of HD155358 and determine the initial conditions of the system. 
 This simple model could be replaced with a full 3D hydrodynamical model, further constraining the initial conditions of the system. 
