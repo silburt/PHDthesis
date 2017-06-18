@@ -41,7 +41,7 @@ Using a Bayesian model parameterized by the orbital elements of each planet, we 
 From my updated orbital solutions I calculated a high likelihood that the planets are in MMR. 
 In addition, we conducted a stability analysis by drawing samples from our posterior distribution and simulating them for $10^9$ years, finding that our best-fit values land firmly in a stable region of parameter space.
 Furthermore, we also explored a series of formation models that migrate the planets into MMR and generated synthetic RV curves to fit directly to the observed data. 
-We found that a number of formation models fit the RV data surprisingly well, with some migration parameters being ruled out.
+We found that a number of formation models fit the RV data surprisingly well, with many migration parameters being ruled out.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Future Work and Directions}
@@ -56,7 +56,7 @@ Chapter~\ref{chap:Hermes} presented \hermes, a hybrid integrator for planetesima
 The base integrator used in \hermes is \whfast which employs Jacobi coordinates to integrate particles.
 However, as mentioned in Section~\ref{sec:Jacobi} this is not the best choice since a clear ordering of bodies is required for efficient integration.
 Instead, democratic heliocentric coordinates or the WHDS coordinate system (Section~\ref{sec:coords}) are better choices. 
-As mentioned in Section~\ref{sec:coords}, since the WHDS coordinate system relies on heliocentric coordinates for integrating bodies \textit{and} solves the two-body and restricted three-body problems exactly, it might ultimately be the best choice of coordinate system for \hermes. 
+Since the WHDS coordinate system relies on heliocentric coordinates for integrating bodies \textit{and} solves the two-body and restricted three-body problems exactly, it might ultimately be the best choice of coordinate system for \hermes, though further investigation is required. 
 However, at the time of writing this thesis this goal could not be fully realized, but will be completed in the future.
 
 In addition, \hermes was originally designed to investigate the role of planetesimals in transporting planets from MMR, however this was never completed during my thesis. 
@@ -64,7 +64,7 @@ Most recently, \citet{Chatterjee2015} investigated planetesimal migration for tw
 However, this result warrants further investigation. 
 For example, given the process of planetary formation (Section~\ref{sec:PF}) is it reasonable to assume that $0.2m_N$ of nearby, dynamically cold planetesimals would be available to migrate planets \textit{after} planets have been trapped in MMR?
 In addition, how would the initial formation of these planets excite, eject and collide nearby planetesimals?
-In short, a self-consistent model of MMR planets embedded in a planetesimal disk has yet to be researched, and such a project can be accomplished with \hermes in the future.
+In short, a self-consistent model of MMR planets embedded in a planetesimal disk has yet to be researched, and such a project could be accomplished with \hermes in the future.
 
 Chapter~\ref{chap:Stability} showed that a machine trained on sample N-body integrations can accurately predict the longterm stability of new systems based off their initial conditions and early evolution. 
 The training set for this work consisted of equal mass planets on circular orbits, simulated for $10^7$ orbits. 
@@ -72,6 +72,6 @@ Substantial work must still be done to make this a valuable asset to the exoplan
 First, this work should be extended to include planetary systems more representative of the \kep population, i.e. unequal mass planets on non-circular orbits simulated for billions of orbits. 
 In addition, for other scientists to use this tool, an easy-to-use pipeline must be created that can accept a planetary system as input and output a probability of longterm stability. 
 
-Finally, in Chapter~\ref{chap:HD155358} I used a simple formation model to fit the RV curve of HD155358 and determine the initial conditions of the system. 
+Finally, in Chapter~\ref{chap:HD155358} we used a simple formation model to fit the RV curve of HD155358 and determine the initial conditions of the system. 
 This simple model could be replaced with a full 3D hydrodynamical model, further constraining the initial conditions of the system. 
 

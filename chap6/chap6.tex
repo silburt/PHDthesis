@@ -82,7 +82,7 @@ To avoid singularities for $\omega$ (which is ill-defined when $e\sim0$), we fit
 We also add an offset parameter $\gamma$ to account for any stellar drift along the line of sight, a jitter parameter $J$ to account for any stellar noise and unreported instrument variability, and a viewing angle parameter sin$(i)$.
 This yields a total of 13 parameters to be sampled by the MCMC. 
 
-We initialize our MCMC chain with values similar to the best fit values of \R to speed up convergence, and use the following priors on our parameters: $0.4M_J<m_1\textrm{sin}(i) < 2M_J$, $0.4M_J<m_2\textrm{sin}(i) < 2M_J$, $0.2 \textrm{AU}<a_1< 0.8\textrm{AU}$, $0.8\textrm{AU}<a_2< 1.4\textrm{AU}$, $1<h_1, h_2, k_1, k_2<-1$, $0<\omega_1, \omega_2, M_1, M_2<2\pi$, $-40\textrm{m/s}<\gamma<40\textrm{m/s}$, and $0\textrm{m/s}<J^2<50\textrm{m/s}$.
+We initialize our MCMC chain with values similar to the best fit values of \R to speed up convergence, and use the following priors on our parameters: $0.4M_J<m_1\textrm{sin}(i) < 2M_J$, $0.4M_J<m_2\textrm{sin}(i) < 2M_J$, $0.2 \textrm{AU}<a_1< 0.8\textrm{AU}$, $0.8\textrm{AU}<a_2< 1.4\textrm{AU}$, $1<h_1, h_2, k_1, k_2<-1$, $0<M_1, M_2<2\pi$, $-40\textrm{m/s}<\gamma<40\textrm{m/s}$, and $0\textrm{m/s}<J^2<50\textrm{m/s}$.
 Our MCMC chain consists of an initial burnin phase of 1000 steps with 400 walkers, after which the MCMC walkers are resampled near the best solution and run for 5000 steps.
 In \reb we use the \whfast integrator \citep{Rein2015b} with a timestep of $P_1/200$, leading to a bounded relative energy error of $<10^{-7}$.
 
@@ -207,7 +207,7 @@ We follow the implementation by \cite{Papaloizou2000} and add an additional acce
 where $\textbf{v}$ is the velocity and $\textbf{r}$ is the position of the planet relative to the star. 
 The migration prescriptions of \citet{Papaloizou2000} were designed with Type-I migration in mind, yet our planets likely lie in the Type-II migration regime.
 However, since we are interested primarily in seeing whether a simple migration model can reproduce the data, this model choice will suffice. 
-More accurate, 3-D hydrodynamical simulations of Type-II planetary migration are significantly more complex and beyond the scope of this chapter. 
+More accurate, 3-D hydrodynamical simulations of Type-II planetary migration are significantly more complex and beyond the scope of this Chapter. 
 
 For each simulation three parameters are independently varied -- the eccentricity damping timescale of the inner planet $\tau_{e_1}$, the eccentricity damping timescale of the outer planet, $\tau_{e_2}$, and the migration timescale of the outer planet, $\tau_{a_2}$.
 The inner planet does not undergo migration by itself, i.e. $\tau_{a_1} = \infty$.
@@ -301,7 +301,7 @@ In the lower panel the residuals between our MAP estimate and the RV data are sh
 As can be seen, our model represents a good fit to the data. 
 
 Following \citet{Kass1995}, a posterior odds ratio lower than 100 indicates no decisive preference for one model over another, and in Figure~\ref{fig:goodones} we plot competing models which, when compared to $\theta_{model,best}$, yield a posterior odds ratio of less than 100. 
-The top panel in Figure~\ref{fig:goodones} presents the valid models in ($K_1$, $K_2$, $\tau_{a_2}$) space, while the bottom panel presents them in ($\tau_{e_1}$, $\tau_{e_2}$, $\tau_{a_2}$) space. 
+The top panel in Figure~\ref{fig:goodones} presents the valid models in ($K_1$, $K_2$, $\tau_{a_2}$) space, where the parameters have been uniformly sampled from the region shown, while the bottom panel presents them in ($\tau_{e_1}$, $\tau_{e_2}$, $\tau_{a_2}$) space. 
 Although many different migration models are able to explain the data, regions of parameter space appear to be ruled out.
 In the top panel of Figure~\ref{fig:goodones}, ($K_1 < 3$, $K_2 < 100$) and $K_1 > 20$ are two regions that appear to be ruled out by the data. 
 In the bottom panel, positive correlation can be seen between $\tau_{a_2}$ and $\tau_{e_1} + \tau_{e_2}$.
