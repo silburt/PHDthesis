@@ -239,7 +239,7 @@ Gas-driven migration comes in two main flavours -- Type I and Type II.
 
 Type I migration occurs when low-mass planets are fully embedded in a protoplanetary disk and do not significantly perturb the disk structure \citep{Armitage2010}. 
 At particular resonant locations, known as Linblad resonances, density waves are excited due to gravitational interactions between the planet and disk \citep{Goldreich1979}. 
-These resonances are driven by the same principles as MMR, occurring when the radial frequency of gas in the disk, $\Omega_g(r)$, matches the planet's radial frequency, $\Omega_p$, according to $m(\Omega_g(r) - \Omega_p) = \pm \kappa(r)$, where $m$ is an integer and $\kappa(r)$ is the epicyclic (or radial) frequency of the gas \citep{SSD1999, Armitage2010}.
+These resonances are driven by the same principles as MMR, and occur when the radial frequency of gas in the disk, $\Omega_g(r)$, matches the planet's radial frequency, $\Omega_p$, according to $m(\Omega_g(r) - \Omega_p) = \pm \kappa(r)$, where $m$ is an integer and $\kappa(r)$ is the epicyclic (or radial) frequency of the gas \citep{SSD1999, Armitage2010}.
 These density waves exchange angular momentum with the planet, and migration occurs when the inner and outer disk interact asymmetrically with the planet \citep{Goldreich1979}.
 In general, the direction of Type-I migration tends to be inwards towards the central star \citep{Ward1997}.
 
@@ -249,7 +249,7 @@ The viscous evolution of the disk causes the planet to slowly migrate inwards, a
 
 In comparison to planetesimal migration, gas-driven migration is still not well understood. 
 In particular, standard calculations of gas-driven migration are too quick by 1-2 orders of magnitude \citep{Lin1986, Tanaka2002}, causing planets to spiral into their central stars before the protoplanetary disk has dispersed.
-In contrast to this standard view, recent work \citep{Fung2017} has suggested that planets actually do not migrate that much and tend to be better behaved than originally believed. 
+In contrast to this standard view, recent work \citep{Fung2017} has suggested that planets actually do not migrate that much and tend to be more stationary than originally believed. 
 A consensus on migration has yet to be established, but it is clear that some form of migration must occur in the universe due to the large number of planets in or near MMR \citep{Lissauer2011,Fabrycky2014,Steffen2015}.
 
 \subsection{Stability}
@@ -262,14 +262,14 @@ For example, it is now known that the Solar System is marginally stable \citep{S
 It is also now well established that most known multi-planet systems are packed to capacity, and adding additional planets into these systems would result in dynamical instabilities \citep{Fang2013,Pu2015}.
 
 Although most planetary systems cannot be analytically solved, constraints on these systems can still be derived from analytical means.
-For example, \citet{Wisdom1980} and \citet{Duncan1989} showed that for small eccentricities in the Restricted 3-Body Problem (R3BP), chaotic orbits (leading to close encounters, collisions and ejections) will occur when the perturber and particle are separated by $\Delta a \le 1.3\mu_p^{2/7}a_p$ (where subscript $p$ indicates the perturber). 
+For example, \citet{Wisdom1980} and \citet{Duncan1989} showed that for small eccentricities in the Restricted 3-Body Problem (R3BP), chaotic orbits (leading to close encounters, collisions and ejections) will occur when the perturber and particle are separated by $\Delta a \le 1.3\mu_p^{2/7}a_p$, where $\mu$ is the planet-star mass ratio and subscript $p$ indicates the perturber. 
 Also associated with the R3BP is the Jacobi constant, which can be used to constrain the chaotic motion of a particle in parameter space. 
 For two massive planets, \citet{Gladman1993} showed that orbits are Hill stable if $\Delta a \ge 3.46 R_H$ (where $R_H$ is the mutual Hill radius), forbidding close encounters for all time.
 
 Since the discovery of numerous exoplanetary systems via \kep, longterm stability has become a popular way to constrain orbital parameters \citep{Lissauer2011, Steffen2013, Jontof-Hutter2014, Tamayo2015}. 
 If one assumes that an observed system is stable over billions of years, grids of N-body integrations can be used to find stable regions of parameter space, further narrowing the range of valid solutions constrained by observations. 
 Although this brute-force method is certainly useful, it is not without its costs. 
-A 10 billion year integration or the Solar System takes weeks to complete, and due to the chaotic nature of planetary systems hundreds to thousands of realizations must be simulated to acquire statistically rigorous results. 
+A 10 billion year integration or the Solar System takes months to complete, and due to the chaotic nature of planetary systems hundreds to thousands of realizations must be simulated to acquire statistically rigorous results. 
 Chapter~\ref{chap:Stability} shows that using machine learning techniques, accurate predictions of longterm stability can be made. 
 These predictions are orders of magnitude faster than direct N-body integrations. 
 
@@ -293,17 +293,9 @@ The coordinates ($\textbf{r}$,$\textbf{p}$) used in Hamiltonian mechanics are ca
 \{\textbf{p}_i, \textbf{p}_j\} = 0, \qquad
 \{\textbf{r}_i, \textbf{p}_j\} = \delta_{ij}
 \end{equation}
-where $\delta_{ij}$ is the Kronecker delta. 
-A primary benefit of using this Hamiltonian framework is the ease of evolving a system of N-bodies into the future or past via Hamilton's equations:
-\begin{align}
-\begin{split}
-\frac{d\textbf{p}}{dt} &= -\frac{\partial H}{\partial \textbf{r}} \\
-\frac{d\textbf{r}}{dt} &= \frac{\partial H}{\partial \textbf{p}} 
-\label{eq:Heq}
-\end{split}
-\end{align}
-Numerically this is straightward, with the accuracy of the result being inversely proportional to the size of the timestep, $dt$.
-A second benefit is the inherent area preserving or symplectic nature of Hamiltonian systems, with the energy error bound to a finite value (excluding e.g. numerical roundoff errors which grow with time).
+where $\delta_{ij}$ is the Kronecker delta, and the Poisson bracket is defined as $\{f, g\} = \sum_{i=1}^N (\frac{\partial a}{\partial r_i} \frac{\partial g}{\partial p_i} - \frac{\partial a}{\partial p_i} \frac{\partial g}{\partial r_i})$. 
+A primary benefit of using a Hamiltonian framework is its symplectic property which enforces the conservation of phase-space $d\textbf{r} \land d\textbf{p}$ \citep{Saha1992}. 
+This is in contrast to other non-Hamiltonian frameworks, like e.g. the Stormer integrator \citep{Sussman1988} in which the errors of relevant quantities (like position) grow quadratically with time \citep{Saha1992}.
 
 Within the context of planetary systems, Equation~\ref{eq:H} can be modified to make integration more efficient.
 For example, a single planet will orbit in a Keplerian fashion around a star, determined exactly by the planet's orbital parameters and stellar mass. 
@@ -322,23 +314,16 @@ Equation~\ref{eq:DKD} is a second order integration scheme, and is the most popu
 
 \subsection{Coordinate Systems}
 \label{sec:coords}
-As mentioned above, the most efficient way to solve the N-body  problem is to split the Hamiltonian into Keplerian and Interaction components.
-In general, the Keplerian and Interaction Hamiltonians take the following form:
-\begin{equation}
-\Ham_K = \sum_{i=1}^N \frac{\textbf{p}_i^2}{2m_i} - \frac{Gm_0m_i}{\textbf{r}_i}, \qquad
-\Ham_I = \sum_{i=1}^{N}\sum_{j=1,j \ne i}^N \frac{Gm_im_j}{|\textbf{r}_i - \textbf{r}_j|}
-\label{eq:Hgeneral}
-\end{equation}
+As mentioned above, an efficient way to solve the N-body problem is to split the Hamiltonian into Keplerian and Interaction components.
 However, there are numerous ways to perform these splits, with each coordinate system having relative strengths and weaknesses. 
-The most popular splittings are are discussed below. 
-In all cases $\textbf{r}$ and $\textbf{p}$ represent cartesian position and momenta, respectively, $N$ is the total number of particles, and $M$ is the total mass of the system. 
+A few popular coordinate systems used in planetary dynamics are discussed below.
 
 \subsubsection{Jacobi}
 \label{sec:Jacobi}
 Carl Jacobi worked out a coordinate system in which the planet positions are measured relative to the centre of mass of all bodies interior to it. 
 Since a planet's semi-major axis (and hence position) is dependent upon the mass interior to it by Kepler's 3rd law, in this coordinate system the position of a particle is directly affected by all bodies interior to it. 
 
-The Jacobi position $\textbf{r}^{\prime}$ and momentum $\textbf{p}^{\prime}$ form a canonical set and are related to the cartesian position and momentum according to \citep{SSD1999}:
+The Jacobi position $\textbf{r}^{\prime}$ and momentum $\textbf{p}^{\prime}$ form a canonical set and are related to the cartesian position and momentum (\textbf{r}, \textbf{p}) according to \citep{SSD1999}:
 \begin{equation}
 \textbf{r}^{\prime}_i = \textbf{r}_i - \textbf{R}_{i-1}, \qquad
 \textbf{p}^{\prime}_i = \frac{\eta_{i-1}}{\eta_i}\textbf{p}_i - \frac{m_i}{\eta_i}\sum_{j=0}^{i-1} \textbf{p}_j
@@ -351,7 +336,7 @@ For the special case of $i=0$:
 \end{equation}
 The inverse transformations from Jacobi coordinates to cartesian coordinates can be found in Chapter 9.5 of \citet{SSD1999}.
 
-The benefit of Jacobi coordinates is that the kinetic terms remain a sum of squares \citep{Plummer1918}, making numerical integration a straightforward process according to Equation~\ref{eq:DKD}. 
+The benefit of Jacobi coordinates is that the kinetic terms in the Hamiltonian remain a sum of squares \citep{Plummer1918}, making numerical integration a straightforward process according to Equation~\ref{eq:DKD}. 
 In addition, these coordinates solve the Two Body and Restricted Three Body Problems exactly. 
 However, the primary disadvantage is that a clear ordering of bodies is required for efficient integration.
 
@@ -399,10 +384,10 @@ In addition, the standard symplectic correctors of \citet{Wisdom2006} cannot be 
 
 \subsection{Integrator Types}
 \label{sec:inttypes}
-The three main classes of N-body integrators are symplectic, non-symplectic and hybrid. 
+I will explain three classes of N-body integrators: symplectic, non-symplectic and hybrid. 
 Symplectic integrators employ a fixed timestep, bounded energy error (excepting bias and roundoff errors which grow with time) and fast integration time.
 These integrators are best suited for well-separated bodies where $\Ham_I \ll \Ham_k$, otherwise the energy error increases dramatically or the timestep must be changed, both of which break symplecticity. 
-The most popular symplectic integrator is the Wisdom-Holman mapping \citep{Wisdom1991}.
+The most popular symplectic integrator for simulating planetary systems is the Wisdom-Holman mapping \citep{Wisdom1991}.
 
 Non-symplectic integrators do not require a fixed timestep and do not have a bounded energy error over time. 
 However, these integrators can employ very accurate and precise numerical convergence schemes, for example the Burlish-Stoer or predictor-corrector algorithms \citep{Press2002}.
