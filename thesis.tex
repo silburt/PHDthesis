@@ -60,6 +60,14 @@
 \def\memohr#1{\color{blue}$HR[${\bf #1}$]$ \color{black}}
 \def\memoas#1{\color{red}$AS[${\bf #1}$]$ \color{black}}
 
+%blank page
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
 %% The line spacing of the document should be specified using one of
 %% the document options given above, but if you need a line spacing
 %% that is not provided by the options, you can override the default
@@ -258,7 +266,7 @@ Bruce and Barbara, this doctorate thesis is a realization of your synthesized co
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% ***   Include chapter files here.   ***
-
+\afterpage{\blankpage}
 \include{intro/intro}
 \include{chap2/chap2}
 \include{chap3/chap3}

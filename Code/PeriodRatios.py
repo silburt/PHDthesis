@@ -21,7 +21,7 @@ for n in systems:
 
 Pratios = np.sort(Pratios[Pratios < 4])
 
-cdf = 0
+cdf = 1
 
 if cdf == 1:    #cdf
     n = float(len(Pratios))
@@ -43,6 +43,6 @@ for i in range(len(mmr)):
     plt.text(m+0.01, 1.05*max, n, size=10)
 
 plt.ylim([0,1.1*max])
-plt.xlabel('Period Ratios')
+plt.xlabel('Period Ratio')
 plt.savefig('PeriodRatios2.png')
 

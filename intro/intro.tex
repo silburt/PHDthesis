@@ -34,7 +34,7 @@ V_r = \gamma + \sum_{i=1}^{n_p} K_i \cdot [\cos(\nu_i + \omega_i) + e_i\cdot \co
 \label{eq:RVsum}
 \end{equation}
 where $n_p$ is the number of planets in the system. 
-If however the planet-planet gravitational interactions are strong, Equation~\ref{eq:RVsum} is invalid and must be replaced with a more careful numerical treatment. 
+If however the planet-planet gravitational interactions are strong, Equation~\ref{eq:RVsum} is invalid and must be replaced with either a more careful numerical treatment or analytic perturbation theory. 
 Chapter~\ref{chap:HD155358} presents such a detailed numerical treatment, which builds off the work of  \citet{Robertson2012} who used Equation~\ref{eq:RVsum} to extract the orbital parameters of the HD155358 system, which hosts two Jovian-sized planets near mean motion resonance. 
 
 \subsubsection{Transit Method}
@@ -46,7 +46,7 @@ The fraction of blocked flux is proportional to the relative areas of the star a
 \label{eq:F}
 \end{equation}
 where $r_p$ and $r_*$ are the planet and stellar radii, respectively. 
-In addition, the probability of a transiting planet $P_t$ is inversely proportional to its semi-major axis:
+In addition, assuming an isotropic distribution of orientations the probability of a transit $P_t$ is inversely proportional to its semi-major axis:
 \begin{equation}
 P_t = \frac{r_*}{a}
 \label{eq:tp}
@@ -62,7 +62,8 @@ From the transit method one can determine the period and radius of the planet.
 In addition, the atmospheric properties of exoplanets can also be probed \citep{Kreidberg2014, Tsiaras2016, Stevenson2016}.
 In total, the transit method is able to provide essential information about the composition, formation and habitability of a planet. 
 However, the transit method has several weaknesses. 
-For example, most orbital parameters required for dynamical studies, like eccentricity and mass, cannot be determined for individual systems via the transit method alone\footnote{When neighbouring planets exhibit Transit Timing Variations, information can be collected about eccentricity and mass \citep{Holman2005}.}.
+For example, most orbital parameters required for dynamical studies, like eccentricity and mass, is difficult to determine for individual systems via the transit method alone. 
+It is only when Transit Timing Variations \citep{Holman2005} or secondary transits are observed that information can be collected about eccentricity and mass via the transit method.
 In addition, false positives from eclipsing binaries and background targets are a significant source of contamination \citep{Fressin2013}, and confirmation via a different method is often required. 
 Smaller planets and/or planets belonging to multi-planet systems are much less likely to be false positives than large, single planets \citep{Fressin2013, Lissauer2011}.
 
@@ -86,7 +87,8 @@ f(P_i, r_j) = \frac{1}{N_*} \sum_k^{n_p(i,j)} \left(\frac{a_k}{r_{*,k}} \frac{1}
 where $N_*$ is the total number of stars surveyed in the sample, $n_p(i, j)$ are the number of planets falling into bin $(i, j)$, $\frac{a_k}{r_{*,k}}$ is the geometric correction factor to account for missed non-transiting planets (inverse of Equation~\ref{eq:tp}) and $\epsilon(i,j)$ is the detection completeness of bin $(i, j)$ to account for missed transiting planets due to low signal-to-noise.
 
 Of the ingredients that go into Equation~\ref{eq:occurence} the most difficult to accurately measure is the detection completeness. 
-Unlike \citet{Fressin2013} who used Combined Differential Photometric Precision (CDPP) values to calculate the detection completeness of known planets, \citet{Petigura2013} instead performed an injection and recovery of simulated light curves. 
+To calculate the detection completeness of known planets, \citet{Fressin2013} used the Combined Differential Photometric Precision (CDPP), which represents the effective white noise of a target star for a specific transit duration \citep{Christiansen2012}.
+In contrast, \citet{Petigura2013} performed an injection and recovery of simulated light curves to obtain the detection completeness. 
 Although the injection and recovery technique is certainly a more accurate way to calculate the detection completeness, \citet{Fressin2013} found that CDPP estimates were robust and could lead to accurate predictions. 
 
 One critical aspect of planet occurrence that \citet{Fressin2013} and \citet{Petigura2013} failed to incorporate into their calculations was the large error bars present in the \kep data.
@@ -102,7 +104,7 @@ Chapter~\ref{chap:Stats} performs a planet occurrence calculation similar to \ci
 \label{sec:PF}
 \subsection{Minimum Mass Solar Nebula and Snowline}
 The initial conditions of the Solar System are still largely unknown.
-\citet{Hayashi1981} and \citet{Weidenschilling1977} provided the first benchmarks for the initial mass of the Solar System by assuming a rocky core for all planets and calculating the initial surface density distribution $\Sigma$ as a function of distance $d$ required to produce the masses of the planets:
+\citet{Hayashi1981} and \citet{Weidenschilling1977} provided the first benchmarks for the initial mass of the Solar System disk by assuming a rocky core for all planets and calculating the initial surface density distribution $\Sigma$ as a function of distance $d$ required to produce the masses of the planets:
 \begin{equation}
 \Sigma(d) = \Sigma_0\left(\frac{d}{1 \textrm{AU}} \right)^{-3/2}
 \end{equation}
@@ -126,7 +128,7 @@ Telescopes like the Atacama Large Millimeter/submillimeter Array (ALMA) have beg
 In total, about 80 circumstellar and debris disks have been observed to date \citep[e.g.][]{Schneider2014,Choquet2016}, revealing unexpected features like strong debris disk asymmetries \citep{Hines2007}, concentric rings sculpted by possible Jovian-sized planets \citep{Tamayo2015} and highly eccentric/unbound trajectories in debris disks that are difficult to reconcile with standard formation theories \citep{Boccaletti2015}.
 
 \subsection{Planetesimal Formation}
-Before planets can form there must be an abundance of kilometre-sized planetesimals.
+Before planets can form, it is believed that an abundance of kilometre-sized planetesimals must be present.
 There are currently two leading models for forming such kilometre-sized planetesimals -- coagulation (a.k.a. core-accretion) and gravitational instability. 
 In the coagulation model, pairwise collisions between sticky dust particles lead to steady growth up to meter-sized and beyond \citep{Weidenschilling1977b, Armitage2010}.
 However, mean collision velocities are strongly coupled to size and destructive collisions tend to occur between meter-sized objects, hindering further planetesimal growth \citep{Weidenschilling1977b, Blum2008}. 
@@ -144,7 +146,7 @@ However, in practice it is very difficult to collect dust particles in densities
 The formation mechanism of planetesimals is still unclear, however, \textit{some} mechanism must exist since planetesimals are ubiquitous. 
 
 \subsection{Formation of Protoplanets}
-The formation of protoplanets occurs shortly after the formation of large, kilometre-sized planetesimals.
+The formation of small, rocky protoplanets occurs shortly after the formation of large, kilometre-sized planetesimals.
 In a pioneering study, \citet{Greenberg1978} found that in the early stages of planet formation larger planetesimals grow more rapidly than smaller ones, resulting in the runaway growth of the largest planetesimal. 
 As a result, $1$--$10$ km sized planetesimals at $1$AU can grow into $10^{22}$ -- $10^{24}$ kg protoplanets in $10^5$--$10^6$ years \citep{Wetherill1989}.
 This runaway process stems from the fact that $1$--$10$ km sized planetesimals are large enough to gravitationally focus each other yet are still dynamically cool via damping from surrounding gas, resulting in a maximum collision cross section \citep{Armitage2010}.
@@ -162,7 +164,7 @@ Since numerous \kep planets larger than Earth reside inside the snowline of thei
 \section{Planetary Dynamics}
 \subsection{Mean Motion Resonance}
 \label{sec:MMR}
-Mean motion resonance (MMR) occurs when the orbital period of one planet is an integer ratio of another. 
+Mean motion resonance (MMR) occurs when the orbital period of one planet is close to an integer ratio of another. 
 Like other types of resonances occuring in nature, MMR results in the amplitude growth of various quantities characterizing the system like eccentricity, semi-major axis and the longitude of pericentre \citep{SSD1999}. 
 As a result, the presence of MMR can strongly affect the formation, evolution and longterm stability of planetary systems in a diversity of ways.
 For example, Kirkwood gaps are unstable regions in the asteroid belt carved by MMRs with Jupiter, while Pluto and Neptune are protected from going unstable due to a 3:2 MMR. 
@@ -176,25 +178,29 @@ For every $p:q$ MMR (where $p$ and $q$ are integers) there are two important res
 \end{split}
 \end{align}
 where $\lambda$ is the mean longitude and $\varpi$ is the longitude of periapse. 
-For planets to be in MMR, the time variation of one or both resonant arguments must be zero.
+For planets to be in MMR, one or both resonant arguments must librate about a fixed value such that $\dot{\phi}_i = 0$.
 As a result, MMRs can be modelled in terms of a pendulum oscillating about a stable, fixed point. 
 After some algebra it can be shown that a MMR can be modelled as \citep{SSD1999}:
 \begin{equation}
-\ddot{\phi} = -\omega_0^2 \sin\phi
+\ddot{\phi} = -A_0^2 \sin\phi
 \label{eq:pendulum}
 \end{equation}
-where $\omega_0$ is the amplitude of libration and is dependent upon the orbital parameters of the system (mass, eccentricity, semi-major axis).
+where $A_0$ is the amplitude of libration and is dependent upon the orbital parameters of the system (mass, eccentricity, semi-major axis).
 
 The pendulum model facilitates an understanding about certain properties of MMR. 
 For energies larger than a critical energy, $E_{crit}$, the pendulum will circulate over all possible values of $\phi$, while for energies smaller than $E_{crit}$ the pendulum will be in MMR and librate about $\phi = 0$.
 The critical energy, $E_{crit}$, defines motion on the separatrix, which separates the circulation and libration regimes. 
 In context of a pendulum, this would correspond to the pendulum suspended vertically in the air with an infinite period of libration. 
 
-The strength of a given MMR is related to its width, which in turn is related to the order of the resonance ($= p - q$) and the magnitude of $p$ and $q$ \citep{SSD1999}. 
-More fundamentally, the strength of a MMR is related to the mass, eccentricity and mean motions of the planets involved \citep{SSD1999}.
-Stronger MMRs are associated with lower values of $p$, $q$ and $p-q$, making the 2:1 and 3:2 MMRs the most probable resonant locations in nature. 
+The magnitude of the Resonant Hamiltonian and libration width are inversely related to the order of the resonance ($= p - q$) and the magnitude of $p$ and $q$ \citep{SSD1999}.
+More fundamentally, the magnitude of the Resonant Hamiltonian and libration width are related to the mass, eccentricity and mean motions of the planets involved \citep{SSD1999}.
+When a pair of planets migrates near MMR in an adiabatic fashion, $J = \int Id\phi$ is a conserved quantity of the Hamiltonian system \citep{Henrard1982}, where ($I$, $\phi$) are the action-angle pair. 
+Adiabatic migration is achieved when the characteristic time-scale of the orbital convergence $\Delta t$ exceeds the libration period $\tau_{lib}$ \citep{Goldreich2014, Batygin2015}.
+For planets undergoing convergent and adiabatic migration, if the area enclosed by $J$ is less than the area enclosed by the homoclinic orbit, $J_{crit}$, capture into resonance is guaranteed \citep{Henrard1982, SSD1999}, while otherwise is probabilistic in nature.
+
+Capture probability is strongly coupled to the order of the resonance, with the 3:2 and 2:1 MMRs having the highest capture probabilities \citep{SSD1999, Batygin2015}. 
 Figure~\ref{fig:KepMMR} shows the distribution of period ratios for planets discovered by \kep, along with the locations of first and second order MMRs. 
-As can be seen, statistical excesses of planets exist wide of the 3:2 MMR and 2:1 MMR \citep{Lissauer2011,Fabrycky2014,Steffen2015}, and it is believed that these planets were transported away from MMR  via dissipative mechanisms.
+Statistical excesses of planets exist wide of the 3:2 MMR and 2:1 MMR \citep{Lissauer2011,Fabrycky2014,Steffen2015}, and it is believed that these planets were initially captured in MMR via convergent migration and subsequently transported from MMR via dissipative mechanisms.
 The most popular of these dissipative mechanisms are tidal \citep{LithwickWu2012, Batygin2013, Delisle2014}, protoplanetary \citep{Rein2012b, Baruteau2013, Goldreich2014}, and planetesimal \citep{Moore2013, Chatterjee2015}.
 The formation implications for each mechanism are different, and no clear consensus has yet emerged.
 Chapter~\ref{chap:Tides} critically examines the role of tidal forces in transporting \kep planets from exact MMR to their observed locations, using analytical and numerical means. 
@@ -233,6 +239,7 @@ Gas-driven migration comes in two main flavours -- Type I and Type II.
 
 Type I migration occurs when low-mass planets are fully embedded in a protoplanetary disk and do not significantly perturb the disk structure \citep{Armitage2010}. 
 At particular resonant locations, known as Linblad resonances, density waves are excited due to gravitational interactions between the planet and disk \citep{Goldreich1979}. 
+These resonances are driven by the same principles as MMR, occurring when the radial frequency of gas in the disk, $\Omega_g(r)$, matches the planet's radial frequency, $\Omega_p$, according to $m(\Omega_g(r) - \Omega_p) = \pm \kappa(r)$, where $m$ is an integer and $\kappa(r)$ is the epicyclic (or radial) frequency of the gas \citep{SSD1999, Armitage2010}.
 These density waves exchange angular momentum with the planet, and migration occurs when the inner and outer disk interact asymmetrically with the planet \citep{Goldreich1979}.
 In general, the direction of Type-I migration tends to be inwards towards the central star \citep{Ward1997}.
 

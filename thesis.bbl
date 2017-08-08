@@ -1,4 +1,4 @@
-\begin{thebibliography}{196}
+\begin{thebibliography}{198}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Akeson} {et~al.}(2013){Akeson}, {Chen}, {Ciardi}, \&
@@ -47,6 +47,9 @@
 \bibitem[{{Bastien} {et~al.}(2014){Bastien}, {Stassun}, \&
   {Pepper}}]{Bastien2014}
 {Bastien}, F.~A., {Stassun}, K.~G., \& {Pepper}, J. 2014, ArXiv e-prints
+
+\bibitem[{{Batygin}(2015)}]{Batygin2015}
+{Batygin}, K. 2015, \mnras, 451, 2589
 
 \bibitem[{{Batygin} {et~al.}(2016){Batygin}, {Bodenheimer}, \&
   {Laughlin}}]{Batygin2016}
@@ -314,6 +317,9 @@ Gelman, A., \& Rubin, D. 1992, Statistical Science, 7, 457,
 
 \bibitem[{{Hayashi}(1981)}]{Hayashi1981}
 {Hayashi}, C. 1981, Progress of Theoretical Physics Supplement, 70, 35
+
+\bibitem[{{Henrard}(1982)}]{Henrard1982}
+{Henrard}, J. 1982, Celestial Mechanics, 27, 3
 
 \bibitem[{{Henry} {et~al.}(1999){Henry}, {Marcy}, {Butler}, \&
   {Vogt}}]{Henry1999}
