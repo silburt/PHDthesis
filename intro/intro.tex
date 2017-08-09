@@ -156,7 +156,7 @@ Eventually this runaway growth transitions into a slower, oligarchic growth.
 As protoplanets grow surrounding planetesimals are dynamically excited via gravitational stirring, decreasing the collision cross section and slowing the rate of protoplanetary growth \citep{Kokubo1998}.
 By the end of oligarchic growth protoplanets have consumed most of the surrounding material and have reached their isolation masses \citep{Schlichting2014}.
 Beyond the snowline the isolation mass is roughly the mass of Neptune, however inside the snowline it is a fraction of an Earth mass \citep{Schlichting2014}.
-Since numerous \kep planets larger than Earth reside inside the snowline of their host star, this suggests that either i) giant impacts between protoplanets, ii) inward drift of additional material, or iii) migration must have taken place \citep{Schlichting2014}.  
+Since numerous \kep planets larger than Earth reside inside the snowline of their host star, this suggests that either i) giant impacts between protoplanets, ii) inward drift of pebble-sized material, and/or iii) planetary migration must have taken place \citep{Schlichting2014}.  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -169,7 +169,7 @@ Like other types of resonances occuring in nature, MMR results in the amplitude 
 As a result, the presence of MMR can strongly affect the formation, evolution and longterm stability of planetary systems in a diversity of ways.
 For example, Kirkwood gaps are unstable regions in the asteroid belt carved by MMRs with Jupiter, while Pluto and Neptune are protected from going unstable due to a 3:2 MMR. 
 
-For every $p:q$ MMR (where $p$ and $q$ are integers) there are two important resonant angles:
+For planetary systems near a $p:q$ MMR (where $p$ and $q$ are integers), two important resonant angles are:
 \begin{align}
 \begin{split}
 \phi_1 &= p\lambda_1 - q\lambda_2 + \varpi_1 \\
@@ -178,7 +178,9 @@ For every $p:q$ MMR (where $p$ and $q$ are integers) there are two important res
 \end{split}
 \end{align}
 where $\lambda$ is the mean longitude and $\varpi$ is the longitude of periapse. 
-For planets to be in MMR, one or both resonant arguments must librate about a fixed value such that $\dot{\phi}_i = 0$.
+Other resonant angles exist (e.g. those corresponding to inclination resonances), and linear combinations of resonant angles are possible (e.g. $\phi_3 = \phi_1 - \phi_2  = \varpi_1 - \varpi_2$). 
+
+For planets to be in MMR, at least one resonant argument must librate about a fixed value such that $\dot{\phi}_i = 0$.
 As a result, MMRs can be modelled in terms of a pendulum oscillating about a stable, fixed point. 
 After some algebra it can be shown that a MMR can be modelled as \citep{SSD1999}:
 \begin{equation}
@@ -192,13 +194,11 @@ For energies larger than a critical energy, $E_{crit}$, the pendulum will circul
 The critical energy, $E_{crit}$, defines motion on the separatrix, which separates the circulation and libration regimes. 
 In context of a pendulum, this would correspond to the pendulum suspended vertically in the air with an infinite period of libration. 
 
-The magnitude of the Resonant Hamiltonian and libration width are inversely related to the order of the resonance ($= p - q$) and the magnitude of $p$ and $q$ \citep{SSD1999}.
-More fundamentally, the magnitude of the Resonant Hamiltonian and libration width are related to the mass, eccentricity and mean motions of the planets involved \citep{SSD1999}.
-When a pair of planets migrates near MMR in an adiabatic fashion, $J = \int Id\phi$ is a conserved quantity of the Hamiltonian system \citep{Henrard1982}, where ($I$, $\phi$) are the action-angle pair. 
-Adiabatic migration is achieved when the characteristic time-scale of the orbital convergence $\Delta t$ exceeds the libration period $\tau_{lib}$ \citep{Goldreich2014, Batygin2015}.
-For planets undergoing convergent and adiabatic migration, if the area enclosed by $J$ is less than the area enclosed by the homoclinic orbit, $J_{crit}$, capture into resonance is guaranteed \citep{Henrard1982, SSD1999}, while otherwise is probabilistic in nature.
+When a pair of planets migrates in an adiabatic fashion, $J = \int Id\phi$ is a conserved quantity of the Hamiltonian system where ($I$, $\phi$) are the action-angle pair \citep{Henrard1982}. 
+Adiabatic migration is established when the characteristic time-scale of the orbital migration $\Delta t$ exceeds the libration period, $\tau_{lib}$, of the interacting bodies \citep{Goldreich2014, Batygin2015}.
+For planets migrating adiabatically into MMR, if the area enclosed by $J$ is less than the area enclosed by the homoclinic orbit, $J_{homo}$, capture into resonance is guaranteed and otherwise is probabilistic \citep{Henrard1982, SSD1999}.
+Capture probabilities are related to the order of the resonance ($= p - q$), the magnitude of $p$ and $q$, and  the masses, eccentricities and mean motions of the planets involved \citep{SSD1999}.
 
-Capture probability is strongly coupled to the order of the resonance, with the 3:2 and 2:1 MMRs having the highest capture probabilities \citep{SSD1999, Batygin2015}. 
 Figure~\ref{fig:KepMMR} shows the distribution of period ratios for planets discovered by \kep, along with the locations of first and second order MMRs. 
 Statistical excesses of planets exist wide of the 3:2 MMR and 2:1 MMR \citep{Lissauer2011,Fabrycky2014,Steffen2015}, and it is believed that these planets were initially captured in MMR via convergent migration and subsequently transported from MMR via dissipative mechanisms.
 The most popular of these dissipative mechanisms are tidal \citep{LithwickWu2012, Batygin2013, Delisle2014}, protoplanetary \citep{Rein2012b, Baruteau2013, Goldreich2014}, and planetesimal \citep{Moore2013, Chatterjee2015}.
@@ -322,8 +322,17 @@ A few popular coordinate systems used in planetary dynamics are discussed below.
 \label{sec:Jacobi}
 Carl Jacobi worked out a coordinate system in which the planet positions are measured relative to the centre of mass of all bodies interior to it. 
 Since a planet's semi-major axis (and hence position) is dependent upon the mass interior to it by Kepler's 3rd law, in this coordinate system the position of a particle is directly affected by all bodies interior to it. 
+In Jacobi co-ordinates the Hamiltonian for a system of n-bodies is \citep{Rein2015b}:
 
-The Jacobi position $\textbf{r}^{\prime}$ and momentum $\textbf{p}^{\prime}$ form a canonical set and are related to the cartesian position and momentum (\textbf{r}, \textbf{p}) according to \citep{SSD1999}:
+\begin{align}
+\begin{split}
+\Ham_K &= \sum_{i=1}^{N-1} \frac{\textbf{p}^{\prime,2}_i}{2m^{\prime}_i} - \frac{GM_im^{\prime}_i}{\textbf{r}^{\prime}_i} \\
+\Ham_I &= \sum_{i=1}^{N-1} \frac{GM_im^{\prime}_i}{\textbf{r}^{\prime}_i} - \sum_{i=0}^{N-1}\sum_{j=i+1}^{N-1} \frac{Gm_im_j}{|\textbf{r}_i - \textbf{r}_j|}
+\end{split}
+\end{align}
+where $\textbf{r}^{\prime}$ and $\textbf{p}^{\prime}$ are the Jacobi position and momentum, $M_i = \sum_{j=0}^i m_j$,  $m^{\prime}_i = m_iM_{i-1}/M_i$, and $N$ is the number of bodies in the system.
+
+$\textbf{r}^{\prime}$ and $\textbf{p}^{\prime}$ form a canonical set and are related to the cartesian position and momentum (\textbf{r}, \textbf{p}) according to \citep{SSD1999}:
 \begin{equation}
 \textbf{r}^{\prime}_i = \textbf{r}_i - \textbf{R}_{i-1}, \qquad
 \textbf{p}^{\prime}_i = \frac{\eta_{i-1}}{\eta_i}\textbf{p}_i - \frac{m_i}{\eta_i}\sum_{j=0}^{i-1} \textbf{p}_j
@@ -337,13 +346,22 @@ For the special case of $i=0$:
 The inverse transformations from Jacobi coordinates to cartesian coordinates can be found in Chapter 9.5 of \citet{SSD1999}.
 
 The benefit of Jacobi coordinates is that the kinetic terms in the Hamiltonian remain a sum of squares \citep{Plummer1918}, making numerical integration a straightforward process according to Equation~\ref{eq:DKD}. 
-In addition, these coordinates solve the Two Body and Restricted Three Body Problems exactly. 
+In addition, numerical implementation of the N-body problem in this coordinate system calculates the Two Body and Circular Restricted Three Body Problems exactly, meaning that $H_K = H$ and $H_I = 0$ \citep{Hernandez2016}. 
 However, the primary disadvantage is that a clear ordering of bodies is required for efficient integration.
 
 \subsubsection{Democratic Heliocentric}
 \label{sec:DH}
 In Democratic Heliocentric coordinates, positions $\textbf{Q}$ and momenta $\textbf{P}$ form a canonical set with $\textbf{Q}$ measured relative to the central body and $\textbf{P}$ measuring barycentric momenta.
-These coordinates are related to the cartesian position and momenta according to \citep{Duncan1998}:
+The Hamiltonian in Democratic Heliocentric coordinates are \citep{Duncan1998}:
+\begin{align}
+\begin{split}
+\Ham_K &= \sum_{i=1}^{N-1} \frac{\textbf{P}^2_i}{2m_i} - \frac{Gm_0m_i}{\textbf{Q}_i} \\
+\Ham_I &= - \sum_{i=1}^{N-1}\sum_{j=i+1}^{N} \frac{Gm_im_j}{|\textbf{Q}_i - \textbf{Q}_j|} \\
+\Ham_J &= \frac{1}{2m_0} \left|\sum_{i=1}^N \textbf{P}_i\right|^2 
+\end{split}
+\end{align}
+
+where $m_0$ is the mass of the central body, and $\textbf{Q}$ and $\textbf{P}$ are related to the cartesian position and momenta according to \citep{Duncan1998}:
 \begin{equation}
 \textbf{Q}_i = \textbf{r}_i - \textbf{r}_0, \qquad
 \textbf{P}_i = \textbf{p}_i - \frac{m_i}{M}\sum_{j=0}^N \textbf{p}_j
@@ -355,13 +373,8 @@ For the special case of $i=0$:
 \end{equation}
 
 The benefit of Democratic Heliocentric coordinates is that positions are not dependent upon other bodies (unlike Jacobi coordinates) and are conceptually easier to understand. 
-However, these coordinates do not solve the Two Body Problem or Restricted Three Body Problems exactly. 
-In addition, $\Ham_K$ cannot be cleanly written as shown in Equation~\ref{eq:Hgeneral} due to several cross terms that arise when substituting $\textbf{Q}$ and \textbf{P}.
-However, this problem can be rectified by transferring these cross terms into an additional Jump Hamiltonian:
-\begin{equation}
-\Ham_J = \frac{1}{2m_0} \left|\sum_{i=1}^N \textbf{P}_i\right|^2
-\end{equation}
-Therefore, the evolution of $\Ham$ in Equation~\ref{eq:DKD} must be modified to include an additional evolution operator under the Jump Hamiltonian, $E_{\Ham_J}$.
+However, numerical implementation of the N-body problem in this coordinate system does not calculate the Two Body Problem or Circular Restricted Three Body Problems exactly, meaning that non-negligible error terms are retained with $H_K \ne H$ and $H_I \ne 0$ \citep{Hernandez2016}. 
+In addition, an additional Jump Hamiltonian $\Ham_J$ is required to keep $\Ham_K$ in the desired format, and the evolution of $\Ham$ in Equation~\ref{eq:DKD} must be modified to include an additional evolution operator under the Jump Hamiltonian, $E_{\Ham_J}$.
 Note that since $\{\Ham_J, \Ham_I\} = 0$, the ordering of $E_{\Ham_I}$ and $E_{\Ham_J}$ does not matter. 
 
 \subsubsection{WHDS}
@@ -377,7 +390,7 @@ The canonical coordinates $\textbf{Q}$ and $\textbf{P}$ have the same form, but 
 \end{align}
 where $\mu \equiv m_im_0/(m_0 + m_i)$.
 
-The benefit of these coordinates is that, unlike Democratic Heliocentric coordinates, the Two Body and Restricted Three Body Problems are now solved exactly. 
+The benefit of these coordinates is that, unlike Democratic Heliocentric coordinates, numerical integration of the N-body problem in this coordinate system calculates the Two Body and Circular Restricted Three Body Problems exactly \citep{Hernandez2016}. 
 In addition, (like Democratic Heliocentric coordinates) a particle's position are not dependent upon any other bodies. 
 One price to pay for these benefits is that $\{\Ham_J, \Ham_I\} \ne 0$, and in Equation~\ref{eq:DKD} $E_{\Ham_J}$ must be exactly nestled in between the $E_{\Ham_K}$ and $E_{\Ham_I}$ operators.
 In addition, the standard symplectic correctors of \citet{Wisdom2006} cannot be used in this coordinate system, however other correctors may be possible to construct. 

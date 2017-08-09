@@ -24,43 +24,43 @@ Warning--empty publisher in Plummer1918
 Warning--empty publisher in Press2002
 You've used 198 entries,
             2988 wiz_defined-function locations,
-            1833 strings with 44531 characters,
-and the built_in function-call counts, 88111 in all, are:
-= -- 7171
+            1835 strings with 44543 characters,
+and the built_in function-call counts, 88172 in all, are:
+= -- 7177
 > -- 6298
 < -- 110
 + -- 2113
 - -- 1892
-* -- 7493
-:= -- 16771
+* -- 7500
+:= -- 16777
 add.period$ -- 198
 call.type$ -- 198
 change.case$ -- 1264
 chr.to.int$ -- 195
 cite$ -- 203
-duplicate$ -- 3650
-empty$ -- 5260
+duplicate$ -- 3651
+empty$ -- 5266
 format.name$ -- 2581
-if$ -- 17241
+if$ -- 17258
 int.to.chr$ -- 4
 int.to.str$ -- 1
 missing$ -- 196
 newline$ -- 598
 num.names$ -- 792
-pop$ -- 1318
+pop$ -- 1317
 preamble$ -- 1
 purify$ -- 1263
 quote$ -- 0
-skip$ -- 3070
+skip$ -- 3074
 stack$ -- 0
-substring$ -- 3768
+substring$ -- 3781
 swap$ -- 17
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 1758
 warning$ -- 5
-while$ -- 718
+while$ -- 719
 width$ -- 0
-write$ -- 1962
+write$ -- 1963
 (There was 1 error message)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  8 AUG 2017 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  9 AUG 2017 14:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -568,17 +568,9 @@ Package microtype Info: Loading generic settings for font family
 \openout3 = `thesis.toc'.
 
  [8] (./thesis.lot
-
-LaTeX Warning: Reference `IC' on page 66 undefined on input line 9.
-
-
-LaTeX Warning: Reference `shortintegrations' on page 66 undefined on input line
- 9.
-
-
-Overfull \hbox (2.41289pt too wide) in paragraph at lines 9--9
+Overfull \hbox (13.13286pt too wide) in paragraph at lines 9--9
  [][] []\T1/pplx/m/n/10 (-20) Hyperparameters used for the initial-conditions (
-IC) model (Sec.[]) and short-integrations 
+IC) model (Sec.5.4.1[]) and short-integrations 
  []
 
 )
@@ -587,32 +579,9 @@ IC) model (Sec.[]) and short-integrations
 
  [9
 
-] (./thesis.lof
+] (./thesis.lof [10
 
-LaTeX Warning: Reference `eq:P' on page 25 undefined on input line 7.
-
-
-LaTeX Warning: Reference `sec:plerr' on page 26 undefined on input line 8.
-
-
-LaTeX Warning: Reference `fig:raddist' on page 27 undefined on input line 9.
-
-
-LaTeX Warning: Reference `eq:KMCMC' on page 27 undefined on input line 9.
-
-[10
-
-] [11]
-
-LaTeX Warning: Reference `eq:Escheme' on page 56 undefined on input line 23.
-
-
-LaTeX Warning: Reference `eq:Escheme' on page 57 undefined on input line 24.
-
-
-LaTeX Warning: Reference `eq:Etot' on page 58 undefined on input line 25.
-
-[12])
+] [11] [12])
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
@@ -636,11 +605,7 @@ File: intro/PeriodRatios.pdf Graphic file (type pdf)
 Package pdftex.def Info: intro/PeriodRatios.pdf used on input line 210.
 (pdftex.def)             Requested size: 451.68752pt x 338.77856pt.
  [6] [7 <./intro/PeriodRatios.pdf>] [8] [9]
-[10]
-
-LaTeX Warning: Reference `eq:Hgeneral' on page 11 undefined on input line 359.
-
-[11] [12]) [13]
+[10] [11] [12] [13]) [14]
 \openout2 = `chap2/chap2.aux'.
 
  (./chap2/chap2.tex
@@ -658,17 +623,17 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 40.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 40.
-[14
+[15
 
 
 
-] [15] [16] [17]
+] [16] [17] [18]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 258.
 
-[18] [19] <chap2/prob_dist.pdf, id=125, 505.89pt x 361.35pt>
+[19] [20] <chap2/prob_dist.pdf, id=128, 505.89pt x 361.35pt>
 File: chap2/prob_dist.pdf Graphic file (type pdf)
 
 <use chap2/prob_dist.pdf>
@@ -678,23 +643,23 @@ Package pdftex.def Info: chap2/prob_dist.pdf used on input line 454.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20] [21 <./chap2/prob_dist.pdf>]
-<chap2/IStest.pdf, id=140, 505.89pt x 361.35pt>
+[21] [22 <./chap2/prob_dist.pdf>]
+<chap2/IStest.pdf, id=143, 505.89pt x 361.35pt>
 File: chap2/IStest.pdf Graphic file (type pdf)
  <use chap2/IStest.pdf>
 Package pdftex.def Info: chap2/IStest.pdf used on input line 596.
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
- [22]
-[23 <./chap2/IStest.pdf>]
-<chap2/Silburt_completeness.pdf, id=156, 505.89pt x 361.35pt>
+ [23]
+[24 <./chap2/IStest.pdf>]
+<chap2/Silburt_completeness.pdf, id=159, 505.89pt x 361.35pt>
 File: chap2/Silburt_completeness.pdf Graphic file (type pdf)
 
 <use chap2/Silburt_completeness.pdf>
 Package pdftex.def Info: chap2/Silburt_completeness.pdf used on input line 666.
 
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
- [24 <./chap2/Silburt_completeness.pdf>]
-<chap2/Silburt_period.pdf, id=171, 505.89pt x 361.35pt>
+ [25 <./chap2/Silburt_completeness.pdf>]
+<chap2/Silburt_period.pdf, id=174, 505.89pt x 361.35pt>
 File: chap2/Silburt_period.pdf Graphic file (type pdf)
 
 <use chap2/Silburt_period.pdf>
@@ -709,14 +674,14 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.29405pt on input line 726.
 
-<chap2/Silburt_Rdist_all.pdf, id=172, 505.89pt x 361.35pt>
+<chap2/Silburt_Rdist_all.pdf, id=175, 505.89pt x 361.35pt>
 File: chap2/Silburt_Rdist_all.pdf Graphic file (type pdf)
 
 <use chap2/Silburt_Rdist_all.pdf>
 Package pdftex.def Info: chap2/Silburt_Rdist_all.pdf used on input line 749.
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
- [25 <./chap2/Silburt_period.pdf>] [26 <./chap2/Silburt_Rdist_all.pdf>]
-<chap2/Silburt_mcmcbin_decRp3.pdf, id=195, 505.89pt x 361.35pt>
+ [26 <./chap2/Silburt_period.pdf>] [27 <./chap2/Silburt_Rdist_all.pdf>]
+<chap2/Silburt_mcmcbin_decRp3.pdf, id=198, 505.89pt x 361.35pt>
 File: chap2/Silburt_mcmcbin_decRp3.pdf Graphic file (type pdf)
 
 <use chap2/Silburt_mcmcbin_decRp3.pdf>
@@ -724,15 +689,15 @@ Package pdftex.def Info: chap2/Silburt_mcmcbin_decRp3.pdf used on input line 83
 0.
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
 
-<chap2/Silburt_ISnobin.pdf, id=196, 505.89pt x 361.35pt>
+<chap2/Silburt_ISnobin.pdf, id=199, 505.89pt x 361.35pt>
 File: chap2/Silburt_ISnobin.pdf Graphic file (type pdf)
 
 <use chap2/Silburt_ISnobin.pdf>
 Package pdftex.def Info: chap2/Silburt_ISnobin.pdf used on input line 843.
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
- [27 <./chap2/Silburt_mcmcbin_decRp3.pdf>]
-[28 <./chap2/Silburt_ISnobin.pdf>]
-<chap2/Petigura_Sil_frac_completeness.pdf, id=219, 505.89pt x 361.35pt>
+ [28 <./chap2/Silburt_mcmcbin_decRp3.pdf>]
+[29 <./chap2/Silburt_ISnobin.pdf>]
+<chap2/Petigura_Sil_frac_completeness.pdf, id=223, 505.89pt x 361.35pt>
 File: chap2/Petigura_Sil_frac_completeness.pdf Graphic file (type pdf)
 
 <use chap2/Petigura_Sil_frac_completeness.pdf>
@@ -743,19 +708,19 @@ Package pdftex.def Info: chap2/Petigura_Sil_frac_completeness.pdf used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29] <chap2/PHM13_mastercomp.pdf, id=224, 505.89pt x 361.35pt>
+[30] <chap2/PHM13_mastercomp.pdf, id=227, 505.89pt x 361.35pt>
 File: chap2/PHM13_mastercomp.pdf Graphic file (type pdf)
 
 <use chap2/PHM13_mastercomp.pdf>
 Package pdftex.def Info: chap2/PHM13_mastercomp.pdf used on input line 997.
 (pdftex.def)             Requested size: 278.24034pt x 198.74312pt.
- [30 <./chap2/Petigura_Sil_frac_completeness.pdf>] [31 <./chap2/PHM13_mastercom
-p.pdf>] [32] [33] [34]
+ [31 <./chap2/Petigura_Sil_frac_completeness.pdf>] [32 <./chap2/PHM13_mastercom
+p.pdf>] [33] [34] [35]
 Underfull \hbox (badness 10000) in paragraph at lines 1388--1391
 
  []
 
-[35]) [36]
+[36]) [37]
 \openout2 = `chap3/chap3.aux'.
 
  (./chap3/chap3.tex
@@ -765,44 +730,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[37
+[38
 
 
 
-] <chap3/MMR.png, id=268, 578.16pt x 433.62pt>
+] <chap3/MMR.png, id=271, 578.16pt x 433.62pt>
 File: chap3/MMR.png Graphic file (type png)
  <use chap3/MMR.png>
 Package pdftex.def Info: chap3/MMR.png used on input line 39.
 (pdftex.def)             Requested size: 283.30087pt x 212.47566pt.
- [38 <./chap3/MMR.png>] [39] [40] <chap3/dDelta.png, id=280, 578.16pt x 433.62p
+ [39 <./chap3/MMR.png>] [40] [41] <chap3/dDelta.png, id=284, 578.16pt x 433.62p
 t>
 File: chap3/dDelta.png Graphic file (type png)
 
 <use chap3/dDelta.png>
 Package pdftex.def Info: chap3/dDelta.png used on input line 180.
 (pdftex.def)             Requested size: 270.68507pt x 194.47807pt.
- [41] [42 <./chap3/dDelta.png>]
-<chap3/tugg_v_repulse_July20.png, id=289, 578.16pt x 433.62pt>
+ [42] [43 <./chap3/dDelta.png>]
+<chap3/tugg_v_repulse_July20.png, id=292, 578.16pt x 433.62pt>
 File: chap3/tugg_v_repulse_July20.png Graphic file (type png)
 
 <use chap3/tugg_v_repulse_July20.png>
 Package pdftex.def Info: chap3/tugg_v_repulse_July20.png used on input line 216
 .
 (pdftex.def)             Requested size: 263.85649pt x 194.47807pt.
- [43 <./chap3/tugg_v_repulse_July20.png>]
+ [44 <./chap3/tugg_v_repulse_July20.png>]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 247.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 247.
 
-<chap3/emin_Tconstraint.png, id=294, 578.16pt x 433.62pt>
+<chap3/emin_Tconstraint.png, id=297, 578.16pt x 433.62pt>
 File: chap3/emin_Tconstraint.png Graphic file (type png)
 
 <use chap3/emin_Tconstraint.png>
 Package pdftex.def Info: chap3/emin_Tconstraint.png used on input line 259.
 (pdftex.def)             Requested size: 263.85649pt x 194.47807pt.
- [44] [45 <./chap3/emin_Tconstraint.png>]
-[46]) [47]
+ [45] [46 <./chap3/emin_Tconstraint.png>]
+[47]) [48]
 \openout2 = `chap4/chap4.aux'.
 
  (./chap4/chap4.tex
@@ -810,11 +775,11 @@ Chapter 4.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/24.88'.
 (microtype)             Ignoring protrusion settings for this character.
-[48
+[49
 
 
 
-] [49] <chap4/images/bodies.pdf, id=316, 273.02pt x 152.57pt>
+] [50] <chap4/images/bodies.pdf, id=319, 273.02pt x 152.57pt>
 File: chap4/images/bodies.pdf Graphic file (type pdf)
 
 <use chap4/images/bodies.pdf>
@@ -823,8 +788,8 @@ Package pdftex.def Info: chap4/images/bodies.pdf used on input line 83.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/8'.
 (microtype)             Ignoring protrusion settings for this character.
- [50 <./chap4/images/bodies.pdf>] [51]
-<chap4/images/CE_fig.pdf, id=328, 578.16pt x 433.62pt>
+ [51 <./chap4/images/bodies.pdf>] [52]
+<chap4/images/CE_fig.pdf, id=331, 578.16pt x 433.62pt>
 File: chap4/images/CE_fig.pdf Graphic file (type pdf)
 
 <use chap4/images/CE_fig.pdf>
@@ -833,27 +798,27 @@ Package pdftex.def Info: chap4/images/CE_fig.pdf used on input line 146.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/9'.
 (microtype)             Ignoring protrusion settings for this character.
- [52 <./chap4/images/CE_fig.pdf>]
-<chap4/images/AutoHSF.pdf, id=369, 439.6425pt x 186.6975pt>
+ [53 <./chap4/images/CE_fig.pdf>]
+<chap4/images/AutoHSF.pdf, id=373, 439.6425pt x 186.6975pt>
 File: chap4/images/AutoHSF.pdf Graphic file (type pdf)
 
 <use chap4/images/AutoHSF.pdf>
 Package pdftex.def Info: chap4/images/AutoHSF.pdf used on input line 193.
 (pdftex.def)             Requested size: 263.78752pt x 112.01935pt.
- [53 <./chap4/images/AutoHSF.pdf>]
+ [54 <./chap4/images/AutoHSF.pdf>]
 Overfull \hbox (55.92296pt too wide) in paragraph at lines 220--222
 []\T1/pplx/m/n/10 (-20) The adap-tive $\OML/zplm/m/it/10 f[]$ \T1/pplx/m/n/10 (
 -20) al-go-rithm can be switched off by set-ting the vari-able \T1/cmtt/m/n/10 
 ri_hermes.adaptive_hill_switch_factor
  []
 
-[54] <chap4/images/R3B.pdf, id=380, 503.8825pt x 266.9975pt>
+[55] <chap4/images/R3B.pdf, id=383, 503.8825pt x 266.9975pt>
 File: chap4/images/R3B.pdf Graphic file (type pdf)
 
 <use chap4/images/R3B.pdf>
 Package pdftex.def Info: chap4/images/R3B.pdf used on input line 268.
 (pdftex.def)             Requested size: 226.74503pt x 120.14775pt.
- [55]
+ [56]
 
 LaTeX Font Warning: Command \sc invalid in math mode on input line 320.
 
@@ -864,15 +829,15 @@ Package microtype Info: Loading generic settings for font family
 
 LaTeX Font Warning: Command \sc invalid in math mode on input line 320.
 
-[56 <./chap4/images/R3B.pdf>]
-<chap4/images/HSR_v_dE.pdf, id=391, 578.16pt x 433.62pt>
+[57 <./chap4/images/R3B.pdf>]
+<chap4/images/HSR_v_dE.pdf, id=394, 578.16pt x 433.62pt>
 File: chap4/images/HSR_v_dE.pdf Graphic file (type pdf)
 
 <use chap4/images/HSR_v_dE.pdf>
 Package pdftex.def Info: chap4/images/HSR_v_dE.pdf used on input line 326.
 (pdftex.def)             Requested size: 260.16959pt x 195.1272pt.
 
-<chap4/images/dt_v_dE.pdf, id=392, 578.16pt x 433.62pt>
+<chap4/images/dt_v_dE.pdf, id=395, 578.16pt x 433.62pt>
 File: chap4/images/dt_v_dE.pdf Graphic file (type pdf)
 
 <use chap4/images/dt_v_dE.pdf>
@@ -906,8 +871,8 @@ LaTeX Font Warning: Command \sc invalid in math mode on input line 363.
 
 LaTeX Font Warning: Command \sc invalid in math mode on input line 363.
 
-[57 <./chap4/images/HSR_v_dE.pdf>]
-<chap4/images/CEvdE.pdf, id=436, 578.16pt x 433.62pt>
+[58 <./chap4/images/HSR_v_dE.pdf>]
+<chap4/images/CEvdE.pdf, id=439, 578.16pt x 433.62pt>
 File: chap4/images/CEvdE.pdf Graphic file (type pdf)
 
 <use chap4/images/CEvdE.pdf>
@@ -923,22 +888,22 @@ LaTeX Font Warning: Command \sc invalid in math mode on input line 382.
 
 LaTeX Font Warning: Command \sc invalid in math mode on input line 383.
 
-[58 <./chap4/images/dt_v_dE.pdf>] [59 <./chap4/images/CEvdE.pdf>]
-<chap4/images/Kirsh_avg_a.pdf, id=547, 578.16pt x 433.62pt>
+[59 <./chap4/images/dt_v_dE.pdf>] [60 <./chap4/images/CEvdE.pdf>]
+<chap4/images/Kirsh_avg_a.pdf, id=550, 578.16pt x 433.62pt>
 File: chap4/images/Kirsh_avg_a.pdf Graphic file (type pdf)
 
 <use chap4/images/Kirsh_avg_a.pdf>
 Package pdftex.def Info: chap4/images/Kirsh_avg_a.pdf used on input line 427.
 (pdftex.def)             Requested size: 260.16959pt x 195.1272pt.
- [60 <./chap4/images/Kirsh_avg_a.pdf>]
-<chap4/images/energy_avg_FULL.png, id=586, 578.16pt x 578.16pt>
+ [61 <./chap4/images/Kirsh_avg_a.pdf>]
+<chap4/images/energy_avg_FULL.png, id=589, 578.16pt x 578.16pt>
 File: chap4/images/energy_avg_FULL.png Graphic file (type png)
 
 <use chap4/images/energy_avg_FULL.png>
 Package pdftex.def Info: chap4/images/energy_avg_FULL.png used on input line 45
 1.
 (pdftex.def)             Requested size: 260.16959pt x 260.16959pt.
- [61 <./chap4/images/energy_avg_FULL.png>]) [62]
+ [62 <./chap4/images/energy_avg_FULL.png>]) [63]
 \openout2 = `chap5/chap5.aux'.
 
  (./chap5/chap5.tex
@@ -948,39 +913,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[63
+[64
 
 
 
-] [64] [65]
+] [65] [66]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[66] <chap5/figures/ICpredictions.pdf, id=608, 578.16pt x 433.62pt>
+[67] <chap5/figures/ICpredictions.pdf, id=611, 578.16pt x 433.62pt>
 File: chap5/figures/ICpredictions.pdf Graphic file (type pdf)
 
 <use chap5/figures/ICpredictions.pdf>
 Package pdftex.def Info: chap5/figures/ICpredictions.pdf used on input line 145
 .
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
- [67] [68 <./chap5/figures/ICpredictions.pdf>]
+ [68] [69 <./chap5/figures/ICpredictions.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[69] <chap5/figures/histograms.pdf, id=683, 433.62pt x 289.08pt>
+[70] <chap5/figures/histograms.pdf, id=686, 433.62pt x 289.08pt>
 File: chap5/figures/histograms.pdf Graphic file (type pdf)
 
 <use chap5/figures/histograms.pdf>
 Package pdftex.def Info: chap5/figures/histograms.pdf used on input line 214.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- [70 <./chap5/figures/histograms.pdf>]
-<chap5/figures/prcurves.pdf, id=723, 505.89pt x 505.89pt>
+ [71 <./chap5/figures/histograms.pdf>]
+<chap5/figures/prcurves.pdf, id=727, 505.89pt x 505.89pt>
 File: chap5/figures/prcurves.pdf Graphic file (type pdf)
 
 <use chap5/figures/prcurves.pdf>
 Package pdftex.def Info: chap5/figures/prcurves.pdf used on input line 233.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
- [71 <./chap5/figures/prcurves.pdf>]) [72]
+ [72 <./chap5/figures/prcurves.pdf>]) [73]
 \openout2 = `chap6/chap6.aux'.
 
 
@@ -991,24 +956,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[73
+[74
 
 
 
-] [74]
-<chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf, id=778, 1445.4pt x 867.24pt>
+] [75]
+<chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf, id=781, 1445.4pt x 867.24pt>
 File: chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf Graphic file (type pdf)
 <use chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf>
 Package pdftex.def Info: chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf used 
 on input line 94.
 (pdftex.def)             Requested size: 451.68752pt x 242.33513pt.
- [75] [76 <./chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf>]
+ [76] [77 <./chap6/images/hk_400walk_5000it_chkpt1_MAP_RV.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 170--170
 []|\T1/pplx/m/n/10 (+20) noPPI
  []
 
-[77] [78]
-<chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf, id=838, 1445
+[78] [79]
+<chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf, id=841, 1445
 .4pt x 867.24pt>
 File: chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf Graphic 
 file (type pdf)
@@ -1018,37 +983,37 @@ Package pdftex.def Info: chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02
 _sd931.pdf used on input line 261.
 (pdftex.def)             Requested size: 451.68752pt x 253.11517pt.
 
-<chap6/images/plot_good_ones.pdf, id=839, 578.16pt x 722.7pt>
+<chap6/images/plot_good_ones.pdf, id=842, 578.16pt x 722.7pt>
 File: chap6/images/plot_good_ones.pdf Graphic file (type pdf)
 
 <use chap6/images/plot_good_ones.pdf>
 Package pdftex.def Info: chap6/images/plot_good_ones.pdf used on input line 270
 .
 (pdftex.def)             Requested size: 316.17987pt x 395.22559pt.
- [79]
-<chap6/images/stability_plot_histogram.pdf, id=843, 1156.32pt x 1084.05pt>
+ [80]
+<chap6/images/stability_plot_histogram.pdf, id=846, 1156.32pt x 1084.05pt>
 File: chap6/images/stability_plot_histogram.pdf Graphic file (type pdf)
 
 <use chap6/images/stability_plot_histogram.pdf>
 Package pdftex.def Info: chap6/images/stability_plot_histogram.pdf used on inpu
 t line 314.
 (pdftex.def)             Requested size: 451.68752pt x 513.74341pt.
- [80 <./chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf>] [81 
-<./chap6/images/plot_good_ones.pdf>] [82 <./chap6/images/stability_plot_histogr
-am.pdf>]) [83] [84]
+ [81 <./chap6/images/taueinner_migrate3e+03_Kin7e+00_Kout3e+02_sd931.pdf>] [82 
+<./chap6/images/plot_good_ones.pdf>] [83 <./chap6/images/stability_plot_histogr
+am.pdf>]) [84] [85]
 \openout2 = `conc/conc.aux'.
 
 
 (./conc/conc.tex
 Chapter 7.
-[85
+[86
 
 
 
-] [86]) [87] (./thesis.bbl [88
+] [87]) [88] (./thesis.bbl [89
 
 
-] [89] [90] [91] [92] [93] [94]) [95]
+] [90] [91] [92] [93] [94] [95]) [96]
 \openout2 = `appendix/appendix.aux'.
 
 
@@ -1058,16 +1023,16 @@ LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 15.0049pt on input line 6.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 15.0049pt on input line 6.
-[96
+[97
 
 
-] <appendix/e_max_dyn.png, id=1043, 578.16pt x 433.62pt>
+] <appendix/e_max_dyn.png, id=1046, 578.16pt x 433.62pt>
 File: appendix/e_max_dyn.png Graphic file (type png)
 
 <use appendix/e_max_dyn.png>
 Package pdftex.def Info: appendix/e_max_dyn.png used on input line 65.
 (pdftex.def)             Requested size: 270.68507pt x 201.30666pt.
- [97 <./appendix/e_max_dyn.png>]
+ [98 <./appendix/e_max_dyn.png>]
 Overfull \hbox (28.4551pt too wide) in alignment at lines 83--96
  [] [] [] [] [] [] [] [] [] 
  []
@@ -1087,21 +1052,18 @@ Overfull \hbox (28.4551pt too wide) in alignment at lines 152--180
  [] [] [] [] [] [] [] [] [] 
  []
 
-[98
+[99
 
 ]
 Overfull \hbox (28.4551pt too wide) in alignment at lines 180--203
  [] [] [] [] [] [] [] [] [] 
  []
 
-[99] (./thesis.aux (./intro/intro.aux) (./chap2/chap2.aux) (./chap3/chap3.aux)
+[100] (./thesis.aux (./intro/intro.aux) (./chap2/chap2.aux) (./chap3/chap3.aux)
 (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./conc/conc.aux)
 (./appendix/appendix.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1110,13 +1072,13 @@ LaTeX Warning: There were multiply-defined labels.
 (\end occurred when \iftrue on line 294 was incomplete)
 (\end occurred when \ifnum on line 294 was incomplete) 
 Here is how much of TeX's memory you used:
- 8896 strings out of 493117
- 132544 string characters out of 6135433
- 256539 words of memory out of 5000000
- 11367 multiletter control sequences out of 15000+600000
+ 8895 strings out of 493117
+ 132531 string characters out of 6135433
+ 256541 words of memory out of 5000000
+ 11366 multiletter control sequences out of 15000+600000
  143195 words of font info for 666 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,17n,46p,1249b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,17n,46p,1147b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/
 texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2014/te
 xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/
@@ -1136,10 +1098,10 @@ tt1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sftt
 88.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/l
 ocal/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (113 pages, 2134480 bytes).
+Output written on thesis.pdf (114 pages, 2135468 bytes).
 PDF statistics:
- 1115 PDF objects out of 1200 (max. 8388607)
- 504 compressed objects within 6 object streams
+ 1118 PDF objects out of 1200 (max. 8388607)
+ 506 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
  90268 words of extra memory for PDF output out of 106986 (max. 10000000)
 
